@@ -1,0 +1,121 @@
+aside .btn-toggle {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+}
+aside .btn-toggle:hover,
+aside .btn-toggle:focus {
+    color: rgba(0, 0, 0, .85);
+}
+aside .btn-toggle::after {
+    position: absolute;
+    top: 30%;
+    right: 5px;
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+}
+aside .btn-toggle[aria-expanded="true"] {
+    color: rgba(0, 0, 0, .85);
+}
+aside .btn-toggle[aria-expanded="true"]::after {
+    transform: rotate(90deg);
+}
+aside .btn-toggle-nav a {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 2rem;
+}
+aside .btn-toggle-nav a:hover,
+aside .btn-toggle-nav a:focus {
+    color: #0a58ca !important;
+}
+aside li.active a {
+    color: #0a58ca !important;
+}
+.breadcrumb-item {
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 20px !important;
+}
+.breadcrumb-item.active {
+    font-size: 18px;
+    line-height: 18px;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "";
+    padding-right: 0;
+}
+.breadcrumb-item::before {
+    content: "\00BB" !important;
+    font-size: 20px;
+    position: absolute;
+    bottom: -2px;
+    right: 5px;
+    color: #565e64;
+}
+.breadcrumb-item.active::before {
+    content: "" !important;
+}
+.form-title {
+    font-size: 20px;
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.nav-pills .nav-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+.nav-pills .nav-link.active {
+    background-color: #198754;
+    border-color: #198754;
+}
+.css-table {
+    display: table;
+}
+.css-table-header {
+    display: table-header-group;
+    background-color: #f1f1f1;
+}
+.css-table-body {
+    display: table-row-group;
+}
+.css-table-row,
+.css-table-row-input {
+    display: table-row;
+}
+.css-table-header div {
+    display: table-cell;
+    padding: 0 6px;
+    border-right: 1px solid rgba(0, 0, 0, 0.175);
+}
+.css-table-row div {
+    display: table-cell;
+    padding: 5px 6px;
+    border-right: 1px solid rgba(0, 0, 0, 0.175);
+}
+.css-table-row {
+    background-color: #f1f1f1;
+}.css-table-row-input {
+     background-color: #c8d9f3;
+ }
+.css-table-row-input div {
+    display: table-cell;
+    padding: 2px;
+    border-right: 1px solid rgba(0, 0, 0, 0.175);
+}
+.css-table-row-input .read-only {
+    background-color: #f1f1f1;
+    border: 3px solid #c8d9f3;
+}
