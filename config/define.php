@@ -6,7 +6,7 @@ define('INACTIVE', 0);
 
 define('LIMIT', 20);
 
-define('BASE_URL', env('BASE_URL', "http://vulcanus.itsj-group.local/"));
+define('BASE_URL', env('BASE_URL', "http://manage.local/"));
 
 define("IS_WRITE_NOT_YET", 0);
 define("IS_WRITE_DONE", 1);

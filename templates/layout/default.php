@@ -7,32 +7,32 @@
     <title><?= $this->fetch('title') ?></title>
 
     <!-- CSS -->
-    <link href="/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/plugins/select2/dist/css/select2.min.css" rel="stylesheet">
-    <link href="/plugins/image-uploader/dist/image-uploader.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/plugins/bootstrap-select/bootstrap-select.min.css">
-    <link rel="stylesheet" href="/plugins/icheck-material/css/icheck-material.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-    <link rel="stylesheet" href="/plugins/jquery-ui/jquery-ui.min.css">
+    <link href="<?= BASE_URL ?>plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= BASE_URL ?>plugins/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="<?= BASE_URL ?>plugins/image-uploader/dist/image-uploader.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= BASE_URL ?>plugins/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>plugins/icheck-material/css/icheck-material.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>css/print.css" media="print">
+    <link rel="stylesheet" href="<?= BASE_URL ?>plugins/jquery-ui/jquery-ui.min.css">
 
-    <link rel="stylesheet" href="/plugins/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/plugins/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/styles.css?v=1">
+    <link rel="stylesheet" href="<?= BASE_URL ?>plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/common.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/styles.css?v=1">
 
 
-    <script src="/js/jquery/jquery-3.6.0.min.js"></script>
-    <script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="/js/jquery/jquery-validation-1.19.4/dist/jquery.validate.js"></script>
-    <script src="/plugins/popper/popper.min.js"></script>
-    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/plugins/bootstrap-select/bootstrap-select.min.js"></script>
-    <script src="/plugins/ckeditor/ckeditor.js"></script>
-    <script src="/plugins/select2/dist/js/select2.min.js"></script>
-    <script src="/plugins/image-uploader/src/image-uploader.js"></script>
-    <script src="/plugins/magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="<?= BASE_URL ?>js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="<?= BASE_URL ?>plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="<?= BASE_URL ?>js/jquery/jquery-validation-1.19.4/dist/jquery.validate.js"></script>
+    <script src="<?= BASE_URL ?>plugins/popper/popper.min.js"></script>
+    <script src="<?= BASE_URL ?>plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= BASE_URL ?>plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="<?= BASE_URL ?>plugins/ckeditor/ckeditor.js"></script>
+    <script src="<?= BASE_URL ?>plugins/select2/dist/js/select2.min.js"></script>
+    <script src="<?= BASE_URL ?>plugins/image-uploader/src/image-uploader.js"></script>
+    <script src="<?= BASE_URL ?>plugins/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="<?= BASE_URL ?>plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 
     <!-- Pusher -->
     <script src="https://js.pusher.com/7.2/pusher.min.js"></script>

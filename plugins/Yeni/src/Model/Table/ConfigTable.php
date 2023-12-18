@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Model\Table;
+namespace Yeni\Model\Table;
 
 class ConfigTable extends AppTable
 {

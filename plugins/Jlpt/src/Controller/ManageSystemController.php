@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Controller;
+namespace Jlpt\Controller;
 
-use App\Library\Business\ManageSystem;
-use Cake\Log\Log;
+use Jlpt\Library\Business\ManageSystem;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
-
+use \Jlpt\Controller\AppController;
 class ManageSystemController extends AppController
 {
 

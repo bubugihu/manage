@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Controller;
+namespace Yeni\Controller;
 
+use \Jlpt\Controller\AppController;
 use App\Model\Table\ConfigTable;
 
 class ConfigController extends AppController

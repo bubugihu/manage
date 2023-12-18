@@ -27,7 +27,7 @@ if (!empty($results)) {
         $objPHPExcel->getActiveSheet()->setCellValue('H' . $i, $item->q_qty);
         $objPHPExcel->getActiveSheet()->setCellValue('I' . $i, $item->total_display);
         $objPHPExcel->getActiveSheet()->setCellValue('J' . $i, $item->t_qty);
-        $objPHPExcel->getActiveSheet()->setCellValue('K' . $i, $item->updated_on->toDateTimeString());
+        $objPHPExcel->getActiveSheet()->setCellValue('K' . $i, $item->updated_on->toDateTimeString() ?? "");
 
         if ($item->total_display <= $defaut_value)
         {

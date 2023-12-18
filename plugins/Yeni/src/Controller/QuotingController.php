@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Controller;
+namespace Yeni\Controller;
 
-use App\Library\Business\Quoting;
-use App\Model\Table\SetProductTable;
+use \Jlpt\Controller\AppController;
+use \Jlpt\Model\Table\SetProductTable;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+use Yeni\Library\Business\Quoting;
 
 class QuotingController extends AppController
 {

@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Controller;
+namespace Yeni\Controller;
 
-class ReportController extends AppController
+use \Jlpt\Controller\AppController;
+
+class PurchaseController extends AppController
 {
     public function initialize(): void
     {

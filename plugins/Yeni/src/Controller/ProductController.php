@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Controller;
+namespace Yeni\Controller;
 
-use App\Library\Business\Product;
-use App\Model\Table\ConfigTable;
-use App\Model\Table\SetProductTable;
+use \Jlpt\Controller\AppController;
+use \Jlpt\Model\Table\ConfigTable;
+use \Jlpt\Model\Table\SetProductTable;
 use Cake\Log\Log;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+use Yeni\Library\Business\Product;
 
 class ProductController extends AppController
 {

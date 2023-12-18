@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Controller;
+namespace Jlpt\Controller;
 
-use App\Library\Business\ManageSystem;
+use App\Controller\AppController;
 use Cake\Log\Log;
+use Jlpt\Library\Business\ManageSystem;
 
 class ApiController extends AppController
 {

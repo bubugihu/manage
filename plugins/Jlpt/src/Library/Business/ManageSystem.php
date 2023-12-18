@@ -1,16 +1,15 @@
 <?php
 
-namespace App\Library\Business;
+namespace Jlpt\Library\Business;
 
 use Cake\Log\Log;
-use Jlpt\Library\Business\Base;
 
-class ManageSystem extends Base
+class ManageSystem extends Entity
 {
     public function __construct()
     {
         parent::__construct();
-        $this->model_customers = $this->_getProvider("Customers");
+        $this->model_customers = $this->_getProvider("Jlpt.Customers");
     }
 
     public function getOne($id)

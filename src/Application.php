@@ -64,6 +64,8 @@ class Application extends BaseApplication
 //        }
 
         // Load more plugins here
+        $this->addPlugin('Jlpt');
+        $this->addPlugin('Yeni');
     }
 
     /**
@@ -129,7 +131,5 @@ class Application extends BaseApplication
 
         $this->addPlugin('Migrations');
 
-        // Load more plugins here
-        $this->addPlugin('Cors');
     }
 }

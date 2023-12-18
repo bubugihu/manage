@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Library\Business;
+namespace Yeni\Library\Business;
 
 use Cake\Datasource\ConnectionManager;
 use Cake\Log\Log;
