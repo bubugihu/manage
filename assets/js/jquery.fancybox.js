@@ -168,7 +168,7 @@
         // Custom CSS class for layout
         baseClass : '',
 
-        // Base template for layout
+        // Entity template for layout
         baseTpl	:
             '<div class="fancybox-container" role="dialog" tabindex="-1">' +
             '<div class="fancybox-bg"></div>' +

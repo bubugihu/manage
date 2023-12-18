@@ -2,9 +2,9 @@
 
 namespace Yeni\Controller;
 
-use \Jlpt\Controller\AppController;
-use \Jlpt\Model\Table\ConfigTable;
-use \Jlpt\Model\Table\SetProductTable;
+use \Yeni\Controller\AppController;
+use \Yeni\Model\Table\ConfigTable;
+use \Yeni\Model\Table\SetProductTable;
 use Cake\Log\Log;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use Yeni\Library\Business\Product;

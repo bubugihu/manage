@@ -4,11 +4,11 @@ use Cake\Routing\RouteBuilder;
 
 return static function (RouteBuilder $routes) {
     $routes->plugin(
-        'Shipping',
-        ['path' => '/shipping'],
+        'Yeni',
+        ['path' => '/yeni'],
         function (RouteBuilder $builder) {
             $builder->setRouteClass(DashedRoute::class);
-            $builder->connect('/', ['controller' => 'Home', 'action' => 'index']);
+            $builder->connect('/', ['controller' => 'Pages', 'action' => 'index']);
             $builder->fallbacks();
         }
     );

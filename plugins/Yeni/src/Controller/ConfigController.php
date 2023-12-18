@@ -2,7 +2,7 @@
 
 namespace Yeni\Controller;
 
-use \Jlpt\Controller\AppController;
+use \Yeni\Controller\AppController;
 use App\Model\Table\ConfigTable;
 
 class ConfigController extends AppController

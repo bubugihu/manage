@@ -6,15 +6,15 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Log\Log;
 use Jlpt\Library\Business\Base;
 
-class Product extends Base
+class Product extends Entity
 {
     public function __construct()
     {
         parent::__construct();
-        $this->model_product = $this->_getProvider("Product");
-        $this->model_set_product = $this->_getProvider("SetProduct");
-        $this->model_set_product_detail = $this->_getProvider("SetProductDetail");
-        $this->model_source_import = $this->_getProvider("SourceImport");
+        $this->model_product = $this->_getProvider("Yeni.Product");
+        $this->model_set_product = $this->_getProvider("Yeni.SetProduct");
+        $this->model_set_product_detail = $this->_getProvider("Yeni.SetProductDetail");
+        $this->model_source_import = $this->_getProvider("Yeni.SourceImport");
         $this->set_name = "";
         $this->set_code = "";
         $this->set_avatar = "";

@@ -1,10 +1,10 @@
 <?php
 
-namespace Yeni\Library\Business;
+namespace App\Library\Business;
 
 use Cake\ORM\TableRegistry;
 
-abstract class Base
+abstract class Entity
 {
     /**
      * Instantinates the class

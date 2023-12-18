@@ -130,6 +130,8 @@ class Application extends BaseApplication
         $this->addOptionalPlugin('Bake');
 
         $this->addPlugin('Migrations');
+        $this->addPlugin('Jlpt');
+        $this->addPlugin('Yeni');
 
     }
 }

@@ -23,8 +23,6 @@ class ManageSystem extends Entity
             'is_payment' => $key_payment,
             'exam' => $key_exam,
             'OR' => [
-//                'first_name LIKE' => "%" . $key_search . "%",
-//                'last_name LIKE' => "%" . $key_search . "%",
                 'CONCAT(last_name, " ", first_name) LIKE' => "%" . $key_search . "%",
                 'code LIKE' => "%" . $key_search . "%",
                 'exam LIKE' => "%" . $key_search . "%",
@@ -56,7 +54,7 @@ class ManageSystem extends Entity
           'first_name'    =>  "ASC",
           'last_name'    =>  "ASC",
         ];
-        return $this->model_customers->getData($page, $condition, [], [], $order, $export);;
+        return $this->model_customers->getData($page, $condition, [], [], $order, $export);
     }
 
     public function update($params,$file)

@@ -1,4 +1,4 @@
-module('Data adapters - Base');
+module('Data adapters - Entity');
 
 var BaseData = require('select2/data/base');
 var $ = require('jquery');

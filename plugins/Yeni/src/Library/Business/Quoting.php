@@ -7,7 +7,7 @@ use Cake\I18n\FrozenTime;
 use Cake\Log\Log;
 use Jlpt\Library\Business\Base;
 
-class Quoting extends Base
+class Quoting extends Entity
 {
     public function __construct()
     {
