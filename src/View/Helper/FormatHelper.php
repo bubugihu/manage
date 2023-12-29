@@ -12,7 +12,7 @@ class FormatHelper extends Helper
     public function formatCurrency($val, $currency_code): string
     {
         if($currency_code == 'VND')
-            return number_format( (float)$val , 2 , '.' , ',' ) . ' ' . $currency_code;
+            return number_format( (float)$val , 0 , '.' , ',' ) . ' ' . $currency_code;
         else
             return $currency_code . ' ' . number_format( (float)$val , 2 , '.' , ',' );
     }

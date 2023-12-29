@@ -1,6 +1,6 @@
 <ul class="list-unstyled ps-0">
         <li class="mb-1 <?php echo $this->getRequest()->getParam('controller') == 'Home' ? 'active' : ''; ?>">
-            <a href="/" class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3 aside-none-after">
+            <a href="/yeni/" class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3 aside-none-after">
                 <i class="fas fa-tachometer-alt me-2 aside-menu-icon"></i>
                 <div class="text-start"><?= __("Dashboard") ?></div>
             </a>
@@ -15,16 +15,16 @@
 
     <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3"
-                data-bs-toggle="collapse" data-bs-target="#purchasing-collapse" aria-expanded="<?php echo in_array($this->getRequest()->getParam('controller'), ['Product']) ? 'true' : 'false'; ?>">
+                data-bs-toggle="collapse" data-bs-target="#inventory-collapse" aria-expanded="<?php echo in_array($this->getRequest()->getParam('controller'), ['Product']) ? 'true' : 'false'; ?>">
             <i class="fa-regular fa-credit-card me-2 aside-menu-icon"></i>
             <div class="text-start"><?= __("Inventory") ?></div>
         </button>
         <div class="collapse bg-white border-end border-light <?php echo in_array($this->getRequest()->getParam('controller'), ['Product']) ? 'show' : ''; ?>"
-             id="purchasing-collapse">
+             id="inventory-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li
                     class="<?php echo ($this->getRequest()->getParam('controller') == 'Product' && $this->getRequest()->getParam('action') == 'index') ? 'active' : ''; ?>">
-                    <a href="/product"
+                    <a href="/yeni/product"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
                         <div class="text-start"><?= __("Product") ?></div>
@@ -33,7 +33,7 @@
 
                 <li
                     class="<?php echo ($this->getRequest()->getParam('controller') == 'Product' && $this->getRequest()->getParam('action') == 'setProductList') ? 'active' : ''; ?>">
-                    <a href="/product/set-product-list"
+                    <a href="/yeni/product/set-product-list"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
                         <div class="text-start"><?= __("Set Product") ?></div>
@@ -42,7 +42,7 @@
 
                 <li
                     class="<?php echo ($this->getRequest()->getParam('controller') == 'Product' && $this->getRequest()->getParam('action') == 'importExcel') ? 'active' : ''; ?>">
-                    <a href="/product/importExcel"
+                    <a href="/yeni/product/importExcel"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
                         <div class="text-start"><?= __("From Excel") ?></div>
@@ -63,7 +63,7 @@
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li
                     class="<?php echo $this->getRequest()->getParam('controller') == 'Purchase' ? 'active' : ''; ?>">
-                    <a href="/purchase"
+                    <a href="/yeni/purchase"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
                         <div class="text-start"><?= __("Request") ?></div>
@@ -83,11 +83,19 @@
              id="quoting-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li
-                    class="<?php echo $this->getRequest()->getParam('controller') == 'Quoting' ? 'active' : ''; ?>">
-                    <a href="/quoting"
+                    class="<?php echo ($this->getRequest()->getParam('controller') == 'Quoting' && $this->getRequest()->getParam('action') == 'index') ? 'active' : ''; ?>">
+                    <a href="/yeni/quoting"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
-                        <div class="text-start"><?= __("Quoting") ?></div>
+                        <div class="text-start"><?= __("Shopee") ?></div>
+                    </a>
+                </li>
+                <li
+                    class="<?php echo ($this->getRequest()->getParam('controller') == 'Quoting' && $this->getRequest()->getParam('action') == 'zalo') ? 'active' : ''; ?>">
+                    <a href="/yeni/quoting/zalo"
+                       class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
+                        <i class="fa-regular fa-circle"></i>
+                        <div class="text-start"><?= __("Zalo") ?></div>
                     </a>
                 </li>
             </ul>
@@ -105,7 +113,7 @@
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li
                     class="<?php echo $this->getRequest()->getParam('controller') == 'Report' ? 'active' : ''; ?>">
-                    <a href="/report"
+                    <a href="/yeni/report"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
                         <div class="text-start"><?= __("Report") ?></div>
@@ -116,7 +124,7 @@
     </li>
 
     <li class="mb-1 <?php echo $this->getRequest()->getParam('controller') == 'Config' ? 'active' : ''; ?>">
-        <a href="/config" class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3 aside-none-after">
+        <a href="/yeni/config" class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3 aside-none-after">
             <i class="fas fa-tachometer-alt me-2 aside-menu-icon"></i>
             <div class="text-start"><?= __("Config") ?></div>
         </a>

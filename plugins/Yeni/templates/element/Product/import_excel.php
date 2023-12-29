@@ -9,7 +9,7 @@
                     <div class="container-fluid">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a class="btn btn-success rounded-0" href="/product/create" id="btn-add-form">
+                                <a class="btn btn-success rounded-0" href="/yeni/product/create" id="btn-add-form">
                                     <i class="fa-solid fa-plus"></i>
                                     <?= __("New") ?>
                                 </a>
@@ -27,7 +27,7 @@
                                     <?= __('Import EXCEL') ?>
                                 </label>
                                 <?= $this->Form->create(null, [
-                                    'url' => '/product/importSource',
+                                    'url' => '/yeni/product/importSource',
                                     'method' => 'post',
                                     'id' => 'uploadFile',
                                     'class' => ['d-none'],
@@ -41,7 +41,7 @@
 
                         <div class="nav-end">
                             <div class="nav-end">
-                                <form class="form-filter" action="/product/import_excel/" method="get">
+                                <form class="form-filter" action="/yeni/product/import_excel/" method="get">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item">
                                             <div class="bb-search">

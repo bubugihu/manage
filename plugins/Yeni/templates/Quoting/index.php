@@ -6,7 +6,7 @@
         <div class="nav nav-tabs ps-3" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                 <i class="fa-solid fa-bookmark me-2"></i>
-            <?= __('Quoting') ?>
+            <?= __('Shopee') ?>
             </button>
         </div>
     </nav>

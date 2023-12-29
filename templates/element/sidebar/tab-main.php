@@ -96,19 +96,19 @@
 
     <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3"
-                data-bs-toggle="collapse" data-bs-target="#report-collapse" aria-expanded="<?php echo in_array($this->getRequest()->getParam('controller'), ['Report']) ? 'true' : 'false'; ?>">
+                data-bs-toggle="collapse" data-bs-target="#report-collapse" aria-expanded="<?php echo in_array($this->getRequest()->getParam('controller'), ['Orders']) ? 'true' : 'false'; ?>">
             <i class="fa-regular fa-credit-card me-2 aside-menu-icon"></i>
-            <div class="text-start"><?= __("Report") ?></div>
+            <div class="text-start"><?= __("Orders") ?></div>
         </button>
-        <div class="collapse bg-white border-end border-light <?php echo in_array($this->getRequest()->getParam('controller'), ['Report']) ? 'show' : ''; ?>"
+        <div class="collapse bg-white border-end border-light <?php echo in_array($this->getRequest()->getParam('controller'), ['Orders']) ? 'show' : ''; ?>"
              id="report-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li
-                    class="<?php echo $this->getRequest()->getParam('controller') == 'Report' ? 'active' : ''; ?>">
+                    class="<?php echo $this->getRequest()->getParam('controller') == 'Orders' ? 'active' : ''; ?>">
                     <a href="/report"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
-                        <div class="text-start"><?= __("Report") ?></div>
+                        <div class="text-start"><?= __("Orders") ?></div>
                     </a>
                 </li>
             </ul>

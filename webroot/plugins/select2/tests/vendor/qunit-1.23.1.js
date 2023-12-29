@@ -2961,7 +2961,7 @@ QUnit.testStart( function( details ) {
 		testBlock.className = "running";
 	} else {
 
-		// Report later registered tests
+		// Orders later registered tests
 		appendTest( details.name, details.testId, details.module );
 	}
 

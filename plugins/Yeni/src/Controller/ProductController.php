@@ -103,7 +103,7 @@ class ProductController extends AppController
                 $this->Flash->error(__("Failed not xlsx"));
             }
         }
-        return $this->redirect('/product/');
+        return $this->redirect('/yeni/product/');
     }
 
     public function importSource()
@@ -198,7 +198,7 @@ class ProductController extends AppController
                 $this->Flash->error(__("Failed not xlsx"));
             }
         }
-        return $this->redirect('/product/import-excel/');
+        return $this->redirect('/yeni/product/import-excel/');
     }
 
     public function importSetProduct()
@@ -253,7 +253,7 @@ class ProductController extends AppController
                 $this->Flash->error(__("Failed not xlsx"));
             }
         }
-        return $this->redirect('/product/set-product-list/');
+        return $this->redirect('/yeni/product/set-product-list/');
     }
 
     public function importExcel()
@@ -276,7 +276,7 @@ class ProductController extends AppController
         }else{
             $this->Flash->error("Failed.");
         }
-        return $this->redirect('/product/import-excel/');
+        return $this->redirect('/yeni/product/import-excel/');
     }
 
     public function loadingFromSource()
@@ -316,7 +316,7 @@ class ProductController extends AppController
         }else{
             $this->Flash->error("Failed.");
         }
-        return $this->redirect('/product/');
+        return $this->redirect('/yeni/product/');
     }
 
     public function export($output_type = 'D')
