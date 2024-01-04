@@ -23,7 +23,7 @@ abstract class Entity
         return TableRegistry::getTableLocator()->get($providerName);
     }
 
-    protected function upload_image($file_input, $input_field = 'banner', $params, $type)
+    protected function upload_image($file_input = null, $input_field = 'banner', $params = [], $type = null)
     {
             //Check if image has been uploaded
             if (!empty($file_input[$input_field]['name'])) {

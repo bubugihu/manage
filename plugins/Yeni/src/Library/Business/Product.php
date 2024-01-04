@@ -22,7 +22,7 @@ class Product extends Entity
         $this->set_price_option = 0;
     }
 
-    public function getList($key_search = "",  $page, $export = false)
+    public function getList($key_search = "",  $page = 1, $export = false)
     {
         $condition = [
             'OR' => [
@@ -93,7 +93,7 @@ class Product extends Entity
         return $this->model_product->getData($page, $condition, [], [], $order, $export);;
     }
 
-    public function getListSource($key_search = "",  $page, $export = false)
+    public function getListSource($key_search = "",  $page = 1, $export = false)
     {
         $condition = [
             'OR' => [
