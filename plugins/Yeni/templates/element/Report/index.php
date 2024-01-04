@@ -6,7 +6,7 @@
     }
     .chart{
         height: 400px;
-        width: 950px;
+        width: 1000px;
     }
 </style>
 <div class="tab-content" id="nav-tabContent">
@@ -152,7 +152,7 @@
         const labels = [
             <?php if (isset($labels) && count($labels) > 0) foreach ($labels as $day => $val) echo '"'. $val . '", ' ?>
         ]
-
+        labels.push("Next")
         const data_count_order_zalo = [
             <?php if (isset($labels) && count($labels) > 0)
                 foreach ($labels as $key => $val)
@@ -248,10 +248,10 @@
             labels: labels,
             datasets: [
                 {
-                    label: 'Report 2023',
+                    label: 'Income 2023',
                     borderColor: 'blue',
                     data: data_sum_price_total,
-                    fill: true,
+                    fill: false,
                 },
             ],
         };
@@ -269,7 +269,7 @@
                         label: function(tooltipItem, data) {
                             return `Total: ${data_count_order_total[tooltipItem.index]}  Orders, Income: ${gFormatCurrency(data_sum_price_total[tooltipItem.index], "VND")}`
                         }
-                    }
+                    },
                 },
                 scales: {
                     yAxes: [{
@@ -280,11 +280,30 @@
                         ticks: {
                             beginAtZero: true,
                             callback: function(value, index, values) {
-                                return gFormatCurrency(value,"VND");
+                                return gFormatCurrency(value,"");
                             }
                         }
                     }]
                 },
+                animation: {
+                    duration: 1,
+                    onComplete: function () {
+                        var chartInstance = this.chart,
+                            ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+
+                        this.data.datasets.forEach(function (dataset, i) {
+                            var meta = chartInstance.controller.getDatasetMeta(i);
+                            meta.data.forEach(function (bar, index) {
+                                var data = dataset.data[index];
+                                ctx.fillStyle = '#000';
+                                ctx.fillText(gFormatCurrency(data,""), bar._model.x, bar._model.y - 5);
+                            });
+                        });
+                    }
+                }
             }
         };
 

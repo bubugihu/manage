@@ -41,6 +41,19 @@ class QuotingController extends AppController
         $this->set('paginate',$paginate);
     }
 
+    public function total()
+    {
+        $arr['key_search'] = $key_search = $_GET['key_search'] ?? "";
+        $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;
+
+        $list_quotings = $this->business_quoting->getList($key_search, $page, false,null);
+        $paginate = $this->Common->displayPaginationBelow(LIMIT, $page, $list_quotings->count(), $arr);
+
+        $this->set('total_quotings',$list_quotings->count());
+        $this->set('list_quotings',$list_quotings->all()->toList());
+        $this->set('paginate',$paginate);
+    }
+
     public function import()
     {
         if ($this->getRequest()->is('POST'))

@@ -98,6 +98,14 @@
                         <div class="text-start"><?= __("Zalo") ?></div>
                     </a>
                 </li>
+                <li
+                    class="<?php echo ($this->getRequest()->getParam('controller') == 'Quoting' && $this->getRequest()->getParam('action') == 'total') ? 'active' : ''; ?>">
+                    <a href="/yeni/quoting/total"
+                       class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
+                        <i class="fa-regular fa-circle"></i>
+                        <div class="text-start"><?= __("Total") ?></div>
+                    </a>
+                </li>
             </ul>
         </div>
     </li>

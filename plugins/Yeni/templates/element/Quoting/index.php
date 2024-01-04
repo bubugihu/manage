@@ -27,7 +27,7 @@
                                         <?= __('Import EXCEL') ?>
                                     </label>
                                     <?= $this->Form->create(null, [
-                                        'url' => 'yeni/quoting/import',
+                                        'url' => '/yeni/quoting/import',
                                         'method' => 'post',
                                         'id' => 'uploadFile',
                                         'class' => ['d-none'],
@@ -41,7 +41,7 @@
 
                         <div class="nav-end">
                             <div class="nav-end">
-                                <form class="form-filter" action="/quoting/" method="get">
+                                <form class="form-filter" action="/yeni/quoting/" method="get">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item">
                                             <div class="bb-search">

@@ -19,16 +19,26 @@ class Quoting extends Entity
 
     public function getList($key_search = "",  $page, $export = false, $type)
     {
-        $condition = [
-            'OR' => [
-                'code LIKE' => "%" . $key_search . "%",
-            ],
-            'source' => $type
-        ];
+        $order = [];
+        if(is_null($type))
+        {
+            $condition = [
+                'OR' => [
+                    'code LIKE' => "%" . $key_search . "%",
+                ],
+            ];
+            $order = [
+                'quantity' => "DESC"
+            ];
+        }else{
+            $condition = [
+                'OR' => [
+                    'code LIKE' => "%" . $key_search . "%",
+                ],
+                'source' => $type
+            ];
+        }
 
-        $order = [
-
-        ];
         return $this->model_quoting->getData($page, $condition, [], [], $order, $export);
     }
 

@@ -8,47 +8,11 @@
                 <nav class="navbar bg-body-tertiary">
                     <div class="container-fluid">
                         <ul class="nav nav-pills">
-<!--                                <li class="nav-item">-->
-<!--                                    <a class="btn btn-success rounded-0" href="/manage-system/create" id="btn-add-form">-->
-<!--                                        <i class="fa-solid fa-plus"></i>-->
-<!--                                        --><?php //= __("New") ?>
-<!--                                    </a>-->
-<!--                                </li>-->
-                                <li class="nav-item px-1">
-                                    <label class="btn btn-outline-secondary rounded-0" for="importQuoting">
-                                        <i class="fa-solid fa-plus"></i>
-                                        <?= __('Import EXCEL') ?>
-                                    </label>
-                                    <?= $this->Form->create(null, [
-                                        'url' => 'yeni/quoting/importZalo',
-                                        'method' => 'post',
-                                        'id' => 'uploadFile',
-                                        'class' => ['d-none'],
-                                        'enctype' => 'multipart/form-data'
-                                    ]); ?>
-                                    <input type="file" id="importQuoting" name="file_import">
-                                    <?= $this->Form->end(); ?>
-                                </li>
-                                <li class="nav-item px-1">
-                                    <label class="btn btn-outline-secondary rounded-0" for="importQuoting">
-                                        <i class="fa-solid fa-plus"></i>
-                                        <?= __('Load order') ?>
-                                    </label>
-                                    <?= $this->Form->create(null, [
-                                        'url' => 'yeni/quoting/importOrder',
-                                        'method' => 'post',
-                                        'id' => 'uploadFile',
-                                        'class' => ['d-none'],
-                                        'enctype' => 'multipart/form-data'
-                                    ]); ?>
-                                    <input type="file" id="importOrder" name="file_import">
-                                    <?= $this->Form->end(); ?>
-                                </li>
                         </ul>
 
                         <div class="nav-end">
                             <div class="nav-end">
-                                <form class="form-filter" action="/yeni/quoting/zalo" method="get">
+                                <form class="form-filter" action="/yeni/quoting/total/" method="get">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item">
                                             <div class="bb-search">
