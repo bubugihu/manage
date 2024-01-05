@@ -43,7 +43,7 @@
 <header class="bg-light border-bottom border-secondary sticky-top">
     <div class="d-flex justify-content-between align-items-center" style="height: 59px;">
         <div class="top">
-            <p class="text-center mb-0 fs-4 fw-bold">ITSJ-G</p>
+            <p class="text-center mb-0 fs-4 fw-bold">YENI PARTY</p>
         </div>
         <div class="bottom me-3">
             <div class="row" >

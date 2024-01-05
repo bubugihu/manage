@@ -9,7 +9,7 @@
     <meta property="og:title" content="Yeni">
     <meta property="og:type" content="Website">
     <meta property="og:url" content="https://yeniparty.com/">
-    <meta property="og:description" content="Yeni party">
+    <meta property="og:description" content="Yeni party Phụ kiện trang trí Sinh Nhật">
     <meta property="og:image" content="<?= BASE_URL . 'image/yeni_logo.jpg' ?>"/>
     <link rel="icon" type="image/x-icon" href="<?= BASE_URL . 'image/yeni_logo.jpg' ?>">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
