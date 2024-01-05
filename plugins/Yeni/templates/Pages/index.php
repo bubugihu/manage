@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataTable Example</title>
+    <title>Yeni Party</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.css"/>
@@ -22,7 +22,7 @@
 <div class="container">
     <!-- Section 1: Hiển thị thông tin -->
     <div id="infoSection">
-        <h2>Thông tin hàng:</h2>
+        <h2>Thông tin đặt hàng:</h2>
         <div>
             <div class="col-12">
                 <div class="row mb-2">

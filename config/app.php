@@ -199,7 +199,7 @@ return [
         'skipLog' => [],
         'log' => true,
         'trace' => true,
-        'ignoredDeprecationPaths' => [],
+        'ignoredDeprecationPaths' => ['vendor/cakephp/cakephp/src/Database/Connection.php'],
     ],
 
     /*
@@ -321,7 +321,7 @@ return [
              */
             'flags' => [],
             'cacheMetadata' => true,
-            'log' => false,
+            'log' => true,
 
             /*
              * Set identifier quoting to true if you are using reserved words or

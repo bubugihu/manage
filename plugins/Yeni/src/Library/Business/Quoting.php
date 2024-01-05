@@ -17,6 +17,10 @@ class Quoting extends Entity
         $this->model_order = $this->_getProvider("Yeni.Orders");
     }
 
+    public function selectListQuoting($condition)
+    {
+        return $this->model_quoting->selectList($condition);
+    }
     public function getList($key_search = "",  $page, $export = false, $type)
     {
         $order = [];

@@ -151,7 +151,8 @@ class Report extends Entity
             $result[$index] = $value;
             $index++;
         }
-        return $result;
+
+        return array_reverse($result);
     }
 
 }

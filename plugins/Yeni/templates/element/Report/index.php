@@ -8,6 +8,12 @@
         height: 400px;
         width: 1000px;
     }
+    .dropdown-item-text{
+        margin: 1px 10px;
+        text-decoration: none;
+        color: black;
+    }
+
 </style>
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
@@ -68,13 +74,10 @@
                                 <div class="css-table-header">
                                     <div style="width: 1%"><br><?= __("Action") ?></div>
                                     <div style="width: 3%"><br><?= __("Code") ?></div>
-                                    <div style="width: 1%"><br><?= __("Date") ?></div>
                                     <div style="width: 2%"><br><?= __("Customer") ?></div>
-                                    <div style="width: 2%"><br><?= __("Phone") ?></div>
                                     <div style="width: 2%"><br><?= __("Address") ?></div>
-                                    <div style="width: 5%"><br><?= __("Shipping") ?></div>
                                     <div style="width: 2%"><br><?= __("Total") ?></div>
-                                    <div style="width: 2%"><br><?= __("Note") ?></div>
+                                    <div style="width: 2%"><br><?= __("Status") ?></div>
                                 </div>
 
                                 <?php if (!empty($list_orders)) : ?>
@@ -83,12 +86,28 @@
                                             <div class="css-table-row-input table-striped">
                                                 <div class="action-col">
                                                     <div class="d-flex justify-content-center">
-                                                        <a href="/quoting/view/<?= $value->id . $this->Format->renderParameterURL() ?>" class="view" title="View">
-                                                            <i class="fa fa-eye"></i>
-                                                        </a>
-                                                        <a href="/quoting/delete/<?= $value->id . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="delete" title="View">
-                                                            <i class="fa fa-trash"></i>
-                                                        </a>
+                                                        <div class="dropdown dropend" title="More Action">
+                                                            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fa-solid fa-ellipsis-vertical text-secondary"></i>
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a href="/yeni/report/view/<?= $value->id . $this->Format->renderParameterURL() ?>" class="view dropdown-item-text" title="View">
+                                                                        <i class="fa fa-eye"></i> Xem
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/yeni/report/delete/<?= $value->id . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="delete dropdown-item-text" title="View">
+                                                                        <i class="fa fa-trash"></i> Xoá
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/yeni/report/delete/<?= $value->id . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="confirm dropdown-item-text" title="View">
+                                                                        <i class="fa fa-check-circle"></i> Xác nhận
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -96,25 +115,16 @@
                                                     <?= $value->order_code ?? '' ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->order_date->toDateString() ?? '' ?>
-                                                </div>
-                                                <div>
                                                     <?= $value->customer_name ?? "" ?>
-                                                </div>
-                                                <div>
-                                                    <?= $value->customer_phone ?? "" ?>
                                                 </div>
                                                 <div>
                                                     <?= $value->customer_addr ?? "" ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->shipping ?? '' ?>
-                                                </div>
-                                                <div>
                                                     <?= $value->total_display ?? 0 ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->note ?>
+                                                    <?= $value->status_display ?>
                                                 </div>
                                             </div>
                                         <?php endforeach; ?>

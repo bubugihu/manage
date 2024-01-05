@@ -89,4 +89,9 @@ class ReportController extends AppController
         }
         return $this->redirect('/yeni/report/');
     }
+
+    public function view($id)
+    {
+
+    }
 }

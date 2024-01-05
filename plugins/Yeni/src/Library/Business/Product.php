@@ -20,8 +20,75 @@ class Product extends Entity
         $this->set_avatar = "";
         $this->set_price = 0;
         $this->set_price_option = 0;
+
     }
 
+    public function getListProduct($condition)
+    {
+        $list_products = $this->model_product->selectList($condition);
+        $list_setProduct = $this->model_set_product->selectList([],['SetProductDetail.Product']);
+        $results = [];
+        $set = [];
+
+        foreach($list_products as $value)
+        {
+            $product = [];
+            $product['code'] = $value->code;
+            $product['name'] = $value->name;
+            $product['total'] = $value->total_display;
+            $product['q_price'] = $value->q_price;
+            $product['p_price'] = $value->p_price;
+            $results[$value->code] = $product;
+        }
+
+        foreach($list_setProduct as $set_value)
+        {
+            $set_detail = $set_value->set_product_detail;
+            $detail = [];
+            foreach($set_detail as $detail_value)
+            {
+                $detail_product = [];
+                $detail_product['code'] = $detail_value->product_code ?? "";
+                $detail_product['name'] = $detail_value->product->name ?? "";
+                $detail_product['qty'] = $detail_value->quantity ?? 0;
+                $detail[$detail_value->product_code] = $detail_product;
+                $detail['price'] = $set_value->price;
+                $detail['price_option'] = $set_value->price_option;
+                $set[$set_value->code] = $detail;
+            }
+        }
+        return $this->formatResultSet($results + $set);
+    }
+    public function formatResultSet($set)
+    {
+        $result =  [];
+        foreach($set as $key => $value)
+        {
+            if(isset($value['code']))
+            {
+                $value['is_set'] = false;
+                $result[$value['code']] = $value;
+            }else{
+                $detail = [];
+                $detail['is_set'] = true;
+                $detail['code'] = $key;
+                $detail['total'] = 0;
+                $detail['p_price'] = 0;
+                $detail['q_price'] = $value['price'] . "/" . $value['price_option'];
+                $detail['name'] = "";
+                foreach($value as $k => $v)
+                {
+                    if($k == "price" || $k == "price_option")
+                    {
+                        continue;
+                    }
+                    $detail['name'] .= $k . " : " . $v['name'] . " : " . $v['qty'] . "<br>";
+                }
+                $result[$key] = $detail;
+            }
+        }
+        return $result;
+    }
     public function getList($key_search = "",  $page = 1, $export = false)
     {
         $condition = [
@@ -207,8 +274,8 @@ class Product extends Entity
 
             if(!empty(trim($params['I'])))
             {
-                $this->set_price_option = $sheet->getCell('H'.$key)->getValue();
-                $results[$key]['price_option'] = $sheet->getCell('H'.$key)->getValue();
+                $this->set_price_option = $sheet->getCell('I'.$key)->getValue();
+                $results[$key]['price_option'] = $sheet->getCell('I'.$key)->getValue();
             }
         }
         $results_detail[$key]['set_product_code'] = $this->set_code;

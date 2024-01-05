@@ -22,6 +22,8 @@ use Cake\Http\Exception\NotFoundException;
 use Cake\Http\Response;
 use Cake\Log\Log;
 use Cake\View\Exception\MissingTemplateException;
+use Yeni\Library\Business\Orders;
+use Yeni\Library\Business\Product;
 
 /**
  * Static content controller
@@ -44,11 +46,30 @@ class PagesController extends AppController
      *   be found and not in debug mode.
      * @throws \Cake\View\Exception\MissingTemplateException In debug mode.
      */
-
+    public function initialize(): void
+    {
+        parent::initialize();
+        $this->business_order = new Orders();
+        $this->business_product = new Product();
+    }
     public function index()
     {
         $this->viewBuilder()->disableAutoLayout();
         $this->set('layout',false);
+
+        $list_products = $this->business_product->getListProduct([]);
+        $this->set('list_products', $list_products);
+        if ($this->request->is('ajax')) {
+            $status = false;
+            $result_create_order = $this->business_order->createOrderZalo($_POST['array_form']);
+            if($result_create_order)
+            {
+                $result_create_quoting = $this->business_order->createQuotingZalo($_POST['array_form']);
+                if($result_create_quoting)
+                    $status = true;
+            }
+            return $this->response->withStringBody(json_encode(compact('status')));
+        }
     }
 
     public function landing()
