@@ -103,7 +103,7 @@
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/yeni/report/delete/<?= $value->id . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="confirm dropdown-item-text" title="View">
+                                                                    <a href="/yeni/report/confirm/<?= $value->order_code . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="confirm dropdown-item-text" title="View">
                                                                         <i class="fa fa-check-circle"></i> Xác nhận
                                                                     </a>
                                                                 </li>

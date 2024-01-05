@@ -5,6 +5,7 @@ namespace Yeni\Library\Business;
 use Cake\Datasource\ConnectionManager;
 use Cake\I18n\FrozenTime;
 use Cake\Log\Log;
+use Yeni\Model\Table\SetProductTable;
 
 class Report extends Entity
 {
@@ -155,4 +156,69 @@ class Report extends Entity
         return array_reverse($result);
     }
 
+    public function confirm($order_code)
+    {
+        $connection = ConnectionManager::get('default');
+        try{
+            //update order
+            $connection->begin();
+            $field = ['status' => STATUS_QUOTING_DONE];
+            $where = ['order_code' => $order_code];
+            $this->model_order->updateAll($field,$where);
+            //update quoting
+            $this->model_quoting->updateAll($field,$where);
+            $this->updateInventory($order_code);
+            $connection->commit();
+            return true;
+        }catch (\Exception $e)
+        {
+            Log::error($e->getMessage());
+            $connection->rollback();
+            return false;
+        }
+
+    }
+
+    public function updateInventory($order_code)
+    {
+        $list_entities = $this->model_quoting->selectList(['order_code' => $order_code]);
+        $set_product_model = new SetProductTable();
+        $list_set_product = $set_product_model->find('list', [
+            'fields' => ['id', 'code','del_flag'],
+            'conditions' => ['SetProduct.del_flag' => UNDEL],
+            'keyField' => 'code',
+            'valueField' => function($value) {
+                return $value;
+            },
+        ])->contain(['SetProductDetail'])->toArray();
+        //update inventory
+        $connection = ConnectionManager::get('default');
+        foreach($list_entities as $value)
+        {
+            $qty = $value['quantity'];
+            $code = $value['code'];
+            $price = $value['price'];
+            if(empty($code))
+                continue;
+            if(!in_array($code,array_keys($list_set_product)))
+            {
+                $sql = "UPDATE product SET `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
+                $connection->execute(
+                    $sql,
+                );
+            }else{
+                $list_product = $list_set_product[$code]->set_product_detail;
+                foreach($list_product as $val)
+                {
+                    $qty_set_detail = $val['quantity'];
+                    $code_set_detail = $val['product_code'];
+
+                    $sql = "UPDATE product SET `q_qty` = q_qty + $qty_set_detail WHERE `code` = '$code_set_detail'";
+                    $connection->execute(
+                        $sql,
+                    );
+                }
+            }
+        }//endforeach
+    }
 }

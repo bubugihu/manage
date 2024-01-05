@@ -94,4 +94,13 @@ class ReportController extends AppController
     {
 
     }
+
+    public function confirm($order_code)
+    {
+        if($this->business_report->confirm($order_code))
+            $this->Flash->success("Confirm successfully");
+        else
+            $this->Flash->error("Can not confirm");
+        return $this->redirect('/yeni/report/');
+    }
 }
