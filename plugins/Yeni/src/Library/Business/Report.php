@@ -16,7 +16,7 @@ class Report extends Entity
         $this->model_order = $this->_getProvider("Yeni.Orders");
     }
 
-    public function getList($key_search = "",  $page, $export = false)
+    public function getList($key_search = "",  $page = 1, $export = false)
     {
         $condition = [
             'OR' => [
