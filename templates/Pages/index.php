@@ -249,6 +249,7 @@
         $('#note').val("")
         $('#ship').val("")
         $('#total_orders').text("")
+        $('#total_actual').val("")
     }
 
     function gFormatNumber(amount, decimalCount = 2, decimal = ".", thousands = ",") {
