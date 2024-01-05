@@ -11,9 +11,3 @@
     RewriteRule    (.*) webroot/$1    [L]
 </IfModule>
 
-<Files "index.php">
-    AuthType Basic
-    AuthName "Restricted Access"
-    AuthUserFile .htpasswd
-    Require valid-user
-</Files>
