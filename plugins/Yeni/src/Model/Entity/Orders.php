@@ -10,10 +10,15 @@ class Orders extends  Entity
     protected $_virtual = [
         'total_display',
         'status_display',
+        'total_actual_display',
     ];
     protected function _getTotalDisplay()
     {
         return number_format( (float)$this->total_order , 0 , '.' , ',' );
+    }
+    protected function _getTotalActualDisplay()
+    {
+        return number_format( (float)$this->total_actual , 0 , '.' , ',' );
     }
     protected function _getStatusDisplay()
     {

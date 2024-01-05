@@ -77,6 +77,7 @@
                                     <div style="width: 2%"><br><?= __("Customer") ?></div>
                                     <div style="width: 2%"><br><?= __("Address") ?></div>
                                     <div style="width: 2%"><br><?= __("Total") ?></div>
+                                    <div style="width: 2%"><br><?= __("Total Actual") ?></div>
                                     <div style="width: 2%"><br><?= __("Status") ?></div>
                                 </div>
 
@@ -122,6 +123,9 @@
                                                 </div>
                                                 <div>
                                                     <?= $value->total_display ?? 0 ?>
+                                                </div>
+                                                <div>
+                                                    <?= $value->total_actual_display ?? 0 ?>
                                                 </div>
                                                 <div>
                                                     <?= $value->status_display ?>
