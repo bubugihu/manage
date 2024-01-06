@@ -200,7 +200,6 @@ class Report extends Entity
                 return $value['code'];
             },
         ])->toArray();
-
         $connection = ConnectionManager::get('default');
         foreach($list_entities as $value)
         {
@@ -218,12 +217,11 @@ class Report extends Entity
                         $sql,
                     );
                 }else{
-                    $list_product = $list_set_product[$code]->set_product_detail;
-                    foreach($list_product as $val)
+                    $list_product_detail = $list_set_product[$code]->set_product_detail;
+                    foreach($list_product_detail as $val)
                     {
                         $qty_set_detail = $val['quantity'];
                         $code_set_detail = $val['product_code'];
-
                         $sql = "UPDATE product SET `q_qty` = q_qty + $qty_set_detail WHERE `code` = '$code_set_detail'";
                         $connection->execute(
                             $sql,
@@ -231,6 +229,7 @@ class Report extends Entity
                     }
                 }
             }else{
+                dd($code);
                 $params = [
                     'code'  => $code,
                     'name'  => 'mã mới chưa import',
