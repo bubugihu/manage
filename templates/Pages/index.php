@@ -317,7 +317,7 @@
                                     <input type="number" class="form-control qty" name="quantity" value="0" />
                                 </div>
                                 <div class="col-2">
-                                    <label>Giá tiền: </label>
+                                    <label>Đơn giá: </label>
                                     <input type="text" class="form-control price" name="price" value="${price}" />
                                 </div>
                             </div>

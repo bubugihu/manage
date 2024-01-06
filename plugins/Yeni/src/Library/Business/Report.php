@@ -79,7 +79,7 @@ class Report extends Entity
                 'month' => $this->model_order->find()->func()->month(['order_date' => 'literal']),
                 'year' => $this->model_order->find()->func()->year(['order_date' => 'literal']),
                 'count_order' => $this->model_order->find()->func()->count('id'),
-                'sum_price' => $this->model_order->find()->func()->sum('total_order'),
+                'sum_price' => $this->model_order->find()->func()->sum('total_actual'),
                 'source'
             ])
             ->where(['YEAR(order_date)' => $year])
@@ -144,7 +144,7 @@ class Report extends Entity
 
     public function matchingNumber()
     {
-        $labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        $labels = ['Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov'];
         $result = [];
         $index = 1;
         foreach($labels as $value)
@@ -153,7 +153,7 @@ class Report extends Entity
             $index++;
         }
 
-        return array_reverse($result);
+        return $result;
     }
 
     public function confirm($order_code)
@@ -209,7 +209,7 @@ class Report extends Entity
             $price = $value['price'];
             if(empty($code))
                 continue;
-            if(in_array($code, $list_product))
+            if(in_array($code, $list_product) || in_array($code,array_keys($list_set_product)))
             {
                 if(!in_array($code,array_keys($list_set_product)))
                 {
