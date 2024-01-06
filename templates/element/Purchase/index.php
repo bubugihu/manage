@@ -1,7 +1,7 @@
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
         <div class="form-title mx-3">
-            <?= __("List Purchase") ?>
+            <?= __("List Purchasing") ?>
         </div>
         <div class="card m-3 rounded-0">
             <div class="card-header p-1">

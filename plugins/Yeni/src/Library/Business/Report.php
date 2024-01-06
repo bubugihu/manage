@@ -192,6 +192,15 @@ class Report extends Entity
             },
         ])->contain(['SetProductDetail'])->toArray();
         //update inventory
+        $list_product = $this->model_product->find('list', [
+            'fields' => ['id', 'code','del_flag'],
+            'conditions' => ['Product.del_flag' => UNDEL],
+            'keyField' => 'id',
+            'valueField' => function($value) {
+                return $value['code'];
+            },
+        ])->toArray();
+
         $connection = ConnectionManager::get('default');
         foreach($list_entities as $value)
         {
@@ -200,25 +209,38 @@ class Report extends Entity
             $price = $value['price'];
             if(empty($code))
                 continue;
-            if(!in_array($code,array_keys($list_set_product)))
+            if(in_array($code, $list_product))
             {
-                $sql = "UPDATE product SET `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
-                $connection->execute(
-                    $sql,
-                );
-            }else{
-                $list_product = $list_set_product[$code]->set_product_detail;
-                foreach($list_product as $val)
+                if(!in_array($code,array_keys($list_set_product)))
                 {
-                    $qty_set_detail = $val['quantity'];
-                    $code_set_detail = $val['product_code'];
-
-                    $sql = "UPDATE product SET `q_qty` = q_qty + $qty_set_detail WHERE `code` = '$code_set_detail'";
+                    $sql = "UPDATE product SET `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
                     $connection->execute(
                         $sql,
                     );
+                }else{
+                    $list_product = $list_set_product[$code]->set_product_detail;
+                    foreach($list_product as $val)
+                    {
+                        $qty_set_detail = $val['quantity'];
+                        $code_set_detail = $val['product_code'];
+
+                        $sql = "UPDATE product SET `q_qty` = q_qty + $qty_set_detail WHERE `code` = '$code_set_detail'";
+                        $connection->execute(
+                            $sql,
+                        );
+                    }
                 }
+            }else{
+                $params = [
+                    'code'  => $code,
+                    'name'  => 'mã mới chưa import',
+                    'p_price'   => $price,
+                    'p_qty'     => $qty,
+                ];
+                $new_product = $this->model_product->newEntity($params);
+                $this->model_product->save($new_product);
             }
+
         }//endforeach
     }
 }

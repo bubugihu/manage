@@ -54,15 +54,15 @@
 
     <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3"
-                data-bs-toggle="collapse" data-bs-target="#purchasing-collapse" aria-expanded="<?php echo in_array($this->getRequest()->getParam('controller'), ['Purchase']) ? 'true' : 'false'; ?>">
+                data-bs-toggle="collapse" data-bs-target="#purchasing-collapse" aria-expanded="<?php echo in_array($this->getRequest()->getParam('controller'), ['Purchasing']) ? 'true' : 'false'; ?>">
             <i class="fa-regular fa-credit-card me-2 aside-menu-icon"></i>
             <div class="text-start"><?= __("Purchasing") ?></div>
         </button>
-        <div class="collapse bg-white border-end border-light <?php echo in_array($this->getRequest()->getParam('controller'), ['Purchase']) ? 'show' : ''; ?>"
+        <div class="collapse bg-white border-end border-light <?php echo in_array($this->getRequest()->getParam('controller'), ['Purchasing']) ? 'show' : ''; ?>"
              id="purchasing-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li
-                    class="<?php echo $this->getRequest()->getParam('controller') == 'Purchase' ? 'active' : ''; ?>">
+                    class="<?php echo $this->getRequest()->getParam('controller') == 'Purchasing' ? 'active' : ''; ?>">
                     <a href="/purchase"
                        class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
                         <i class="fa-regular fa-circle"></i>
