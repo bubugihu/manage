@@ -102,11 +102,13 @@
                                                                         <i class="fa fa-trash"></i> Xoá
                                                                     </a>
                                                                 </li>
-                                                                <li>
-                                                                    <a href="/yeni/report/confirm/<?= $value->order_code . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="confirm dropdown-item-text" title="View">
-                                                                        <i class="fa fa-check-circle"></i> Xác nhận
-                                                                    </a>
-                                                                </li>
+                                                                <?php if($value->status == STATUS_QUOTING_NEW) :?>
+                                                                    <li>
+                                                                        <a href="/yeni/report/confirm/<?= $value->order_code . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="confirm dropdown-item-text" title="View">
+                                                                            <i class="fa fa-check-circle"></i> Xác nhận
+                                                                        </a>
+                                                                    </li>
+                                                                <?php endif; ?>
                                                             </ul>
                                                         </div>
                                                     </div>

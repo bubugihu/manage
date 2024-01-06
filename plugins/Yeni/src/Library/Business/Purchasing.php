@@ -41,14 +41,13 @@ class Purchasing extends Entity
                 'OR' => [
                     'code LIKE' => "%" . $key_search . "%",
                 ],
-                'source' => $type
             ];
         }
 
-        return $this->model_quoting->getData($page, $condition, [], [], $order, $export);
+        return $this->model_purchasing->getData($page, $condition, [], [], $order, $export);
     }
 
-    public function saveList($param)
+    public function saveList($params)
     {
         $connection = ConnectionManager::get('default');
         try{
@@ -135,7 +134,14 @@ class Purchasing extends Entity
         $result['p_date'] = new FrozenTime("now");
 //        $result['note'] = trim($params['E']);
         $total_purchase = trim($sheet->getCell('H'.$key)->getValue());
-        $result['price'] = floatval($total_purchase) / floatval($result['quantity']);
+        if(floatval($result['quantity']) == 0)
+        {
+            $result['price'] = 0;
+            $result['quantity'] = 0;
+        }else{
+            $result['price'] = floatval($total_purchase) / floatval($result['quantity']) * 1000;
+        }
+
         $result['source'] = 0;
         return $result;
     }

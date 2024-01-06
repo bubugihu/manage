@@ -180,12 +180,12 @@
 <!-- Include thư viện SheetJS -->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>-->
 <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
-<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>-->
-<!--<script type="text/javascript">-->
-<!--    (function(){-->
-<!--        emailjs.init("IixI2U_PjLkTBP_Ue");-->
-<!--    })();-->
-<!--</script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("IixI2U_PjLkTBP_Ue");
+    })();
+</script>
 
 <script>
     function exportToExcel(file_name) {
@@ -382,6 +382,7 @@
         })
 
         var array_form = []
+        var html_message = ""
         //send form
         $('#send_form').click(function(){
             let full_name = $('#full_name').val()
@@ -489,36 +490,9 @@
             //export excel
 
             $('#modal-body').html(html)
+            html_message = html
             $('.modal').css("display","block")
-            // exportToExcel(full_name.replace(/\s+/g, '_'))
 
-            // $('#table_export').remove()
-
-
-            // let templateParams = {
-            //     customer_name: full_name,
-            //     customer_phone: phone,
-            //     customer_addr: addr,
-            //     customer_total: total_order,
-            //     customer_note: note,
-            //     message: html,
-            //     customer_date: showToday(),
-            //     // to_email: "yeniparty0923@gmail.com",
-            //     to_email: "bavuongbui@gmail.com",
-            // };
-
-            // emailjs.send('service_wc467ip', 'template_zfvbd5n', templateParams)
-            //     .then(function(response) {
-            //         alert('Gửi mail thành công! Kiểm tra email nào', response.status, response.text);
-            //         $('#send_form').text("Tạo order")
-            //         $('#selectedInfo').html("")
-            //         formReset()
-            //         $('#table_export').remove()
-            //     }, function(error) {
-            //         $('#send_form').text("Tạo order")
-            //         $('#table_export').remove()
-            //         alert('Gửi mail thất bại, alo kĩ thuật nhen...', error);
-            //     });
         })
 
         $('#confirm_order').click(function(){
@@ -539,6 +513,36 @@
                     if(data.status)
                     {
                         alert('Tạo order thành công');
+                        let full_name = $('#full_name').val()
+                        let phone = $('#phone').val()
+                        let addr = $('#addr').val()
+                        let total_order = $('#total_order').val()
+                        let total_actual = $('#total_actual').val()
+                        let note = $('#note').val()
+                        let ship = $('#ship').val()
+                        let order_code = showOrderCode()
+                        let templateParams = {
+                            customer_name: full_name,
+                            customer_phone: phone,
+                            customer_addr: addr,
+                            customer_total: total_order,
+                            customer_note: note,
+                            customer_ship: ship,
+                            customer_total_actual: total_actual,
+                            customer_order_code: order_code,
+                            message: html_message,
+                            customer_date: showToday(),
+                            to_email: "buibavuong123456@gmail.com",
+                        };
+
+                        emailjs.send('service_wc467ip', 'template_zfvbd5n', templateParams)
+                            .then(function(response) {
+
+                            }, function(error) {
+
+                            });
+
+
                         $('#confirm_order').text("Xác nhận")
                         $('#selectedInfo').html("")
                         formReset()

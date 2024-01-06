@@ -234,8 +234,8 @@ class Report extends Entity
                 $params = [
                     'code'  => $code,
                     'name'  => 'mã mới chưa import',
-                    'p_price'   => $price,
-                    'p_qty'     => $qty,
+                    'q_price'   => $price,
+                    'q_qty'     => $qty,
                 ];
                 $new_product = $this->model_product->newEntity($params);
                 $this->model_product->save($new_product);

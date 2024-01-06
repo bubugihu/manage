@@ -17,7 +17,15 @@ class PurchasingController extends AppController
 
     public function index()
     {
+        $arr['key_search'] = $key_search = $_GET['key_search'] ?? "";
+        $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;
 
+        $list_quotings = $this->business_purchasing->getList($key_search, $page, false, 0);
+        $paginate = $this->Common->displayPaginationBelow(LIMIT, $page, $list_quotings->count(), $arr);
+
+        $this->set('total_quotings',$list_quotings->count());
+        $this->set('list_quotings',$list_quotings->all()->toList());
+        $this->set('paginate',$paginate);
     }
 
     public function importExcel()
@@ -43,7 +51,7 @@ class PurchasingController extends AppController
 
                         foreach ($dataInput as $key => $value)
                         {
-                            if($key <= 1)
+                            if($key <= 1 || empty(trim($value['B'])))
                             {
                                 continue;
                             }

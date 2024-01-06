@@ -88,7 +88,7 @@
                                                     <?= $value->note ?? '' ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->q_date->toDateString() ?? '' ?>
+                                                    <?= $value->p_date->toDateString() ?? '' ?>
                                                 </div>
                                                 <div>
                                                     <?= $value->status_display ?? '' ?>
