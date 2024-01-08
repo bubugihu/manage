@@ -83,7 +83,7 @@ class Report extends Entity
                 'year' => $this->model_order->find()->func()->year(['order_date' => 'literal']),
                 'count_order' => $this->model_order->find()->func()->count('id'),
                 'sum_price' => $this->model_order->find()->func()->sum('total_actual'),
-                'source'
+                'source','status'
             ])
             ->where(['order_date >=' => $last_year_text])
             ->where(['order_date <' => $current_year_text])
@@ -119,7 +119,6 @@ class Report extends Entity
                 }
             }
         }
-
         for($i = 1;$i<=12;$i++)
         {
             $count_order = 0;
@@ -244,5 +243,43 @@ class Report extends Entity
             }
 
         }//endforeach
+    }
+
+    public function getProfit($current_year)
+    {
+        $last_year = $current_year -1;
+        $last_year_text = "$last_year-12-01";
+        $current_year_text = "$current_year-12-01";
+        $list_quoting = $this->model_quoting->find()
+            ->where(['q_date >=' => $last_year_text])
+            ->where(['q_date <' => $current_year_text])
+            ->contain(['Product'])
+            ->toArray();
+        $result_monthly = [];
+        foreach($list_quoting as $key => $quoting)
+        {
+            $quoting_monthly = $quoting->q_date->format('n');
+            $source = SOURCE[$quoting->source];
+            $p_price = $quoting->product->p_price ?? $quoting->price/2;
+            $profit = (floatval($quoting->price) - floatval($p_price)) * intval($quoting->quantity);
+            if(isset($result_monthly[$source][$quoting_monthly]))
+            {
+                $result_monthly[$source][$quoting_monthly]['profit'] += floor($profit);
+                $result_monthly[$source][$quoting_monthly]['count_quoting']++;
+            }else{
+                $result_monthly[$source][$quoting_monthly]['profit'] = floor($profit);
+                $result_monthly[$source][$quoting_monthly]['count_quoting'] = 1;
+            }
+            if(isset($result_monthly['total'][$quoting_monthly]))
+            {
+                $result_monthly['total'][$quoting_monthly]['profit'] += floor($profit);
+                $result_monthly['total'][$quoting_monthly]['count_quoting']++;
+            }else{
+                $result_monthly['total'][$quoting_monthly]['profit'] = floor($profit);
+                $result_monthly['total'][$quoting_monthly]['count_quoting'] = 1;
+            }
+
+        }
+        return $result_monthly;
     }
 }

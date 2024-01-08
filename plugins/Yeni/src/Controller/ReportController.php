@@ -30,8 +30,12 @@ class ReportController extends AppController
         $current_year = intval(date("Y"));
         $getMonthlyYear = $this->business_report->getMonthlyYear($current_year);
         $labels = $this->business_report->matchingNumber();
+
+        //profit
+        $list_profit = $this->business_report->getProfit($current_year);
         $this->set('labels',$labels);
         $this->set('getMonthlyYear',$getMonthlyYear);
+        $this->set('list_profit',$list_profit);
     }
 
     public function importOrder()

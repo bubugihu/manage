@@ -229,6 +229,51 @@
             ?>
         ]
 
+        const data_profit = [
+            <?php if (isset($labels) && count($labels) > 0)
+            foreach ($labels as $key => $val)
+            {
+                if(isset($list_profit['total'][$key]))
+                {
+                    echo '"'. $list_profit['total'][$key]["profit"] . '", ' ;
+                }else{
+                    echo '"'. 0 . '", ' ;
+                }
+            }
+
+            ?>
+        ]
+
+        const data_profit_shopee = [
+            <?php if (isset($labels) && count($labels) > 0)
+            foreach ($labels as $key => $val)
+            {
+                if(isset($list_profit['SHOPEE'][$key]))
+                {
+                    echo '"'. $list_profit['SHOPEE'][$key]["profit"] . '", ' ;
+                }else{
+                    echo '"'. 0 . '", ' ;
+                }
+            }
+
+            ?>
+        ]
+
+        const data_profit_zalo = [
+            <?php if (isset($labels) && count($labels) > 0)
+            foreach ($labels as $key => $val)
+            {
+                if(isset($list_profit['ZALO'][$key]))
+                {
+                    echo '"'. $list_profit['ZALO'][$key]["profit"] . '", ' ;
+                }else{
+                    echo '"'. 0 . '", ' ;
+                }
+            }
+
+            ?>
+        ]
+
         const data_count_order_shopee = [
             <?php if (isset($labels) && count($labels) > 0)
             foreach ($labels as $key => $val)
@@ -264,9 +309,15 @@
             labels: labels,
             datasets: [
                 {
-                    label: 'Income 2023',
+                    label: 'Income',
                     borderColor: 'blue',
                     data: data_sum_price_total,
+                    fill: false,
+                },
+                {
+                    label: 'Profit',
+                    borderColor: 'red',
+                    data: data_profit,
                     fill: false,
                 },
             ],
@@ -280,10 +331,20 @@
                 tooltips: {
                     callbacks: {
                         title: function(tooltipItems, data) {
-                            return `Shopee: ${data_count_order_shopee[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_shopee[tooltipItems[0].index], "VND")} \nZalo: ${data_count_order_zalo[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_zalo[tooltipItems[0].index], "VND")} \n`
+                            if(tooltipItems[0].datasetIndex == 0)
+                            {
+                                return `Shopee: ${data_count_order_shopee[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_shopee[tooltipItems[0].index], "VND")} \nZalo: ${data_count_order_zalo[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_zalo[tooltipItems[0].index], "VND")} \n`
+                            }else{
+                                return `Shopee: ${gFormatCurrency(data_profit_shopee[tooltipItems[0].index], "VND")} \nZalo: ${gFormatCurrency(data_profit_zalo[tooltipItems[0].index], "VND")} \n`
+                            }
                         },
                         label: function(tooltipItem, data) {
-                            return `Total: ${data_count_order_total[tooltipItem.index]}  Orders, Income: ${gFormatCurrency(data_sum_price_total[tooltipItem.index], "VND")}`
+                            if(tooltipItem.datasetIndex == 0)
+                            {
+                                return `Total: ${data_count_order_total[tooltipItem.index]}  Orders, Income: ${gFormatCurrency(data_sum_price_total[tooltipItem.index], "VND")}`
+                            }else{
+                                return `Total: ${gFormatCurrency(data_profit[tooltipItem.index], "VND")}`
+                            }
                         }
                     },
                 },

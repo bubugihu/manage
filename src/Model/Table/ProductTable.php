@@ -10,6 +10,9 @@ class ProductTable extends AppTable
     {
 
         $this->condition = ['del_flag' => UNDEL, 'active' => ACTIVE];
-
+        $this->hasOne("Quoting",[
+            'foreignKey' => 'code',
+            'bindingKey' => 'code'
+        ])->setConditions(['Quoting.del_flag' => UNDEL]);
     }
 }

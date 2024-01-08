@@ -95,6 +95,58 @@ class Quoting extends Entity
         return true;
     }
 
+    public function saveListImportShopee($params, $list_set_product)
+    {
+        $connection = ConnectionManager::get('default');
+        try{
+            $connection->begin();
+            if(empty($params))
+                return false;
+            //quotinng
+            $list_entities = $this->model_quoting->newEntities($params['quoting']);
+            $this->model_quoting->saveMany($list_entities);
+
+            $list_order = $this->model_order->newEntities($params['order']);
+            $this->model_order->saveMany($list_order);
+
+            //update inventory
+            foreach($list_entities as $value)
+            {
+                $qty = $value['quantity'];
+                $code = $value['code'];
+                $price = $value['price'];
+                if(empty($code))
+                    continue;
+                if(!in_array($code,array_keys($list_set_product)))
+                {
+                    $sql = "UPDATE product SET `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
+                    $connection->execute(
+                        $sql,
+                    );
+                }else{
+                    $list_product = $list_set_product[$code]->set_product_detail;
+                    foreach($list_product as $val)
+                    {
+                        $qty_set_detail = $val['quantity'];
+                        $code_set_detail = $val['product_code'];
+
+                        $sql = "UPDATE product SET `q_qty` = q_qty + $qty_set_detail WHERE `code` = '$code_set_detail'";
+                        $connection->execute(
+                            $sql,
+                        );
+                    }
+                }
+
+            }
+            $connection->commit();
+        }catch (\Exception $e)
+        {
+            Log::error($e->getMessage());
+            $connection->rollback();
+            return false;
+        }
+        return true;
+    }
     public function saveListOrder($params)
     {
         $connection = ConnectionManager::get('default');
@@ -130,6 +182,39 @@ class Quoting extends Entity
         $result['price'] = trim($sheet->getCell('Y'.$key)->getValue());
         $result['source'] = 0;
         return $result;
+    }
+
+    public function formatValueQuotingShopee($key, $params, $sheet, $order_code)
+    {
+        $result_quoting['order_code'] = "SHOPEE_" . trim($params['A']);
+        $result_quoting['code'] = trim($params['S']);
+        $result_quoting['quantity'] = trim($params['Z']);
+        $result_quoting['status'] = STATUS_QUOTING_DONE;
+        $q_date = trim($sheet->getCell('C'.$key)->getValue());
+        $result_quoting['q_date'] = new FrozenTime($q_date);
+        $result_quoting['price'] = trim($sheet->getCell('Y'.$key)->getValue()); //
+        $result_quoting['source'] = SOURCE_SHOPEE;
+
+        return $result_quoting;
+    }
+    public function formatValueOrderShopee($key, $params, $sheet, &$order_code)
+    {
+        $result_order = [];
+        if($order_code != $params['A'])
+        {
+            $order_code = $params['A'];
+            $result_order['order_code'] = "SHOPEE_" . $order_code;
+            $result_order['total_order'] = floatval(trim($sheet->getCell('AC'.$key)->getValue())) - floatval(trim($sheet->getCell('AD'.$key)->getValue()));
+            $result_order['total_actual'] = $result_order['total_order'] - floatval(trim($sheet->getCell('AT'.$key)->getValue())) - floatval(trim($sheet->getCell('AU'.$key)->getValue())) - floatval(trim($sheet->getCell('AV'.$key)->getValue()));
+            $q_date = trim($sheet->getCell('C'.$key)->getValue());
+            $result_order['order_date'] = new FrozenTime($q_date);
+            $result_order['shipping'] = 0;
+            $result_order['source'] = SOURCE_SHOPEE;
+            $result_order['customer_name'] = "SHOPEE CUSTOMER NAME";
+            $result_order['status'] = STATUS_QUOTING_DONE;
+        }
+
+        return $result_order;
     }
 
     private function formatStatus($status)

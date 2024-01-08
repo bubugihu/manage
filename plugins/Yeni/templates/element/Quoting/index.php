@@ -24,10 +24,10 @@
                                 <li class="nav-item px-1">
                                     <label class="btn btn-outline-secondary rounded-0" for="importQuoting">
                                         <i class="fa-solid fa-plus"></i>
-                                        <?= __('Import EXCEL') ?>
+                                        <?= __('Import EXCEL Shopee') ?>
                                     </label>
                                     <?= $this->Form->create(null, [
-                                        'url' => '/yeni/quoting/import',
+                                        'url' => '/yeni/quoting/importShopee',
                                         'method' => 'post',
                                         'id' => 'uploadFile',
                                         'class' => ['d-none'],
