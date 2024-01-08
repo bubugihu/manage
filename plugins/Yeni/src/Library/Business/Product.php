@@ -75,15 +75,8 @@ class Product extends Entity
                 $detail['total'] = 0;
                 $detail['p_price'] = 0;
                 $detail['q_price'] = $value['price'] . "/" . $value['price_option'];
-                $detail['name'] = "";
-                foreach($value as $k => $v)
-                {
-                    if($k == "price" || $k == "price_option")
-                    {
-                        continue;
-                    }
-                    $detail['name'] .= $k . " : " . $v['name'] . " : " . $v['qty'] . "<br>";
-                }
+                $detail['name'] = "Set $key (có khung tròn/ không khung tròn)";
+
                 $result[$key] = $detail;
             }
         }

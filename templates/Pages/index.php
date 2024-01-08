@@ -94,7 +94,7 @@
                         <label>Tổng tiền: </label>
                     </div>
                     <div class="col-6">
-                        <input type="text" class="form-control" id="total_order" name="total_order" value="" autocomplete="off"/>
+                        <input type="text" class="form-control" id="total_order"  readonly name="total_order" value="" autocomplete="off"/>
                         <input type="hidden" class="form-control" id="total_order_hide" name="total_order_hide" value="" autocomplete="off"/>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
         </div>
         <form id="form_item" action="" name="form_item">
             <div id="selectedInfo" class="mb-2"></div>
-            <div class="mb-2">Tổng tiền hàng: <label id="total_orders"></label></div>
+            <div class="mb-2" style="text-align: end">Tổng tiền hàng: <label id="total_orders"></label></div>
             <div><input type="hidden" id="total_orders_hide"></div>
         </form>
         <div class="row mb-2">
@@ -303,7 +303,7 @@
                                 <div class="col-1">
                                     <label class="text-red" data-id="${code}" onclick="removeRow($(this))"> Xóa </label>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-2">
                                     <label>Mã: </label>
                                     <input type="text" class="form-control" name="code" value="${code}" />
                                 </div>
@@ -312,13 +312,17 @@
                                     <label>Tên: </label>
                                     <input type="text" class="form-control" name="name" value="${name}" />
                                 </div>
-                                <div class="col-2">
+                                <div class="col-1">
                                     <label>Số lượng: </label>
                                     <input type="number" class="form-control qty" name="quantity" value="0" />
                                 </div>
                                 <div class="col-2">
                                     <label>Đơn giá: </label>
                                     <input type="text" class="form-control price" name="price" value="${price}" />
+                                </div>
+                                <div class="col-2">
+                                    <label>Thành tiền: </label>
+                                    <input type="text" class="form-control price_display" readonly name="price_display" value="0" />
                                 </div>
                             </div>
                         </div>
@@ -334,6 +338,7 @@
                     let row = $(this).closest('div.row');
                     let qtyInput  = row.find('.qty').val()
                     total_price_product += (parseFloat($(this).val()) * parseFloat(qtyInput))
+                    row.find('.price_display').val((parseFloat($(this).val()) * parseFloat(qtyInput)))
                 });
                 $('#total_orders_hide').val(total_price_product)
                 $('#total_orders').text(gFormatCurrency(total_price_product, "VND"))
@@ -354,6 +359,7 @@
                     let row = $(this).closest('div.row');
                     let qtyInput  = row.find('.price').val()
                     total_price_product += (parseFloat($(this).val()) * parseFloat(qtyInput))
+                    row.find('.price_display').val((parseFloat($(this).val()) * parseFloat(qtyInput)))
                 });
                 $('#total_orders_hide').val(total_price_product)
                 $('#total_orders').text(gFormatCurrency(total_price_product, "VND"))

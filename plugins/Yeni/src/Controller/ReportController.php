@@ -27,7 +27,8 @@ class ReportController extends AppController
         $this->set('paginate',$paginate);
 
         //chart
-        $getMonthlyYear = $this->business_report->getMonthlyYear(2024);
+        $current_year = intval(date("Y"));
+        $getMonthlyYear = $this->business_report->getMonthlyYear($current_year);
         $labels = $this->business_report->matchingNumber();
         $this->set('labels',$labels);
         $this->set('getMonthlyYear',$getMonthlyYear);

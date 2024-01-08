@@ -28,7 +28,7 @@ class Report extends Entity
         ];
 
         $order = [
-
+            'status' => "ASC"
         ];
         return $this->model_order->getData($page, $condition, [], [], $order, $export);
     }
@@ -72,8 +72,11 @@ class Report extends Entity
         return $result;
     }
 
-    public function getMonthlyYear($year)
+    public function getMonthlyYear($current_year)
     {
+        $last_year = $current_year -1;
+        $last_year_text = "$last_year-12-01";
+        $current_year_text = "$current_year-12-01";
         $monthlyOrders = $this->model_order->find()
             ->select([
                 'month' => $this->model_order->find()->func()->month(['order_date' => 'literal']),
@@ -82,7 +85,8 @@ class Report extends Entity
                 'sum_price' => $this->model_order->find()->func()->sum('total_actual'),
                 'source'
             ])
-            ->where(['YEAR(order_date)' => $year])
+            ->where(['order_date >=' => $last_year_text])
+            ->where(['order_date <' => $current_year_text])
             ->group(['source', 'month'])
             ->order(['source', 'month'])
             ->toArray();
@@ -146,11 +150,11 @@ class Report extends Entity
     {
         $labels = ['Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov'];
         $result = [];
-        $index = 1;
+        $index = 12;
         foreach($labels as $value)
         {
             $result[$index] = $value;
-            $index++;
+            $index--;
         }
 
         return $result;
@@ -229,7 +233,6 @@ class Report extends Entity
                     }
                 }
             }else{
-                dd($code);
                 $params = [
                     'code'  => $code,
                     'name'  => 'mã mới chưa import',
