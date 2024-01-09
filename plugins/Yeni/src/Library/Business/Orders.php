@@ -6,6 +6,7 @@ use Cake\Datasource\ConnectionManager;
 use Cake\I18n\FrozenTime;
 use Cake\Log\Log;
 use Yeni\Model\Table\SetProductTable;
+use function PHPUnit\Framework\exactly;
 
 class Orders extends Entity
 {
@@ -29,6 +30,8 @@ class Orders extends Entity
                     return $value;
                 },
             ])->contain(['SetProductDetail'])->toArray();
+            $order_date_input_array = explode("/",$data[10]);
+            $oder_date = $order_date_input_array[1] . "/" . $order_date_input_array[0] . "/" . $order_date_input_array[2];
             $param_order = [
                 'order_code' => $data[0],
                 'customer_name' => $data[1],
@@ -39,6 +42,7 @@ class Orders extends Entity
                 'shipping' => $data[6],
                 'total_actual' => $data[11],
                 'source'    => 1, // zalo
+                'order_date'    => new FrozenTime($oder_date)
             ];
             $new = $this->model_order->newEntity($param_order);
             $this->model_order->save($new);
@@ -58,13 +62,15 @@ class Orders extends Entity
             if(empty($data) || empty($data[7]))
                 return false;
             $result = [];
+            $order_date_input_array = explode("/",$data[10]);
+            $oder_date = $order_date_input_array[1] . "/" . $order_date_input_array[0] . "/" . $order_date_input_array[2];
             foreach($data[7] as $key => $value)
             {
                 $quoting['code'] = $data[7][$key];
                 $quoting['quantity'] = floatval($data[8][$key]);
                 $quoting['price'] = floatval($data[9][$key]);
                 $quoting['status'] = STATUS_QUOTING_NEW;
-                $quoting['q_date'] = new FrozenTime('now');
+                $quoting['q_date'] = new FrozenTime($oder_date);
                 $quoting['source'] = 1; // zalo
                 $quoting['order_code'] = $data[0]; // zalo
                 $quoting['name'] = $data[12][$key];

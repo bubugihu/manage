@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.css"/>
     <script src="<?= BASE_URL . 'js/common.js' ?>"></script>
     <script src="<?= BASE_URL . 'js/product.js' ?>"></script>
+    <link rel="stylesheet" href="<?= BASE_URL;?>plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <script src="<?= BASE_URL;?>plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
     <style>
         .text-red{
             cursor: pointer;
@@ -96,6 +98,14 @@
                     <div class="col-6">
                         <input type="text" class="form-control" id="total_order"  readonly name="total_order" value="" autocomplete="off"/>
                         <input type="hidden" class="form-control" id="total_order_hide" name="total_order_hide" value="" autocomplete="off"/>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <label>Ngày đặt: </label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control datepicker" id="order_date"  readonly name="order_date" value=""/>
                     </div>
                 </div>
                 <div class="row mb-2">
@@ -196,14 +206,14 @@
     }
 
     function showToday(){
-        const currentDate = new Date();
+        const currentDate = new Date($('#order_date').val());
         const day = currentDate.getDate();
         const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
         const hours = currentDate.getHours();
         const minutes = currentDate.getMinutes();
         const seconds = currentDate.getSeconds();
-        return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`
+        return `${day}/${month}/${year}`
     }
 
     function showOrderCode(){
@@ -279,6 +289,15 @@
     }
 
     $(document).ready(function() {
+        $('.datepicker').datepicker({
+            orientation: "bottom left",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('.datepicker').datepicker("setDate",new Date())
+
         let total_price_product = 0
         let table = new DataTable('#dataTable', {
             columns: [
