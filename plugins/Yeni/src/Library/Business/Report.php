@@ -28,7 +28,10 @@ class Report extends Entity
         ];
 
         $order = [
-            'status' => "ASC"
+            'status' => "ASC",
+            'source'    => "DESC",
+            'created_on'    => "DESC",
+            'order_date'    => "DESC",
         ];
         return $this->model_order->getData($page, $condition, [], [], $order, $export);
     }
