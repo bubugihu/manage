@@ -49,7 +49,7 @@
 
                         <div class="nav-end">
                             <div class="nav-end">
-                                <form class="form-filter" action="yeni/report/" method="get">
+                                <form class="form-filter" action="/yeni/report/" method="get">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item">
                                             <div class="bb-search">
