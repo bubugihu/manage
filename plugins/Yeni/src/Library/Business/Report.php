@@ -150,16 +150,20 @@ class Report extends Entity
 
     public function matchingNumber()
     {
-        $labels = ['Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov'];
-        $result = [];
-        $index = 12;
-        foreach($labels as $value)
-        {
-            $result[$index] = $value;
-            $index--;
-        }
-
-        return $result;
+        return [
+            12 => 'Dec',
+            1=>'Jan',
+            2=>'Feb',
+            3=>'Mar',
+            4=>'Apr',
+            5=>'May',
+            6=>'Jun',
+            7=>'July',
+            8=>'Aug',
+            9=>'Sep',
+            10=>'Oct',
+            11=>'Nov'
+        ];
     }
 
     public function confirm($order_code)
