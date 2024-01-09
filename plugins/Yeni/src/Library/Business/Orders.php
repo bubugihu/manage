@@ -67,6 +67,7 @@ class Orders extends Entity
                 $quoting['q_date'] = new FrozenTime('now');
                 $quoting['source'] = 1; // zalo
                 $quoting['order_code'] = $data[0]; // zalo
+                $quoting['name'] = $data[12][$key];
                 $result[] = $quoting;
             }
             $list_entities = $this->model_quoting->newEntities($result);

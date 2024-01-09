@@ -209,13 +209,14 @@ class Report extends Entity
             $qty = $value['quantity'];
             $code = $value['code'];
             $price = $value['price'];
+            $name = $value['name'];
             if(empty($code))
                 continue;
             if(in_array($code, $list_product) || in_array($code,array_keys($list_set_product)))
             {
                 if(!in_array($code,array_keys($list_set_product)))
                 {
-                    $sql = "UPDATE product SET `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
+                    $sql = "UPDATE product SET `name` = '$name', `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
                     $connection->execute(
                         $sql,
                     );
@@ -234,7 +235,7 @@ class Report extends Entity
             }else{
                 $params = [
                     'code'  => $code,
-                    'name'  => 'mã mới chưa import',
+                    'name'  => $name,
                     'q_price'   => $price,
                     'q_qty'     => $qty,
                 ];

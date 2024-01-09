@@ -178,7 +178,7 @@
     </div>
 </div>
 <!-- Include thư viện SheetJS -->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
 <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
@@ -283,7 +283,7 @@
         let table = new DataTable('#dataTable', {
             columns: [
                 null,
-                { searchable: false },
+                null,
                 { searchable: false },
                 { searchable: false },
                 { searchable: false },
@@ -408,7 +408,7 @@
             let qty_array = groupedInputs['quantity']
             let name_array = groupedInputs['name']
             let price_array = groupedInputs['price']
-            array_form = [order_code, full_name, phone, addr, total_order_form, note, ship, code_array, qty_array, price_array, order_date, total_actual]
+            array_form = [order_code, full_name, phone, addr, total_order_form, note, ship, code_array, qty_array, price_array, order_date, total_actual, name_array]
             let html = ""
             if(code_array != null && code_array.length > 0)
             {
@@ -493,12 +493,11 @@
                      </table>`
             }
 
-            //export excel
+
 
             $('#modal-body').html(html)
             html_message = html
             $('.modal').css("display","block")
-
         })
 
         $('#confirm_order').click(function(){
@@ -519,7 +518,10 @@
                     if(data.status)
                     {
                         alert('Tạo order thành công');
+                        //export excel
                         let full_name = $('#full_name').val()
+
+                        exportToExcel(full_name.replace(/\s+/g, '_'))
                         let phone = $('#phone').val()
                         let addr = $('#addr').val()
                         let total_order = $('#total_order').val()
