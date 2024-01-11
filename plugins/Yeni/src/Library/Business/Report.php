@@ -25,8 +25,10 @@ class Report extends Entity
                 'customer_name LIKE' => "%" . $key_search . "%",
                 'customer_phone LIKE' => "%" . $key_search . "%",
             ],
+            'YEAR(order_date)' => 2024,
+            'MONTH(order_date)' => 1,
+            'source' => 1,
         ];
-
         $order = [
             'status' => "ASC",
             'source'    => "DESC",
