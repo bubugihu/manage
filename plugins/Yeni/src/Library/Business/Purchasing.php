@@ -73,18 +73,19 @@ class Purchasing extends Entity
                 $qty = $value['quantity'];
                 $code = $value['code'];
                 $price = $value['price'];
+                $name = $value['name'];
                 if(empty($code))
                     continue;
                 if(in_array($code, $list_product))
                 {
-                    $sql = "UPDATE product SET `p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
+                    $sql = "UPDATE product SET `name` = '$name',`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
                     $connection->execute(
                         $sql,
                     );
                 }else{
                     $params = [
                         'code'  => $code,
-                        'name'  => 'mã mới chưa import',
+                        'name'  => $name,
                         'p_price'   => $price,
                         'p_qty'     => $qty,
                     ];
@@ -129,19 +130,11 @@ class Purchasing extends Entity
     {
         $result = [];
         $result['code'] = trim($params['B']);
-        $result['quantity'] = trim($params['K']);
+        $result['name'] = trim($params['C']);
+        $result['quantity'] = intval(trim($params['E']));
         $result['status'] = STATUS_QUOTING_DONE;
         $result['p_date'] = new FrozenTime("now");
-//        $result['note'] = trim($params['E']);
-        $total_purchase = trim($sheet->getCell('H'.$key)->getValue());
-        if(floatval($result['quantity']) == 0)
-        {
-            $result['price'] = 0;
-            $result['quantity'] = 0;
-        }else{
-            $result['price'] = floatval($total_purchase) / floatval($result['quantity']) * 1000;
-        }
-
+        $result['price'] = floatval(trim($sheet->getCell('F'.$key)->getValue()));
         $result['source'] = 0;
         return $result;
     }

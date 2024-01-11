@@ -45,6 +45,21 @@
                                 <input type="file" id="importOrder" name="file_import">
                                 <?= $this->Form->end(); ?>
                             </li>
+                            <li class="nav-item px-1">
+                                <label class="btn btn-outline-secondary rounded-0" for="exportOrder">
+                                    <i class="fa-solid fa-minus"></i>
+                                    <?= __('Export orders') ?>
+                                </label>
+                                <?= $this->Form->create(null, [
+                                    'url' => 'yeni/report/exportOrder',
+                                    'method' => 'post',
+                                    'id' => 'uploadFile',
+                                    'class' => ['d-none'],
+                                    'enctype' => 'multipart/form-data'
+                                ]); ?>
+                                <input type="submit" id="exportOrder" name="file_export">
+                                <?= $this->Form->end(); ?>
+                            </li>
                         </ul>
 
                         <div class="nav-end">
@@ -163,7 +178,6 @@
         $('#importOrder').on("change", function () {
             $('#uploadFile').submit();
         });
-
 
         const labels = [
             <?php if (isset($labels) && count($labels) > 0) foreach ($labels as $day => $val) echo '"'. $val . '", ' ?>

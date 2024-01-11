@@ -68,6 +68,15 @@ class PagesController extends AppController
                 if($result_create_quoting)
                     $status = true;
             }
+//            //save excel
+//            $htmlString = $_POST['html_message'];
+//
+//            $reader = new \PhpOffice\PhpSpreadsheet\Reader\Html();
+//            $spreadsheet = $reader->loadFromString($htmlString);
+//
+//            $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xls');
+//            $writer->save('write.xls');
+
             return $this->response->withStringBody(json_encode(compact('status')));
         }
     }

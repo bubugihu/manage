@@ -5,6 +5,7 @@ namespace Yeni\Controller;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use \Yeni\Controller\AppController;
 use Yeni\Library\Business\Purchasing;
+use Yeni\Model\Table\ProductTable;
 use Yeni\Model\Table\SetProductTable;
 
 class PurchasingController extends AppController
@@ -48,10 +49,9 @@ class PurchasingController extends AppController
                     {
                         $results = [];
 
-
                         foreach ($dataInput as $key => $value)
                         {
-                            if($key <= 1 || empty(trim($value['B'])))
+                            if($key <= 4 || empty(trim($value['B'])))
                             {
                                 continue;
                             }

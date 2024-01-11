@@ -129,4 +129,17 @@ class Orders extends Entity
         }
 
     }
+
+    public function getListExport($page = 1, $export = false)
+    {
+        $condition = [
+            'status' => 0,
+            'source'    => 1, //zalo
+        ];
+
+        $order = [
+
+        ];
+        return $this->model_order->getData($page, $condition, ['Quoting.Product'], [], $order, $export);
+    }
 }

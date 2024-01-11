@@ -447,7 +447,7 @@
                         if(index == 0)
                         {
                             html += `<tr>
-                                <td rowspan="${code_array.length}" class="vertical-align-top">${array_info[0]}<br>${array_info[1]}<br>${array_info[2]}<br>${array_info[3]}<br>${array_info[4]}<br>${array_info[5]}<br>${array_info[6]}<br>${array_info[7]}</td>
+                                <td rowspan="${code_array.length}" class="vertical-align-top">${array_info[0]}<br>${array_info[1]}<br>${array_info[2]}<br>${array_info[3]}<br>${array_info[4]}<br>${array_info[5]}<br><span style="font-weight: 700;color: red">${array_info[6]}</span><br>${array_info[7]}</td>
                                 <td>${element}</td>
                                 <td>${name_array[index]}</td>
                                 <td class="text-align-center">${qty_array[index]}</td>
@@ -478,7 +478,7 @@
                         if(index == 0)
                         {
                             html += `<tr>
-                                <td rowspan="${array_info.length}" class="vertical-align-top">${array_info[0]}<br>${array_info[1]}<br>${array_info[2]}<br>${array_info[3]}<br>${array_info[4]}<br>${array_info[5]}<br>${array_info[6]}<br>${array_info[7]}</td>
+                                <td rowspan="${array_info.length}" class="vertical-align-top">${array_info[0]}<br>${array_info[1]}<br>${array_info[2]}<br>${array_info[3]}<br>${array_info[4]}<br>${array_info[5]}<br><span style="font-weight: 700;color: red">${array_info[6]}</span><br>${array_info[7]}</td>
                                 <td>${code_array[index]}</td>
                                 <td>${name_array[index]}</td>
                                 <td class="text-align-center">${qty_array[index]}</td>
@@ -527,6 +527,7 @@
                 type: "POST",
                 data: {
                     array_form: array_form,
+                    html_message: html_message
                 },
                 dataType: "json",
                 headers: {

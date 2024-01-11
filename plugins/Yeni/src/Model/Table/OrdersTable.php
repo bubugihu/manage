@@ -9,5 +9,9 @@ class OrdersTable extends AppTable
     {
         $this->condition = ['del_flag' => UNDEL];
         $this->setEntityClass(\Yeni\Model\Entity\Orders::class);
+        $this->hasMany("Quoting",[
+            'foreignKey' => 'order_code',
+            'bindingKey' => 'order_code'
+        ])->setConditions(['Quoting.del_flag' => UNDEL]);
     }
 }

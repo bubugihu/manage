@@ -4,7 +4,9 @@ namespace Yeni\Controller;
 
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use \Yeni\Controller\AppController;
+use Yeni\Library\Business\Orders;
 use Yeni\Library\Business\Report;
+use Yeni\Model\Table\SetProductTable;
 
 class ReportController extends AppController
 {
@@ -12,6 +14,7 @@ class ReportController extends AppController
     {
         parent::initialize();
         $this->business_report = new Report();
+        $this->business_order = new Orders();
     }
 
     public function index()
@@ -107,5 +110,28 @@ class ReportController extends AppController
         else
             $this->Flash->error("Can not confirm");
         return $this->redirect('/yeni/report/');
+    }
+
+    public function exportOrder($output_type = 'D')
+    {
+        $list_orders = $this->business_order->getListExport(1, true);
+        $results = $list_orders->all()->toList();
+        $set_product_model = new SetProductTable();
+        $list_set_product = $set_product_model->find('list', [
+            'fields' => ['id','name', 'code','del_flag'],
+            'conditions' => ['SetProduct.del_flag' => UNDEL],
+            'keyField' => 'code',
+            'valueField' => function($value) {
+                return $value['name'];
+            },
+        ])->contain(['SetProductDetail'])->toArray();
+        $file_name = "Order_" . date('Y-m-d'). ".xlsx";
+        $this->set(compact('results', 'output_type', 'file_name','list_set_product'));
+        $this->viewBuilder()->setLayout('xls/default');
+        $this->viewBuilder()->setTemplate('export_excel');
+        $this->response->withDownload('Inventory_' . date('Y-m-d'). '.xlsx');
+        $this->render();
+
+        return;
     }
 }
