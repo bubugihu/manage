@@ -2,6 +2,8 @@
 
 namespace Yeni\Controller;
 
+use Cake\Datasource\ConnectionManager;
+use Cake\Log\Log;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use \Yeni\Controller\AppController;
 use Yeni\Library\Business\Orders;
@@ -19,16 +21,19 @@ class ReportController extends AppController
 
     public function index()
     {
-        $arr['key_search'] = $key_search = $_GET['key_search'] ?? "";
+        $arr['key_search']  = $_GET['key_search'] ?? "";
         $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;
+		$arr['month']  = $_GET['month'] ?? date("m");;
+        $arr['year']  = $_GET['year'] ?? date("Y");;
 
-        $list_orders = $this->business_report->getList($key_search, $page, false,1);
+        $list_orders = $this->business_report->getList($arr, $page, false);
         $paginate = $this->Common->displayPaginationBelow(LIMIT, $page, $list_orders->count(), $arr);
 
         $this->set('total_orders',$list_orders->count());
         $this->set('list_orders',$list_orders->all()->toList());
         $this->set('paginate',$paginate);
-
+        $this->set('month', $arr['month']);
+        $this->set('year', $arr['year']);
         //chart
         $current_year = intval(date("Y"));
         $getMonthlyYear = $this->business_report->getMonthlyYear($current_year);
@@ -100,7 +105,8 @@ class ReportController extends AppController
 
     public function view($id)
     {
-
+        $order = $this->business_report->getOne($id);
+        $this->set('order', $order);
     }
 
     public function confirm($order_code)
@@ -133,5 +139,22 @@ class ReportController extends AppController
         $this->render();
 
         return;
+    }
+
+    public function delete($order_code)
+    {
+        $connection = ConnectionManager::get('default');
+        try{
+            $connection->begin();
+            $this->business_report->delete($order_code);
+            $this->Flash->success("Delete successfully.");
+        }catch (\Exception $e)
+        {
+            Log::error($e->getMessage());
+            $this->Flash->error("Delete failed.");
+            $connection->rollback();
+        }
+        $connection->commit();
+        return $this->redirect(['action' => "index"]);
     }
 }

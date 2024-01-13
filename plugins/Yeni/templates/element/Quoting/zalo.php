@@ -77,7 +77,7 @@
                                     <div style="width: 2%"><br><?= __("Price") ?></div>
                                     <div style="width: 2%"><br><?= __("Total") ?></div>
                                     <div style="width: 2%"><br><?= __("Source") ?></div>
-                                    <div style="width: 5%"><br><?= __("Note") ?></div>
+                                    <div style="width: 5%"><br><?= __("Order_code") ?></div>
                                     <div style="width: 2%"><br><?= __("Date") ?></div>
                                     <div style="width: 2%"><br><?= __("Status") ?></div>
                                 </div>
@@ -113,7 +113,7 @@
                                                     <?= $value->source_display ?? '' ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->note ?? '' ?>
+                                                    <?= $value->order_code ?? '' ?>
                                                 </div>
                                                 <div>
                                                     <?= $value->q_date->toDateString() ?? '' ?>

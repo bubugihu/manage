@@ -17,16 +17,26 @@ class Report extends Entity
         $this->model_order = $this->_getProvider("Yeni.Orders");
     }
 
-    public function getList($key_search = "",  $page = 1, $export = false)
+    public function getOne($id)
+    {
+        $condition = [
+            'id'    => $id
+        ];
+        $contain = [
+            'Quoting.Product'
+        ];
+        return $this->model_order->selectOne($condition, $contain);
+    }
+    public function getList($key_search = [],  $page = 1, $export = false)
     {
         $condition = [
             'OR' => [
-                'order_code LIKE' => "%" . $key_search . "%",
-                'customer_name LIKE' => "%" . $key_search . "%",
-                'customer_phone LIKE' => "%" . $key_search . "%",
+                'order_code LIKE' => "%" . $key_search['key_search'] . "%",
+                'customer_name LIKE' => "%" . $key_search['key_search'] . "%",
+                'customer_phone LIKE' => "%" . $key_search['key_search'] . "%",
             ],
-            'YEAR(order_date)' => 2024,
-            'MONTH(order_date)' => 1,
+            'YEAR(order_date)' => $key_search['month'],
+            'MONTH(order_date)' => $key_search['year'],
             'source' => 1,
         ];
         $order = [
@@ -291,5 +301,11 @@ class Report extends Entity
 
         }
         return $result_monthly;
+    }
+
+    public function delete($order_code)
+    {
+        $this->model_order->deleteAll(['order_code' => $order_code]);
+        $this->model_quoting->deleteAll(['order_code' => $order_code]);
     }
 }

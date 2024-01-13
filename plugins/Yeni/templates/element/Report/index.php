@@ -26,10 +26,11 @@
             <?= __("List Order") ?>
         </div>
         <div class="card m-3 rounded-0">
+            <form id="form-filter" class="form-filter" action="/yeni/report/" method="get">
             <div class="card-header p-1">
                 <nav class="navbar bg-body-tertiary">
                     <div class="container-fluid">
-                        <ul class="nav nav-pills">
+                        <ul class="nav nav-pills d-none">
                             <li class="nav-item px-1">
                                 <label class="btn btn-outline-secondary rounded-0" for="importOrder">
                                     <i class="fa-solid fa-plus"></i>
@@ -60,11 +61,26 @@
                                 <input type="submit" id="exportOrder" name="file_export">
                                 <?= $this->Form->end(); ?>
                             </li>
-                        </ul>
 
+                        </ul>
+                        <ul class="nav nav-pills">
+                            <li class="nav-item px-1 ">
+                                <select class="form-select" name="month" id="month">
+                                    <?php for($i = 1; $i <= 12; $i++) : ?>
+                                        <option value="<?= $i ?>"><?= $i ?></option>
+                                    <?php endfor; ?>
+                                </select>
+                            </li>
+                            <li class="nav-item px-1 ">
+                                <select class="form-select" name="year" id="year">
+                                    <?php for($i = 2023; $i <= 2025; $i++) : ?>
+                                        <option value="<?= $i ?>"><?= $i ?></option>
+                                    <?php endfor; ?>
+                                </select>
+                            </li>
+                        </ul>
                         <div class="nav-end">
                             <div class="nav-end">
-                                <form class="form-filter" action="/yeni/report/" method="get">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item">
                                             <div class="bb-search">
@@ -74,13 +90,13 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </form>
                             </div>
                         </div>
-
                     </div>
                 </nav>
             </div>
+            </form>
+
             <div class="card-body">
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" style="background-color: #c5c5c5;">
@@ -108,15 +124,17 @@
                                                             </button>
                                                             <ul class="dropdown-menu">
                                                                 <li>
-                                                                    <a href="/yeni/report/view/<?= $value->id . $this->Format->renderParameterURL() ?>" class="view dropdown-item-text" title="View">
+                                                                    <a href="/yeni/report/view/<?= $value->id . $this->Format->renderParameterURL() ?>" class="view dropdown-item-text" target="_blank" title="View">
                                                                         <i class="fa fa-eye"></i> Xem
                                                                     </a>
                                                                 </li>
+                                                                <?php if($value->status == STATUS_QUOTING_NEW) :?>
                                                                 <li>
-                                                                    <a href="/yeni/report/delete/<?= $value->id . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="delete dropdown-item-text" title="View">
+                                                                    <a href="/yeni/report/delete/<?= $value->order_code. $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="delete dropdown-item-text" title="View">
                                                                         <i class="fa fa-trash"></i> Xoá
                                                                     </a>
                                                                 </li>
+                                                                <?php endif; ?>
                                                                 <?php if($value->status == STATUS_QUOTING_NEW) :?>
                                                                     <li>
                                                                         <a href="/yeni/report/confirm/<?= $value->order_code . $this->Format->renderParameterURL() ?>" onclick="return confirm('Are you sure?');" class="confirm dropdown-item-text" title="View">
@@ -175,6 +193,20 @@
 
 <script>
     $(document).ready(function() {
+        // set month year
+        const current_month = <?= $month ?? 1 ?>;
+        const current_year = <?= $year ?? 2024 ?>;
+        $('#month').val(current_month)
+        $('#year').val(current_year)
+
+        $('#month').on("change", function () {
+            $('#form-filter').submit();
+        });
+
+        $('#year').on("change", function () {
+            $('#form-filter').submit();
+        });
+
         $('#importOrder').on("change", function () {
             $('#uploadFile').submit();
         });

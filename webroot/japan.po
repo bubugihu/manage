@@ -1,0 +1,8763 @@
+msgid "dashboard"
+msgstr "ダッシュボード"
+
+msgid "rockie_award"
+msgstr "新人賞"
+
+msgid "book_meeting_room"
+msgstr "会議室を予約します"
+
+msgid "files"
+msgstr "ファイル"
+
+msgid "to"
+msgstr "宛先"
+
+msgid "cc"
+msgstr "CC"
+
+msgid "subjects"
+msgstr "件名"
+
+msgid "content"
+msgstr "コンテンツ"
+
+msgid "document"
+msgstr "ドキュメント"
+
+msgid "download"
+msgstr "ダウンロード"
+
+msgid "assign"
+msgstr "割り当てる"
+
+msgid "work_from_home"
+msgstr "在宅勤務"
+
+msgid "register"
+msgstr "登録"
+
+msgid "timesheet"
+msgstr "タイムシート"
+
+msgid "add"
+msgstr "追加"
+
+msgid "prior_timesheet_adjustment"
+msgstr "以前のタイムシート調整"
+
+msgid "show"
+msgstr "表示"
+
+msgid "report"
+msgstr "レポート"
+
+msgid "send_report"
+msgstr "レポートを送信します"
+
+msgid "send_mail"
+msgstr "メールを送信します"
+
+msgid "sent"
+msgstr "送信済み"
+
+msgid "un-sent"
+msgstr "未送信"
+
+msgid "not_found_data"
+msgstr "データがみつかりません"
+
+msgid "employee_timesheet"
+msgstr "従業員のタイムシート"
+
+msgid "project_timesheet"
+msgstr "プロジェクトのタイムシート"
+
+msgid "account_experience"
+msgstr "アカウント経験"
+
+msgid "weekly_offshore_status_report"
+msgstr "週次オフショア状況レポート"
+
+msgid "employee_effort_utilization"
+msgstr "従業員の労力活用"
+
+msgid "project_effort_utilization"
+msgstr "プロジェクトの労力活用"
+
+msgid "project_phase_category"
+msgstr "プロジェクトフェーズの区分"
+
+msgid "bench"
+msgstr "ベンチ"
+
+msgid "project_org_chart"
+msgstr "プロジェクト組織図"
+
+msgid "resource_utilization"
+msgstr "リソース利用"
+
+msgid "resource_allocation"
+msgstr "リソース割り当て"
+
+msgid "overtime"
+msgstr "残業"
+
+msgid "employee"
+msgstr "従業員"
+
+msgid "list"
+msgstr "一覧"
+
+msgid "onsiter_list"
+msgstr "オンサイト一覧"
+
+msgid "candidate_referral_bonus"
+msgstr "候補者紹介ボーナス"
+
+msgid "incentive"
+msgstr "インセンティブ"
+
+msgid "labor_contract"
+msgstr "労働契約"
+
+msgid "promotion"
+msgstr "昇進"
+
+msgid "contact_address"
+msgstr "連絡先アドレス"
+
+msgid "recruitment"
+msgstr "採用"
+
+msgid "candidate_list"
+msgstr "候補者リスト"
+
+msgid "interview_list"
+msgstr "面接一覧"
+
+msgid "accounts"
+msgstr "アカウント"
+
+msgid "team_building"
+msgstr "チームビルディング"
+
+msgid "leave"
+msgstr "休暇"
+
+msgid "my_leave"
+msgstr "自分の休暇"
+
+msgid "leave_today"
+msgstr "本日の休暇"
+
+msgid "member_leave_report"
+msgstr "メンバー休暇レポート"
+
+msgid "revert"
+msgstr "切り戻し"
+
+msgid "reverted"
+msgstr "切り戻済み"
+
+msgid "revert_leave"
+msgstr "休暇の切り戻し"
+
+msgid "revert_balance"
+msgstr "バランスの切り戻しをします"
+
+msgid "resignation"
+msgstr "辞職"
+
+msgid "resignation_application"
+msgstr "辞職申請"
+
+msgid "my_resignation_letter"
+msgstr "自分の辞職状"
+
+msgid "appraisal"
+msgstr "評価"
+
+msgid "my_box"
+msgstr "マイボックス"
+
+msgid "my_appraisal"
+msgstr "自分の評価"
+
+msgid "permission"
+msgstr "許可"
+
+msgid "function"
+msgstr "機能"
+
+msgid "user_permission"
+msgstr "ユーザー許可"
+
+msgid "config"
+msgstr "設定"
+
+msgid "config_website"
+msgstr "ウェブサイトの設定"
+
+msgid "level_out"
+msgstr "レベルアウト"
+
+msgid "company"
+msgstr "会社"
+
+msgid "device_management"
+msgstr "端末管理"
+
+msgid "department"
+msgstr "部門"
+
+msgid "incentive_type"
+msgstr "インセンティブ種類"
+
+msgid "job_title"
+msgstr "職種"
+
+msgid "skill"
+msgstr "スキル"
+
+msgid "meeting_room"
+msgstr "会議室"
+
+msgid "holiday"
+msgstr "休日"
+
+msgid "unlock_timesheet"
+msgstr "タイムシートのロック解除"
+
+msgid "2fa_login_setting"
+msgstr "2要素認証ログイン設定"
+
+msgid "kpi_setting"
+msgstr "KPI設定"
+
+msgid "figure_type"
+msgstr "図形タイプ"
+
+msgid "project_role"
+msgstr "プロジェクトの役割"
+
+msgid "phase_category"
+msgstr "フェーズ区分"
+
+msgid "project_phase"
+msgstr "プロジェクトフェーズ"
+
+msgid "team_building_config"
+msgstr "チームビルディングの設定"
+
+msgid "weekly_report_recipient"
+msgstr "週報の受取人"
+
+msgid "highlights"
+msgstr "ハイライト"
+
+msgid "current_utilization"
+msgstr "現在の活用"
+
+msgid "utilization_target"
+msgstr "活用目標"
+
+msgid "billable_target"
+msgstr "請求可能目標"
+
+msgid "role"
+msgstr "役割"
+
+msgid "roles"
+msgstr "役割"
+
+msgid "recruitment_source"
+msgstr "採用ソース"
+
+msgid "define_template"
+msgstr "テンプレートを定義します"
+
+msgid "shortcus"
+msgstr "ショートカット"
+
+msgid "logout"
+msgstr "ログアウト"
+
+msgid "website"
+msgstr "ウェブサイト"
+
+msgid "notifications"
+msgstr "通知"
+
+msgid "effort"
+msgstr "労力"
+
+msgid "info"
+msgstr "インフォ"
+
+msgid "org_chart"
+msgstr "組織図"
+
+msgid "member"
+msgstr "メンバー"
+
+msgid "members"
+msgstr "メンバー"
+
+msgid "setting"
+msgstr "設定"
+
+msgid "role_chart"
+msgstr "役割図"
+
+msgid "ramp_plan"
+msgstr "ランププラン"
+
+msgid "milestones"
+msgstr "マイルストーン"
+
+msgid "reports"
+msgstr "レポート"
+
+msgid "figures"
+msgstr "数値"
+
+msgid "metrics"
+msgstr "メトリクス"
+
+msgid "external"
+msgstr "外部"
+
+msgid "estimate"
+msgstr "見積もり"
+
+msgid "allocated"
+msgstr "割り当てられた"
+
+msgid "tracked"
+msgstr "追跡されました"
+
+msgid "remaining"
+msgstr "残り"
+
+msgid "burndown_chart"
+msgstr "バーンダウンチャート"
+
+msgid "planned_burn"
+msgstr "予定のバーン"
+
+msgid "actual_burn"
+msgstr "実際のバーン"
+
+msgid "expire"
+msgstr "期限切れ"
+
+msgid "expired"
+msgstr "期限切れされました"
+
+msgid "joined_date"
+msgstr "参加日"
+
+msgid "expired_date"
+msgstr "有効期限日"
+
+msgid "submitted_date"
+msgstr "提出日"
+
+msgid "record_date"
+msgstr "記録日"
+
+msgid "effort_allocated"
+msgstr "割り当てられた労力"
+
+msgid "billable"
+msgstr "課金可能"
+
+msgid "non_billable"
+msgstr "課金不可"
+
+msgid "position"
+msgstr "ポジション"
+
+msgid "tier"
+msgstr "ティア"
+
+msgid "weeks"
+msgstr "週間"
+
+msgid "week"
+msgstr "週"
+
+msgid "hours"
+msgstr "時間"
+
+msgid "total_headcount"
+msgstr "総人員数"
+
+msgid "sub_total_hours"
+msgstr "サブトータル時間"
+
+msgid "total_hours"
+msgstr "合計時間"
+
+msgid "no."
+msgstr "番号"
+
+msgid "now"
+msgstr "今"
+
+msgid "comter"
+msgstr "コンター"
+
+msgid "tester"
+msgstr "テスター"
+
+msgid "developer"
+msgstr "開発者"
+
+msgid "technical_leader"
+msgstr "テクニカルリーダー"
+
+msgid "designer"
+msgstr "デザイナー"
+
+msgid "business_analyst"
+msgstr "ビジネスアナリスト"
+
+msgid "bridge_software_engineer"
+msgstr "BrSE"
+
+msgid "test_lead"
+msgstr "テストリード"
+
+msgid "overhead"
+msgstr "オーバーヘッド"
+
+msgid "dev_ops_engineer"
+msgstr "DevOpsエンジニア"
+
+msgid "senior_developer"
+msgstr "シニアデベロッパー"
+
+msgid "acting_technical_leader"
+msgstr "代理テクニカルリーダー"
+
+msgid "effort_utilization"
+msgstr "労力利用"
+
+msgid "internal_work_order"
+msgstr "内部作業指示書"
+
+msgid "project"
+msgstr "プロジェクト"
+
+msgid "projects"
+msgstr "プロジェクト"
+
+msgid "null"
+msgstr "Null"
+
+msgid "employee_upper"
+msgstr "従業員"
+
+msgid "project_information"
+msgstr "プロジェクト情報"
+
+msgid "home"
+msgstr "ホーム"
+
+msgid "project_list"
+msgstr "プロジェクトリスト"
+
+msgid "edit"
+msgstr "編集"
+
+msgid "edit_member"
+msgstr "メンバーの編集"
+
+msgid "view"
+msgstr "見ます"
+
+msgid "view_all"
+msgstr "すべて見ます"
+
+msgid "view_detail"
+msgstr "詳細を表示します"
+
+msgid "delete"
+msgstr "削除"
+
+msgid "update"
+msgstr "更新"
+
+msgid "update_effort"
+msgstr "労力の更新"
+
+msgid "active"
+msgstr "アクティブ"
+
+msgid "in_active"
+msgstr "非アクティブ"
+
+msgid "approved"
+msgstr "承認済み"
+
+msgid "rejected"
+msgstr "拒否されました"
+
+msgid "submitted"
+msgstr "提出済み"
+
+msgid "updated"
+msgstr "更新済み"
+
+msgid "approve"
+msgstr "承認します"
+
+msgid "approve_project"
+msgstr "プロジェクト承認"
+
+msgid "approver"
+msgstr "承認者"
+
+msgid "approval_status"
+msgstr "承認状況"
+
+msgid "approved_iwo"
+msgstr "承認されましたIWO"
+
+msgid "requested"
+msgstr "要求されました"
+
+msgid "reject"
+msgstr "拒否します"
+
+msgid "confirm"
+msgstr "確認します"
+
+msgid "confirmation"
+msgstr "確認"
+
+msgid "comment"
+msgstr "コメント"
+
+msgid "pm_comment"
+msgstr "PMのコメント"
+
+msgid "gm_comment"
+msgstr "GMのコメント"
+
+msgid "description"
+msgstr "説明"
+
+msgid "loading"
+msgstr "読み込み中..."
+
+msgid "save"
+msgstr "保存"
+
+msgid "yes"
+msgstr "はい"
+
+msgid "no"
+msgstr "いいえ"
+
+msgid "search"
+msgstr "検索..."
+
+msgid "enter"
+msgstr "入力..."
+
+msgid "export"
+msgstr "エクスポート"
+
+msgid "export_excel"
+msgstr "Excel形式でエクスポート"
+
+msgid "select_account"
+msgstr "アカウントを選択します"
+
+msgid "project_name"
+msgstr "プロジェクト名"
+
+msgid "all"
+msgstr "すべて"
+
+msgid "in_progress"
+msgstr "進行中"
+
+msgid "new"
+msgstr "新規"
+
+msgid "on_hold"
+msgstr "保留中"
+
+msgid "closed"
+msgstr "クローズ"
+
+msgid "canceled"
+msgstr "キャンセルされました"
+
+msgid "project_code"
+msgstr "プロジェクトコード"
+
+msgid "project_category"
+msgstr "プロジェクトカテゴリ"
+
+msgid "category"
+msgstr "カテゴリ"
+
+msgid "internal_projects"
+msgstr "内部プロジェクト"
+
+msgid "external_projects"
+msgstr "外部プロジェクト"
+
+msgid "internal"
+msgstr "内部"
+
+msgid "external"
+msgstr "外部"
+
+msgid "action"
+msgstr "アクション"
+
+msgid "version"
+msgstr "バージョン"
+
+msgid "month"
+msgstr "月"
+
+msgid "year"
+msgstr "年"
+
+msgid "quarter"
+msgstr "四半期"
+
+msgid "total"
+msgstr "合計"
+
+msgid "reason"
+msgstr "理由"
+
+msgid "team"
+msgstr "チーム"
+
+msgid "name"
+msgstr "名前"
+
+msgid "user"
+msgstr "ユーザー"
+
+msgid "employee_name"
+msgstr "従業員名"
+
+msgid "employee_code"
+msgstr "従業員コード"
+
+msgid "employee_id"
+msgstr "従業員ID"
+
+msgid "full_name"
+msgstr "フルネーム"
+
+msgid "marriage"
+msgstr "結婚"
+
+msgid "main_skill"
+msgstr "主要なスキル"
+
+msgid "birthday"
+msgstr "誕生日"
+
+msgid "gender"
+msgstr "性別"
+
+msgid "office"
+msgstr "オフィス"
+
+msgid "business_title"
+msgstr "職務タイトル"
+
+msgid "user_info"
+msgstr "ユーザー情報"
+
+msgid "employee_info"
+msgstr "従業員情報"
+
+msgid "province"
+msgstr "県"
+
+msgid "district"
+msgstr "地区"
+
+msgid "billing_dates"
+msgstr "請求日"
+
+msgid "hourly_rate"
+msgstr "時給"
+
+msgid "total_calendar_days"
+msgstr "総カレンダー日数"
+
+msgid "weekend_days"
+msgstr "週末の日数"
+
+msgid "weekend"
+msgstr "週末"
+
+msgid "weekday"
+msgstr "平日"
+
+msgid "actual_working_days"
+msgstr "実際の労働日数"
+
+msgid "total_billable_hours"
+msgstr "請求可能時間の合計"
+
+msgid "total_cost"
+msgstr "総コスト"
+
+msgid "code"
+msgstr "コード"
+
+msgid "email"
+msgstr "メール"
+
+msgid "no_email"
+msgstr "メールなし"
+
+msgid "phone"
+msgstr "電話"
+
+msgid "notes"
+msgstr "メモ"
+
+msgid "summary"
+msgstr "要約"
+
+msgid "overall_health"
+msgstr "全体的な健全状態"
+
+msgid "overall_project"
+msgstr "全体的なプロジェクト"
+
+msgid "overall_project_health"
+msgstr "全体的なプロジェクトの健全状態"
+
+msgid "overall_project_status"
+msgstr "全体的なプロジェクトの状態"
+
+msgid "report_status"
+msgstr "レポートの状態"
+
+msgid "reported_date"
+msgstr "報告日"
+
+msgid "reporter"
+msgstr "報告者"
+
+msgid "project_manager"
+msgstr "プロジェクトマネージャー"
+
+msgid "sort"
+msgstr "ソート"
+
+msgid "start"
+msgstr "開始"
+
+msgid "finish"
+msgstr "終了"
+
+msgid "date"
+msgstr "日付"
+
+msgid "planned_date"
+msgstr "予定日"
+
+msgid "actual_date"
+msgstr "実際の日付"
+
+msgid "start_date"
+msgstr "開始日"
+
+msgid "end_date"
+msgstr "終了日"
+
+msgid "due_date"
+msgstr "期日"
+
+msgid "status"
+msgstr "ステータス"
+
+msgid "created_on"
+msgstr "作成日"
+
+msgid "updated_on"
+msgstr "更新日"
+
+msgid "created_by"
+msgstr "作成者"
+
+msgid "updated_by"
+msgstr "更新者"
+
+msgid "technologies"
+msgstr "技術"
+
+msgid "methodology"
+msgstr "方法"
+
+msgid "phase"
+msgstr "フェーズ"
+
+msgid "component"
+msgstr "コンポーネント"
+
+msgid "project_component"
+msgstr "プロジェクトコンポーネント"
+
+msgid "overview"
+msgstr "概要"
+
+msgid "project_overview"
+msgstr "プロジェクト概要"
+
+msgid "service_type"
+msgstr "サービスタイプ"
+
+msgid "customer"
+msgstr "顧客"
+
+msgid "country"
+msgstr "国"
+
+msgid "account"
+msgstr "アカウント"
+
+msgid "estimated_resources"
+msgstr "見積もりリソース"
+
+msgid "none"
+msgstr "なし"
+
+msgid "internal_estimated_effort"
+msgstr "内部見積もり労力"
+
+msgid "external_estimated_effort"
+msgstr "外部見積もり労力"
+
+msgid "external_effort"
+msgstr "外部労力"
+
+msgid "health"
+msgstr "健全状態"
+
+msgid "green"
+msgstr "グリーン"
+
+msgid "yellow"
+msgstr "イエロー"
+
+msgid "red"
+msgstr "レッド"
+
+msgid "upload"
+msgstr "アップロード"
+
+msgid "submit"
+msgstr "提出"
+
+msgid "cancel"
+msgstr "キャンセル"
+
+msgid "back"
+msgstr "戻ります"
+
+msgid "close"
+msgstr "閉じます"
+
+msgid "add_more_file"
+msgstr "ファイルを追加します"
+
+msgid "add_new_project"
+msgstr "新しいプロジェクトを追加します"
+
+msgid "add_member"
+msgstr "メンバーを追加します"
+
+msgid "add_effort"
+msgstr "労力を追加します"
+
+msgid "add_weekly_report"
+msgstr "週次レポートを追加します"
+
+msgid "add_figures"
+msgstr "数字を追加します"
+
+msgid "add_edit_iwo"
+msgstr "IWOを追加します/編集します"
+
+msgid "project_edit"
+msgstr "プロジェクトを編集"
+
+msgid "check_history"
+msgstr "履歴を確認します"
+
+msgid "iwo_history"
+msgstr "IWOの履歴"
+
+msgid "component_project"
+msgstr "コンポーネントプロジェクト"
+
+msgid "issue"
+msgstr "問題"
+
+msgid "risk"
+msgstr "リスク"
+
+msgid "risks"
+msgstr "リスク"
+
+msgid "roadblocks"
+msgstr "障害物"
+
+msgid "fix"
+msgstr "修正"
+
+msgid "over"
+msgstr "超過"
+
+msgid "on"
+msgstr "オン"
+
+msgid "under"
+msgstr "下"
+
+msgid "validation.required"
+msgstr "このフィールドは必須！"
+
+msgid "permission.denied"
+msgstr "アクセスが拒否されました。このURLにアクセスします権限がありません。"
+
+msgid "company_name"
+msgstr "チームソリューションズベトナム"
+
+msgid "end"
+msgstr "終了"
+
+msgid "title"
+msgstr "タイトル"
+
+msgid "leader"
+msgstr "リーダー"
+
+
+msgid "other"
+msgstr "その他"
+
+msgid "confirm_delete"
+msgstr "本当に削除します？"
+
+msgid "total_day"
+msgstr "総日数"
+
+msgid "type"
+msgstr "タイプ"
+
+msgid "approver_feedback"
+msgstr "承認者のフィードバック"
+
+msgid "detail_labor_contract"
+msgstr "詳細労働契約"
+
+msgid "remark"
+msgstr "備考"
+
+msgid "user"
+msgstr "ユーザー"
+
+msgid "contract_number"
+msgstr "契約番号"
+
+msgid "sign_date"
+msgstr "署名日"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rejected"
+msgstr "拒否されました"
+
+msgid "approved"
+msgstr "承認されました"
+
+msgid "un_approved"
+msgstr "非承認"
+
+msgid "days"
+msgstr " 日 "
+
+msgid "day"
+msgstr " 日 "
+
+msgid "approved_by"
+msgstr "承認者"
+
+msgid "reject_by"
+msgstr "拒否者"
+
+msgid "week"
+msgstr "週"
+
+msgid "debit"
+msgstr "前借り"
+
+msgid "total_wfh"
+msgstr "合計WFH（WFH）"
+
+msgid "email_hikesiya"
+msgstr "Hikeshiyaメール"
+
+msgid "first_name"
+msgstr "ファーストネーム"
+
+msgid "last_name"
+msgstr "ラストネーム"
+
+msgid "nickname"
+msgstr "ニックネーム"
+
+msgid "permanent_address"
+msgstr "本籍の住所"
+
+msgid "street"
+msgstr "通り"
+
+msgid "city"
+msgstr "市"
+
+msgid "male"
+msgstr "男性"
+
+msgid "female"
+msgstr "女性"
+
+msgid "avatar"
+msgstr "アバター"
+
+msgid "upload_cv"
+msgstr "CVをアップロードします"
+
+msgid "number_annual"
+msgstr "年次有給休暇数"
+
+msgid "number_compensatory"
+msgstr "代替休暇数"
+
+msgid "foreign_language"
+msgstr "外国語"
+
+msgid "level"
+msgstr "レベル"
+
+msgid "social_security_number"
+msgstr "社会保障番号"
+
+msgid "citizen_identity_no"
+msgstr "市民ID番号"
+
+msgid "place_of_residence"
+msgstr "居住地"
+
+msgid "issued_date"
+msgstr "発行日"
+
+msgid "place_of_issue"
+msgstr "発行地"
+
+msgid "change_password"
+msgstr "パスワードを変更します"
+
+msgid "password"
+msgstr "パスワード"
+
+msgid "new_password"
+msgstr "新しいパスワード"
+
+msgid "re_new_password"
+msgstr "再度パスワードを入力"
+
+msgid "confirm_password"
+msgstr "パスワードを確認します"
+
+msgid "not_declared_yet"
+msgstr "まだ宣言されていません。"
+
+msgid "year_of_experience"
+msgstr "経験年数"
+
+msgid "progress"
+msgstr "進捗"
+
+msgid "see_full_info"
+msgstr "詳細情報を見ます"
+
+msgid "add_employee"
+msgstr "従業員を追加します"
+
+msgid "edit_employee"
+msgstr "従業員を編集します"
+
+msgid "choose_employee"
+msgstr "従業員を選択します"
+
+msgid "japan"
+msgstr "日本"
+
+msgid "united_states"
+msgstr "アメリカ合衆国"
+
+msgid "detail"
+msgstr "詳細"
+
+msgid "phone_number"
+msgstr "電話番号"
+
+msgid "message"
+msgstr "メッセージ"
+
+msgid "created"
+msgstr "作成済み"
+
+msgid "month"
+msgstr "月"
+
+msgid "keyword"
+msgstr "キーワード"
+
+msgid "btn_search"
+msgstr "検索"
+
+msgid "update_on"
+msgstr "更新日"
+
+msgid "paid"
+msgstr "支払済み"
+
+msgid "unpaid"
+msgstr "未払い"
+
+msgid "date"
+msgstr "日付"
+
+msgid "confirm"
+msgstr "確認します"
+
+msgid "total_user"
+msgstr "（合計 {0} ユーザー）"
+
+msgid "not_yet_enter"
+msgstr "まだ入力されていません"
+
+msgid "user_code"
+msgstr "ユーザーコード"
+
+msgid "user__code"
+msgstr "ユーザーコード"
+
+msgid "user_name"
+msgstr "ユーザー名"
+
+msgid "rejected_by"
+msgstr "拒否者"
+
+msgid "working"
+msgstr "稼働中"
+
+msgid "ot"
+msgstr "残業"
+
+msgid "test"
+msgstr "テスト"
+
+msgid "id"
+msgstr "ID"
+
+msgid "success"
+msgstr "成功"
+
+msgid "error"
+msgstr "エラー"
+
+msgid "not_found"
+msgstr "みつかりません"
+
+msgid "company_name_upper"
+msgstr "チーム SOLUTIONS VIETNAM"
+
+msgid "from"
+msgstr "から"
+
+msgid "bussiness_title"
+msgstr "ビジネスタイトル"
+
+msgid "comment_of_feedback"
+msgstr "コメント/フィードバック"
+
+msgid "slogan_team_solutions"
+msgstr "日本ソフトウェアアウトソーシングサービス、ベトナムソフトウェア開発アウトソーシング"
+
+msgid "timesheet_management_system"
+msgstr "タイムシート管理システム"
+
+msgid "cancelled"
+msgstr "キャンセル済み"
+
+msgid "information"
+msgstr "情報"
+
+msgid "dob"
+msgstr "生年月日"
+
+msgid "expected_working_office"
+msgstr "予定される勤務オフィス:"
+
+msgid "expected_start_date"
+msgstr "予定される開始日: "
+
+msgid "expected_gross_salary"
+msgstr "予想される総収入: "
+
+msgid "final_comment"
+msgstr "最終コメント:"
+
+msgid "round1_interviewer"
+msgstr "ラウンド1 - 面接官"
+
+msgid "round2_interviewer"
+msgstr "ラウンド2 - 面接官"
+
+msgid "interviewer"
+msgstr "面接官"
+
+msgid "interview_room"
+msgstr "面接室"
+
+msgid "first_interview_time"
+msgstr "第1面接の時間"
+
+msgid "second_interview_time"
+msgstr "第2面接の時間"
+
+msgid "scan_cccd"
+msgstr "プロフィールを表示します"
+
+msgid "wfh_register"
+msgstr "WFH登録"
+
+msgid "my_leave_balance"
+msgstr "自分の休暇残高"
+
+msgid "my_leave_balance"
+msgstr "休暇のレポート"
+
+msgid "toggle_navigation"
+msgstr "ナビゲーションを切り替えます"
+
+msgid "change_pass"
+msgstr "パスワードの変更"
+
+msgid "edit_profile"
+msgstr "プロフィールの編集"
+
+msgid "view_profile"
+msgstr "プロフィールを表示します"
+
+msgid "sign_out"
+msgstr "サインアウト"
+
+msgid "no_data_available"
+msgstr "データは存在しません！"
+
+msgid "copy_paste_html"
+msgstr "HTMLをコピーして貼り付けます"
+
+msgid "collapse"
+msgstr "折りたたむ"
+
+msgid "line"
+msgstr "ライン"
+
+msgid "validation.date"
+msgstr " エラー日付形式"
+
+msgid "validation.validate_unique"
+msgstr " 既に存在しています"
+
+msgid "validation.active"
+msgstr " 非アクティブ"
+
+msgid "validation.exist"
+msgstr " 存在しない"
+
+msgid "error.re_password"
+msgstr "パスワードが一致しません"
+
+msgid "address"
+msgstr "住所"
+
+msgid "sex"
+msgstr "性別"
+
+msgid "gm_confirmed"
+msgstr "GMが確認されました"
+
+msgid "hikesiya"
+msgstr "Hikesiya"
+
+msgid "overall_status"
+msgstr "全体的な状況"
+
+msgid "done"
+msgstr "完了"
+
+msgid "default"
+msgstr "デフォルト"
+#default start
+msgid "footer.version"
+msgstr "バージョン"
+
+msgid "footer.copyright"
+msgstr "著作権"
+
+msgid "footer.by"
+msgstr "によって"
+
+msgid "footer.all_rights_reserved"
+msgstr "全著作権所有"
+
+msgid "timesheets_dashboard"
+msgstr "タイムシート | ダッシュボード"
+
+msgid "default.success"
+msgstr "成功！"
+
+msgid "default.success_alert"
+msgstr "成功アラートのプレビュー。このアラートは閉じることができます。"
+
+msgid "default.failed"
+msgstr "失敗しました！"
+
+msgid "default.failed_alert"
+msgstr "成功アラートのプレビュー。このアラートは閉じることができます。"
+
+msgid "default.number_of_hours_allows_ot"
+msgstr "時間の数は残業を許可します"
+
+msgid "default.add_new"
+msgstr "新規追加"
+
+msgid "apply"
+msgstr "適用"
+
+msgid "result"
+msgstr "結果"
+
+msgid "ype"
+msgstr "タイプ"
+
+msgid "not_setup"
+msgstr "設定されていません"
+
+msgid "accept"
+msgstr "受け入れます"
+
+msgid "accepted"
+msgstr "承諾されました"
+
+msgid "day(s)"
+msgstr "日（日）"
+
+msgid "resolution"
+msgstr "解決"
+
+#default end
+
+#Start text validation
+
+msgid "validation.not_empty_string"
+msgstr "このフィールドを記入してください {0}"
+
+msgid "validation.unique"
+msgstr "{0} は既に存在します"
+
+msgid "validation.max_length"
+msgstr "{0} は長すぎることはできません"
+
+msgid "validation.min_length"
+msgstr "{0} は短すぎることはできません"
+
+msgid "validation.valid_space"
+msgstr "{0} にはスペースがありません"
+
+msgid "validation.email"
+msgstr "メールが有効である必要があります"
+
+msgid "validation.incorrect_format"
+msgstr "不正な {0} 形式"
+
+msgid "validation.incorrect_value"
+msgstr "不正な {0} 値"
+
+msgid "validation.unicode"
+msgstr "{0} はユニコードではありません"
+
+msgid "validation.check_exists"
+msgstr "{0} が存在しません"
+
+msgid "validation.numberic"
+msgstr "{0} は数値でなければなりません"
+
+msgid "validation.is_integer"
+msgstr "{0} は整数ではありません"
+
+msgid "validation.check_valid"
+msgstr "{0} は無効です"
+
+msgid "validation.permission_url"
+msgstr "アクセスが拒否されました。このURLにアクセスします権限がありません"
+
+msgid "validation.empty_value_or_url"
+msgstr "データが空白またはURLが無効です"
+
+msgid "validation.valid_progress"
+msgstr "進行が等しくありません {0} - {1}"
+
+msgid "validation.approver_is_required"
+msgstr "承認者が必要です"
+
+msgid "validation.field_reason_is_required"
+msgstr "理由のフィールドが必要です"
+
+msgid "validation.incorrect_time_format"
+msgstr "時間形式が正しくありません"
+
+msgid "validation.password_is_not_unicode"
+msgstr "パスワードはユニコードではありません"
+
+# Start AccountController
+msgid "account.index.view.account"
+msgstr "アカウント"
+
+msgid "account.index.view.home"
+msgstr "ホーム"
+
+msgid "account.index.view.total"
+msgstr "合計"
+
+msgid "account.index.view.search"
+msgstr "検索"
+
+msgid "account.index.view.account_name"
+msgstr "アカウント名"
+
+msgid "account.index.view.country"
+msgstr "国"
+
+msgid "account.index.view.onshore_account_manager"
+msgstr "オンショア・アカウントマネージャー"
+
+msgid "account.add.flash.add_success"
+msgstr "アカウント ({0}) が保存されました。"
+
+msgid "account.add.flash.add_failed"
+msgstr "アカウント ({0}) は保存できませんでした。もう一度お試しください。"
+
+msgid "account.add.view.add_account"
+msgstr "アカウントを追加します"
+
+msgid "account.add.view.account_name"
+msgstr "アカウント名"
+
+msgid "account.add.view.country"
+msgstr "国"
+
+msgid "account.add.view.place_some_text_here"
+msgstr "ここにテキストを入力してください"
+
+msgid "account.add.view.submit"
+msgstr "送信します"
+
+msgid "account.add.view.cancel"
+msgstr "キャンセル"
+
+msgid "account.edit.flash.account_not_found"
+msgstr "アカウントが見つかりませんでした。"
+
+msgid "account.edit.flash.system_error"
+msgstr "システムエラー。"
+
+msgid "account.edit.validation.account_name.not_empty_string"
+msgstr "アカウント名を入力してください"
+
+msgid "account.edit.validation.account_name.max_length"
+msgstr "アカウント名が長すぎです。"
+
+msgid "account.edit.validation.account_name.validate_unique"
+msgstr "アカウント名は既に存在しています"
+
+msgid "account.edit.validation.country.in_list"
+msgstr "国を選択してください"
+
+msgid "account.edit.validation.country.not_empty_string"
+msgstr "オンショア・アカウントマネージャー"
+
+msgid "account.edit.validation.country.max_length"
+msgstr "オンショア・アカウントマネージャーが長すぎです。"
+
+msgid "account.edit.view.edit_account"
+msgstr "アカウントを編集します"
+
+msgid "account.delete.message.internal_server_error"
+msgstr "内部サーバーエラー"
+
+msgid "account.delete.message.account_id_invalid"
+msgstr "アカウントIDが無効です"
+
+msgid "account.delete.message.account_not_found"
+msgstr "アカウントが見つかりません"
+
+msgid "account.delete.message.account_delete_failed"
+msgstr "このアカウントはいくつかのプロジェクトを作成したため削除できません"
+
+msgid "account.delete.message.system_error"
+msgstr "システムエラー"
+
+msgid "account.delete.message.delete_success"
+msgstr "アカウント ({0}) が削除されました。"
+# End AccountController
+
+# Start AppController
+msgid "app.initialize.flash.permission_deny"
+msgstr "許可が拒否されました！"
+
+msgid "app.initialize.flash.not_business_title"
+msgstr "ビジネスタイトルを入力しないでください"
+
+msgid "app.initialize.flash.save_config_success"
+msgstr "設定の保存に成功しました。"
+
+msgid "app.accessFunction.overtime.approve_time_sheet"
+msgstr "タイムシートを承認します"
+
+msgid "app.accessFunction.flash.access_denied"
+msgstr "アクセスが拒否されました。このURLにアクセスします権限がありません。"
+
+msgid "app.accessTimesheet.message.do_not_add_timesheet"
+msgstr "お願いします！タイムシートを追加しないでください。タイムシートはロックされています。"
+
+msgid "app.accessTimesheet.message.do_not_approve_timesheet"
+msgstr "お願いします！タイムシートを承認しないでください。タイムシートはロックされています。"
+
+msgid "app.infoEmployer.info.not_declared_yet"
+msgstr "まだ宣言されていません。"
+
+msgid "app.infoEmployer.info.click_see_full_info"
+msgstr "全情報を見るのをクリックしてください。"
+
+msgid "app.renderLevelProject.info.level_project_comter"
+msgstr "コンター"
+
+msgid "app.renderLevelProject.info.level_project_tester"
+msgstr "テスター"
+
+msgid "app.renderLevelProject.info.level_project_developer"
+msgstr "開発者"
+
+msgid "app.renderLevelProject.info.level_project_technical_leader"
+msgstr "テクニカルリーダー"
+
+msgid "app.renderLevelProject.info.level_project_designer"
+msgstr "デザイナー"
+
+msgid "app.renderLevelProject.info.level_project_project_manager"
+msgstr "プロジェクトマネージャー"
+
+msgid "app.renderLevelProject.info.level_project_admin"
+msgstr "管理者"
+
+msgid "app.renderLevelProject.info.level_project_business_analyst"
+msgstr "ビジネスアナリスト"
+
+msgid "app.renderLevelProject.info.level_project_other"
+msgstr "その他"
+# End AppController
+
+# Start BillableTargetController
+msgid "billable_target.add.validation.company_target.start_date.start_dateformat.incorrect"
+msgstr "日付形式が正しくありません"
+
+msgid "billable_target.add.validation.company_target.end_date.end_dateformat.incorrect"
+msgstr "終了日付形式が正しくありません"
+
+msgid "billable_target.add.validation.company_target.end_date.endstart.incorrect"
+msgstr "終了日は開始日より後である必要があります"
+
+msgid "billable_target.add.validation.company_target.value.not_empty_string.incorrect"
+msgstr "このフィールドに値を入力してください"
+
+msgid "billable_target.add.validation.company_target.value.valid_value.incorrect"
+msgstr "値は1から100ではありません"
+
+msgid "billable_target.add.error.time.starttoend"
+msgstr "開始日から終了日までの時間は既に存在しています"
+
+msgid "billable_target.add.flash.save_success"
+msgstr "Billable目標が保存されました"
+
+msgid "billable_target.add.flash.save_failed"
+msgstr "Billableターゲットを保存できませんでした。もう一度お試しください"
+
+msgid "billable_target.delete.flash.error"
+msgstr "BillableTargetを削除できませんでした。もう一度お試しください"
+
+msgid "billable_target.delete.flash.success"
+msgstr "BillableTargetが削除されました"
+
+msgid "billable_target.view.index.billable_target_list"
+msgstr "％ Billable Targetリスト"
+
+msgid "billable_target.view.index.billable_target"
+msgstr "% Billable Target"
+
+msgid "breadcrumb_home"
+msgstr "ホーム"
+
+msgid "form.btn.submit"
+msgstr "送信します"
+
+msgid "form.btn.cancel"
+msgstr "キャンセル"
+
+msgid "form.btn.from"
+msgstr "から"
+
+msgid "form.btn.to"
+msgstr "まで"
+
+msgid "billable_target.view.index.title.add"
+msgstr "Billable Target追加"
+
+msgid "billable_target.view.index.add_billable_target"
+msgstr "%Billable Targetを追加します"
+
+msgid "billable_target.view.index.total_count_targets"
+msgstr "（合計{0}ターゲット）"
+
+msgid "billable_target.view.index.table.action"
+msgstr "アクション"
+
+msgid "billable_target.view.index.table.start_date"
+msgstr "開始日"
+
+msgid "billable_target.view.index.table.end_date"
+msgstr "終了日"
+
+msgid "billable_target.view.index.table.value"
+msgstr "値"
+
+msgid "billable_target.view.index.table.created_on"
+msgstr "作成日"
+
+msgid "billable_target.view.index.js.confirm"
+msgstr "このBillable Targetの開始日を削除してもよろしいですか "
+
+msgid "billable_target.view.add.billable_target_add"
+msgstr "% Billable Target追加"
+
+msgid "billable_target.view.edit.title.edit"
+msgstr "Billable Target編集"
+# End BillableTargetController
+
+# Start BookingRoomController
+
+msgid "booking_room.attendees"
+msgstr "出席者"
+
+msgid "booking_room.add_booking.title_calendar"
+msgstr "ミーティング{0} 開始: {1} To: {2} 予約しますing By {3} {4}"
+
+msgid "booking_room.edit.title_calendar"
+msgstr "ミーティング{0} From: {1} To: {2} Booking By {3} {4}が更新されました"
+
+msgid "booking_room.view.meeting_room_booking_calendar"
+msgstr "会議室予約カレンダー"
+
+msgid "booking_room.view.booking_meeting_room"
+msgstr "会議室を予約します"
+
+msgid "booking_room.alter.please_select_room"
+msgstr "部屋を選択してください"
+
+msgid "booking_room.text.please_input_date"
+msgstr "日付を入力してください"
+
+msgid "booking_room.text.validate_time"
+msgstr "開始時間 < 終了時間を選択してください"
+
+msgid "booking_room.delete.not_found"
+msgstr "エラー：データが見つかりません"
+
+msgid "booking_room.delete.try_again"
+msgstr "エラー：もう一度お試しください"
+
+msgid "booking_room.data_empty"
+msgstr "データが空です"
+
+msgid "booking_room.validation.start_end"
+msgstr "開始時間 < 終了時間"
+
+msgid "booking_room.validation.start_end_add_five_min"
+msgstr "開始時間 > 現在時刻 + 5分"
+
+msgid "booking_room.validation.user_not_found"
+msgstr "ユーザーが見つかりません"
+
+msgid "booking_room.validation.room_not_found"
+msgstr "部屋が見つかりません"
+
+msgid "booking_room.validation.conflict_time_room"
+msgstr "この会議室は既に予約されています"
+
+msgid "booking_room.validation.meeting_not_exist"
+msgstr "会議の予約が存在しません"
+
+msgid "booking_room.please_try_again"
+msgstr "もう一度お試しください"
+
+msgid "booking_room.title_calender"
+msgstr "ミーティング{0} From: {1} To: {2} Booking By {3} {4}がキャンセルされました'"
+
+msgid "form.btn.today"
+msgstr "今日"
+
+msgid "form.btn.room"
+msgstr "部屋"
+
+msgid "form.btn.office"
+msgstr "オフィス"
+
+msgid "form.btn.member"
+msgstr "メンバー"
+
+msgid "form.btn.start_time"
+msgstr "開始時間"
+
+msgid "form.btn.end_time"
+msgstr "終了時間"
+
+msgid "form.btn.select"
+msgstr "選択"
+
+msgid "form.btn.book"
+msgstr "Book"
+
+msgid "booking_room.view.meeting_room"
+msgstr "会議室"
+# End BookingRoomController
+
+#Project start
+msgid "project.pc"
+msgstr "PC"
+
+msgid "project.org_chart"
+msgstr "{0} 組織図"
+
+msgid "project.iwo_detail"
+msgstr "IWO 詳細"
+
+msgid "project.please_enter_comment"
+msgstr "コメントを入力してください！"
+
+msgid "project.account_not_found"
+msgstr "アカウントが見つかりません"
+
+msgid "project.effort_usage"
+msgstr "%労力 使用率<br>(トラック済み/見積もり)"
+
+msgid "project.other_key_updates_notes"
+msgstr "その他の主要な更新/メモ"
+
+msgid "project.project_timeline"
+msgstr "プロジェクトタイムライン"
+
+msgid "project.project_health"
+msgstr "プロジェクトの健全状態"
+
+msgid "project.status_date"
+msgstr "ステータス日付"
+
+msgid "project.project_status"
+msgstr "プロジェクトステータス"
+
+msgid "project.project_management_dashboard"
+msgstr "プロジェクト管理ダッシュボード"
+
+msgid "project.coding_prod_mm"
+msgstr "コーディング生産性 (KLOC/MM)"
+
+msgid "project.coding_prod_month"
+msgstr "コーディング生産性 (KLOC/月)"
+
+msgid "project.pending_iwo_version"
+msgstr "保留中の IWO バージョン: "
+
+msgid "project.view_allocated_effort"
+msgstr "割り当てられた労力を表示します"
+
+msgid "project.approved_iwo"
+msgstr "承認済み IWO "
+
+msgid "project.hint"
+msgstr "ヒント: "
+
+msgid "project.hint_internal_effort"
+msgstr "承認済み IWO からの労力"
+
+msgid "project.hint_external_effort"
+msgstr "オンショア/クライアントによって承認された請求可能な労力"
+
+msgid "project.total_project"
+msgstr "合計 {0} プロジェクト"
+
+msgid "project.approve.confirm"
+msgstr "このプロジェクトを承認してもよろしいですか？"
+
+msgid "project.reject.confirm"
+msgstr "このプロジェクトを拒否してもよろしいですか？"
+
+msgid "project.delete.confirm"
+msgstr "これを削除してもよろしいですか："
+
+msgid "project.reject.advertise"
+msgstr "プロジェクトが拒否されました"
+
+msgid "project.unapprove.advertise"
+msgstr "プロジェクトが未承認です"
+
+msgid "project.close.advertise"
+msgstr "プロジェクトがクローズされました"
+
+msgid "project.delete_component.fail"
+msgstr "ユーザーがタイムシートデータをログしたため、コンポーネント {0} は削除できません！ 名前を変更しますか？"
+
+msgid "project.delete_component.confirm"
+msgstr "このコンポーネントを削除しますか？"
+
+msgid "project.delete_figures.confirm"
+msgstr "この値を削除してもよろしいですか？"
+
+msgid "project.gm_approve.confirm"
+msgstr "プロジェクト {0} を承認してもよろしいですか？"
+
+msgid "project.gm_reject.confirm"
+msgstr "プロジェクト {0} を拒否してもよろしいですか？"
+
+msgid "project.add.success"
+msgstr "プロジェクトが追加されました。"
+
+msgid "project.save.fail"
+msgstr "プロジェクトを保存できませんでした。もう一度お試しください。"
+
+msgid "project.edit.success"
+msgstr "プロジェクトが更新されました！"
+
+msgid "project.edit_start_date.fail"
+msgstr "タイムシートデータがすでに記録されているため、プロジェクトの開始日を変更できません。"
+
+msgid "project.view.not_found"
+msgstr "このプロジェクトが見つかりません。"
+
+msgid "project.approve.already_approve"
+msgstr "このURLにアクセスできません。プロジェクト {0} は {1} されました。"
+
+msgid "project.approve.success"
+msgstr "プロジェクトは {0} されました。"
+
+msgid "project.approve.fail"
+msgstr "このプロジェクトを承認/拒否できません。もう一度お試しください！"
+
+msgid "project.approve_iwo.confirm"
+msgstr "このIWOを承認してもよろしいですか？"
+
+msgid "project.reject_iwo.confirm"
+msgstr "このIWOを拒否してもよろしいですか？"
+
+msgid "project.download_document.not_found"
+msgstr "ファイルが見つかりません"
+
+msgid "project.delete.success"
+msgstr "{0} が削除されました"
+
+msgid "project.delete.fail_by_data"
+msgstr "タイムシートデータが含まれているため、{0} プロジェクトを削除できません！"
+
+msgid "project.delete.fail"
+msgstr "プロジェクトを削除できませんでした。もう一度お試しください。"
+
+msgid "project.update_role.success"
+msgstr "役割が正常に更新されました！"
+
+msgid "project.update_role.fail"
+msgstr "役割の更新に失敗しました！"
+
+msgid "project.delete_component.fail"
+msgstr "{0} がユーザーログタイムシートされました。"
+
+msgid "project.delete_component.success"
+msgstr "コンポーネントの削除に成功しました。"
+
+msgid "project.edit_component.empty"
+msgstr "コンポーネントプロジェクトを記入してください。"
+
+msgid "project.edit_component.success"
+msgstr "{0} の編集に成功しました"
+
+msgid "project.edit_component.fail"
+msgstr "編集に失敗しました"
+
+msgid "project.delete_report.confirm"
+msgstr "削除してもよろしいですか: "
+
+msgid "project.remove_member.confirm"
+msgstr "(期限切れ) メンバーを削除してもよろしいですか： "
+
+msgid "project.expire_member.confirm"
+msgstr "メンバーを削除してもよろしいですか： "
+
+msgid "project.billable_confirm"
+msgstr "請求可能 (はい/いいえ)"
+
+msgid "project.week_range"
+msgstr "週1から週 {0}"
+
+msgid "project.effort_detail"
+msgstr "労力詳細"
+
+msgid "project.ramp_plan_note"
+msgstr "- 注意：RampプランはMEMBERタブに基づいています"
+
+msgid "project.action_note"
+msgstr "- Shift'ボタンを押しながら横方向にスクロールします <b>週</b> エリア"
+
+msgid "project.add_milestones"
+msgstr "マイルストーンを追加します"
+
+msgid "project.total_hours"
+msgstr "合計（時間）"
+
+msgid "project.total_man"
+msgstr "合計（人月）"
+
+msgid "project.total_hours_iwo"
+msgstr "IWOファイルの合計時間"
+
+msgid "project.total_hours_ramp_plan"
+msgstr "Rampプランに割り当てられたメンバーの合計時間"
+
+msgid "project.total_approved_hours"
+msgstr "承認済みのタイムシート時間の合計"
+
+msgid "project.validation.account_not_exist"
+msgstr "アカウントが見つかりません"
+
+msgid "project.validation_code.exists"
+msgstr "プロジェクトコードはすでに存在します！"
+
+msgid "project.validation_code.required"
+msgstr "このフィールドにプロジェクトコードを入力してください"
+
+msgid "project.validation_code.too_long"
+msgstr "プロジェクトコードは長すぎです。"
+
+msgid "project.validation_code.unicode"
+msgstr "プロジェクトコードはUnicodeではありません"
+
+msgid "project.validation_code.valid_space"
+msgstr "プロジェクトコードにはスペースを含めることはできません。"
+
+msgid "project.validation_title.required"
+msgstr "このフィールドにタイトルを入力してください"
+
+msgid "project.validation_title.too_long"
+msgstr "タイトルは長すぎることはできません"
+
+msgid "project.validation_estimate_user.invalid"
+msgstr "見積もりユーザーが1〜1000と等しくありません"
+
+msgid "project.validation_status.invalid"
+msgstr "ステータスが正しくありません"
+
+msgid "project.validation_start_date.required"
+msgstr "プロジェクト開始日が必要です"
+
+msgid "project.validation_end_date.required"
+msgstr "プロジェクト終了日が必要です"
+
+msgid "project.validation_country.required"
+msgstr "国を選択してください"
+
+msgid "project.validation_estimate.required"
+msgstr "プロジェクトの努力の見積もりが必要です"
+
+msgid "project.validation_estimate.invalid"
+msgstr "努力の見積もりは1〜10000000と等しくありません"
+
+msgid "project.validation_external_effort.invalid"
+msgstr "外部努力は1〜10000000と等しくありません"
+
+msgid "project.validation_project_overview.required"
+msgstr "このフィールドにプロジェクトの概要を記入してください"
+
+msgid "project.title_create_a_new_project"
+msgstr " 新しいプロジェクトが作成されました "
+
+msgid "project.approve.title_mail"
+msgstr "{0} プロジェクト | {1}"
+
+msgid "project.approve.title_mail"
+msgstr "{0} プロジェクト | {1}"
+
+msgid "project.approve.message_noti"
+msgstr " {0} プロジェクト"
+
+msgid "project.subject_send_mail"
+msgstr "新しいプロジェクトのお知らせ | {0}"
+#Project end
+
+#Project Effort start
+msgid "project_effort.validation_project.required"
+msgstr "エラー：プロジェクトが必要です。"
+
+msgid "project_effort.validation_project.close"
+msgstr "エラー：プロジェクトは閉じられています。"
+
+msgid "project_effort.validation_start_date.required"
+msgstr "エラー：start_date が必要です"
+
+msgid "project_effort.validation_end_date.required"
+msgstr "エラー：end_date が必要です"
+
+msgid "project_effort.validation_end_date.invalid"
+msgstr "エラー：終了日は <= {0} でなければなりません"
+
+msgid "project_effort.validation_start_date.invalid"
+msgstr "エラー：開始日は >= {0} でなければなりません"
+
+msgid "project_effort.validation_effort.invalid"
+msgstr "労力は0から100の間でなければなりません"
+
+msgid "project_effort.validation_date.invalid"
+msgstr "終了週は開始週以上である必要があります"
+
+msgid "project_effort.add.fail"
+msgstr "エラー：もう一度お試しください。"
+
+msgid "project_effort.edit.sucess"
+msgstr "更新されました！"
+
+msgid "project_effort.delete.not_found"
+msgstr "エラー：データが見つかりません"
+
+msgid "project_effort.validation.effort_exists"
+msgstr "この期間の労力はすでに存在しています"
+
+msgid "project_effort.validation_value.too_large"
+msgstr "労力値が大きすぎます、最大値は: {0} です"
+#Project Effort end
+
+#Project Phase start
+msgid "project_phase.add.success"
+msgstr "プロジェクトフェーズの追加に成功しました"
+
+msgid "project_phase.add.fail"
+msgstr "プロジェクトフェーズを保存できませんでした。もう一度お試しください。"
+
+msgid "project_phase.edit.not_found"
+msgstr "データが空白またはURLが無効です。"
+
+msgid "project_phase.edit.success"
+msgstr "プロジェクトフェーズが保存されました。"
+
+msgid "project_phase.delete.in_use"
+msgstr "フェーズカテゴリ {0} はすでに使用されており、削除できません"
+
+msgid "project_phase.delete.success"
+msgstr "プロジェクトフェーズが削除されました。"
+
+msgid "project_phase.delete.confirm"
+msgstr "このレシピを削除してもよろしいですか？"
+
+msgid "project_phase.delete.fail"
+msgstr "プロジェクトフェーズを削除できませんでした。もう一度お試しください。"
+
+msgid "project_phase.validation_description.too_long"
+msgstr "説明は長すぎです。"
+
+msgid "project_phase.validation_sort.max"
+msgstr "ソート最大数は 100 件です。"
+
+msgid "project_phase.project_phase_add"
+msgstr "プロジェクトフェーズを追加します"
+
+msgid "project_phase.new_project_phase"
+msgstr "新しいプロジェクトフェーズ"
+
+msgid "project_phase.project_phase_edit"
+msgstr "プロジェクトフェーズの編集"
+#Project Phase end
+
+#Project Report start
+msgid "project_report.back_to_project_weekly_report_list"
+msgstr "プロジェクト週次レポートリストに戻る"
+
+msgid "project_report.bench_members"
+msgstr "BENCH（{0} メンバー）"
+
+msgid "project_report.no"
+msgstr "NO"
+
+msgid "project_report.this_month"
+msgstr "今月"
+
+msgid "project_report.this_week"
+msgstr "今週"
+
+msgid "project_report.today"
+msgstr "今日"
+
+msgid "project_report.date_resolved"
+msgstr "解決日"
+
+msgid "project_report.date_reported"
+msgstr "報告日"
+
+msgid "project_report.project_end_date"
+msgstr "プロジェクト終了日"
+
+msgid "project_report.offshore_pm"
+msgstr "オフショアPm"
+
+msgid "project_report.history_send_mail_weekly_project_status_report"
+msgstr "履歴週次プロジェクトステータスレポートを送信します"
+
+msgid "project_report.on_track"
+msgstr "順調に進行中"
+
+msgid "project_report.potential_risks"
+msgstr "潜在的なリスク"
+
+msgid "project_report.add_new_roadblock"
+msgstr "新しいロードブロックを追加します"
+
+msgid "project_report.add_new_risk"
+msgstr "新しいリスクを追加します"
+
+msgid "project_report.resolved"
+msgstr "解決済み"
+
+msgid "project_report.reported"
+msgstr "報告済み"
+
+msgid "project_report.enable_roadblock"
+msgstr "ロードブロックコンポーネントを有効にします"
+
+msgid "project_report.enable_risk"
+msgstr "リスクコンポーネントを有効にします"
+
+msgid "project_report.enable_other"
+msgstr "他のコンポーネントを有効にします"
+
+msgid "project_report.other"
+msgstr "他"
+
+msgid "project_report.enable_scope"
+msgstr "スコープコンポーネントを有効にします"
+
+msgid "project_report.scope"
+msgstr "スコープ"
+
+msgid "project_report.enable_timeline"
+msgstr "タイムラインコンポーネントを有効にします"
+
+msgid "project_report.timeline"
+msgstr "タイムライン"
+
+msgid "project_report.enable_resources"
+msgstr "リソースコンポーネントを有効にします"
+
+msgid "project_report.resources"
+msgstr "リソース"
+
+msgid "project_report.enable_budget"
+msgstr "予算コンポーネントを有効にします"
+
+msgid "project_report.budget"
+msgstr "予算"
+
+msgid "project_report.weekly_report"
+msgstr "週次レポート"
+
+msgid "project_report.clone_weekly_report"
+msgstr "週次レポートをクローンします"
+
+msgid "project_report.project_weekly_report"
+msgstr "プロジェクト週次レポート"
+
+msgid "project_report.create_project_weekly_report"
+msgstr "プロジェクト週次レポートを作成します"
+
+msgid "project_report.create_weekly_project_status_report"
+msgstr "プロジェクト週次ステータスレポートを作成します"
+
+msgid "project_report.edit_weekly_project_status_report"
+msgstr "プロジェクト週次ステータスレポートを編集します"
+
+msgid "project_report.edit_project_weekly_report"
+msgstr "プロジェクト週次レポートを編集します"
+
+msgid "project_report.project_status_this_week"
+msgstr "今週のプロジェクトステータス"
+
+msgid "project_report.period_covered"
+msgstr "カバーされた期間"
+
+msgid "project_report.period_cover"
+msgstr "カバーされる期間"
+
+msgid "project_report.date_status_entry"
+msgstr "ステータス入力日"
+
+msgid "project_report.owner_team"
+msgstr "オーナー / チーム"
+
+msgid "project_report.view_popup.error"
+msgstr "エラーが発生しました、後でやり直してください"
+
+msgid "project_report.add.exists"
+msgstr "プロジェクト週次レポートはすでに存在します。"
+
+msgid "project_report.add.success"
+msgstr "プロジェクト週次レポートが保存されました。"
+
+msgid "project_report.add.fail"
+msgstr "プロジェクト週次レポートを保存できませんでした。もう一度お試しください。"
+
+msgid "project_report.delete.success"
+msgstr "プロジェクト週次レポートが削除されました。"
+
+msgid "project_report.delete.fail"
+msgstr "プロジェクト週次レポートを削除できませんでした。もう一度お試しください。"
+
+msgid "project_report.save_highlight.fail"
+msgstr "ハイライトの保存に失敗しました！"
+
+msgid "project_report.save_highlight.invalid"
+msgstr "カバーされる期間が無効です！"
+
+msgid "project_report.save_highlight.success"
+msgstr "ハイライトが保存されました！"
+
+msgid "project_report.edit_highlight.success"
+msgstr "ハイライトが編集されました！"
+
+msgid "project_report.save_highlight.empty"
+msgstr "ハイライトが空です！"
+
+msgid "project_report.validation_overall_status.empty"
+msgstr "全体的なステータスを選択してください"
+
+msgid "project_report.validation_overall_status.invalid"
+msgstr "正しい全体的なステータスを選択してください"
+
+msgid "project_report.validation_budget_status.empty"
+msgstr "予算のステータスを選択してください"
+
+msgid "project_report.validation_budget_status.invalid"
+msgstr "正しい予算のステータスを選択してください"
+
+msgid "project_report.validation_resources_status.empty"
+msgstr "リソースのステータスを選択してください"
+
+msgid "project_report.validation_resources_status.invalid"
+msgstr "正しいリソースのステータスを選択してください"
+
+msgid "project_report.validation_timeline_status.empty"
+msgstr "タイムラインのステータスを選択してください"
+
+msgid "project_report.validation_timeline_status.invalid"
+msgstr "正しいタイムラインのステータスを選択してください"
+
+msgid "project_report.validation_scope_status.empty"
+msgstr "スコープのステータスを選択してください"
+
+msgid "project_report.validation_scope_status.invalid"
+msgstr "正しいスコープのステータスを選択してください"
+
+msgid "project_report.validation_scope_status.empty"
+msgstr "スコープのステータスを選択してください"
+
+msgid "project_report.validation_scope_status.invalid"
+msgstr "正しいスコープのステータスを選択してください"
+
+msgid "project_report.validation_issue.invalid"
+msgstr "正しいスコープのステータスを選択してください"
+
+msgid "project_report.mail_project_report.title"
+msgstr "{0} - 週次レポート | {1}"
+
+msgid "project_report.export_excel.mail_title"
+msgstr "オフショアステータス週次レポート {0}"
+
+msgid "project_report.send_project_report.user_empty"
+msgstr "ユーザーが空です！"
+
+msgid "project_report.send_project_report.fail"
+msgstr "メール送信に失敗しました！"
+
+msgid "project_report.send_project_report.success"
+msgstr "週次レポートが送信されました！"
+
+msgid "project_report.weekly_project_status_report.bench_empty"
+msgstr "Benchのデータが空です！"
+
+msgid "project_report.issue.are_existing"
+msgstr "存在していますが、全体的なステータスをON TRACKに設定しますか？"
+
+msgid "project_report.issue.is_existing"
+msgstr "存在していますが、全体的なステータスをON TRACKに設定しますか？"
+
+msgid "project_report.on_track.confirm"
+msgstr " POTENTIAL RISKS/ROADBLOCKがありますが、全体的なステータスをON TRACKに設定しますか？"
+#Project Report end
+
+#Project User start
+msgid "project_user.project_title"
+msgstr "プロジェクト {0}"
+
+msgid "project_user.choose_employee"
+msgstr "従業員を選択してください"
+
+msgid "project_user.add_project_member"
+msgstr "プロジェクトメンバーを追加します"
+
+msgid "project_user.add.success"
+msgstr "ユーザーがプロジェクトに追加されました。"
+
+msgid "project_user.add.fail"
+msgstr "ユーザーをプロジェクトに追加できませんでした。もう一度お試しください"
+
+msgid "project_user.add.project_close"
+msgstr "プロジェクトは閉じられています。メンバーを追加できません。"
+
+msgid "project_user.delete_member.success"
+msgstr "{0} がプロジェクトから削除されました！"
+
+msgid "project_user.delete_member.fail"
+msgstr "エラー。もう一度お試しください。"
+
+msgid "project_user.edit.success"
+msgstr "データの更新に成功しました！"
+
+msgid "project_user.edit.fail"
+msgstr "エラー：もう一度お試しください。"
+
+msgid "project_user.edit.project_empty"
+msgstr "エラー：プロジェクトが必要です。メンバーを編集できません。"
+
+msgid "project_user.edit.project_closed"
+msgstr "エラー：プロジェクトは閉じられています。メンバーを編集できません。"
+
+msgid "project_user.edit.not_found"
+msgstr "エラー：ユーザーは開始日と終了日を編集できません"
+
+msgid "project_user.edit.not_allow"
+msgstr "エラー：ユーザーは開始日と終了日を更新できません"
+
+msgid "project_user.edit.start_date_empty"
+msgstr "エラー：start_date が必要です"
+
+msgid "project_user.edit.end_date_empty"
+msgstr "エラー：end_date が必要です"
+
+msgid "project_user.edit.start_project_effort"
+msgstr "メンバーの開始日は プロジェクト労力 の開始日より前でなければなりません。"
+
+msgid "project_user.edit.start_project"
+msgstr "メンバーの開始日はプロジェクトの開始日より後でなければなりません。"
+
+msgid "project_user.edit.end_project"
+msgstr "メンバーの終了日はプロジェクトの終了日より前でなければなりません。"
+
+msgid "project_user.change_level.fail"
+msgstr "エラー：ユーザーはレベルを変更できません"
+
+msgid "project_user.change_level.error"
+msgstr "エラー"
+
+msgid "project_user.change_expired.fail"
+msgstr "エラー：ユーザーはプロジェクトを離れることはできません"
+
+msgid "project_user.change_expired.error"
+msgstr "エラー"
+
+msgid "project_user.change_effort.fail"
+msgstr "エラー：ユーザーはプロジェクトの労力を更新できません"
+
+msgid "project_user.change_effort.invalid"
+msgstr "エラー：残りの労力 {0}"
+
+msgid "project_user.change_effort.error"
+msgstr "エラー"
+
+msgid "project_user.change_data_member.success"
+msgstr "データの更新に成功しました！"
+
+msgid "project_user.validation.end_date_member"
+msgstr "メンバーの終了日はプロジェクトの終了日より前でなければなりません。"
+
+msgid "project_user.validation.user_exists"
+msgstr "ユーザーは既にプロジェクトにいます"
+#Project User end
+
+#Rating User start
+msgid "rating_user.average_of_mark"
+msgstr "マークの平均"
+
+msgid "rating_user.evaluation_rank_bases_on"
+msgstr "マークの平均に基づく評価ランク"
+
+msgid "rating_user.how_to_evaluate"
+msgstr "評価方法"
+
+msgid "rating_user.1_level_appraised"
+msgstr "1-レベル評価"
+
+msgid "rating_user.view_1_level_appraised"
+msgstr "1-レベル評価を表示します"
+
+msgid "rating_user.appraise"
+msgstr "評価"
+
+msgid "rating_user.edit_appraisal"
+msgstr "評価を編集"
+
+msgid "rating_user.alert.comment"
+msgstr "コメントを入力してください！"
+
+msgid "rating_user.alert.mark"
+msgstr "マークを確認してください！"
+
+msgid "rating_user.back_to_list"
+msgstr "リストに戻る"
+
+msgid "rating_user.manager_comment"
+msgstr "マネージャーのコメント"
+
+msgid "rating_user.2_level_evaluator_comment"
+msgstr "2-レベル評価者のコメント"
+
+msgid "rating_user.1_level_evaluator_comment"
+msgstr "1-レベル評価者のコメント"
+
+msgid "rating_user.average_of_rank"
+msgstr "ランクの平均"
+
+msgid "rating_user.rating"
+msgstr "評価"
+
+msgid "rating_user.weight_marks"
+msgstr "（重み * マーク）"
+
+msgid "rating_user.total_marks"
+msgstr "合計マーク"
+
+msgid "rating_user.weight"
+msgstr "重み"
+
+msgid "rating_user.target"
+msgstr "Target"
+
+msgid "rating_user.criticals_of_evaluation"
+msgstr "評価のCRITICALS"
+
+msgid "rating_user.period"
+msgstr "期間"
+
+msgid "rating_user.performance_appraisal_form"
+msgstr "パフォーマンス評価フォーム"
+
+msgid "rating_user.kpi_config_empty"
+msgstr "KPI設定が空です！"
+
+msgid "rating_user.gm_rejected"
+msgstr "GMに拒否されました"
+
+msgid "rating_user.eu"
+msgstr "％EU"
+
+msgid "rating_user.rank"
+msgstr "ランク"
+
+msgid "rating_user.mark"
+msgstr "マーク"
+
+msgid "rating_user.evalueted_date"
+msgstr "評価日"
+
+msgid "rating_user.working_months"
+msgstr "勤務月数"
+
+msgid "rating_user.evaluatee_name"
+msgstr "評価者の名前"
+
+msgid "rating_user.appraisal_for_your_action"
+msgstr "あなたの行動に対します評価"
+
+msgid "rating_user.2_level_evaluator"
+msgstr "2-レベル評価者"
+
+msgid "rating_user.1_level_evaluator"
+msgstr "1-レベル評価者"
+
+msgid "rating_user.select_team"
+msgstr "チームを選択します"
+
+msgid "rating_user.select_appraisal_category"
+msgstr "評価カテゴリを選択します"
+
+msgid "rating_user.appraisal_category"
+msgstr "評価カテゴリ"
+
+msgid "rating_user.add_appraisal"
+msgstr "評価を追加します"
+
+msgid "rating_user.appraisal_my_box"
+msgstr "自分の評価ボックス"
+
+msgid "rating_user.appraisal_list"
+msgstr "評価リスト"
+
+msgid "rating_user.add_request_evaluation.exists"
+msgstr "この評価の従業員が追加されました。もう一度お試しください。"
+
+msgid "rating_user.add_request_evaluation.success"
+msgstr "評価が保存されました。"
+
+msgid "rating_user.add_request_evaluation.fail"
+msgstr "評価を保存できませんでした。もう一度お試しください。"
+
+msgid "rating_user.edit.success"
+msgstr "パフォーマンス評価が保存されました！"
+
+msgid "rating_user.check_leader_pm.is_leader_pm"
+msgstr "この従業員はリーダーまたはPMレビューです。もう一度お試しください。"
+
+msgid "rating_user.check_leader_pm.gm_review_leader_pm"
+msgstr "このリーダーはPMレビューです。もう一度お試しください。"
+
+msgid "rating_user.check_leader_pm.pm_review"
+msgstr "従業員はリーダーです。リーダーレビューはPMリストに含まれている必要があります。"
+
+msgid "rating_user.check_leader_pm.gm_review"
+msgstr "従業員はPMです。リーダーとPMのレビューはGMである必要があります。"
+
+msgid "rating_user.edit_request_evaluation.appraisal_exists"
+msgstr "この従業員の評価が追加されました。もう一度お試しください。"
+
+msgid "rating_user.edit_request_evaluation.success"
+msgstr "評価が保存されました。"
+
+msgid "rating_user.edit_request_evaluation.fail"
+msgstr "評価を保存できませんでした。もう一度お試しください。"
+
+msgid "rating_user.delete.success"
+msgstr "この評価が削除されました"
+
+msgid "rating_user.delete.fail"
+msgstr "評価を削除できませんでした。もう一度お試しください。"
+
+msgid "rating_user.close_appraisal.success"
+msgstr "この評価が終了しました"
+
+msgid "rating_user.close_appraisal.fail"
+msgstr "評価を終了できませんでした。もう一度お試しください。"
+
+msgid "rating_user.delete.confirm"
+msgstr "削除してもよろしいですか？"
+
+msgid "rating_user.close.confirm"
+msgstr "閉じてもよろしいですか？"
+
+msgid "rating_user.save.confirm"
+msgstr "本当によろしいですか？"
+
+msgid "rating_user.reject.confirm"
+msgstr "この評価を拒否してもよろしいですか？"
+
+msgid "rating_user.approve.confirm"
+msgstr "この評価を承認してもよろしいですか？"
+
+msgid "rating_user.validation_due_date.invalid"
+msgstr "期限のフォーマットが正しくありません"
+
+msgid "rating_user.notification_to_user.message"
+msgstr "{0} の評価（ID: {1}）"
+
+msgid "rating_user.send_mail_performance_appraisal.title"
+msgstr "{0} - パフォーマンス評価（{1}）"
+
+msgid "rating_user.send_mail_review.title"
+msgstr "{0} の評価が終了しました"
+#Rating User end
+
+#Rating Self start
+msgid "rating_self.empty_data"
+msgstr "空のデータ"
+
+msgid "rating_self.not_yet_appraisal"
+msgstr "まだ評価されていません"
+
+msgid "rating_self.reject.confirm"
+msgstr "この評価を拒否してもよろしいですか？ "
+
+msgid "rating_self.alert.comment"
+msgstr "コメントを入力してください！"
+
+msgid "rating_self.approve.confirm"
+msgstr "この評価を承認してもよろしいですか？"
+
+#Rating Self end
+
+#Recruitment Source start
+msgid "recruitment_source.total_sources"
+msgstr "（合計 {0} ソース）"
+
+msgid "recruitment_source.add_recruitment_source"
+msgstr "採用ソースを追加します"
+
+msgid "recruitment_source.recruitment_source_list"
+msgstr "採用ソースリスト"
+
+msgid "recruitment_source.recruitment_source_edit"
+msgstr "採用ソースの編集"
+
+msgid "recruitment_source.new_recruitment_source"
+msgstr "新しい採用ソース"
+
+msgid "recruitment_source.recruitment_source"
+msgstr "採用ソース"
+
+msgid "recruitment_source.recruitment_source_add"
+msgstr "採用ソースの追加"
+
+msgid "recruitment_source.add.success"
+msgstr "採用ソースが保存されました。"
+
+msgid "recruitment_source.add.fail"
+msgstr "採用ソースを保存できませんでした。もう一度お試しください。"
+
+msgid "recruitment_source.edit.success"
+msgstr "採用ソースが正常に編集されました。"
+
+msgid "recruitment_source.edit.fail"
+msgstr "採用ソースを編集できませんでした。もう一度お試しください。"
+
+msgid "recruitment_source.delete.not_found"
+msgstr "採用ソースを削除できませんでした。もう一度お試しください。"
+
+msgid "recruitment_source.delete.success"
+msgstr "{0} が削除されました"
+
+msgid "recruitment_source.delete.fail"
+msgstr "採用ソースを削除できませんでした。もう一度お試しください。"
+
+msgid "recruitment_source.delete.confirm"
+msgstr "削除してもよろしいですか： "
+#Recruitment Source end
+
+#Report start
+msgid "report.compensatory_leave"
+msgstr "代休（日数）"
+
+msgid "report.compensatory_hours"
+msgstr "代休時間"
+
+msgid "report.payment_hrs"
+msgstr "支払い時間"
+
+msgid "rreport.overtime_hours"
+msgstr "残業時間"
+
+msgid "report.report_pay_overtime"
+msgstr "PayOvertimeレポート"
+
+msgid "report.percentage"
+msgstr "パーセンテージ（％）"
+
+msgid "report.total_bench_effort"
+msgstr "合計ベンチ労力"
+
+msgid "report.effort_bench"
+msgstr "ベンチの努力%"
+
+msgid "report.intern_inclusive"
+msgstr "インターンも含みます"
+
+msgid "report.total_member_headcount_in_bench"
+msgstr "ベンチのヘッドカウント（{0} メンバー）"
+
+msgid "report.headcount_in_bench"
+msgstr "ベンチのヘッドカウント"
+
+msgid "report.no_data_available"
+msgstr "データはありません！"
+
+msgid "report.head_count_bench.empty"
+msgstr "ベンチのヘッドカウントが空です！！！"
+#Report end
+
+#Resignation start
+msgid "resignation.transfer_device"
+msgstr "デバイスの移動"
+
+msgid "resignation.decision_note"
+msgstr "決定ノート"
+
+msgid "resignation.type_device"
+msgstr "デバイスの種類"
+
+msgid "resignation.serial_device"
+msgstr "シリアル番号"
+
+msgid "resignation.name_device"
+msgstr "デバイス名"
+
+msgid "resignation.list_device"
+msgstr "デバイスリスト"
+
+msgid "resignation.send_mail_farewell"
+msgstr "お別れの送信メール"
+
+msgid "resignation.list_of_devices_in_use"
+msgstr "使用中のデバイスのリスト"
+
+msgid "resignation.document_confirmation"
+msgstr "文書確認"
+
+msgid "resignation.approves"
+msgstr "承認"
+
+msgid "resignation.compact"
+msgstr "コンパクト"
+
+msgid "resignation.hr_action"
+msgstr "人事部の行動"
+
+msgid "resignation.date_of_application"
+msgstr "申請日"
+
+msgid "resignation.resignation_list"
+msgstr "辞職リスト"
+
+msgid "resignation.farewell"
+msgstr "お別れ"
+
+msgid "resignation.farewell_form"
+msgstr "お別れフォーム"
+
+msgid "resignation.edit_approve_resignation"
+msgstr "承認した辞職を編集します"
+
+msgid "resignation.hr_confirm_resignation"
+msgstr "HRによる辞職の確認"
+
+msgid "resignation.time_decision"
+msgstr "決定時刻"
+
+msgid "resignation.hr_confirm_relevant_documents"
+msgstr "HRによる関連書類の確認"
+
+msgid "resignation.feedback"
+msgstr "フィードバック"
+
+msgid "resignation.gm_feedback"
+msgstr "GMのフィードバック"
+
+msgid "resignation.pm_feedback"
+msgstr "PMのフィードバック"
+
+msgid "resignation.approves_resignation"
+msgstr "辞職を承認します"
+
+msgid "resignation.resignation_reason"
+msgstr "辞職理由"
+
+msgid "resignation.expected_end_date"
+msgstr "予定される終了日"
+
+msgid "resignation.approver"
+msgstr "承認者"
+
+msgid "resignation.add_resignation"
+msgstr "辞職を追加します"
+
+msgid "resignation.edit_resignation"
+msgstr "辞職を編集します"
+
+msgid "resignation.resignation_application_form"
+msgstr "辞職申請フォーム"
+
+msgid "resignation.add_resignation_application_form"
+msgstr "辞職申請フォームを追加します"
+
+msgid "resignation.edit_resignation_application_form"
+msgstr "辞職申請フォームを編集します"
+
+msgid "resignation.gm_reject_the_resignation_application"
+msgstr "GMが辞職申請を拒否します"
+
+msgid "resignation.gm_approve_the_resignation_application"
+msgstr "GMが辞職申請を承認します"
+
+msgid "resignation.pm_approve_the_resignation_application"
+msgstr "PMが辞職申請を承認します"
+
+msgid "resignation.remind_transfer_device_user"
+msgstr "デバイスの移動をリマインドします"
+
+msgid "resignation.farewell_letter"
+msgstr "お別れの手紙"
+
+msgid "resignation.data_not_found"
+msgstr "データが見つかりません"
+
+msgid "resignation.approve_by_pm"
+msgstr "PM {0} が承認しました"
+
+msgid "resignation.approve_by_gm"
+msgstr "GM {0} が承認しました"
+
+msgid "resignation.send_mail.success"
+msgstr "メール送信に成功しました！"
+
+msgid "resignation.send_mail.fail"
+msgstr "メール送信失敗"
+
+msgid "resignation.send_mail.error"
+msgstr "メール送信失敗（例外）"
+
+msgid "resignation.send_mail_hr.fail"
+msgstr "HRのメール送信失敗"
+
+msgid "resignation.send_mail_pm.fail"
+msgstr "PMのメール送信失敗"
+
+msgid "resignation.send_mail_it.fail"
+msgstr "ITデバイスの移動のメール送信失敗"
+
+msgid "resignation.add.success"
+msgstr "辞職申請の追加が成功しました"
+
+msgid "resignation.add.fail"
+msgstr "追加失敗"
+
+msgid "resignation.add.error"
+msgstr "保存失敗（例外）"
+
+msgid "resignation.edit.success"
+msgstr "辞職申請の編集が成功しました"
+
+msgid "resignation.edit.fail"
+msgstr "編集失敗"
+
+msgid "resignation.edit.approved"
+msgstr "辞職が承認されました"
+
+msgid "resignation.save.error"
+msgstr "保存失敗（例外）"
+
+msgid "resignation.delete.approved"
+msgstr "辞職が承認されました"
+
+msgid "resignation.delete.not_found"
+msgstr "データが見つかりません。もう一度お試しください。"
+
+msgid "resignation.approve.pm_not_review"
+msgstr "PMがレビューしていません"
+
+msgid "resignation.approve.already_approved"
+msgstr "辞職が承認されました"
+
+msgid "resignation.approve.fail"
+msgstr "承認失敗"
+
+msgid "resignation.approve.success"
+msgstr "承認されました！"
+
+msgid "resignation.reject.success"
+msgstr "拒否されました！"
+
+msgid "resignation.approve.type_invalid"
+msgstr "承認または拒否が決定されていません"
+
+msgid "resignation.approve.feedback_empty"
+msgstr "フィードバックが必要です"
+
+msgid "resignation.approve.error"
+msgstr "承認失敗（例外）"
+
+msgid "resignation.farewell.gm_not_approve"
+msgstr "GMが辞職を承認していません"
+
+msgid "resignation.edit_approve.gm_approved"
+msgstr "GMが辞職を承認しました"
+
+msgid "resignation.confirm_document.success"
+msgstr "保存に成功しました！"
+
+msgid "resignation.confirm_document.fail"
+msgstr "保存失敗"
+
+msgid "resignation.confirm_document.error"
+msgstr "保存失敗（例外）"
+
+msgid "resignation.delete.confirm"
+msgstr "削除してもよろしいですか： "
+
+msgid "resignation.validation_user.required"
+msgstr "ユーザーが必要です"
+
+msgid "resignation.validation_reason.required"
+msgstr "理由が必要です"
+
+msgid "resignation.validation_user.exists"
+msgstr "従業員は既に存在します"
+
+msgid "resignation.validation_approver.required"
+msgstr "承認者が必要です"
+
+msgid "resignation.validation_expected_end_date.required"
+msgstr "予定される終了日が必要です"
+
+msgid "resignation.push_notification.message"
+msgstr "{0} が辞職を申請しました"
+
+msgid "resignation.push_notification_update.message"
+msgstr "{0} が辞職を更新しました"
+
+msgid "resignation.push_notification_approve.message"
+msgstr "{0} が辞職を承認しました"
+
+msgid "resignation.push_notification_complete.message"
+msgstr "GM {0} 辞職手続きが完了しました"
+#Resignation end
+
+#Resource Utilization start
+msgid "resource_utilization.percent_resource_utilization_of_year"
+msgstr "% リソース利用率 {0}"
+
+msgid "resource_utilization.company_target"
+msgstr "企業目標"
+
+msgid "resource_utilization.value"
+msgstr "価値"
+#Resource Utilization end
+
+#Revert Leave start
+msgid "revert_leave.number_of_days"
+msgstr "日数"
+
+msgid "revert_leave.leave_end"
+msgstr "休暇終了日"
+
+msgid "revert_leave.leave_start"
+msgstr "休暇開始日"
+
+msgid "revert_leave.reason_for_leave"
+msgstr "休暇理由"
+
+msgid "revert_leave.leave_type"
+msgstr "休暇タイプ"
+
+msgid "revert_leave.revert_list"
+msgstr "休暇が見つかりません"
+
+msgid "revert_leave.leave_not_found"
+msgstr "休暇が見つかりません"
+
+msgid "revert_leave.request_revert.condition_revert"
+msgstr "休暇のリクエスト日を月の21日より前に切り戻し"
+
+msgid "revert_leave.request_revert.success"
+msgstr "休暇の切り戻しが完了しました"
+
+msgid "revert_leave.request_revert.fail"
+msgstr "切り戻し失敗。後でやり直してください。"
+
+msgid "revert_leave.revert_recipe.confirm"
+msgstr "このレシピを元に切りも市がよろしいですか？"
+
+msgid "revert_leave.cancel_recipe.confirm"
+msgstr "このレシピをキャンセルしてもよろしいですか？"
+#Revert Leave end
+
+#Rockie Award start
+msgid "rockie_award.total_titles"
+msgstr "合計 {0} タイトル"
+
+msgid "rockie_award.rockie_award_edit"
+msgstr "新人賞の編集"
+
+msgid "rockie_award.upload_image"
+msgstr "画像をアップロードします"
+
+msgid "rockie_award.prize_money"
+msgstr "賞金"
+
+msgid "rockie_award.date_award"
+msgstr "受賞日"
+
+msgid "rockie_award.select"
+msgstr "--選択してください--"
+
+msgid "rockie_award.winner"
+msgstr "受賞者"
+
+msgid "rockie_award.quarterly"
+msgstr "四半期ごと"
+
+msgid "rockie_award.new_rockie_award"
+msgstr "新しい新人賞"
+
+msgid "rockie_award.validation_date_award.required"
+msgstr "この項目に受賞日を入力してください。"
+
+msgid "rockie_award.validation_prize_money.required"
+msgstr "この項目に賞金を入力してください。"
+
+msgid "rockie_award.upload.fail"
+msgstr "ファイルが 'image' にアップロードしますことになります。もう一度お試しください。"
+
+msgid "rockie_award.add.fail"
+msgstr "新人賞を保存できませんでした。もう一度お試しください。"
+
+msgid "rockie_award.edit.fail"
+msgstr "新人賞を保存できませんでした。もう一度お試しください。"
+
+msgid "rockie_award.edit.success"
+msgstr "新人賞が保存されました。"
+
+msgid "rockie_award.delete.success"
+msgstr "新人賞が削除されました。"
+
+msgid "rockie_award.delete.fail"
+msgstr "新人賞を削除できませんでした。もう一度お試しください。"
+
+msgid "rockie_award.delete.confirm"
+msgstr "このレシピを削除してもよろしいですか？"
+
+msgid "rockie_award.validation_title.required"
+msgstr "この項目にタイトルを入力してください"
+
+msgid "rockie_award.validation_title.max_length"
+msgstr "タイトルは長すぎです。"
+
+msgid "rockie_award.validation_quarterly.required"
+msgstr "この項目に四半期を入力してください"
+#Rockie Award end
+
+#Role Member start
+msgid "role_member.search_btn"
+msgstr "検索"
+
+msgid "role_member.total_role"
+msgstr "（合計 {0} {1}）"
+
+msgid "role_member.role_list"
+msgstr "{0} リスト"
+
+msgid "role_member.development"
+msgstr "開発"
+
+msgid "role_member.choose_role"
+msgstr "役割を選択します"
+
+msgid "role_member.edit_member_role"
+msgstr "メンバーの役割を編集します　 {0}"
+
+msgid "role_member.choose_employee"
+msgstr "従業員を選択します"
+
+msgid "role_member.add_member_role_admin"
+msgstr "管理者のメンバー役割を追加します"
+
+msgid "role_member.add_admin.success"
+msgstr "{0} を管理者に追加しました！"
+
+msgid "role_member.add_admin.success"
+msgstr "{0} を管理者に追加しました！"
+
+msgid "role_member.add_admin.fail"
+msgstr "追加に失敗しました。もう一度お試しください。"
+
+msgid "role_member.delete.not_found"
+msgstr "役割が見つかりません"
+
+msgid "role_member.delete.success"
+msgstr "{0} を管理者から削除しました！"
+
+msgid "role_member.delete.fail"
+msgstr "削除に失敗しました。もう一度お試しください。"
+
+msgid "role_member.edit.role_admin_empty"
+msgstr "管理者の役割を記入してください！"
+
+msgid "role_member.edit.role_develop_empty"
+msgstr "役割を記入してください！"
+
+msgid "role_member.edit.role_overhead_empty"
+msgstr "役割を記入してください！"
+
+msgid "role_member.save_role_admin.success"
+msgstr "{0} を役割管理者に編集しました！"
+
+msgid "role_member.save_role_admin.fail"
+msgstr "役割を保存できませんでした。もう一度お試しください。"
+
+msgid "role_member.save_role_develop.success"
+msgstr "{0} を開発役割に編集しました！"
+
+msgid "role_member.save_role_develop.fail"
+msgstr "役割を保存できませんでした。もう一度お試しください。"
+
+msgid "role_member.save_role_overhead.success"
+msgstr "{0} をオーバーヘッド役割に編集しました！"
+
+msgid "role_member.save_role_overhead.fail"
+msgstr "役割を保存できませんでした。もう一度お試しください。"
+
+msgid "role_member.remove_admin_role.confirm"
+msgstr "以下のユーザーから管理者役割を削除してもよろしいですか？ "
+
+msgid "role_member.validation_user.required"
+msgstr "ユーザーを記入してください！"
+#Role Member end
+
+#Role Project start
+msgid "role_project.add_new_role"
+msgstr "新しい役割を追加します"
+
+msgid "role_project.order"
+msgstr "順番"
+
+msgid "role_project.count_titles"
+msgstr "（合計 {0} タイトル）"
+
+msgid "role_project.edit_list_job_title"
+msgstr "職名リストの編集"
+
+msgid "role_project.role_edit"
+msgstr "役割の編集"
+
+msgid "role_project.add_list_job_title"
+msgstr "職名リストの追加"
+
+msgid "role_project.add_list_job_title_for_role"
+msgstr "役割に対します職名リストの追加"
+
+msgid "role_project.role_add"
+msgstr "役割の追加"
+
+msgid "role_project.add.success"
+msgstr "役割の追加に成功しました"
+
+msgid "role_project.add.fail"
+msgstr "役割を保存できませんでした。もう一度お試しください。"
+
+msgid "role_project.add_business.success"
+msgstr "職名リストの追加に成功しました"
+
+msgid "role_project.edit.success"
+msgstr "役割の更新に成功しました！"
+
+msgid "role_project.delete.not_found"
+msgstr "役割が見つかりません"
+
+msgid "role_project.delete.in_use"
+msgstr "この役割はすでに使用されています。削除できません"
+
+msgid "role_project.delete.success"
+msgstr "役割が削除されました。"
+
+msgid "role_project.delete.fail"
+msgstr "役割を削除できませんでした。もう一度お試しください。"
+
+msgid "role_project.delete.confirm"
+msgstr "この役割を削除してもよろしいですか？"
+
+msgid "role_project.validation_title.required"
+msgstr "この項目にタイトルを入力してください"
+
+msgid "role_project.validation_title.unique"
+msgstr "タイトルはすでに存在します。"
+
+msgid "role_project.validation_title.too_long"
+msgstr "タイトルは長すぎです。"
+
+msgid "role_project.validation_description.too_long"
+msgstr "説明が長すぎです。"
+#Role Project end
+
+#Business Title start
+msgid "business_title.total_titles"
+msgstr "（合計 {0} タイトル）"
+
+msgid "business_title.new_title"
+msgstr "新しいタイトル"
+
+msgid "business_title.job_title_add"
+msgstr "職名の追加"
+
+msgid "business_title.job_title_edit"
+msgstr "職名の編集"
+
+msgid "business_title.add.fail"
+msgstr "ビジネスを保存できませんでした。もう一度お試しください。"
+
+msgid "business_title.edit.success"
+msgstr "ビジネスが保存されました。"
+
+msgid "business_title.edit.fail"
+msgstr "ビジネスを保存できませんでした。もう一度お試しください。"
+
+msgid "business_title.delete.success"
+msgstr "ビジネスが削除されました。"
+
+msgid "business_title.delete.fail"
+msgstr "ビジネスを削除できませんでした。もう一度お試しください。"
+
+msgid "business_title.delete.confirm"
+msgstr "このレシピを削除してもよろしいですか？"
+
+msgid "business_title.validation_title.required"
+msgstr "この項目にタイトルを入力してください"
+
+msgid "business_title.validation_title.unique"
+msgstr "タイトルはすでに存在します。"
+
+msgid "business_title.validation_title.too_long"
+msgstr "タイトルは長すぎです。"
+
+msgid "business_title.validation_description.too_long"
+msgstr "説明が長すぎです。"
+#Business Title end
+
+#Candidate start
+msgid "candidate.extension_file"
+msgstr "（jpg、jpeg、gif、png、doc、docx、pdf、xlsx、csv）"
+
+msgid "candidate.offer_send"
+msgstr "オファーを送信します"
+
+msgid "candidate.gm_comment"
+msgstr "GMコメント"
+
+msgid "candidate.hr_comment"
+msgstr "HRコメント"
+
+msgid "candidate.offer_sent"
+msgstr "オファーを送信しました"
+
+msgid "candidate.second_interview"
+msgstr "2次面接"
+
+msgid "candidate.interview_date"
+msgstr "面接日"
+
+msgid "candidate.evaluate"
+msgstr "評価"
+
+msgid "candidate.ype"
+msgstr "YPE"
+
+msgid "candidate.expected_salary"
+msgstr "期待給与（総額）"
+
+msgid "candidate.gm_action"
+msgstr "GMの行動"
+
+msgid "candidate.job_offer"
+msgstr "求人オファー"
+
+msgid "candidate.first_interview"
+msgstr "初めての面接"
+
+msgid "candidate.final_interview"
+msgstr "最終面接"
+
+msgid "candidate.candidate_info"
+msgstr "候補者情報"
+
+msgid "candidate.select_final_conclusion"
+msgstr "最終結論を選択します"
+
+msgid "candidate.select_final_interview_status"
+msgstr "最終面接ステータスを選択します"
+
+msgid "candidate.select_first_interview_status"
+msgstr "最初の面接ステータスを選択します"
+
+msgid "candidate.status_noti"
+msgstr "この候補者のステータスは"
+
+msgid "candidate.select_result"
+msgstr "結果を選択します"
+
+msgid "candidate.final_conclusion"
+msgstr "最終結論"
+
+msgid "candidate.waiting"
+msgstr "待機中"
+
+msgid "candidate.passed"
+msgstr "合格"
+
+msgid "candidate.failed"
+msgstr "不合格"
+
+msgid "candidate.kept_in_view"
+msgstr "注視"
+
+msgid "candidate.offer_status"
+msgstr "オファーのステータス"
+
+msgid "candidate.final_interview_2nd"
+msgstr "最終面接（2次ラウンド） - インタビュアーを選択"
+
+msgid "candidate.technical_interview_1st"
+msgstr "テクニカル面接（1次ラウンド） - インタビュアーを選択"
+
+msgid "candidate.round_of_interview"
+msgstr "面接ラウンド"
+
+msgid "candidate.select_user_send_cv"
+msgstr "履歴書を送信したユーザーを選択します"
+
+msgid "candidate.send_cv_if_any"
+msgstr "履歴書を送信します（あれば）"
+
+msgid "candidate.send_cv"
+msgstr "履歴書を送信します"
+
+msgid "candidate.keep_cv"
+msgstr "履歴書を保管します"
+
+msgid "candidate.select_recruitment_source"
+msgstr "採用ソースを選択します"
+
+msgid "candidate.old_company"
+msgstr "前の会社"
+
+msgid "candidate.salary"
+msgstr "給与"
+
+msgid "candidate.expectations"
+msgstr "期待額"
+
+msgid "candidate.candidate"
+msgstr "候補者"
+
+msgid "candidate.edit_candidate"
+msgstr "候補者の編集"
+
+msgid "candidate.add_candidate"
+msgstr "候補者の追加"
+
+msgid "candidate.delete.success"
+msgstr "{0} が削除されました"
+
+msgid "candidate.delete.fail"
+msgstr "候補者を削除できませんでした。もう一度お試しください。"
+
+msgid "candidate.edit.success"
+msgstr "候補者が編集されました！"
+
+msgid "candidate.add.success"
+msgstr "候補者が保存されました！"
+
+msgid "candidate.add.title_mail_first"
+msgstr "INTERVIEW_{0}"
+
+msgid "candidate.add.send_mail_first_success"
+msgstr "面接の予定をHRに送信しました。初回の面接が成功しました。"
+
+msgid "candidate.add.send_mail_first_second_success"
+msgstr "面接の予定をHRに送信しました。初回と2回目の面接が成功しました。"
+
+msgid "candidate.add.title_mail_first_second"
+msgstr "INTERVIEW_{0}_最初: {1}_二番目: {2}"
+
+msgid "candidate.send_cv_to_gm.success"
+msgstr "履歴書をGMのレビューに送信成功"
+
+msgid "candidate.add.cv_empty"
+msgstr "候補者の履歴書をアップロードしてください！"
+
+msgid "candidate.cv.not_found"
+msgstr "履歴書が見つかりません。"
+
+msgid "candidate.get_checked_to_schedule.send_mail_hr"
+msgstr "面接の手配のためにHRにメールを送信しました！"
+
+msgid "candidate.get_checked_to_schedule.title_mail"
+msgstr "{0}の面接を計画してください"
+
+msgid "candidate.check_deal_salary.success"
+msgstr "給与の承認のためにGMに情報を送信しました！"
+
+msgid "candidate.check_deal_salary.title_mail_first"
+msgstr "候補者の評価サマリー - 第1ラウンド | {0}"
+
+msgid "candidate.check_deal_salary.title_mail_second"
+msgstr "候補者の評価サマリー - 第2ラウンド | {0}"
+
+msgid "candidate.accept_deal_salary.success"
+msgstr "候補者 {0} を承認しました。通知メールがHRに送信されました！"
+
+msgid "candidate.accept_deal_salary.title_mail"
+msgstr "最終結論 - {0} - 承認済み！"
+
+msgid "candidate.cancel_deal_salary.success"
+msgstr "候補者 {0} を拒否しました。通知メールがHRに送信されました！"
+
+msgid "candidate.cancel_deal_salary.title_mail"
+msgstr "最終結論 - {0} - 拒否されました！"
+
+msgid "candidate.kiv_deal_salary.success"
+msgstr "HRに給与の取り決めを送信しました。成功しました。"
+
+msgid "candidate.kiv_deal_salary.title_mail"
+msgstr "最終結論 - {0} - KIV（保留中）！"
+
+msgid "candidate.form_check_cv.rejected"
+msgstr "この候補者はすでに拒否されています！"
+
+msgid "candidate.check_status_candidate.success"
+msgstr "求人オファーのステータスが正常に変更されました！"
+
+msgid "candidate.form_cancel_interview.success"
+msgstr "面接 {0} をキャンセルしました"
+
+msgid "candidate.reject_candidate.success"
+msgstr "{0} を拒否しました"
+
+msgid "candidate.reject_candidate.title_mail"
+msgstr "{0}_{1}_拒否されました！"
+
+msgid "candidate.send_mail_cancel_interview.title_mail"
+msgstr "{0}_{1}_面接がキャンセルされました！"
+
+msgid "candidate.validation_url.invalid"
+msgstr "URLが有効なURLではありません！"
+
+msgid "candidate.validation_cv.format_not_correct"
+msgstr "CVの形式が正しくありません！"
+
+msgid "candidate.validation_check_deal.required"
+msgstr "取引給与のチェックを入力してください"
+
+msgid "candidate.validation_message_hr.required"
+msgstr "メッセージボックスに入力してください"
+
+msgid "candidate.validation_description.required"
+msgstr "説明を記入してください！"
+
+msgid "candidate.validation_interviewer.required"
+msgstr "lease fill in Technical 面接 - 面接官を選択!"
+
+msgid "candidate.select_again.confirm"
+msgstr "すでにインタビュアーが選択されています。もう一度選択しますか？"
+
+msgid "candidate.has_been"
+msgstr "この候補者はすでに"
+
+msgid "candidate.in_first_round"
+msgstr "ファーストラウンドで"
+
+msgid "candidate.in_first_round_and"
+msgstr "ファーストラウンドで＆"
+
+msgid "candidate.in_final_round"
+msgstr "最終ラウンドで"
+#Candidate end
+
+#Company start
+msgid "company.edit_company"
+msgstr "会社を編集します"
+
+msgid "company.edit_company_name"
+msgstr "会社を編集します {0}"
+
+msgid "company.company_name"
+msgstr "会社名"
+
+msgid "company.add_company"
+msgstr "会社を追加します"
+
+msgid "company.add.success"
+msgstr "会社が保存されました！"
+
+msgid "company.add.fail"
+msgstr "会社の保存に失敗しました！"
+
+msgid "company.edit.not_found"
+msgstr "この会社を見つけることができません！"
+
+msgid "company.edit.in_use"
+msgstr "会社 {0} はすでに使用中です。ステータスを編集できません。"
+
+msgid "company.edit.success"
+msgstr "会社が編集されました！"
+
+msgid "company.edit.fail"
+msgstr "会社の編集に失敗しました！"
+
+msgid "company.delete.not_found"
+msgstr "会社を削除できませんでした。もう一度お試しください。"
+
+msgid "company.delete.in_use"
+msgstr "会社 {0} はすでに使用中です。削除できません。"
+
+msgid "company.delete.success"
+msgstr "{0} が削除されました"
+
+msgid "company.delete.confirm"
+msgstr "削除してもよろしいですか： "
+
+msgid "company.validation_name.required"
+msgstr "このフィールドに会社名を記入してください"
+
+msgid "company.validation_name.unique"
+msgstr "会社名はすでに存在します。"
+
+msgid "company.validation_name.too_long"
+msgstr "会社名は長すぎです。"
+#Company end
+
+#Company Target start
+msgid "company_target.total_target"
+msgstr "（合計 {0} ターゲット）"
+
+msgid "company_target.company_target_add"
+msgstr "会社ターゲットを追加します"
+
+msgid "company_target.value"
+msgstr "値％"
+
+msgid "company_target.add_utilization_target"
+msgstr "％利用ターゲットを追加します"
+
+msgid "company_target.utilization_target_list"
+msgstr "％利用ターゲットリスト"
+
+msgid "company_target.utilization_target_edit"
+msgstr "％利用ターゲットの編集"
+
+msgid "company_target.utilization_target_form"
+msgstr "％利用ターゲットのフォーム"
+
+msgid "company_target.utilization_target"
+msgstr "％利用ターゲット"
+
+msgid "company_target.utilization_target_add"
+msgstr "％利用ターゲットの追加"
+
+msgid "company_target.validation_start_end.exists"
+msgstr "開始日から終了日までの時間が存在しました"
+
+msgid "company_target.validation_start_end.exists"
+msgstr "開始日から終了日までの時間が存在しました"
+
+msgid "company_target.add.success"
+msgstr "会社ターゲットが作成されました。"
+
+msgid "company_target.add.fail"
+msgstr "会社ターゲットを作成できませんでした。もう一度お試しください。"
+
+msgid "company_target.add.error"
+msgstr "会社ターゲットを作成できませんでした。もう一度お試しください。"
+
+msgid "company_target.edit.success"
+msgstr "会社ターゲットが編集されました。"
+
+msgid "company_target.edit.fail"
+msgstr "会社ターゲットを編集できませんでした。もう一度お試しください。"
+
+msgid "company_target.edit.error"
+msgstr "会社ターゲットを編集できませんでした。もう一度お試しください。"
+
+msgid "company_target.delete.success"
+msgstr "会社ターゲットが削除されました。"
+
+msgid "company_target.delete.fail"
+msgstr "会社ターゲットを削除できませんでした。もう一度お試しください。"
+
+msgid "company_target.delete.error"
+msgstr "会社ターゲットを削除できませんでした。もう一度お試しください。"
+
+msgid "company_target.validation_start_date.invalid"
+msgstr "不正な開始日の形式"
+
+msgid "company_target.validation_end_date.invalid"
+msgstr "不正な終了日の形式"
+
+msgid "company_target.validation_start_end.invalid"
+msgstr "終了日は開始日より後でなければなりません"
+
+msgid "company_target.validation_value.required"
+msgstr "このフィールドに値を記入してください"
+
+msgid "company_target.validation_value.valid"
+msgstr "値は1〜100に等しくありません"
+#Company Target end
+
+#Config start
+msgid "config.config_list"
+msgstr "設定リスト"
+
+msgid "config.value"
+msgstr "値"
+
+msgid "config.edit_value"
+msgstr "値の編集"
+
+msgid "config.edit_description"
+msgstr "説明の編集"
+
+msgid "config.save_successful"
+msgstr "保存に成功しました！"
+#Config end
+
+#Contract start
+msgid "contract.infinite_contract"
+msgstr "無期限の契約"
+
+msgid "contract.3_years"
+msgstr "3年"
+
+msgid "contract.1_year"
+msgstr "1年"
+
+msgid "contract.hdtv"
+msgstr "試用期間（2ヶ月）"
+
+msgid "contract.internship_2"
+msgstr "インターンシップ2（3ヶ月）"
+
+msgid "contract.contract_information"
+msgstr "契約情報"
+
+msgid "contract.sign_contract"
+msgstr "契約に署名します"
+
+msgid "contract.signed.success"
+msgstr "契約が署名されました！"
+#Contract end
+
+#Day Off start
+msgid "day_off.compensatory_leave"
+msgstr "代休"
+
+msgid "day_off.annual_leave"
+msgstr "有給休暇"
+
+msgid "day_off.balance"
+msgstr "残高"
+
+msgid "day_off.choose_employee"
+msgstr "従業員を選択します"
+
+msgid "day_off.export_leave_balance"
+msgstr "休暇残高をエクスポートします"
+
+msgid "day_off.total_lieu_time_days_allowed"
+msgstr "合計代休日数許可"
+
+msgid "day_off.total_annual_days_allowed"
+msgstr "合計年次休暇日数許可"
+
+msgid "day_off.total_days"
+msgstr "合計日数"
+
+msgid "day_off.leave_balance_list"
+msgstr "休暇残高リスト"
+
+msgid "day_off.leave_balance_list_at"
+msgstr "{0}の休暇残高リスト"
+
+msgid "day_off.leave_balance_edit"
+msgstr "休暇残高の編集"
+
+msgid "day_off.leave_balance_add"
+msgstr "休暇残高の追加"
+
+msgid "day_off.leave_balance"
+msgstr "休暇残高"
+
+msgid "day_off.add.success"
+msgstr "総有給休暇が保存されました。"
+
+msgid "day_off.add.fail"
+msgstr "総有給休暇を保存できませんでした。もう一度お試しください。"
+
+msgid "day_off.edit.success"
+msgstr "総有給休暇が保存されました。"
+
+msgid "day_off.delete.confirm"
+msgstr "このレシピを削除してもよろしいですか？"
+
+msgid "day_off.validation_user_id.not_integer"
+msgstr "ユーザーIDが整数ではありません"
+
+msgid "day_off.validation_user_id.unique"
+msgstr "ユーザーはすでに存在します"
+
+msgid "day_off.validation_total.invalid"
+msgstr "合計年次休暇日数のデータタイプが間違います。"
+
+msgid "day_off.validation_total.configured"
+msgstr "合計年次休暇日数が設定よりも大きくありません"
+
+msgid "day_off.validation_total_annual.invalid"
+msgstr "合計年次休暇日数のデータタイプが間違います。"
+
+msgid "day_off.validation_total_compensatory.invalid"
+msgstr "合計代休日数のデータタイプが間違います。"
+#Day Off end
+
+#Define Template start
+msgid "define_template.choose_collect"
+msgstr "収集を選択します"
+
+msgid "define_template.new_define"
+msgstr "新しい定義"
+
+msgid "define_template.define_template_edit"
+msgstr "テンプレートの編集"
+
+msgid "define_template.collect"
+msgstr "収集"
+
+msgid "define_template.subject"
+msgstr "件名"
+
+msgid "define_template.add_define_template"
+msgstr "{0}の定義テンプレートを追加します"
+
+msgid "define_template.add.success"
+msgstr "定義テンプレートの追加が成功しました"
+
+msgid "define_template.add.fail"
+msgstr "追加に失敗しました"
+
+msgid "define_template.edit.not_found"
+msgstr "定義テンプレートIDが見つかりません"
+
+msgid "define_template.edit.success"
+msgstr "定義テンプレートの編集が成功しました"
+
+msgid "define_template.edit.fail"
+msgstr "編集に失敗しました"
+
+msgid "define_template.delete.not_found"
+msgstr "定義テンプレートIDが見つかりません"
+
+msgid "define_template.delete.success"
+msgstr "定義テンプレートの削除が成功しました"
+
+msgid "define_template.delete.fail"
+msgstr "削除に失敗しました"
+
+msgid "define_template.delete.confirm"
+msgstr "このテンプレートを削除してもよろしいですか？"
+
+msgid "define_template.validation_title.required"
+msgstr "このフィールドにタイトルを入力してください"
+
+msgid "define_template.validation_subject.required"
+msgstr "このフィールドに件名を入力してください"
+
+msgid "define_template.validation_collect.required"
+msgstr "このフィールドに収集を記入してください"
+
+msgid "define_template.validation_collect.unique"
+msgstr "収集はすでに存在します"
+
+msgid "define_template.validation_collect.too_long"
+msgstr "収集は長すぎです。"
+
+msgid "define_template.validation_title.unique"
+msgstr "タイトルはすでに存在します。"
+
+msgid "define_template.validation_title.too_long"
+msgstr "タイトルは長すぎです。"
+
+msgid "define_template.validation_subject.too_long"
+msgstr "件名は長すぎです。"
+#Define Template end
+
+#Department start
+msgid "department.un_special"
+msgstr "一般"
+
+msgid "department.special"
+msgstr "特殊"
+
+msgid "department.department_name"
+msgstr "部署名"
+
+msgid "department.edit_department"
+msgstr "部署の編集"
+
+msgid "department.add_department"
+msgstr "部署の追加"
+
+msgid "department.add.success"
+msgstr "部署が保存されました！"
+
+msgid "department.edit.success"
+msgstr "部署が編集されました！"
+
+msgid "department.edit.not_found"
+msgstr "この部署を見つけることができません"
+
+msgid "department.delete.not_found"
+msgstr "この部署を見つけることができません"
+
+msgid "department.delete.fail"
+msgstr "この部署を削除できません"
+
+msgid "department.delete.success"
+msgstr "{0} が削除されました"
+
+msgid "department.delete.confirm"
+msgstr "本当に削除しますか： "
+
+msgid "department.validation_name.required"
+msgstr "部署名を入力してください"
+
+msgid "department.validation_name.too_long"
+msgstr "部署名は長すぎです。"
+
+msgid "department.validation_name.unique"
+msgstr "部署名はすでに存在します"
+
+msgid "department.validation_description.too_long"
+msgstr "説明は長すぎです。"
+#Department end
+
+#District start
+msgid "district.empty_data"
+msgstr "データが空です！"
+
+msgid "district.click_see_full_info"
+msgstr "クリックしますと詳細情報が表示されます"
+#District end
+
+#Email start
+msgid "email.delete.success"
+msgstr "サブスクリプトの削除アクションが成功しました。"
+
+msgid "email.delete.fail"
+msgstr "サブスクリプトの削除アクションは保存されませんでした。もう一度お試しください。"
+#Email end
+
+#Export start
+msgid "export.actual"
+msgstr "実際"
+
+msgid "export.monthly_project_utilization"
+msgstr "月間プロジェクト利用率（％）"
+
+msgid "export.not_have_data"
+msgstr "選択した月にはデータレポートがありません"
+
+msgid "export.total_day"
+msgstr "合計：{0} 日"
+
+msgid "export.actual_work_day"
+msgstr "実際の作業日数"
+
+msgid "export.total_work_day"
+msgstr "合計勤務日数"
+
+msgid "export.month_year"
+msgstr "月年"
+
+msgid "export.monthly_utilization"
+msgstr "月次利用率"
+
+msgid "export.project_joined"
+msgstr "プロジェクト参加"
+
+msgid "export.account_joined_date"
+msgstr "アカウント参加日"
+
+msgid "export.experience"
+msgstr "経験（人日）"
+
+msgid "export.man_days"
+msgstr "Man-日s (人日)"
+
+msgid "export.working_experience_per_account"
+msgstr "アカウントあたりの労働経験（人日）"
+
+msgid "export.overtime_rate"
+msgstr "残業率"
+
+msgid "export.overtime_type"
+msgstr "残業タイプ"
+
+msgid "export.working_hours"
+msgstr "労働時間"
+
+msgid "export.hourly_rate"
+msgstr "時給（米ドル/時間）"
+
+msgid "export.overtime_hours"
+msgstr "残業時間"
+
+msgid "export.from"
+msgstr "From"
+
+msgid "export.un_approved"
+msgstr "未承認"
+
+msgid "export.export_timesheet_by_project"
+msgstr "プロジェクト別のタイムシートのエクスポート"
+
+msgid "export.total_overtime_holiday"
+msgstr "合計残業休日"
+
+msgid "export.total_overtime_weekend"
+msgstr "合計残業週末"
+
+msgid "export.total_overtime_week"
+msgstr "合計残業週間"
+
+msgid "export.total_working_time"
+msgstr "合計稼働時間"
+
+msgid "export.end_of_report"
+msgstr "***レポート終了***"
+
+msgid "export.manager_total_hours"
+msgstr "マネージャーの合計時間"
+
+msgid "export.manager"
+msgstr "マネージャー"
+
+msgid "export.to_week_ending"
+msgstr "終了週までの週"
+
+msgid "export.from_week_ending"
+msgstr "開始週までの週"
+
+msgid "export.company_code"
+msgstr "企業コード"
+
+msgid "export.time_detail_report"
+msgstr "時間の詳細レポート"
+
+msgid "export.start_time"
+msgstr "開始時間"
+
+msgid "export.end_time"
+msgstr "終了時間"
+
+msgid "export.export_pdf"
+msgstr "PDFのエクスポート"
+
+msgid "export.hourly_rate_for_tier"
+msgstr "階層 {0} の時給"
+
+msgid "export.sunday"
+msgstr "日曜日"
+
+msgid "export.monday"
+msgstr "月曜日"
+
+msgid "export.tuesday"
+msgstr "火曜日"
+
+msgid "export.wednesday"
+msgstr "水曜日"
+
+msgid "export.thursday"
+msgstr "木曜日"
+
+msgid "export.friday"
+msgstr "金曜日"
+
+msgid "export.saturday"
+msgstr "土曜日"
+
+msgid "export.validation.start_empty"
+msgstr "開始時間が空です。"
+
+msgid "export.validation.end_empty"
+msgstr "終了時間が空です。"
+
+msgid "export.validation.start_error"
+msgstr "開始時間のエラーです。"
+
+msgid "export.validation.end_error"
+msgstr "終了時間のエラーです。"
+
+msgid "export.validation.start_end"
+msgstr "開始時間 < 終了時間です。"
+
+msgid "export.validation.count_year"
+msgstr "日時 < 2年です。"
+#Export end
+
+
+# Start text LaborContract
+msgid "labor_contract.add.error"
+msgstr "労働契約は保存できませんでした。もう一度お試しください。"
+
+msgid "labor_contract.add.success"
+msgstr "労働契約の追加成功"
+
+msgid "labor_contract.edit.success"
+msgstr "労働契約が保存されました"
+
+msgid "labor_contract.delete.success"
+msgstr "ユーザーが削除されました"
+
+msgid "labor_contract.delete.error"
+msgstr "ユーザーを削除できませんでした。もう一度お試しください"
+
+## validate LaborContract
+
+msgid "labor_contract.validate.date_duplicated_error"
+msgstr "契約日が重複しています。再度選択してください"
+
+msgid "labor_contract.validate.missing_data"
+msgstr "データが不足しています"
+
+msgid "labor_contract.validate.start_dateformat"
+msgstr "正しくない開始日の形式"
+
+msgid "labor_contract.validate.end_dateformat"
+msgstr "正しくない終了日の形式"
+
+msgid "labor_contract.validate.max_length"
+msgstr "契約番号が長すぎです"
+
+msgid "labor_contract.validate.endstart"
+msgstr "終了日は開始日よりも後である必要があります"
+
+## Template LaborContract
+msgid "labor_contract.index.name_index"
+msgstr "従業員労働契約リスト"
+
+msgid "labor_contract.index.name_breadcrumb"
+msgstr "従業員労働契約"
+
+msgid "labor_contract.index.total_employees"
+msgstr "（合計 {0} 人の従業員）"
+
+msgid "labor_contract.index.add_employee"
+msgstr "従業員労働契約を追加します"
+
+msgid "labor_contract.index.edit_employee"
+msgstr "従業員労働契約を編集します"
+
+msgid "labor_contract.filed.contract"
+msgstr "契約"
+
+msgid "labor_contract.filed.type_contract"
+msgstr "契約のタイプ"
+
+msgid "labor_contract.select.contract"
+msgstr "契約のタイプを選択してください"
+# End text LaborContract
+
+# Start text LeaderApproveLeave
+
+msgid "Leader_approve_leave.approve.approved"
+msgstr " TL 承認された休暇 "
+
+msgid "Leader_approve_leave.approve.approved_of"
+msgstr " TL 承認された休暇 "
+
+msgid "Leader_approve_leave.approve.success"
+msgstr "休暇承認が成功しました"
+
+msgid "Leader_approved_leave.approve.success"
+msgstr "休暇が承認されました"
+
+msgid "Leader_approve_leave.approve.error"
+msgstr "承認に失敗しました。後で再試行してください。"
+
+msgid "Leader_approve_leave.reject.rejected_by"
+msgstr "あなたの休暇リクエストは、以下によって拒否されました "
+
+msgid "Leader_approve_leave.reject.rejected"
+msgstr " 拒否された休暇リクエスト "
+
+msgid "Leader_approve_leave.reject.success"
+msgstr "休暇の拒否が成功しました"
+
+msgid "Leader_approve_leave.reject.error"
+msgstr "拒否に失敗しました。後で再試行してください。"
+
+msgid "Leader_approve_leave.empty_id"
+msgstr "休暇IDが存在しません"
+
+msgid "Leader_approve_leave.permission_leave"
+msgstr "この休暇リクエストを承認します権限がありません"
+
+# End text LeaderApproveLeave
+
+# Start text LeaderApproveWfh
+
+msgid "leader_approve_wfh.approve_of"
+msgstr "TL が承認した WFH リクエスト"
+
+msgid "leader_approve_wfh.approved"
+msgstr "TL が WFH リクエストを承認しました"
+
+msgid "leader_approve_wfh.approve.error"
+msgstr "WFH 承認に失敗しました"
+
+msgid "leader_approve_wfh.approve.success"
+msgstr "WFH が正常に承認されました"
+
+msgid "leader_approve_wfh.reject.success"
+msgstr "WFH が正常に拒否されました"
+
+msgid "leader_approve_wfh.reject"
+msgstr "WFH を拒否しました"
+
+msgid "leader_approve_wfh.approval"
+msgstr "WFH 承認リクエスト "
+
+msgid "leader_approve_wfh.approved"
+msgstr "WFH 承認リクエスト "
+
+msgid "leader_approve_wfh.rejected"
+msgstr "WFH 拒否リクエスト "
+
+## validate LeaderApproveWfh
+
+msgid "leader_approve_wfh.get_user_info.not_exits"
+msgstr "ユーザーが存在しません"
+
+msgid "leader_approve_wfh.WFH.not_exits"
+msgstr "WFH ID が存在しません"
+
+## Template LeaderApproveWfh
+
+msgid "leader_approve_wfh.header"
+msgstr "WFHを承認します"
+
+msgid "leader_approve_wfh.confirm_delete"
+msgstr "この WFH を削除してもよろしいですか？"
+
+msgid "leader_approve_wfh.breadcrumb"
+msgstr "WFH を承認します"
+
+msgid "leader_approve_wfh.template_mail_padding"
+msgstr "あなたの WFH リクエストが承認待ちです"
+
+msgid "leader_approve_wfh.template_mail_approved"
+msgstr "あなたの WFH リクエストが承認されました"
+
+msgid "leader_approve_wfh.template_mail_rejected"
+msgstr "あなたの WFH リクエストが拒否されました"
+
+msgid "leader_approve_wfh.last_text_submit_template_mail"
+msgstr "WFH リクエストを提出しました"
+
+msgid "leader_approve_wfh.num_of_days"
+msgstr "日数"
+
+# End text LeaderApproveWfh
+
+# Start text PhaseCategory
+
+msgid "phase_category.template.total_title"
+msgstr "（合計 {0} 件のタイトル）"
+
+msgid "phase_category.add.success"
+msgstr "フェーズカテゴリの追加が成功しました"
+
+msgid "phase_category.add.error"
+msgstr "フェーズカテゴリを保存できませんでした。もう一度お試しください。"
+
+msgid "phase_category.edit.success"
+msgstr "フェーズカテゴリが保存されました"
+
+msgid "phase_category.edit.error"
+msgstr "ビジネスを保存できませんでした。もう一度お試しください。"
+
+msgid "phase_category.delete.error_by_already_in_use"
+msgstr "フェーズカテゴリ {0} はすでに使用中であり、削除できません"
+
+msgid "phase_category.delete.success"
+msgstr "フェーズカテゴリが削除されました"
+
+msgid "phase_category.delete.error"
+msgstr "フェーズカテゴリを削除できませんでした。もう一度お試しください。"
+
+## Template PhaseCategory
+
+msgid "phase_category.template.confirm_delete"
+msgstr "このレシピを削除してもよろしいですか？"
+
+msgid "phase_category.template.phase_category_add"
+msgstr "フェーズカテゴリの追加"
+
+msgid "phase_category.template.phase_category_edit"
+msgstr "フェーズカテゴリの編集"
+
+msgid "phase_category.template.new_phase_category"
+msgstr "新しいフェーズカテゴリ"
+
+msgid "phase_category.template.phase_category_code"
+msgstr "フェーズカテゴリコード"
+
+# End text PhaseCategory
+
+# Start text Profile
+
+msgid "profile.save.success"
+msgstr "ユーザーが保存されました"
+
+msgid "profile.save.error"
+msgstr "ユーザーを保存できませんでした。もう一度お試しください。"
+
+msgid "profile.change_pass.error"
+msgstr "パスワードの更新に失敗しました。もう一度お試しください。"
+
+msgid "profile.cv.not_find"
+msgstr "履歴書が見つかりません"
+
+## validate Profile
+
+msgid "profile.validate.error_language"
+msgstr "外国語の追加エラー"
+
+msgid "profile.validate.old_password"
+msgstr "古いパスワードが一致しません"
+
+msgid "profile.validate.data_missing"
+msgstr "データが不足しています"
+
+msgid "profile.validate.birthdayformat"
+msgstr "誕生日の形式が正しくないか、年齢が18歳未満です"
+
+msgid "profile.validate.passwordformat"
+msgstr "パスワードは最低6文字で、少なくとも1つの大文字、1つの小文字、1つの数字、1つの特殊文字を含む必要があります。"
+
+msgid "profile.validate.passwordsEqual"
+msgstr "入力した2つのパスワードが一致しません"
+
+msgid "profile.validate.inlist"
+msgstr "従業員タイプは [オーバーヘッド、開発] のみです"
+
+msgid "profile.validate.date_of_issuing_format"
+msgstr "日付の形式が正しくないか、発行日が今日より前である必要があります "
+
+msgid "profile.validate.required"
+msgstr "{0} の連絡先住所が必要です！"
+
+## Template Profile
+
+msgid "profile.select.district"
+msgstr "区を選択してください"
+
+msgid "profile.html_error"
+msgstr "このブラウザはHTML5 ファイル既読erをサポートしていません。"
+
+msgid "profile.not_a_valid_image"
+msgstr " 有効な画像ファイルではありません。"
+
+msgid "profile.select.province"
+msgstr "都道府県/市を選択してください"
+
+msgid "profile.validate_jd.check_password"
+msgstr "パスワードs Don\"t 一致"
+# End text Profile
+
+# Start text Permission
+
+msgid "permission.edit.success"
+msgstr "権限の更新に成功しました"
+
+## Teamplate Permission
+
+msgid "permission.index.header"
+msgstr "権限リスト"
+
+msgid "permission.change.header"
+msgstr "ユーザー権限の更新"
+
+msgid "permission.change.change_permission"
+msgstr "権限の変更"
+
+msgid "permission.select.team"
+msgstr "チームを選択してください"
+
+# End text Permission
+
+# Start text Onshore
+
+msgid "onshore.add.success"
+msgstr "Onsiterが正常に追加されました。"
+
+msgid "onshore.edit.success"
+msgstr "Onsiterが正常に編集されました。"
+
+msgid "onshore.delete.error"
+msgstr "プランを削除できませんでした。もう一度お試しください。"
+
+msgid "onshore.delete.success"
+msgstr "プランは削除されました。"
+
+## validate Onshore
+
+msgid "onshore.validate.time"
+msgstr "お願いします！ 入力時間を確認してください。"
+
+msgid "onshore.validate.time_exist"
+msgstr "入力時間が存在します。もう一度お試しください！"
+
+## Template Onshore
+
+msgid "onshore.breadcrumb"
+msgstr "Onshore JPの従業員"
+
+msgid "onshore.add.title"
+msgstr "新しいOnsiterを追加します"
+
+msgid "onshore.duration"
+msgstr "期間"
+
+msgid "onshore.first"
+msgstr "First"
+
+msgid "onshore.second"
+msgstr "Second"
+
+msgid "onshore.times"
+msgstr "回数"
+
+msgid "onshore.status.plan"
+msgstr "プラン"
+
+msgid "onshore.status.planned"
+msgstr "計画済み"
+
+msgid "onshore.status.planned_upper"
+msgstr "計画済み"
+
+msgid "onshore.status.ongoing"
+msgstr "進行中"
+
+msgid "onshore.status.ongoing_upper"
+msgstr "進行中"
+
+msgid "onshore.status.finished"
+msgstr "完了済み"
+
+msgid "onshore.status.finish"
+msgstr "完了"
+
+msgid "onshore.status.finished_upper"
+msgstr "完了済み"
+
+msgid "onshore.status.cancel"
+msgstr "キャンセル"
+
+msgid "onshore.status.cancelled"
+msgstr "キャンセル済み"
+
+msgid "onshore.status.cancelled_upper"
+msgstr "キャンセル済み"
+
+msgid "onshore.edit_plan_from"
+msgstr "プランを{0}から{1}に編集します"
+
+# End text Onshore
+
+# Start text ListCandidate
+
+## Template ListCandidate
+
+msgid "list_candidate.total_candidate"
+msgstr "（合計{0}人の候補者）"
+
+msgid "list_candidate.list_candidate"
+msgstr "候補者リスト"
+
+msgid "list_candidate.candidate_name"
+msgstr "候補者名"
+
+msgid "list_candidate.salary"
+msgstr "給与"
+
+msgid "list_candidate.first_interview_result"
+msgstr "第一次面接結果"
+
+msgid "list_candidate.second_interview_result"
+msgstr "第二次面接結果"
+
+msgid "list_candidate.position_applied"
+msgstr "応募ポジション"
+
+msgid "list_candidate.interview_details"
+msgstr "面接詳細"
+
+msgid "list_candidate.technical_round_result"
+msgstr "技術ラウンド結果"
+
+msgid "list_candidate.final_round_result"
+msgstr "最終ラウンド結果"
+
+msgid "list_candidate.working_office"
+msgstr "勤務オフィス"
+
+msgid "list_candidate.convert_to_employee"
+msgstr "従業員への転換"
+
+msgid "list_candidate.NA"
+msgstr "N/A"
+
+msgid "list_candidate.status.waiting"
+msgstr "待ち中"
+
+msgid "list_candidate.status.passed"
+msgstr "合格"
+
+msgid "list_candidate.status.fail"
+msgstr "不合格"
+
+msgid "list_candidate.status.kiv"
+msgstr "KIV"
+
+# End text ListCandidate
+
+# Stard text LogQps
+
+## Template LogQps
+
+msgid "log_qps.log_qps"
+msgstr "Qpsをログします"
+
+msgid "log_qps.qps_logs"
+msgstr "Qpsログ"
+
+msgid "log_qps.qps_server_logs"
+msgstr "QPS {0} ログ"
+
+msgid "log_qps.total_qps_logs"
+msgstr "総QPSログ"
+
+msgid "log_qps.total_qps_server_log"
+msgstr "総QPSサーバーログ"
+
+msgid "log_qps.qps_log"
+msgstr "QPS wshashinkan{0}z.prod.jp.local ログ"
+
+msgid "log_qps.report_log"
+msgstr "wshashinkan{0}z.prod.jp.local レポート"
+
+msgid "log_qps.report_all_server"
+msgstr "全サーバーのレポート"
+
+msgid "log_qps.min_second"
+msgstr "最小/秒"
+
+msgid "log_qps.max_second"
+msgstr "最大/秒"
+
+# End text LogQps
+
+# Start text Milestones
+
+msgid "milestones.save.success"
+msgstr "マイルストーンが保存されました！"
+
+msgid "milestones.delete.error"
+msgstr "マイルストーンを削除できませんでした。もう一度お試しください。"
+
+msgid "milestones.delete.success"
+msgstr "{0} が削除されました"
+
+## Validate Milestones
+
+msgid "milestones.validate.health"
+msgstr "健全状態を選択してください"
+
+msgid "milestones.validate.date"
+msgstr "計画済み {0} は必須です"
+
+## Template Milestones
+
+msgid "milestones.header"
+msgstr "プロジェクトのマイルストーンを追加します：{0}"
+
+msgid "milestones.header_edit"
+msgstr "マイルストーンの編集します：{0}"
+
+msgid "milestones.add_milestone"
+msgstr "マイルストーンの追加"
+
+msgid "milestones.edit_milestone"
+msgstr "マイルストーンの編集"
+
+msgid "milestones.miletones"
+msgstr "マイルストーン"
+
+msgid "milestones.%"
+msgstr "%"
+
+msgid "milestones.choose_health"
+msgstr "健全状態を選択してください"
+
+# End text Milestones
+
+# Start text Notification
+
+msgid "notification.update.success"
+msgstr "ステータスの更新に成功しました"
+
+msgid "notification.update.error"
+msgstr "ステータスの更新に失敗しました"
+
+## Template Notification
+
+msgid "notification.list_notifications"
+msgstr "通知リスト"
+
+msgid "notification.total_notifications"
+msgstr "（合計 {0} 通知）"
+
+msgid "notification.tick_readed"
+msgstr "既読にします"
+
+msgid "notification.read"
+msgstr "Read"
+
+msgid "notification.tick_unreaded"
+msgstr "未読にします"
+
+msgid "notification.unread"
+msgstr "未読"
+
+# End text Notification
+
+# Start text Login
+
+msgid "login.index.login_error"
+msgstr "メールアドレスまたはパスワードが正しくありません"
+
+msgid "login.index.account_permission_denied"
+msgstr "アカウントにはログインシステムの許可がありません"
+
+msgid "login.reset_pw.code_security_not_correct"
+msgstr "セキュリティコードが正しくありません！"
+
+msgid "login.reset_pw.empty"
+msgstr "パスワードをリセットしますURLにアクセスできます！"
+
+msgid "login.reset_pw.success"
+msgstr "パスワードのリセットに成功しました"
+
+msgid "login.verify.authenticator_error"
+msgstr "認証コードは6桁の数字です"
+
+msgid "login.verify.authenticator_incorrect"
+msgstr "認証コードが正しくありません"
+
+msgid "login.forgot.success"
+msgstr "パスワードリセットリンクがあなたのメールに送信されました。メールを確認してください"
+
+msgid "login.forgot.email_empty"
+msgstr "メールアドレスが存在しません！"
+
+## Template Login
+
+msgid "login.title"
+msgstr "タイムシート管理システム {0} | ログイン"
+
+msgid "login.title_verify"
+msgstr "タイムシート管理システム {0} | Authenticatorを使用した2段階認証"
+
+msgid "login.verification_code_your_phone"
+msgstr "携帯電話の認証アプリで生成された認証コードを入力してください。"
+
+msgid "login.enter_authenticator_code"
+msgstr "認証コードを入力します"
+
+msgid "login.switch_account"
+msgstr "アカウントを切り替えます"
+
+msgid "login.get_authenticator_on_your_phone"
+msgstr "携帯電話にAuthenticatorを取得します"
+
+msgid "login.title_reset_password"
+msgstr "{0} - タイムシート | パスワードをリセットします"
+
+msgid "login.timesheet_management_system"
+msgstr "タイムシート管理システム"
+
+msgid "login.forgot_password"
+msgstr "パスワードを忘れた場合"
+
+msgid "login.sign_in"
+msgstr "サインイン"
+
+msgid "login.input_email"
+msgstr "メールアドレスを入力してください"
+
+msgid "login.send"
+msgstr "送信"
+
+msgid "login.input_your"
+msgstr "あなたの {0} を入力してください"
+
+msgid "login.reset_password"
+msgstr "パスワードをリセットします"
+
+msgid "login.code_security"
+msgstr "セキュリティコード"
+
+msgid "login.template_reset_password.hello"
+msgstr "こんにちは"
+
+msgid "login.template_reset_password.your_code_security"
+msgstr "あなたのセキュリティコード"
+
+msgid "login.template_reset_password.click_here"
+msgstr "こちらをクリックしてください"
+
+msgid "login.template_reset_password.url_reset_password"
+msgstr "パスワードをリセットしますためのリンクをクリックしてください"
+
+# End text Login
+
+# Start text PaySlip
+
+## Template PaySlip
+
+msgid "pay_slip.pay_slip"
+msgstr "給与明細"
+
+msgid "pay_slip.working_hours"
+msgstr "労働時間"
+
+msgid "pay_slip.working_ot_week"
+msgstr "週の残業時間"
+
+msgid "pay_slip.working_ot_weekend"
+msgstr "週末の残業時間"
+
+msgid "pay_slip.working_ot_holiday"
+msgstr "休日の残業時間"
+
+msgid "pay_slip.total_work"
+msgstr "総労働時間"
+
+msgid "pay_slip.total_ot"
+msgstr "総残業時間"
+
+msgid "pay_slip.paylist_march"
+msgstr "2020年3月の給与明細"
+
+msgid "pay_slip.employee_infomation"
+msgstr "従業員情報"
+
+msgid "pay_slip.staff_code"
+msgstr "スタッフコード"
+
+msgid "pay_slip.standard_working_days"
+msgstr "標準労働日数"
+
+msgid "pay_slip.working_days"
+msgstr "実労働日数"
+
+msgid "pay_slip.family_deduction"
+msgstr "家族控除"
+
+msgid "pay_slip.annua_leave"
+msgstr "有給休暇"
+
+msgid "pay_slip.compensatory_time"
+msgstr "代休"
+
+msgid "pay_slip.units"
+msgstr "単位"
+
+msgid "pay_slip.earnings"
+msgstr "収入"
+
+msgid "pay_slip.basic_salary"
+msgstr "基本給"
+
+msgid "pay_slip.transportation"
+msgstr "交通費"
+
+msgid "pay_slip.housing"
+msgstr "住宅費"
+
+msgid "pay_slip.attendance"
+msgstr "出勤"
+
+msgid "pay_slip.telephone"
+msgstr "電話"
+
+msgid "pay_slip.childcare_support"
+msgstr "育児手当"
+
+msgid "pay_slip.car_parking"
+msgstr "駐車場"
+
+msgid "pay_slip.overtime_weekday"
+msgstr "平日の残業"
+
+msgid "pay_slip.overtime_weekend"
+msgstr "週末の残業"
+
+msgid "pay_slip.gross_payment"
+msgstr "総支給額"
+
+msgid "pay_slip.deduction"
+msgstr "控除"
+
+msgid "pay_slip.social_insurance"
+msgstr "社会保険（{0}%）"
+
+msgid "pay_slip.health_insurance"
+msgstr "健康保険（{0}%）"
+
+msgid "pay_slip.unemployment_insurance"
+msgstr "失業保険（{0}%）"
+
+msgid "pay_slip.pit"
+msgstr "所得税"
+
+msgid "pay_slip.indirect_tax"
+msgstr "間接税"
+
+msgid "pay_slip.net_salary"
+msgstr "純給与額"
+
+msgid "pay_slip.employee_signature"
+msgstr "従業員の署名"
+
+msgid "pay_slip.transportantion"
+msgstr "交通費"
+
+msgid "pay_slip.childecare_support"
+msgstr "育児手当"
+
+# End text PaySlip
+
+# Start text Overtime
+
+msgid "overtime.added_by"
+msgstr "追加者 "
+
+msgid "overtime.updated_by"
+msgstr "更新者 "
+
+msgid "overtime.adjusted_by"
+msgstr "調整者 "
+
+msgid "overtime.approved_timesheet"
+msgstr "承認されたタイムシート"
+
+msgid "overtime.reject_timesheet"
+msgstr "拒否されたタイムシート"
+
+msgid "overtime.sendmail.reject"
+msgstr "あなたのタイムシートは次の方に拒否されました:"
+
+msgid "overtime.timesheet_not_found"
+msgstr "タイムシートが見つかりません"
+
+msgid "overtime.delete.success"
+msgstr "タイムシートの削除が成功しました"
+
+msgid "overtime.delete.error"
+msgstr "タイムシートの削除エラー"
+
+msgid "overtime.revert.success"
+msgstr "タイムシートの切り戻しに成功しました"
+
+msgid "overtime.revert.error"
+msgstr "タイムシートの切り戻しのエラー"
+
+msgid "overtime.revert.revert_timesheet_small_than_24_hour_approve"
+msgstr "24時間以内に承認されたタイムシートの切り戻し"
+
+## Template Overtime
+
+msgid "overtime.approve_timesheet"
+msgstr "タイムシートを承認します"
+
+msgid "overtime.abbreviation_for_hour"
+msgstr "H"
+
+msgid "overtime.confirm_revert"
+msgstr "このレシピの切り戻しをしますか？"
+
+msgid "overtime.empty_data_timesheet"
+msgstr "空のデータタイムシート"
+
+msgid "overtime.empty_data"
+msgstr "空のデータ"
+
+msgid "overtime.checked_ot"
+msgstr "リスト内の残業時間を確認して、アクションをクリックしてください"
+
+msgid "overtime.alert.checked_ot"
+msgstr "リスト内の残業時間を確認してください"
+
+msgid "overtime.validate.hour"
+msgstr "週ごとの合計時間は40時間以上である必要があります"
+
+msgid "overtime.img.alt_use_profile"
+msgstr "ユーザープロフィール写真"
+
+msgid "overtime.img.please_fill_this_input"
+msgstr "この入力を記入してください。"
+
+msgid "overtime.msg.approve_timesheet"
+msgstr "このタイムシートを承認しますか？"
+
+msgid "overtime.msg.reject_timesheet"
+msgstr "このタイムシートを拒否しますか？"
+
+msgid "overtime.regular_time"
+msgstr "通常の時間"
+
+msgid "overtime.check_to_pay"
+msgstr "支払いを確認します"
+
+msgid "overtime.type_time"
+msgstr "時間のタイプ"
+
+msgid "overtime.hrs"
+msgstr "(時間)"
+
+msgid "overtime.total_regular_time"
+msgstr "合計通常時間"
+
+msgid "overtime.total_overtime"
+msgstr "合計残業時間"
+
+msgid "overtime.total_normal"
+msgstr "合計通常時間"
+
+msgid "overtime.total_weekend"
+msgstr "合計週末時間"
+
+msgid "overtime.total_holiday"
+msgstr "合計休日時間"
+
+msgid "overtime.maintenance"
+msgstr "メンテナンス中の機能"
+
+msgid "overtime.come_back_later"
+msgstr "後で戻ってきてください！"
+
+msgid "overtime.mail_rejected.title"
+msgstr "あなたのタイムシートリクエストは拒否されました"
+
+# End text Overtime
+
+# Start text LevelOuts
+
+msgid "level_outs.add.success"
+msgstr "残業許可時間の追加に成功しました"
+
+msgid "level_outs.add.error"
+msgstr "残業許可時間の追加に失敗しました"
+
+msgid "level_outs.edit.success"
+msgstr "残業許可時間の更新に成功しました"
+
+msgid "level_outs.edit.error"
+msgstr "残業許可時間の更新に失敗しました"
+
+msgid "level_outs.add.ot_invalid"
+msgstr "残業許可時間が無効です"
+
+# End text LevelOuts
+
+# Start text Leave
+
+msgid "leave.add.text_submitted_Leave_request"
+msgstr "休暇申請が提出されました"
+
+msgid "leave.add.text_updated_Leave_request"
+msgstr "休暇申請が更新されました"
+
+msgid "leave.add.text_Leave_request_from"
+msgstr "からの休暇申請"
+
+msgid "leave.add.success"
+msgstr "休暇を追加しました"
+
+msgid "leave.update.success"
+msgstr "休暇を更新しました"
+
+msgid "leave.text_approve"
+msgstr "あなたの休暇申請が承認されたのは"
+
+msgid "leave.text_approve_leave_request"
+msgstr "承認されました休暇申請"
+
+msgid "leave.delete.error"
+msgstr "休暇を削除できませんでした。もう一度お試しください。"
+
+msgid "leave.delete.success"
+msgstr "休暇は削除されました"
+
+msgid "leave.check_leave.date_is_full"
+msgstr "{0} の休暇日がいっぱいです"
+
+msgid "leave.check_leave.leave_is_malformed"
+msgstr "データの休暇が不正です"
+
+## validate
+
+msgid "leave.validate.number_day"
+msgstr "0日以上の休暇日数"
+
+msgid "leave.validate.cannot_find_user_id"
+msgstr "ユーザーIDが見つかりません"
+
+msgid "leave.validate.Invalid_date"
+msgstr "入力された日付が無効です"
+
+msgid "leave.validate.cannot_find_day_off"
+msgstr "休みがありません"
+
+msgid "leave.validate.cannot_find_day_off_for_user"
+msgstr "ユーザーは休みがありません"
+
+msgid "leave.validate.start_time"
+msgstr "開始時間は終了時間よりも小さくしますことはできません。"
+
+msgid "leave.validate.has_existed"
+msgstr "休暇時間が既に存在しています"
+
+msgid "leave.validate.already_exists"
+msgstr "休暇時間はすでにタイムシートに存在しています"
+
+msgid "leave.validate.description_not_empty"
+msgstr "説明が空ではありません"
+
+msgid "leave.validate.team_building_leave_already_exists"
+msgstr "チームビルディング休暇はすでに存在しています"
+
+msgid "leave.validate.health_checkup_leave_already_exists"
+msgstr "健康診断休暇はすでに存在しています"
+
+msgid "leave.validate.debit_not_exceed_12_days"
+msgstr "前借りが12日を超えてはいけません"
+
+msgid "leave.add.leaver_error"
+msgstr "休暇のタイプエラー"
+
+msgid "leave.validate.annual_leave_cannot_day_limit_exceeded"
+msgstr "年次有給休暇の合計日数は年次有給休暇の日数を超えてはなりません"
+
+msgid "leave.validate.leave_a_not_bigger_than_b"
+msgstr "{0}日の休暇は{1}よりも大きくありません"
+
+msgid "leave.validate.compensatory_leave_exceeds_limit"
+msgstr "代休の合計は代休を超えてはいけません"
+
+msgid "leave.validate.sabbatical_leave_days_remaining"
+msgstr "全てのサバティカル休暇を使い切っていません"
+
+msgid "leave.validate.the_user_does_not_exist"
+msgstr "ユーザーが存在しません"
+
+msgid "leave.validate.the_file_not_found"
+msgstr "ファイルが見つかりません"
+
+msgid "leave.validate.type_valid"
+msgstr "有効なタイプ"
+
+msgid "leave.validate.validate.exists"
+msgstr "この従業員のチームビルディング休暇はすでに存在しています。"
+
+## Template Leave
+
+msgid "leave.my_leave_list"
+msgstr "自分の休暇リスト"
+
+msgid "leave.health_certification_"
+msgstr "健康証明書"
+
+msgid "leave.leave_list_of"
+msgstr "の休暇リスト"
+
+msgid "leave.day_off_add"
+msgstr "休暇追加"
+
+msgid "leave.accrued_annual_leave_in"
+msgstr "による積み立てた有給休暇"
+
+msgid "leave.accrued_compensatory_leave_in"
+msgstr "による積み立てた代休"
+
+msgid "leave.leave_type"
+msgstr "休暇の種類"
+
+msgid "leave.reason_for_leave"
+msgstr "休暇の理由"
+
+msgid "leave.leave_start"
+msgstr "休暇開始"
+
+msgid "leave.leave_end"
+msgstr "休暇終了"
+
+msgid "leave.number_of_days"
+msgstr "日数"
+
+msgid "leave.submit_from_timesheet"
+msgstr "タイムシートから送信"
+
+msgid "leave.edit_leave"
+msgstr "休暇の編集"
+
+msgid "leave.approver_s"
+msgstr "承認者"
+
+msgid "leave.select_approve"
+msgstr "承認者を選択します"
+
+msgid "leave.number_of_day_remaining"
+msgstr "残りの日数"
+
+msgid "leave.compensatory_leave_remaining"
+msgstr "残りの代休"
+
+msgid "leave.upload_health_certification"
+msgstr "健康証明書をアップロード"
+
+msgid "leave.morning"
+msgstr "午前"
+
+msgid "leave.afternoon"
+msgstr "午後"
+
+msgid "leave.registration_date"
+msgstr "登録日"
+
+msgid "leave.hours"
+msgstr "時間"
+
+msgid "leave.go_to_screen"
+msgstr "承認画面に移動します"
+
+msgid "leave.click_to_download"
+msgstr "ダウンロードしますにはクリック"
+
+msgid "leave.team_selected"
+msgstr "選択されたチーム"
+
+msgid "leave.start_time"
+msgstr "開始時間"
+
+msgid "leave.end_time"
+msgstr "終了時間"
+
+msgid "leave.leave_plan_in_group"
+msgstr "グループの休暇計画"
+
+msgid "leave.public_holiday"
+msgstr "祝日"
+
+msgid "leave.personal_leave"
+msgstr "個人休暇"
+
+msgid "leave.note_ph"
+msgstr "PH"
+
+msgid "leave.note_pl"
+msgstr "PL"
+
+msgid "leave.note_x"
+msgstr "X"
+
+msgid "leave.note_o"
+msgstr "O"
+
+msgid "leave.note_leave"
+msgstr "日付はあなたのメンバーが休暇を取る予定の ({0}日)"
+
+msgid "leave.associate_name"
+msgstr "アソシエイト名"
+
+msgid "leave.my_leave_balance"
+msgstr "自分の休暇残高"
+
+msgid "leave.leave_name"
+msgstr "休暇名"
+
+msgid "leave.accrued"
+msgstr "積み立て"
+
+msgid "leave.taken"
+msgstr "取得済み"
+
+msgid "leave.current_balance"
+msgstr "現在の残高"
+
+msgid "leave.revert_list"
+msgstr "リバートリスト"
+
+msgid "padding"
+msgstr "パディング"
+
+msgid "leave.sabbatical_leave"
+msgstr "サバティカル休暇"
+
+msgid "leave.unpaid_leave"
+msgstr "無給休暇"
+
+msgid "leave.sick_leave"
+msgstr "病気休暇"
+
+msgid "leave.marriage_leave"
+msgstr "結婚休暇"
+
+msgid "leave.maternity_leave"
+msgstr "産休"
+
+msgid "leave.bereavement_leave"
+msgstr "喪失休暇"
+
+msgid "leave.childcare_leave"
+msgstr "育児休暇"
+
+msgid "leave.leave_list_member"
+msgstr "休暇リストメンバー"
+
+msgid "leave.leaves_report"
+msgstr "休暇レポートの概要"
+
+msgid "leave.hi"
+msgstr "Hi"
+
+msgid "leave.title_report"
+msgstr "こちらがあなたの年次休暇報告書です。"
+
+msgid "leader"
+msgstr "リーダー"
+
+msgid "leave.detail_leave_title_first"
+msgstr "合計年次有給休暇"
+
+msgid "leave.detail_leave_title_last"
+msgstr "(単位: 日)"
+
+msgid "leave.detail_leave_title_compensatory"
+msgstr "合計代休: {0} (単位: 日)"
+
+msgid "leave.confirm_approve_wfh"
+msgstr "この在宅勤務リクエストを承認してもよろしいですか？"
+
+msgid "leave.confirm_reject_wfh"
+msgstr "この在宅勤務リクエストを拒否してもよろしいですか？"
+
+msgid "leave.date_of_Leave"
+msgstr "休暇の日付"
+
+msgid "leave.accumulative_leave"
+msgstr "積算休暇"
+
+msgid "leave.used_leave"
+msgstr "使用された休暇"
+
+msgid "leave.annual_leave"
+msgstr "年次休暇"
+
+msgid "leave.used_annual_leave"
+msgstr "使用された年次休暇"
+
+msgid "leave.current_leave_balance"
+msgstr "現在の休暇残高"
+
+msgid "leave.compensatory_leave"
+msgstr "代休"
+
+msgid "leave.total_leave_remaining"
+msgstr "残りの総休暇"
+
+msgid "leave.leave_detail"
+msgstr "休暇の詳細"
+
+msgid "leave.data-msg.approve"
+msgstr "この休暇リクエストを承認してもよろしいですか？"
+
+msgid "leave.data-msg.reject"
+msgstr "この休暇リクエストを拒否してもよろしいですか？"
+
+msgid "leave.add_leave"
+msgstr "休暇を追加します"
+
+msgid "leave.template_mail_status_padding"
+msgstr "あなたの承認待ちの休暇リクエスト"
+
+msgid "leave.template_mail_status_ok"
+msgstr "あなたの休暇リクエストが承認されました"
+
+msgid "leave.template_mail_status_rejected"
+msgstr "あなたの休暇リクエストが拒否されました"
+
+msgid "respond"
+msgstr "返信します"
+
+msgid "leave.total_approved_annual_leave"
+msgstr "合計承認された年次有給休暇"
+
+msgid "leave.total_approved_compensatory_leave"
+msgstr "合計承認された代休"
+
+msgid "leave.current_balance_annual_leave"
+msgstr "現在の残高年次有給休暇"
+
+msgid "leave.current_balance_compensatory_leave"
+msgstr "現在の残高代休"
+
+# End text Leave
+
+
+
+# Start text Figures
+
+msgid "figures.title"
+msgstr "FIGURES"
+
+msgid "figures.index.add_figures"
+msgstr "FIGURESを追加します"
+
+msgid "figures.index.effort"
+msgstr "労力 (m日)"
+
+msgid "figures.index.record_date"
+msgstr "記録日"
+
+msgid "figures.add.title"
+msgstr "プロジェクトの数字を追加します: {0}"
+
+msgid "figures.edit.breadcrum"
+msgstr "数字を編集します"
+
+msgid "figures.add.form.type"
+msgstr "タイプ"
+
+msgid "figures.add.form.choose_type"
+msgstr "タイプを選択します"
+
+msgid "figures.add.form.record_date"
+msgstr "記録日"
+
+msgid "figures.add.form.value"
+msgstr "値"
+
+msgid "figures.add.form.effort"
+msgstr "Effort"
+
+msgid "figures.add.form.button_add"
+msgstr "追加"
+
+msgid "figures.add.form.button_cancel"
+msgstr "キャンセル"
+
+msgid "figures.add.success"
+msgstr "数字が保存されました！"
+
+msgid "figures.edit.title"
+msgstr "数字のタイプを編集します"
+
+msgid "figures.edit.not_found"
+msgstr "タイプ: {0} の数字を編集できませんでした！もう一度お試しください！"
+
+msgid "figures.edit.success"
+msgstr "数字が編集されました！"
+
+msgid "figures.delete.fail"
+msgstr "数字を削除できませんでした。もう一度お試しください。"
+
+msgid "figures.delete.success"
+msgstr "{0} の値が削除されました"
+
+msgid "figures.index.message_confirm"
+msgstr "この値を削除してもよろしいですか？"
+
+msgid "figures.validation.required"
+msgstr "{0} が必要です！"
+
+# End text Figures
+
+
+# Start text Figure Type
+
+msgid "figure_type.index.add_figure_type"
+msgstr "数字タイプを追加します"
+
+msgid "figure_type.index.message_confirm"
+msgstr "削除してもよろしいですか？"
+
+msgid "figure_type.add.form.button_submit"
+msgstr "提出します"
+
+msgid "figure_type.add.form.button_cancel"
+msgstr "キャンセルします"
+
+msgid "figure_type.add.success"
+msgstr "数字タイプが保存されました！"
+
+msgid "figure_type.edit.title_edit"
+msgstr "数字タイプの編集: {0}"
+
+msgid "figure_type.edit.not_found"
+msgstr "この数字タイプが見つかりません！もう一度お試しください！"
+
+msgid "figure_type.edit.success"
+msgstr "数字タイプが編集されました！"
+
+msgid "figure_type.delete.fail"
+msgstr "この数字タイプを削除できません！"
+
+msgid "figure_type.delete.success"
+msgstr "{0} が削除されました！"
+
+msgid "figure_type.delete.in_use"
+msgstr "数字タイプ: {0} はすでに使用されています。削除できません。"
+
+msgid "figure_type.validation.required"
+msgstr "{0} は必須です。"
+
+msgid "figure_type.validation.maxlength"
+msgstr "{0} は長すぎです。最大 {1} 文字までです。"
+
+# End text Figure Type
+
+
+# Start text Function
+
+msgid "function.index.function_list"
+msgstr "関数リスト"
+
+msgid "function.index.total_function"
+msgstr "(合計 {0} 関数)"
+
+msgid "function.index.value"
+msgstr "値"
+
+msgid "function.index.message_confirm"
+msgstr "削除してもよろしいですか"
+
+msgid "function.add.title_add"
+msgstr "関数を追加します"
+
+msgid "function.add.form.value"
+msgstr "値"
+
+msgid "function.add.form.value.placeholder"
+msgstr "eg: ユーザー/追加"
+
+msgid "function.add.form.group"
+msgstr "グループ"
+
+msgid "function.add.success"
+msgstr "関数が保存されました。"
+
+msgid "function.add.success.log"
+msgstr "関数を作成します"
+
+msgid "function.add.fail"
+msgstr "関数を保存できませんでした。もう一度お試しください。"
+
+msgid "function.edit.title_edit"
+msgstr "関数を編集します"
+
+msgid "function.edit.success.log"
+msgstr "関数を編集します"
+
+msgid "function.edit.success"
+msgstr "関数が編集されました。"
+
+msgid "function.edit.fail"
+msgstr "関数を編集できませんでした。もう一度お試しください。"
+
+msgid "function.delete.fail"
+msgstr "関数を削除できませんでした。もう一度お試しください。"
+
+msgid "function.delete.success"
+msgstr "{0} が削除されました！"
+
+msgid "function.delete.success.log"
+msgstr "関数を削除します"
+
+# End text Function
+
+
+# Start text History
+
+msgid "history.history"
+msgstr "履歴"
+
+msgid "history.index.view_history"
+msgstr "履歴を表示します"
+
+msgid "history.view.old_title"
+msgstr "古いタイトル"
+
+msgid "history.view.new_title"
+msgstr "新しいタイトル"
+
+msgid "history.view.roles_old"
+msgstr "以前の役割"
+
+msgid "history.view.roles_new"
+msgstr "新しい役割"
+
+msgid "history.view.promoted_date"
+msgstr "昇進日"
+
+msgid "history.view.duration"
+msgstr "期間"
+
+msgid "history.view.note"
+msgstr "メモ"
+
+msgid "history.view.confirm_message"
+msgstr "この行を削除してもよろしいですか？"
+
+msgid "history.delete.fail"
+msgstr "履歴を削除できませんでした。もう一度お試しください。"
+
+msgid "history.delete.success"
+msgstr "この履歴は削除されました！"
+
+msgid "history.delete.success.log"
+msgstr "昇進履歴を削除します"
+
+msgid "history.edit.current_business_title"
+msgstr "現在のビジネスタイトル"
+
+msgid "history.edit.new_role"
+msgstr "新しい役割"
+
+msgid "history.edit.edit_title"
+msgstr "昇進履歴を編集します"
+
+msgid "history.edit.new_business"
+msgstr "新しいビジネス"
+
+msgid "history.edit.business_update.success"
+msgstr "あなたのビジネスタイトルが更新されました！"
+
+msgid "history.edit.business_role_update.success"
+msgstr "あなたのビジネスタイトルと役割がアップグレードされました！"
+
+msgid "history.edit.success"
+msgstr "履歴が編集されました！"
+
+# End text History
+
+
+# Start text Holiday
+
+msgid "holiday.index.title_index"
+msgstr "休日リスト"
+
+msgid "holiday.index.title_add"
+msgstr "休日を追加します"
+
+msgid "holiday.index.total_holiday"
+msgstr "（合計 {0} 日）"
+
+msgid "holiday.index.time"
+msgstr "時間"
+
+msgid "holiday.index.message_confirm"
+msgstr "本当に削除しますか"
+
+msgid "holiday.add.form.time"
+msgstr "時間"
+
+msgid "holiday.add.form.time.placeholder"
+msgstr "時間"
+
+msgid "holiday.add.form.description.placeholder"
+msgstr "ここにテキストを入力してください"
+
+msgid "holiday.add.success.log"
+msgstr "休日を作成します"
+
+msgid "holiday.add.success"
+msgstr "休日が保存されました。"
+
+msgid "holiday.add.fail"
+msgstr "休日を保存できませんでした。もう一度お試しください。"
+
+msgid "holiday.add.missing_data"
+msgstr "データが不足しています"
+
+msgid "holiday.index.title_edit"
+msgstr "休日を編集します"
+
+msgid "holiday.index.title_delete"
+msgstr "休日を削除します"
+
+msgid "holiday.edit.success.log"
+msgstr "休日を編集します"
+
+msgid "holiday.edit.success"
+msgstr "休日が編集されました。"
+
+msgid "holiday.edit.fail"
+msgstr "休日を編集できませんでした。もう一度お試しください。"
+
+msgid "holiday.delete.success.log"
+msgstr "休日を削除します"
+
+msgid "holiday.delete.success"
+msgstr "{0} が削除されました。"
+
+msgid "holiday.delete.fail"
+msgstr "休日を削除できませんでした。もう一度お試しください。"
+
+msgid "holiday.validation.required"
+msgstr "{0} が必要です。"
+
+msgid "holiday.validation.maxlength"
+msgstr "{0} は長すぎです。最大 {1} 文字です。"
+
+msgid "holiday.validation.time_format"
+msgstr "時間の形式が正しくありません。"
+
+# End text Holiday
+
+
+# Start text Home
+
+msgid "home.index.total_member"
+msgstr "合計: {0} メンバー"
+
+msgid "members"
+msgstr "メンバー"
+
+msgid "approved"
+msgstr "承認済み"
+
+msgid "un_approved"
+msgstr "未承認"
+
+msgid "rejected"
+msgstr "拒否された"
+
+msgid "home.index.attrition_rate"
+msgstr "離職率"
+
+msgid "home.index.leave_type"
+msgstr "休暇タイプ"
+
+msgid "home.index.submit_from_timesheet"
+msgstr "（タイムシートから送信）"
+
+msgid "home.index.day"
+msgstr " 日"
+
+msgid "home.index.full_day"
+msgstr " （フルデイ）"
+
+msgid "home.index.other"
+msgstr "その他"
+
+msgid "home.index.wfh_type"
+msgstr "WFHタイプ"
+
+msgid "home.index.full_day_wfh"
+msgstr "フルデイWFH"
+
+msgid "home.index.hours_wfh"
+msgstr "（時間）WFH"
+
+msgid "home.index.billable_resource"
+msgstr "請求可能リソース"
+
+msgid "home.index.current_utilization"
+msgstr "現在の利用状況"
+
+msgid "home.index.current_billable"
+msgstr "現在の請求可能"
+
+msgid "home.index.your_current_project_utilization"
+msgstr "現在のプロジェクト利用状況"
+
+msgid "home.index.rockie_award.date_awarded"
+msgstr "授与日"
+
+msgid "home.index.rockie_award.award"
+msgstr "受賞"
+
+msgid "home.index.timesheet_report"
+msgstr "タイムシートレポート"
+
+msgid "home.index.team_solution_employees"
+msgstr "チームソリューション社員"
+
+msgid "home.index.team_organization"
+msgstr "チーム組織"
+
+msgid "home.index.intern_inclusive"
+msgstr "インターン含む"
+
+msgid "home.index.active_project_chart"
+msgstr "アクティブプロジェクトチャート"
+
+msgid "home.index.project_report.resource_allocation"
+msgstr "プロジェクトへのリソース割り当てレポート"
+
+msgid "home.index.project_report.select_project"
+msgstr "チャート内のプロジェクトを選択します"
+
+msgid "home.index.project_report.select_project.placeholder"
+msgstr "複数プロジェクトを選択します"
+
+msgid "home.index.monthly_project_utilization"
+msgstr "月次プロジェクト利用状況"
+
+msgid "home.index.monthly_project_utilization.select_project"
+msgstr "チャート内のプロジェクトを選択します"
+
+msgid "home.index.monthly_project_utilization.select_project.placeholder"
+msgstr "複数プロジェクトを選択します"
+
+msgid "home.index.project_report.by_country"
+msgstr "国ごとに配布されたプロジェクト"
+
+msgid "home.index.project_report.by_account"
+msgstr "アカウントごとに配布されたプロジェクト"
+
+msgid "home.index.project_report.by_country.select_project"
+msgstr "オプションを選択します"
+
+msgid "home.index.monthly_project_utilization.select_project.placeholder"
+msgstr "複数プロジェクトを選択します"
+
+msgid "home.index.title_break_down_chart"
+msgstr "タイトル別チャート"
+
+msgid "home.index.meeting_room"
+msgstr "会議室予約カレンダー"
+
+msgid "home.index.senior_and_junior_ratio"
+msgstr "シニアとジュニアの比率"
+
+msgid "home.index.resource"
+msgstr "リソース"
+
+msgid "home.index.senior_and_junior_ratio.senior"
+msgstr "シニア"
+
+msgid "home.index.senior_and_junior_ratio.junior"
+msgstr "ジュニア"
+
+msgid "home.index.week_to_week"
+msgstr "週 {0} から週 {1} のタイムシート"
+
+# End text Home
+
+
+# Start text Incentive
+
+msgid "incentive.index.title"
+msgstr "インセンティブ証明書"
+
+msgid "incentive.index.title_add"
+msgstr "インセンティブ証明書を追加します"
+
+msgid "incentive.index.title_edit"
+msgstr "インセンティブ証明書を編集します"
+
+msgid "incentive.index.title_delete"
+msgstr "インセンティブ証明書を削除します"
+
+msgid "incentive.index.incentive_type"
+msgstr "インセンティブタイプ"
+
+msgid "incentive.index.incentive_name"
+msgstr "インセンティブ名"
+
+msgid "incentive.index.yearly_incentive"
+msgstr "年次インセンティブ (VND)"
+
+msgid "incentive.index.monthly_incentive"
+msgstr "月次インセンティブ (VND)"
+
+msgid "incentive.index.message_confirm"
+msgstr "削除してもよろしいですか"
+
+msgid "incentive.add.form.incentive_type"
+msgstr "インセンティブタイプ"
+
+msgid "incentive.add.form.incentive_type.choose"
+msgstr "インセンティブタイプを選択します"
+
+msgid "incentive.add.form.incentive_type.add"
+msgstr "インセンティブタイプを追加します"
+
+msgid "incentive.add.success"
+msgstr "インセンティブが保存されました！"
+
+msgid "incentive.validation.incentive_type_inactive"
+msgstr "インセンティブタイプは非アクティブです。"
+
+msgid "incentive.validation.required"
+msgstr "{0} が必要です。"
+
+msgid "incentive.validation.exists"
+msgstr "{0} はすでに存在しています。"
+
+msgid "incentive.validation.maxlength"
+msgstr "{0} は長すぎです。最大 {1} 文字です。"
+
+msgid "incentive.validation.numeric"
+msgstr "{0} は数値である必要があります。"
+
+msgid "incentive.validation.greaterThan"
+msgstr "{0} は {1} 以上でなければなりません。"
+
+msgid "incentive.edit.certificate_name"
+msgstr "証明書名: {0}"
+
+msgid "incentive.edit.success"
+msgstr "インセンティブが編集されました！"
+
+msgid "incentive.delete.fail"
+msgstr "インセンティブを削除できませんでした。もう一度お試しください。"
+
+msgid "incentive.delete.in_use"
+msgstr "インセンティブ: {0} はすでに使用中です。削除できません。"
+
+msgid "incentive.delete.success"
+msgstr "{0} が削除されました！"
+
+msgid "incentive.validation.not_valid_file"
+msgstr "有効な画像ファイルではありません。"
+
+msgid "incentive.save_new.fail"
+msgstr "新しいインセンティブを保存できませんでした。"
+
+# End text Incentive
+
+
+# Start text Incentive Type
+
+msgid "incentive_type.index.title_add"
+msgstr "インセンティブタイプを追加します"
+
+msgid "incentive_type.index.title_edit"
+msgstr "インセンティブタイプを編集します"
+
+msgid "incentive_type.index.title_delete"
+msgstr "インセンティブタイプを削除します"
+
+msgid "incentive_type.index.message_confirm"
+msgstr "削除してもよろしいですか"
+
+msgid "incentive_type.add.form.name"
+msgstr "インセンティブタイプ名"
+
+msgid "incentive_type.add.success"
+msgstr "インセンティブタイプが保存されました！"
+
+msgid "incentive_type.add.fail"
+msgstr "インセンティブタイプの保存に失敗しました！"
+
+msgid "incentive_type.edit.title_edit.name"
+msgstr "インセンティブタイプ名: {0}"
+
+msgid "incentive_type.edit.no_incentive_type"
+msgstr "編集しますインセンティブタイプがありません！"
+
+msgid "incentive_type.edit.success"
+msgstr "インセンティブタイプが編集されました！"
+
+msgid "incentive_type.edit.fail"
+msgstr "インセンティブタイプの編集に失敗しました！"
+
+msgid "incentive_type.delete.fail"
+msgstr "インセンティブタイプを削除できませんでした。もう一度お試しください。"
+
+msgid "incentive_type.delete.in_use"
+msgstr "インセンティブタイプ: {0} はすでに使用中です。削除できません。"
+
+msgid "incentive_type.delete.success"
+msgstr "{0}が削除されました。"
+
+msgid "incentive_type.validation.required"
+msgstr "{0}は必須です。"
+
+msgid "incentive_type.validation.exists"
+msgstr "{0}はすでに存在しています。"
+
+msgid "incentive_type.validation.maxlength"
+msgstr "{0}は長すぎです。最大文字数は{1}です。"
+
+# End text Incentive Type
+
+
+# Insert Annual Review start
+msgid "insert_annual_review.save_many_rating.fail"
+msgstr "査定を保存できませんでした。もう一度お試しください。"
+
+msgid "insert_annual_review.save_many_rating.success"
+msgstr "査定が保存されました。"
+# Insert Annual Review end
+
+# Start text Iwo Detail
+
+msgid "iwo_detail.title"
+msgstr "内部作業オーダー"
+
+msgid "iwo_detail.index.title_add"
+msgstr "IWOを追加します"
+
+msgid "iwo_detail.save_only.success"
+msgstr "IWOが保存されました！"
+
+msgid "iwo_detail.title_send_mail.submitted"
+msgstr "{0} - 内部作業オーダーの承認（バージョン {1}）"
+
+msgid "iwo_detail.save_history.fail"
+msgstr "履歴を保存できません！データを再度確認してください。"
+
+msgid "iwo_detail.add.success"
+msgstr "IWOが保存されました！GMへ通知メールが送信されました！"
+
+msgid "iwo_detail.add.fail"
+msgstr "保存できません！データを再度確認してください！"
+
+msgid "iwo_detail.title_send_mail.approved"
+msgstr "内部作業オーダーの承認がされました！"
+
+msgid "iwo_detail.title_send_mail.rejected"
+msgstr "内部作業オーダーの承認が拒否されました！"
+
+msgid "iwo_detail.delete.fail"
+msgstr "この行を削除できません！"
+
+msgid "iwo_detail.delete.success"
+msgstr "この行は削除されました！"
+
+msgid "iwo_detail.validation.date"
+msgstr "終了日は開始日より後でなければなりません！"
+
+msgid "iwo_detail.validation.effort"
+msgstr "労力は0から100の間でなければなりません！"
+
+msgid "iwo_detail.add_row.success"
+msgstr "テーブルに追加しました！"
+
+msgid "iwo_detail.add.missing_data"
+msgstr "以下のフィールドをすべて入力してください！"
+
+msgid "iwo_detail.add.title"
+msgstr "プロジェクトにIWOを追加します: {0}"
+
+msgid "iwo_detail.add.form.member.choose_member"
+msgstr "メンバーを選択します"
+
+msgid "iwo_detail.add.form.effort"
+msgstr "%労力"
+
+msgid "iwo_detail.add.form.button_add"
+msgstr "メンバーを追加します"
+
+msgid "iwo_detail.add.form.button_clear"
+msgstr "クリア"
+
+msgid "iwo_detail.add.title_delete"
+msgstr "行を削除します"
+
+msgid "iwo_detail.add.title_edit"
+msgstr "行を編集します"
+
+msgid "iwo_detail.add.total.hours"
+msgstr "合計（時間）"
+
+msgid "iwo_detail.add.total.man_month"
+msgstr "合計（人月）"
+
+msgid "iwo_detail.add.button_send_mail"
+msgstr "保存してメールを送信します"
+
+msgid "iwo_detail.add.button_save_only"
+msgstr "保存のみ"
+
+msgid "iwo_detail.edit_row.success"
+msgstr "行を編集しました！"
+
+msgid "iwo_detail.index.pending_iwo_approve"
+msgstr "保留中のIWOバージョン: {0}"
+
+msgid "iwo_detail.index.message_confirm_approve"
+msgstr "IWOを{0}してもよろしいですか？"
+
+msgid "iwo_detail.index.title_view_history"
+msgstr "IWO詳細（バージョン{0}）"
+
+msgid "iwo_detail.email_gm.title_effort"
+msgstr "努力（時間）"
+
+msgid "iwo_detail.email_gm.title_review"
+msgstr "レビュー"
+
+# End text Iwo Detail
+
+
+# Start text Kpi Config
+
+msgid "kpi.mark"
+msgstr "マーク"
+
+msgid "kpi.outstanding"
+msgstr "優れており期待を大きく上回ります/優れています"
+
+msgid "kpi.consistently_exceeds_expectations"
+msgstr "一貫して期待を上回ります"
+
+msgid "kpi.meets_occasionally_exceeds_expectations"
+msgstr "期待を満たします/時折期待を上回ります"
+
+msgid "kpi.partially_meets_expectations"
+msgstr "一部期待に応えます"
+
+msgid "kpi.below_expectations"
+msgstr "期待を下回ります"
+
+msgid "kpi.index.title_list_kpi"
+msgstr "KPI設定リスト"
+
+msgid "kpi.index.title_one_kpi"
+msgstr "KPI設定"
+
+msgid "kpi.index.form_search.choose_category"
+msgstr "評価カテゴリを選択します"
+
+msgid "kpi.index.form_search.choose_role"
+msgstr "役割を選択します"
+
+msgid "kpi.index.form_search.choose_year"
+msgstr "年を選択します"
+
+msgid "kpi.index.critical_of_evaluation"
+msgstr "評価の重要事項"
+
+msgid "kpi.index.target"
+msgstr "Target"
+
+msgid "kpi.index.weight"
+msgstr "重み"
+
+msgid "kpi.index.1_level_evaluation_comment"
+msgstr "1レベル評価者のコメント"
+
+msgid "kpi.index.2_level_evaluation_comment"
+msgstr "2レベル評価者のコメント"
+
+msgid "kpi.index.manager_comment"
+msgstr "マネージャーのコメント"
+
+msgid "kpi.index.button_copy"
+msgstr "コピー"
+
+msgid "kpi.index.kpi_for_role"
+msgstr "役割のKPI"
+
+msgid "kpi.index.appraisal_category"
+msgstr "評価カテゴリ"
+
+msgid "kpi.index.confirm_message"
+msgstr "年{0}タイプ{1}のKPIを削除してもよろしいですか？"
+
+msgid "kpi.copy.title_copy"
+msgstr "KPI設定を年{0}から{1}にコピーします"
+
+msgid "kpi.copy.form.text"
+msgstr "テキスト"
+
+msgid "kpi.copy.form.mark_define"
+msgstr "マークの定義"
+
+msgid "kpi.copy.form.match"
+msgstr "Match"
+
+msgid "kpi.copy.form.value"
+msgstr "値"
+
+msgid "kpi.copy.success"
+msgstr "KPI設定がコピーされました！"
+
+msgid "kpi.copy.fail"
+msgstr "KPI設定はコピーされませんでした！"
+
+msgid "kpi.edit.success"
+msgstr "KPI設定が編集されました！"
+
+msgid "kpi.edit.fail"
+msgstr "KPI設定は編集されませんでした！"
+
+msgid "kpi.edit.not_found"
+msgstr "この年のKPI設定が見つかりません！"
+
+msgid "kpi.delete.fail"
+msgstr "KPI設定を削除できませんでした。もう一度お試しください。"
+
+msgid "kpi.delete.success"
+msgstr "このKPI設定は削除されました"
+
+msgid "kpi.edit.title_edit"
+msgstr "KPI設定を編集します"
+
+# End text Kpi Config
+
+
+# End text Interview First
+
+msgid "interview_first.add_interviewer.title"
+msgstr "面接官を追加します"
+
+msgid "interview_first.add_interviewer.form.candidate_name"
+msgstr "候補者の名前"
+
+msgid "interview_first.add_interviewer.form.position_recommended"
+msgstr "推奨されたポジション"
+
+msgid "interview_first.add_interviewer.form.first_date_time"
+msgstr "面接日時（最初の面接）"
+
+msgid "interview_first.add_interviewer.form.first_interviewer"
+msgstr "面接官（最初の面接）"
+
+msgid "interview_first.add_interviewer.form.interviewer.select_interviewer"
+msgstr "Select Interviewer"
+
+msgid "interview_first.add_interviewer.form.cc_send_mail"
+msgstr "CC sendmail（最初の面接）（あれば）"
+
+msgid "interview_first.add_interviewer.form.cancel.check"
+msgstr "面接のキャンセルを確認します"
+
+msgid "interview_first.add_interviewer.form.cancel.un_check"
+msgstr "面接キャンセルを解除します"
+
+msgid "interview_first.add_interviewer.form.title_and_project"
+msgstr "タイトルとプロジェクト/部門"
+
+msgid "interview_first.add_interviewer.form.interview_venue"
+msgstr "面接会場"
+
+msgid "interview_first.add_interviewer.form.interview_venue.select_room"
+msgstr "部屋を選択します"
+
+msgid "interview_first.add_interviewer.form.link_meeting"
+msgstr "会議のリンク"
+
+msgid "interview_first.add_interviewer.form.recruiter"
+msgstr "担当リクルーター"
+
+msgid "interview_first.add_interviewer.form.plan_interview_second"
+msgstr "第二面接の計画"
+
+msgid "interview_first.add_interviewer.form.second_date_time"
+msgstr "面接日時（第二面接）"
+
+msgid "interview_first.add_interviewer.form.second_interviewer"
+msgstr "面接官（第二面接）"
+
+msgid "interview_first.add_interviewer.form.interview_second_room"
+msgstr "第二面接の面接室"
+
+msgid "interview_first.add_interviewer.form.interview_second_room.select_room"
+msgstr "部屋を選択します"
+
+msgid "interview_first.add_interviewer.finished"
+msgstr "面接が終了しました。面接情報を編集しますことはできません。"
+
+msgid "interview_first.add_interviewer.validation.invalid_url"
+msgstr "URLが有効なURLではありません！"
+
+msgid "interview_first.add_interviewer.title_send_mail_appointment"
+msgstr "INTERVIEW_{0}_{1}_{2}"
+
+msgid "interview_first.add_interviewer.title_send_mail_appointment.success"
+msgstr "カレンダーとメールを送信して、人事部に第一面接の計画が成功しました。"
+
+msgid "interview_first.add_interviewer.first.success"
+msgstr "面接成功を追加します"
+
+msgid "interview_first.add_interviewer.fail"
+msgstr "面接を保存できませんでした。もう一度お試しください。"
+
+msgid "interview_first.add_interviewer.title_send_mail_appointment_first_and_second"
+msgstr "INTERVIEW_{0}_{1}_第一: {2}_第二: {3}"
+
+msgid "interview_first.add_interviewer.title_send_mail_appointment_first_and_second.success"
+msgstr "カレンダーとメールを送信して、人事部に第一および第二面接の計画が成功しました。"
+
+msgid "interview_first.add_interviewer.title_send_mail_appointment_second.success"
+msgstr "カレンダーとメールを送信して、人事部に第二および最初の面接の終了が成功しました。"
+
+msgid "interview_first.add_interviewer.first_and_second.success"
+msgstr "第一面接と第二面接の計画を追加しました！"
+
+msgid "interview_first.add_second_interview.fail.first_not_finished"
+msgstr "編集に失敗しました。第一面接が終了していないためです。"
+
+msgid "interview_first.add.title_add"
+msgstr "技術面接（第1ラウンド）：{0}"
+
+msgid "interview_first.add.title_breadcrum"
+msgstr "Interview"
+
+msgid "interview_first.add.notes"
+msgstr "評価が必要です。面接にはSTARs技術を適用します必要があります。"
+
+msgid "interview_first.add.success_factors"
+msgstr "成功要因"
+
+msgid "interview_first.add.technical_experience"
+msgstr "技術経験："
+
+msgid "interview_first.add.technical_experience.description"
+msgstr "（候補者が実際のプロジェクト/業務で得た技術経験）"
+
+msgid "interview_first.add.technical_skill"
+msgstr "技術スキル/知識："
+
+msgid "interview_first.add.technical_skill.description"
+msgstr "（職務に必要な候補者の能力と知識）"
+
+msgid "interview_first.add.competencies"
+msgstr "コンピテンシー："
+
+msgid "interview_first.add.competencies.description"
+msgstr "（職務に適した候補者の個人的な特性）"
+
+msgid "interview_first.add.people_management"
+msgstr "人員管理："
+
+msgid "interview_first.add.people_management.description"
+msgstr "（人員と業務を管理します候補者の能力）"
+
+msgid "interview_first.add.others"
+msgstr "その他："
+
+msgid "interview_first.add.conclusion"
+msgstr "技術面接（第1ラウンド）の結論"
+
+msgid "interview_first.add.interview_result"
+msgstr "面接結果："
+
+msgid "interview_first.add.result.passed"
+msgstr "合格"
+
+msgid "interview_first.add.result.kiv"
+msgstr "将来の適合性を保留します（適合がある場合）"
+
+msgid "interview_first.add.result.failed"
+msgstr "不合格"
+
+msgid "interview_first.add.suggested_ype"
+msgstr "提案されたYPE："
+
+msgid "interview_first.add.suggested_business_title"
+msgstr "提案されたビジネスタイトル："
+
+msgid "interview_first.add.suggested_business_title.select_title"
+msgstr "タイトルを選択します"
+
+msgid "interview_first.add.suggested_project"
+msgstr "提案されたプロジェクト（あれば）："
+
+msgid "interview_first.add.suggested_project.select_project"
+msgstr "プロジェクトを選択します"
+
+msgid "interview_first.add.note1"
+msgstr "<p class='notes'>給与/オファー</p>は、「候補者の追加情報」セクションで入力されました。"
+
+msgid "interview_first.add.note2"
+msgstr "技術面接ではベトナム語が使用されます。仕事の請求に応じて、英語、日本語は任意です。"
+
+msgid "interview_first.add.note3"
+msgstr "YPE：専門職経験年数。"
+
+msgid "interview_first.add.note4"
+msgstr "<p class='notes'>面接結果</p>は、面接官の最終的な決定がなされた後、<p class='notes'>HRのPhuongさんによってのみ通知されます。</p>"
+
+msgid "interview_first.add.full_name_interviewer_1st"
+msgstr "第1ラウンドの面接官のフルネーム："
+
+msgid "interview_first.add.date_interview_1st"
+msgstr "第1ラウンドの日付："
+
+msgid "interview_first.add.already_added"
+msgstr "面接第一が以前に追加されました！"
+
+msgid "interview_first.add.notification_message"
+msgstr "最初の面接プロセスが完了しました。"
+
+msgid "interview_first.add.success"
+msgstr "面接第一が保存されました！"
+
+msgid "interview_first.edit.success"
+msgstr "面接第一が編集されました！"
+
+msgid "interview_first.view.button_next"
+msgstr "次へ"
+
+msgid "interview_first.validation.missing_data"
+msgstr "データが不足しています！"
+
+msgid "interview_first.validation.candidate_name.required"
+msgstr "候補者名は必須です！"
+
+msgid "interview_first.validation.candidate_name.maxlength"
+msgstr "候補者名は長すぎです。最大は{0}文字です！"
+
+msgid "interview_first.validation.candidate_name.space"
+msgstr "候補者名にスペースはありません。"
+
+msgid "interview_first.validation.position_applied.required"
+msgstr "応募職種は必須です！"
+
+msgid "interview_first.validation.position_applied.maxlength"
+msgstr "応募職種は長すぎです。最大は{0}文字です！"
+
+msgid "interview_first.validation.recruiter.required"
+msgstr "リクルーターは必須です！"
+
+msgid "interview_first.validation.recruiter.maxlength"
+msgstr "リクルーターは長すぎ出来ません。最大は{0}文字です！"
+
+msgid "interview_first.validation.date_interview.required"
+msgstr "面接日は必須です！"
+
+msgid "interview_first.validation.time_interview.required"
+msgstr "面接時間は必須です！"
+
+msgid "interview_first.validation.interview_room.required"
+msgstr "面接会場は必須です！"
+
+msgid "interview_first.validation.tech_experience.required"
+msgstr "技術経験は必須です！"
+
+msgid "interview_first.validation.tech_skill.required"
+msgstr "技術スキルは必須です！"
+
+msgid "interview_first.validation.competencies.required"
+msgstr "コンピテンシーは必須です！"
+
+msgid "interview_first.validation.final_comment.required"
+msgstr "最終コメントは必須です！"
+
+msgid "interview_first.template_mail.dear"
+msgstr "拝啓"
+
+msgid "interview_first.template_mail.thank"
+msgstr "TEAM SOLUTIONS VIETNAM の<b>{0}</b> ポジションへのご応募、ありがとうございます。"
+
+msgid "interview_first.template_mail.opening_statement"
+msgstr "ご応募資料を丁寧にご確認いたしました。この度はポジションの面接にご招待させていただきますことを、心よりお知らせ申し上げます。心からお会いできることを楽しみにしております。"
+
+msgid "interview_first.template_mail.time_interview"
+msgstr "時間: <b>{0}</b>"
+
+msgid "interview_first.template_mail.interviewer_detail"
+msgstr "インタビュアーとお話しいただくことになります。"
+
+msgid "interview_first.template_mail.download_cv"
+msgstr "履歴書をダウンロードしますところ："
+
+msgid "interview_first.template_mail.time_interview_first"
+msgstr "第一面接の時間: <b>{0}</b>"
+
+msgid "interview_first.template_mail.time_interview_second"
+msgstr "第二面接の時間: <b>{0}</b>"
+
+msgid "interview_first.template_mail.interviewer_first_detail"
+msgstr "第一面接ではインタビュアーとお話しいただくことになります。"
+
+msgid "interview_first.template_mail.interviewer_second_detail"
+msgstr "第二面接ではインタビュアーとお話しいただくことになります。"
+
+msgid "interview_first.send_mail_done_interview.title"
+msgstr "通知 - 第1ラウンド | {0}({1})"
+
+msgid "interview_first.template_mail.checked.mandatory_interviewer"
+msgstr "必須面接者"
+
+msgid "interview_first.template_mail.check_deal_salary.title_first_interview"
+msgstr "{0}の第一面接が "
+
+msgid "interview_first.template_mail.check_deal_salary.title_second_interview"
+msgstr "{0}の第二面接が終了しました。"
+
+msgid "interview_first.template_mail.hr_cancel_interview.title"
+msgstr "候補者{0}({1})の面接スケジュールがキャンセルされました。"
+
+# End text Interview First
+
+
+# Start text Interview Second
+
+msgid "interview_second.title"
+msgstr "最終面接（第2ラウンド）: {0}"
+
+msgid "interview_second"
+msgstr "第二面接"
+
+msgid "interview_second.show.technical_expertise"
+msgstr "技術的専門知識と実務経験： "
+
+msgid "interview_second.show.technical_expertise.description"
+msgstr "（候補者の技術的スキル/知識と実務経験を評価）"
+
+msgid "interview_second.show.client_business_orientation"
+msgstr "クライアント/ビジネスオリエンテーション： "
+
+msgid "interview_second.show.client_business_orientation.description"
+msgstr "（候補者のビジネスコンセプト、実践、およびクライアント対応/サービスを評価）"
+
+msgid "interview_second.show.create_deliver_solutions"
+msgstr "ソリューションの提供と提供： "
+
+msgid "interview_second.show.create_deliver_solutions.description"
+msgstr "（候補者がソリューションプロバイダーかどうか、および提供能力を確認）"
+
+msgid "interview_second.show.soft_skills"
+msgstr "ソフトスキル： "
+
+msgid "interview_second.show.soft_skills.description"
+msgstr "（候補者のコミュニケーション、マネジメントスキルなどのソフトスキルを評価）"
+
+msgid "interview_second.show.people_management"
+msgstr "人員管理： "
+
+msgid "interview_second.show.people_management.description"
+msgstr "（候補者の人員管理スキルを評価）"
+
+msgid "interview_second.show.other"
+msgstr "その他"
+
+msgid "interview_second.show.conclusion_title"
+msgstr "最終面接（第2ラウンド）の結論"
+
+msgid "interview_second.show.interview_result"
+msgstr "面接結果："
+
+msgid "interview_second.show.result.passed"
+msgstr "合格"
+
+msgid "interview_second.show.result.kiv"
+msgstr "将来適合性を考慮します（該当します場合）"
+
+msgid "interview_second.show.result.failed"
+msgstr "不合格"
+
+msgid "interview_second.show.suggested_ype"
+msgstr "提案されたYPE："
+
+msgid "interview_second.show.suggested_business_title"
+msgstr "提案されたビジネスタイトル："
+
+msgid "interview_second.show.suggested_business_title.select_title"
+msgstr "タイトルを選択します"
+
+msgid "interview_second.show.suggested_project"
+msgstr "提案されたプロジェクト（あれば）："
+
+msgid "interview_second.show.suggested_project.select_project"
+msgstr "プロジェクトを選択します"
+
+msgid "interview_second.show.reference_check"
+msgstr "参照チェック（はい/いいえ）："
+
+msgid "interview_second.show.date_interview"
+msgstr "面接日"
+
+msgid "interview_second.validation.interview_result.required"
+msgstr "この項目を記入してください：面接結果"
+
+msgid "interview_second.message_push_notification"
+msgstr "第二面接プロセスが完了しました"
+
+msgid "interview_second.edit.success"
+msgstr "最終面接が更新されました"
+
+msgid "interview_second.add.success"
+msgstr "第二面接の作成に成功しました"
+
+msgid "interview_second.add.success.log"
+msgstr "第二面接の作成"
+
+msgid "interview_second.add.fail"
+msgstr "第二面接の作成エラー"
+
+msgid "interview_second.validation.tech_working_exp.required"
+msgstr "この項目を記入してください：技術的専門知識と実務経験"
+
+msgid "interview_second.validation.tech_working_exp.maxlength"
+msgstr "技術的専門知識と実務経験は長すぎです。最大は{0}です"
+
+msgid "interview_second.validation.client_bussines_orientation.required"
+msgstr "この項目を記入してください：クライアント/ビジネス志向"
+
+msgid "interview_second.validation.client_bussines_orientation.maxlength"
+msgstr "クライアント/ビジネス志向は長すぎです。最大は{0}です"
+
+msgid "interview_second.validation.create_deliver_solutions.required"
+msgstr "この項目を記入してください：ソリューションの作成と提供"
+
+msgid "interview_second.validation.create_deliver_solutions.maxlength"
+msgstr "ソリューションの提供と提供は長すぎです。最大は{0}です"
+
+msgid "interview_second.validation.soft_skills.required"
+msgstr "この項目を記入してください：ソフトスキル"
+
+msgid "interview_second.validation.soft_skills.maxlength"
+msgstr "ソフトスキルは長すぎです。最大は{0}です"
+
+msgid "interview_second.validation.people_management.required"
+msgstr "この項目を記入してください：人員管理"
+
+msgid "interview_second.validation.people_management.maxlength"
+msgstr "人員管理は長すぎです。最大は{0}です"
+
+msgid "interview_second.validation.suggested_YPE.required"
+msgstr "この項目を記入してください：提案されたYPE"
+
+msgid "interview_second.validation.suggested_YPE.maxlength"
+msgstr "提案されたYPEは長すぎです。最大は{0}です"
+
+msgid "interview_second.validation.suggested_business_title.required"
+msgstr "この項目を記入してください：提案されたビジネスタイトル"
+
+msgid "interview_second.validation.suggested_business_title.maxlength"
+msgstr "提案されたビジネスタイトルは長すぎです。最大は{0}です"
+
+msgid "interview_second.validation.final_comment.required"
+msgstr "こちらに最終コメントを記入してください。"
+
+msgid "interview_second.validation.final_comment.maxlength"
+msgstr "最終コメントは長すぎです。最大は{0}です。"
+
+# End text Interview Second
+
+
+# Start text Insert Leave Teamp
+msgid "insert_leave_teamp.time_at"
+msgstr "時刻"
+
+msgid "insert_leave_teamp.send_email"
+msgstr "メール送信"
+
+msgid "insert_leave_teamp.un_approved"
+msgstr "非承認"
+
+msgid "insert_leave_teamp.check_leave"
+msgstr "休暇チェック"
+
+msgid "insert_leave_teamp.email_notifications"
+msgstr "メール通知"
+
+msgid "insert_leave_teamp.approved_annual"
+msgstr "承認された年次休暇"
+
+msgid "insert_leave_teamp.reset_annual_leave"
+msgstr "年次休暇のリセット"
+
+msgid "insert_leave_teamp.send_mail.fail"
+msgstr "メール送信が失敗しました！！！ "
+
+msgid "insert_leave_teamp.send_mail.success"
+msgstr "メール送信成功しました！！！ "
+
+msgid "insert_leave_teamp.send_mail.title"
+msgstr "2021年の#{0}年次休暇"
+
+msgid "insert_leave_teamp.template_mail.title"
+msgstr "こんにちは、<b style='color: #00a5e5;'>{0}</b>さん、年次休暇に関します情報です。"
+
+msgid "insert_leave_teamp.template_mail.leave_sumary_report"
+msgstr "休暇サマリーレポート"
+
+msgid "insert_leave_teamp.template_mail.total_annual"
+msgstr "総年次休暇: {0}（単位: 時間）"
+
+msgid "insert_leave_teamp.template_mail.date_annual_leave"
+msgstr "年次休暇日"
+
+msgid "insert_leave_teamp.template_mail.accrued_annual_leave"
+msgstr "積み立てた年次休暇"
+
+msgid "insert_leave_teamp.template_mail.taken_annual_leave"
+msgstr "取得された年次休暇"
+
+msgid "insert_leave_teamp.template_mail.current_annual_leave_balance"
+msgstr "現在の年次休暇残高"
+
+msgid "insert_leave_teamp.template_mail.use_annual_leave"
+msgstr "年次休暇の利用"
+
+msgid "insert_leave_teamp.template_mail.total_compensatory"
+msgstr "総補償休暇: {0}（単位: 時間）"
+
+msgid "insert_leave_teamp.template_mail.date_compensatory_leave"
+msgstr "代休日"
+
+msgid "insert_leave_teamp.template_mail.accrued_compensatory_leave"
+msgstr "積み立てた補償休暇"
+
+msgid "insert_leave_teamp.template_mail.taken_compensatory_leave"
+msgstr "取得された補償休暇"
+
+msgid "insert_leave_teamp.template_mail.current_compensatory_leave_balance"
+msgstr "現在の代休残高"
+
+msgid "insert_leave_teamp.template_mail.use_compensatory_leave"
+msgstr "代休の利用"
+
+msgid "insert_leave_teamp.template_mail.total_current_leave_balance"
+msgstr "総現在の休暇残高"
+
+# End text Insert Leave Teamp
+
+# Start text Room
+msgid "room.index.header"
+msgstr "会議室リスト"
+
+msgid "room.index.button.add"
+msgstr "部屋を追加します"
+
+msgid "room.index.total"
+msgstr "（合計{0}部屋）"
+
+msgid "room.form.add"
+msgstr "部屋の追加"
+
+msgid "room.form.notification.delete"
+msgstr "削除してもよろしいですか"
+
+msgid "room.add.header"
+msgstr "部屋の追加"
+
+msgid "room.add.writeLog"
+msgstr "部屋の作成"
+
+msgid "room.add.success"
+msgstr "部屋が保存されました。"
+
+msgid "room.add.error"
+msgstr "部屋を保存できませんでした。もう一度お試しください。"
+
+msgid "room.edit.header"
+msgstr "部屋の編集"
+
+msgid "room.edit.title"
+msgstr "部屋 <b>{0}</b> の編集"
+
+msgid "room.edit.writeLog"
+msgstr "部屋を更新します"
+
+msgid "room.edit.success"
+msgstr "部屋が編集されました。"
+
+msgid "room.edit.error"
+msgstr "部屋を編集できませんでした。もう一度お試しください。"
+
+msgid "room.delete.notfound"
+msgstr "部屋を削除できませんでした。もう一度お試しください。"
+
+msgid "room.delete.success"
+msgstr "削除されました"
+
+msgid "room.delete.writeLog"
+msgstr "部屋を削除します"
+
+msgid "room.delete.error"
+msgstr "部屋を削除できませんでした。もう一度お試しください。"
+# End text Room
+
+# Start text ScanCCCD
+msgid "scancccd.index.title"
+msgstr "身分証明書をアップロードしてください"
+
+msgid "scancccd.index.scan_ready"
+msgstr "IDカードの表面を撮影してください"
+
+msgid "scancccd.index.capture"
+msgstr "キャプチャ"
+
+msgid "scancccd.index.scan_error"
+msgstr "エラー：写真に身分証明書番号が見つかりませんでした。もう一度お試しください！"
+
+msgid "scancccd.index.capture_again"
+msgstr "再キャプチャ"
+
+msgid "scancccd.add.title"
+msgstr "作成された身分証明書フォーム"
+
+msgid "scancccd.form.citizen_identity_number"
+msgstr "身分証明書番号"
+
+msgid "scancccd.form.place_of_residence"
+msgstr "居住地"
+
+msgid "scancccd.form.issued_date"
+msgstr "発行日"
+
+msgid "scancccd.form.place_of_issue"
+msgstr "発行地"
+
+msgid "scancccd.index.scan_backside"
+msgstr "IDカードの裏面を撮影してください"
+
+msgid "scancccd.index.scan_backside.suggest"
+msgstr "提案イメージ"
+
+msgid "scancccd.index.scan_ready.success"
+msgstr "写真の撮影が成功しました。IDカードの裏面の写真を撮影してください"
+
+msgid "scancccd.index.scan_backside.error"
+msgstr "エラー：画像が見つかりませんでした。もう一度お試しください"
+
+msgid "scancccd.index.error_system"
+msgstr "システムエラーです。もう一度お試しください"
+
+msgid "scancccd.index.error_mobile"
+msgstr "この機能はモバイルデバイスでのみ使用可能です"
+
+msgid "scancccd.save.success"
+msgstr "保存が成功しました。"
+
+msgid "scancccd.empty.response"
+msgstr "QR CCCDのスキャンの空の応答： "
+
+msgid "scancccd.error.symlink"
+msgstr "システムエラーです。管理者に連絡してください。ありがとうございます！"
+
+msgid "scancccd.empty.response.backside"
+msgstr "裏面の取得の空の応答： "
+
+msgid "scancccd.symlink.fail"
+msgstr "シンボリックリンクの失敗"
+
+msgid "scancccd.token.expired"
+msgstr "トークンが期限切れです！"
+
+msgid "scancccd.validation.citizen_identity_number.empty"
+msgstr "身分証明書番号を入力してください"
+
+msgid "scancccd.validation.citizen_identity_number.maxlength"
+msgstr "身分証明書番号は長すぎません {0}。"
+
+msgid "scancccd.validation.citizen_identity_number.minlength"
+msgstr "身分証明書番号は短すぎません {0}。"
+
+msgid "scancccd.validation.citizen_identity_number.numeric"
+msgstr "身分証明書番号は数字を入力してください。"
+
+msgid "scancccd.validation.place_of_residence.empty"
+msgstr "居住地を入力してください"
+
+msgid "scancccd.validation.place_of_residence.maxlength"
+msgstr "居住地は長すぎません {0}。"
+
+msgid "scancccd.validation.issued_date.empty"
+msgstr "発行日を入力してください"
+
+msgid "scancccd.validation.place_of_issue.empty"
+msgstr "発行地を入力してください"
+
+msgid "scancccd.validation.place_of_issue.maxlength"
+msgstr "発行地は長すぎません {0}。"
+
+msgid "scancccd.validation.img_front_ci.empty"
+msgstr "身分証明書の表面の画像は空白にできません"
+
+msgid "scancccd.validation.img_backside_ci.empty"
+msgstr "身分証明書の裏面の画像は空白にできません"
+
+msgid "scancccd.notification_dialog_box"
+msgstr "通知ダイアログボックス"
+# End text ScanCCCD
+
+# Start text SettingUser
+msgid "setting_user.index.header"
+msgstr "2要素認証設定"
+
+msgid "setting_user.index.total"
+msgstr "（合計 {0} {1}）"
+
+msgid "setting_user.form.title.change_code"
+msgstr "コードを変更します"
+
+msgid "setting_user.form.title.reset"
+msgstr "リセット"
+
+msgid "setting_user.form.title.active"
+msgstr "{0}の従業員をクリックします"
+
+msgid "setting_user.form.two_factor_code"
+msgstr "二要素認証コード"
+
+msgid "setting_user.form.first_login"
+msgstr "初回ログイン"
+
+msgid "setting_user.form.un_active"
+msgstr "初回ログインなし"
+
+msgid "setting_user.notification.reset_login"
+msgstr "本当にリセットしますか？ "
+
+msgid "setting_user.notification.change_code"
+msgstr "本当に二要素認証コードを変更しますか？ "
+
+msgid "setting_user.notification.active"
+msgstr "{1}の{0}を本当に{0}しますか？"
+
+msgid "setting_user.error_server"
+msgstr "内部サーバーエラー"
+
+msgid "setting_user.invalid_employee"
+msgstr "従業員コードが無効です"
+
+msgid "setting_user.notfound_employee"
+msgstr "従業員が見つかりません"
+
+msgid "setting_user.error_system"
+msgstr "システムエラー"
+
+msgid "setting_user.reset_first.success"
+msgstr "従業員（{0}）がリセットされました。"
+
+msgid "setting_user.change_code.success"
+msgstr "従業員（{0}）が変更されました。"
+
+msgid "setting_user.active.wrong_format"
+msgstr "正しいパラメーターではありません。"
+
+msgid "setting_user.active.success"
+msgstr "従業員（{0}）が{1}されました。"
+# End text SettingUser
+
+# Start text Skill
+msgid "skill.index.total"
+msgstr "（合計{0} スキル）"
+
+msgid "skill.form.notification.delete"
+msgstr "このレシピを削除してもよろしいですか？"
+
+msgid "skill.add.header"
+msgstr "スキルタイトルの追加"
+
+msgid "skill.add.title"
+msgstr "新しいスキル"
+
+msgid "skill.edit.header"
+msgstr "スキルタイトルを編集します"
+
+msgid "skill.edit.title"
+msgstr "スキルの編集: {0}"
+
+msgid "skill.add.writeLog"
+msgstr "スキルを作成します"
+
+msgid "skill.error"
+msgstr "スキルを保存できませんでした。もう一度お試しください。"
+
+msgid "skill.empty"
+msgstr "名前は空にできません。"
+
+msgid "skill.edit.writeLog"
+msgstr "スキルを更新します"
+
+msgid "skill.edit.success"
+msgstr "スキルが保存されました。"
+
+msgid "skill.delete.writeLog"
+msgstr "スキルを削除します"
+
+msgid "skill.delete.success"
+msgstr "スキルは削除されました。"
+# End text Skill
+# Start text Team Building Config
+
+msgid "team_building_config.index.total"
+msgstr "（合計{0}タイトル）"
+
+msgid "team_building_config.business_title"
+msgstr "ビジネスタイトル"
+
+msgid "team_building_config.value"
+msgstr "値"
+
+msgid "team_building_config.index.notification_delete"
+msgstr "本当にこのチームビルディング設定を削除しますか？ "
+
+msgid "team_building_config.index.delete_error"
+msgstr "このチームビルディング設定を削除できません！"
+
+msgid "team_building_config.add.header"
+msgstr "チームビルディング設定の追加"
+
+msgid "team_building_config.select.business_title"
+msgstr "ビジネスタイトルを選択してください。"
+
+msgid "team_building_config.add.value"
+msgstr "値（VND）"
+
+msgid "team_building_config.edit.header"
+msgstr "チームビルディング設定の編集"
+
+msgid "team_building_config.success"
+msgstr "チームビルディング設定が保存されました。"
+
+msgid "team_building_config.error"
+msgstr "チームビルディング設定を保存できませんでした。もう一度お試しください！"
+
+msgid "team_building_config.not_found"
+msgstr "このチームビルディング設定が見つかりません。"
+
+msgid "team_building_config.delete.success"
+msgstr "{0}のチームビルディング設定が削除されました"
+
+msgid "team_building_config.delete.error"
+msgstr "チームビルディング構成を削除できませんでした。もう一度お試しください！"
+
+msgid "team_building_config.validation.empty.business_title_id"
+msgstr "ビジネスタイトルを選択してください"
+
+msgid "team_building_config.validation.empty.value"
+msgstr "値は必須です"
+
+msgid "team_building_config.validation.empty.unit"
+msgstr "ユニットを選択してください"
+
+msgid "team_building_config.validation.unique.business_title_id"
+msgstr "ビジネスタイトル構成は既に存在します"
+# End text Team Building Config
+# Start text Team Building
+msgid "team_building.quarter_number"
+msgstr "四半期{0}"
+
+msgid "team_building.index.title"
+msgstr "チームビルディングのリクエストを作成します"
+
+msgid "team_building.search.select.quarter"
+msgstr "四半期を選択します"
+
+msgid "team_building.search.select.year"
+msgstr "年を選択します"
+
+msgid "team_building.search.select.status"
+msgstr "ステータスを選択します"
+
+msgid "team_building.search"
+msgstr "検索"
+
+msgid "team_building.request_code"
+msgstr "リクエストコード"
+
+msgid "team_building.year"
+msgstr "年"
+
+msgid "team_building.project"
+msgstr "Project"
+
+msgid "team_building.total"
+msgstr "合計"
+
+msgid "team_building.pm"
+msgstr "PM"
+
+msgid "team_building.amount"
+msgstr "金額"
+
+msgid "team_building.note"
+msgstr "備考"
+
+msgid "team_building.notification.approve"
+msgstr "このチームビルディングのリクエストを承認してもよろしいですか？"
+
+msgid "team_building.notification.reject"
+msgstr "このチームビルディングのリクエストを拒否してもよろしいですか？"
+
+msgid "team_building.index.notification.confirm"
+msgstr "チームビルディングが支払われたことを確認してもよろしいですか？"
+
+msgid "team_building.index.notification.delete"
+msgstr "チームビルディングを削除してもよろしいですか？"
+
+msgid "team_building.index.delete.error"
+msgstr "このチームビルディングを削除できません！"
+
+msgid "team_building.index.confirm.error"
+msgstr "この入力欄に記入してください。"
+
+msgid "team_building.add.header"
+msgstr "チームビルディングをリクエストします"
+
+msgid "team_building.search.select.project"
+msgstr "プロジェクトを選択します"
+
+msgid "team_building.add.placeholder.description"
+msgstr "ここにテキストを入力してください"
+
+msgid "team_building.save_sendmail"
+msgstr "保存してメールを送信します"
+
+msgid "team_building.add.save_only"
+msgstr "保存のみ"
+
+msgid "team_building.form.member"
+msgstr "メンバーのEUが50％未満です"
+
+msgid "team_building.empty_user"
+msgstr "メンバーを選択してください！"
+
+msgid "team_building.check_exist_member"
+msgstr "このチームビルディングのリクエストを追加できません。もう一度お試しください！"
+
+msgid "team_building.add.notification.delete"
+msgstr "ユーザーを削除してもよろしいですか？"
+
+msgid "team_building.add.validation.max_length.description"
+msgstr "説明は長すぎです。"
+
+msgid "team_building.add.validation.max_length.pm_comment"
+msgstr "PMコメントは長すぎ出来ません。"
+
+msgid "team_building.add.empty_year"
+msgstr "年を選択してください！"
+
+msgid "team_building.add.empty_quarter"
+msgstr "四半期を選択してください！"
+
+msgid "team_building.add.empty_project"
+msgstr "プロジェクトを選択してください！"
+
+msgid "team_building.project.not_found"
+msgstr "プロジェクトが見つかりません。もう一度お試しください！"
+
+msgid "team_building.user.not_found"
+msgstr "このチームからユーザーを読み込めません。もう一度お試しください！"
+
+msgid "team_building.validation.max_length.item"
+msgstr "メモは長すぎです。"
+
+msgid "team_building.edit.header"
+msgstr "チームビルディングをリクエストします"
+
+msgid "team_building.edit.update_only"
+msgstr "更新のみ"
+
+msgid "team_building.view.header"
+msgstr "チームビルディングのリクエスト - 四半期{0}/{1} - コード{2}"
+
+msgid "team_building.date_requested"
+msgstr "リクエストされた日付"
+
+msgid "team_building.total_user"
+msgstr "合計ユーザー数"
+
+msgid "team_building.total_amount"
+msgstr "合計金額"
+
+msgid "team_building.last_comment"
+msgstr "最後のコメント"
+
+msgid "team_building.view.notification.confirm"
+msgstr "このリクエストが支払われたことを確認してもよろしいですか？"
+
+msgid "team_building.view.button.payment_confirm"
+msgstr "支払い確認"
+
+msgid "team_building.view.form.header"
+msgstr "チームビルディング履歴をリクエストします。"
+
+msgid "team_building.view.form.account_comment"
+msgstr "アカウントのコメント"
+
+msgid "team_building.view.get_data_history.header"
+msgstr "チームビルディング詳細（バージョン"
+
+msgid "team_building.view.error"
+msgstr "エラー！"
+
+msgid "team_building.add.empty_comment"
+msgstr "コメントを入力してください！"
+
+msgid "team_building.add.permission"
+msgstr "チームビルディングのリクエストを作成します権限がありません。"
+
+msgid "team_building.empty_error"
+msgstr "何かがエラーです。もう一度お試しください。"
+
+msgid "team_building.send_mail.title_approve"
+msgstr "リクエストチームビルディング{0}-Q{1}の承認（バージョン{2}）"
+
+msgid "team_building.add.success"
+msgstr "リクエストチームビルディングが保存されました。"
+
+msgid "team_building.error"
+msgstr "保存できません！ データを再確認してください！"
+
+msgid "team_building.empty_request"
+msgstr "このリクエストが見つかりません。"
+
+msgid "team_building.edit.permission"
+msgstr "このリクエストを編集します権限がありません。"
+
+msgid "team_building.edit.success"
+msgstr "リクエストチームビルディングが保存されました。"
+
+msgid "team_building.error.eu"
+msgstr "{0} {1}を追加できません。EU利用率が50％未満です！ EUを50％以上にしますために他のメンバーと組み合わせてください。"
+
+msgid "team_building.send_mail.title_approve_request"
+msgstr "チームビルディングリクエスト {0}-Q{1} (バージョン {2}) が承認されました！"
+
+msgid "team_building.send_mail.title_reject_request"
+msgstr "チームビルディングリクエスト {0}-Q{1} (バージョン {2}) が拒否されました！"
+
+msgid "team_building.send_mail.title_paid_request"
+msgstr "チームビルディングリクエスト {0}-Q{1} (バージョン {2}) が支払われました！"
+
+msgid "team_building.delete.empty_team_building"
+msgstr "このチームビルディングのリクエストが見つかりません。"
+
+msgid "team_building.delete.success"
+msgstr "このチームビルディングリクエストは削除されました。"
+
+msgid "team_building.delete.error"
+msgstr "このチームビルディングリクエストを削除できません！"
+
+msgid "team_building.validation.empty.code"
+msgstr "コードは空にできません"
+
+msgid "team_building.validation.empty.year"
+msgstr "年を選択してください"
+
+msgid "team_building.validation.empty.quarter"
+msgstr "四半期を選択してください"
+
+msgid "team_building.validation.maxlength.description"
+msgstr "{0} は長すぎです。最大 {1} 文字です。"
+
+msgid "team_building.validation.maxlength.pm_comment"
+msgstr "{0} は長すぎです。最大 {1} 文字です。"
+
+msgid "team_building.validation.maxlength.gm_comment"
+msgstr "{0} は長すぎです。最大 {1} 文字です。"
+
+msgid "team_building.validation.maxlength.account_comment"
+msgstr "{0} は長すぎです。最大 {1} 文字です。"
+
+msgid "team_building.validation.greater_than_equal.total"
+msgstr "合計は0より少なくしますことはできません"
+
+msgid "team_building.validation.unique.code"
+msgstr "リクエストはすでに存在します"
+
+msgid "team_building.validation.empty.team_building_id"
+msgstr "チームビルディングは空にできません。"
+
+msgid "team_building.validation.empty.pm_id"
+msgstr "PMは空にできません。"
+
+msgid "team_building.validation.empty.user_id"
+msgstr "ユーザーは空にできません。"
+
+msgid "team_building.validation.empty.team_id"
+msgstr "チームは空にできません。"
+
+msgid "team_building.validation.empty.project_id"
+msgstr "プロジェクトは空にできません。"
+
+msgid "team_building.validation.empty.note"
+msgstr "ノートは空にできません。"
+
+msgid "team_building.validation.maxlength.note"
+msgstr "{0} は長すぎです。最大 {1} 文字です。"
+
+msgid "team_building.validation.greater_than_equal.amount"
+msgstr "額は0より少なくしますことはできません。"
+
+msgid "team_building.mail.waiting.header"
+msgstr "チームビルディングリクエストが承認待ちです。"
+
+msgid "team_building.mail.approve.header"
+msgstr "チームビルディングリクエストが承認されました。"
+
+msgid "team_building.mail.paid.header"
+msgstr "チームビルディングリクエストが支払われました。"
+
+msgid "team_building.mail.reject.header"
+msgstr "チームビルディングリクエストが拒否されました。"
+
+msgid "team_building.mail.title"
+msgstr "リクエストチームビルディング {0}-Q{1} (バージョン {2})"
+
+msgid "team_building.team_building_code"
+msgstr "チームビルディングコード"
+# End text Team Building
+# Start text Team
+msgid "team.index.header"
+msgstr "チームリスト"
+
+msgid "team.index.total"
+msgstr "（合計 {0} チーム）"
+
+msgid "team.team_leader"
+msgstr "チームリーダー"
+
+msgid "team.number_of_member"
+msgstr "メンバー数"
+
+msgid "team.index.notification.delete"
+msgstr "{0} を削除してもよろしいですか？"
+
+msgid "team.add.header"
+msgstr "チームを追加します"
+
+msgid "team.add.title"
+msgstr "新しいチーム"
+
+msgid "team.add.placeholder.description"
+msgstr "ここにテキストを入力してください"
+
+msgid "team.select.leader"
+msgstr "--- リーダーを選択します ---"
+
+msgid "team.edit.header"
+msgstr "チームを編集します"
+
+msgid "team.view.total.isset_key_search"
+msgstr "{0} の {1} メンバー"
+
+msgid "team.view.total"
+msgstr "{0} メンバー"
+
+msgid "team.view.add_member"
+msgstr "新しいメンバーを追加します"
+
+msgid "team.modal.add_member.title"
+msgstr "{0} にメンバーを追加します"
+
+msgid "team.modal.add_member.show_member"
+msgstr "メンバーを表示しますにはクリック"
+
+msgid "team.modal.add_member.nothing"
+msgstr "表示しますものがありません！"
+
+msgid "team.modal.add_member.select_member"
+msgstr "選択されたメンバー"
+
+msgid "team.modal.add_member.choose_level"
+msgstr "レベルを選択します"
+
+msgid "team.view.success"
+msgstr "チームにメンバーを追加しました。"
+
+msgid "team.add.empty_team"
+msgstr "チームはすでに存在します。"
+
+msgid "team.add.write_log"
+msgstr "チームを作成します"
+
+msgid "team.add.success"
+msgstr "チーム {0} が作成されました！"
+
+msgid "team.error"
+msgstr "チームを保存できませんでした。もう一度お試しください。"
+
+msgid "team.edit.empty_user"
+msgstr "ユーザーがすでに存在しません。"
+
+msgid "team.edit.write_log"
+msgstr "チームを更新します"
+
+msgid "team.edit.success"
+msgstr "チーム {0} が更新されました！"
+
+msgid "team.delete.success"
+msgstr "チーム {0} が削除されました！"
+
+msgid "team.delete.write_log"
+msgstr "チームを削除します"
+
+msgid "team.delete.error"
+msgstr "チームを削除できません。もう一度お試しください。"
+
+msgid "team.remove_member.empty_team"
+msgstr "チームは存在しません"
+
+msgid "team.remove_member.empty_user_position"
+msgstr "ユーザーはチームにいません"
+
+msgid "team.remove_member.check_leader"
+msgstr "メンバーはリーダーです"
+
+msgid "team.remove_member.success"
+msgstr "{0} はユーザーを正常に削除しました。"
+
+msgid "team.remove_member.error"
+msgstr "ユーザーのエラーを削除します。もう一度お試しください。"
+
+msgid "team.validation.empty.title"
+msgstr "このフィールドをタイトルで記入してください。"
+
+msgid "team.validation.max_length.title"
+msgstr "{0} は長すぎです。最大 {1} 文字です"
+
+msgid "team.validation.empty.name"
+msgstr "このフィールドを名前で記入してください"
+
+msgid "team.validation.max_length.name"
+msgstr "{0} は長すぎです。最大 {1} 文字です"
+
+msgid "team.validation.check_leader.leader"
+msgstr "リーダーチームは2人以上を持っています"
+# End text Team
+# Start text time sheet
+
+msgid "time_sheet.date.sat"
+msgstr "土"
+
+msgid "time_sheet.date.sun"
+msgstr "日"
+
+msgid "time_sheet.date.mon"
+msgstr "月"
+
+msgid "time_sheet.date.tue"
+msgstr "火"
+
+msgid "time_sheet.date.wed"
+msgstr "水"
+
+msgid "time_sheet.date.thu"
+msgstr "木"
+
+msgid "time_sheet.date.fri"
+msgstr "金"
+
+msgid "time_sheet.approve.not_found_leave"
+msgstr "レベルアウトのユーザー {0} - {1} {2} が見つかりませんでした"
+
+msgid "time_sheet.deleted.week"
+msgstr "週 {0} ({1} - {2}) が削除されました"
+
+msgid "time_sheet.index.title_list"
+msgstr "従業員リスト"
+
+msgid "time_sheet.ot.month"
+msgstr "OT/月"
+
+msgid "time_sheet.ot.year"
+msgstr "OT/年"
+
+msgid "time_sheet.hrs"
+msgstr "hrs"
+
+msgid "time_sheet.total_work_time"
+msgstr "合計労働時間"
+
+msgid "time_sheet.total_work_time_pending"
+msgstr "保留中の合計労働時間"
+
+msgid "time_sheet.total_work_time_reject"
+msgstr "拒否された合計労働時間"
+
+msgid "time_sheet.total_over_time"
+msgstr "合計残業時間"
+
+msgid "time_sheet.total_over_time_pending"
+msgstr "保留中の合計残業時間"
+
+msgid "time_sheet.total_over_time_reject"
+msgstr "拒否された合計残業時間"
+
+msgid "time_sheet.note"
+msgstr "ノート"
+
+msgid "time_sheet.type_time"
+msgstr "時間のタイプ"
+
+msgid "time_sheet.number"
+msgstr "番号"
+
+msgid "time_sheet.work_time_pending"
+msgstr "保留中の労働時間"
+
+msgid "time_sheet.over_time_approved"
+msgstr "承認された残業"
+
+msgid "time_sheet.over_time_pending"
+msgstr "保留中の残業"
+
+msgid "time_sheet.leave_pending"
+msgstr "保留中の休暇"
+
+msgid "time_sheet.leave_approved"
+msgstr "承認された休暇"
+
+msgid "time_sheet.go"
+msgstr "GO"
+
+msgid "time_sheet.sat"
+msgstr "土"
+
+msgid "time_sheet.sun"
+msgstr "日"
+
+msgid "time_sheet.mon"
+msgstr "月"
+
+msgid "time_sheet.tue"
+msgstr "火"
+
+msgid "time_sheet.wed"
+msgstr "水"
+
+msgid "time_sheet.thu"
+msgstr "木"
+
+msgid "time_sheet.fri"
+msgstr "金"
+
+msgid "time_sheet.jan"
+msgstr "1月"
+
+msgid "time_sheet.feb"
+msgstr "2月"
+
+msgid "time_sheet.mar"
+msgstr "3月"
+
+msgid "time_sheet.apr"
+msgstr "4月"
+
+msgid "time_sheet.may"
+msgstr "5月"
+
+msgid "time_sheet.jun"
+msgstr "6月"
+
+msgid "time_sheet.jul"
+msgstr "7月"
+
+msgid "time_sheet.aug"
+msgstr "8月"
+
+msgid "time_sheet.sep"
+msgstr "9月"
+
+msgid "time_sheet.oct"
+msgstr "10月"
+
+msgid "time_sheet.nov"
+msgstr "11月"
+
+msgid "time_sheet.dec"
+msgstr "12月"
+
+msgid "time_sheet.h"
+msgstr "h"
+
+msgid "time_sheet.m"
+msgstr "m"
+
+msgid "time_sheet.approved_week"
+msgstr "承認された週"
+
+msgid "time_sheet.edit_week"
+msgstr "週を編集します"
+
+msgid "time_sheet.delete_week"
+msgstr "週を削除します"
+
+msgid "time_sheet.empty"
+msgstr "空"
+
+msgid "time_sheet.title.project_text"
+msgstr "プロジェクト: {0} ({1})"
+
+msgid "time_sheet.wt"
+msgstr "WT: "
+
+msgid "time_sheet.ph"
+msgstr "PH: "
+
+msgid "time_sheet.pending"
+msgstr "保留中"
+
+msgid "time_sheet.ot"
+msgstr "OT: "
+
+msgid "time_sheet.test"
+msgstr "test"
+
+msgid "time_sheet.id"
+msgstr "ID"
+
+msgid "time_sheet.modal.maintenance"
+msgstr "機能はメンテナンス中です。<br />後で戻ってきてください！"
+
+msgid "time_sheet.index.notification.delete"
+msgstr "このタイムシートを削除してもよろしいですか？"
+
+msgid "time_sheet.add.header"
+msgstr "時間を追加します"
+
+msgid "time_sheet.add.menu"
+msgstr "タイムシートの追加"
+
+msgid "time_sheet.add.annual_leave_remaining"
+msgstr "残りの有給休暇"
+
+msgid "time_sheet.add.compensatory_leave_remaining"
+msgstr "残りの代休"
+
+msgid "time_sheet.days"
+msgstr "days"
+
+msgid "time_sheet.o_day"
+msgstr "0日"
+
+msgid "time_sheet.work_time"
+msgstr "労働時間"
+
+msgid "time_sheet.over_time"
+msgstr "残業時間"
+
+msgid "time_sheet.no_component"
+msgstr "コンポーネントなし"
+
+msgid "time_sheet.add.add_leave"
+msgstr "休暇を追加します"
+
+msgid "time_sheet.type"
+msgstr "種類"
+
+msgid "time_sheet.session"
+msgstr "セッション"
+
+msgid "time_sheet.morning"
+msgstr "午前"
+
+msgid "time_sheet.afternoon"
+msgstr "午後"
+
+msgid "time_sheet.add.error_project"
+msgstr "プロジェクトは既に存在しました"
+
+msgid "time_sheet.add.empty_project"
+msgstr "プロジェクトを選択します"
+
+msgid "time_sheet.add_for"
+msgstr "追加対象"
+
+msgid "time_sheet.prev_week"
+msgstr "前の週"
+
+msgid "time_sheet.today"
+msgstr "今日"
+
+msgid "time_sheet.next_week"
+msgstr "次の週"
+
+msgid "time_sheet.add.error.maximum_work_time_and_leave_time"
+msgstr "1日あたりの最大労働時間と休暇時間"
+
+msgid "time_sheet.maximum_work_time"
+msgstr "最大労働時間"
+
+msgid "time_sheet.empty_timesheet"
+msgstr "タイムシートが空です"
+
+msgid "time_sheet.is_empty"
+msgstr "が空です"
+
+msgid "time_sheet.leave_time"
+msgstr "休暇時間"
+
+msgid "time_sheet.0h"
+msgstr "0時間"
+
+msgid "time_sheet.data_empty"
+msgstr "データが空です"
+
+msgid "time_sheet.select.working_project"
+msgstr "労働プロジェクトを選択してください"
+
+msgid "time_sheet.full_day"
+msgstr "フルタイム"
+
+msgid "time_sheet.half_day_morning"
+msgstr "半日 - 午前"
+
+msgid "time_sheet.half_day_afternoon"
+msgstr "半日 - 午後"
+
+msgid "time_sheet.time"
+msgstr "時間"
+
+msgid "time_sheet.end"
+msgstr "終了"
+
+msgid "time_sheet.note"
+msgstr "1日あたりの最大残業時間"
+
+msgid "time_sheet.not_include"
+msgstr "昼休憩を含まない：12時00分から13時00分"
+
+msgid "time_sheet.select_month"
+msgstr "月を選択します"
+
+msgid "time_sheet.select_week"
+msgstr "週を選択します"
+
+msgid "time_sheet.error.work_time"
+msgstr "労働時間を選択してください。"
+
+msgid "time_sheet.error.total_annual_leave"
+msgstr "総有給休暇日数は年次有給休暇日数を超えることはできません"
+
+msgid "time_sheet.error.total_compensatory_leave"
+msgstr "総代休は代休日数を超えることはできません"
+
+msgid "time_sheet.empty.project_join"
+msgstr "あなたはどのプロジェクトにも参加していません"
+
+msgid "time_sheet.error.permission"
+msgstr "このデータにアクセスします権限がないまたはステータスが更新されました"
+
+msgid "time_sheet.submit_timesheet"
+msgstr "{0}がタイムシートを提出しました (ID: {1})"
+
+msgid "time_sheet.add.write_log.update"
+msgstr "タイムシートの更新"
+
+msgid "time_sheet.update_timesheet"
+msgstr "{0}がタイムシートを更新しました (ID: {1})"
+
+msgid "time_sheet.add.write_log.create"
+msgstr "タイムシートを作成します"
+
+msgid "time_sheet.add.success"
+msgstr "労働時間が正常に保存されました"
+
+msgid "time_sheet.adjustment.write_log"
+msgstr "タイムシートを調整します"
+
+msgid "time_sheet.delete.empty_data"
+msgstr "タイムシートを削除できませんでした。もう一度お試しください。"
+
+msgid "time_sheet.delete.write_log"
+msgstr "タイムシートを削除します"
+
+msgid "time_sheet.detail.message"
+msgstr "機能はメンテナンス中です。<br/>後で戻ってきてください！"
+
+msgid "time_sheet.approve_by"
+msgstr "承認者 "
+
+msgid "time_sheet.reject_by"
+msgstr "拒否者 "
+
+msgid "time_sheet.un_approve"
+msgstr "未承認 "
+# End text time sheet
+# Start text Upload File
+msgid "upload_file.file"
+msgstr "File"
+
+msgid "upload_file.folder"
+msgstr "フォルダー"
+
+msgid "upload_file.total_file"
+msgstr "（合計 {0} ファイル）"
+
+msgid "upload_file.total_folder"
+msgstr "（合計 {0} フォルダー）"
+
+msgid "upload_file.upload_by"
+msgstr "アップロード者"
+
+msgid "upload_file.url"
+msgstr "URL"
+
+msgid "upload_file.time"
+msgstr "時間"
+
+msgid "upload_file.copy"
+msgstr "コピー"
+
+msgid "upload_file.copied"
+msgstr "コピー済み"
+
+msgid "upload_file.notification.delete"
+msgstr "{0}を削除してもよろしいですか？"
+
+msgid "upload_file.add_file.header"
+msgstr "新しいファイルを追加します"
+
+msgid "upload_file.add_file.placeholder.description"
+msgstr "ここにテキストを入力してください"
+
+msgid "upload_file.add_file.extension"
+msgstr "（pdf、doc、excel、画像）"
+
+msgid "upload_file.select_folder"
+msgstr "フォルダを選択します"
+
+msgid "upload_file.error.allowed_upload_size"
+msgstr "このファイルは許可されたアップロードサイズを超えています！"
+
+msgid "upload_file.error.system"
+msgstr "このブラウザはHTML5をサポートしていません。"
+
+msgid "upload_file.add_folder.header"
+msgstr "フォルダの追加"
+
+msgid "upload_file.new_folder"
+msgstr "新しいフォルダ"
+
+msgid "upload_file.edit_file.header"
+msgstr "ファイルの編集"
+
+msgid "upload_file.edit_folder.header"
+msgstr "フォルダの編集"
+
+msgid "upload_file.error.empty_file"
+msgstr "ファイルをアップロードします必要があります。もう一度お試しください！"
+
+msgid "upload_file.error.unique_title"
+msgstr "ファイルのタイトルはすでに存在しています"
+
+msgid "upload_file.error.extension"
+msgstr "ファイルは 'pdf、doc、excel、image' でアップロードされます。もう一度お試しください。"
+
+msgid "upload_file.add.write_log"
+msgstr "ファイルを作成します"
+
+msgid "upload_file.add_folder.write_log"
+msgstr "フォルダを作成します"
+
+msgid "upload_file.save.fail"
+msgstr "ファイルを保存できませんでした。もう一度お試しください。"
+
+msgid "upload_file.error.empty_url_file"
+msgstr "フエイルが見つかりません。もう一度お試しください。"
+
+msgid "upload_file.error.upload_file"
+msgstr "ファイルのアップロードエラーです。もう一度お試しください。"
+
+msgid "upload_file.save.success"
+msgstr "ファイルが保存されました。"
+
+msgid "upload_file.delete.success"
+msgstr "ファイルが削除されました。"
+
+msgid "upload_file.delete.fail"
+msgstr "ファイルを削除できませんでした。もう一度お試しください。"
+
+msgid "upload_file.error.not_found"
+msgstr "ファイルが見つかりません。"
+
+msgid "upload_file.error.inactive"
+msgstr "ファイルは非アクティブです。"
+
+msgid "upload_file.add_folder.error.unique_name"
+msgstr "フォルダ名はすでに存在しています"
+
+msgid "upload_file.add_folder.error.upload"
+msgstr "フォルダのアップロードエラー"
+
+msgid "upload_file.add_folder.save.success"
+msgstr "フォルダが保存されました。"
+
+msgid "upload_file.add_folder.save.fail"
+msgstr "フォルダを保存できませんでした。もう一度お試しください。"
+
+msgid "upload_file.edit_folder.write_log"
+msgstr "フォルダを更新します"
+
+msgid "upload_file.delete_folder.error"
+msgstr "フォルダの削除エラー"
+
+msgid "upload_file.delete_folder.write_log"
+msgstr "フォルダを削除します"
+
+msgid "upload_file.delete_folder.success"
+msgstr "フォルダが削除されました。"
+
+msgid "upload_file.delete_folder.fail"
+msgstr "ファイルを削除できませんでした。もう一度お試しください。"
+# End text Upload File
+# Start text Users
+msgid "users.index.header"
+msgstr "従業員リスト"
+
+msgid "users.user_add"
+msgstr "ユーザーの追加"
+
+msgid "users.total_employee"
+msgstr "（合計 {0} 人の従業員）"
+
+msgid "users.select_office"
+msgstr "オフィスを選択します"
+
+msgid "users.select_team"
+msgstr "チームを選択します"
+
+msgid "users.select_project"
+msgstr "プロジェクトを選択します"
+
+msgid "users.select_skill"
+msgstr "スキルを選択します"
+
+msgid "users.select_gender"
+msgstr "性別を選択します"
+
+msgid "users.none_of_team"
+msgstr "チームはありません"
+
+msgid "users.none_of_project"
+msgstr "プロジェクトはありません"
+
+msgid "users.search"
+msgstr "検索"
+
+msgid "users.user_info"
+msgstr "ユーザー情報"
+
+msgid "users.title.edit_business"
+msgstr "ビジネスを編集します"
+
+msgid "users.title.cv"
+msgstr "CV"
+
+msgid "users.citizen_identification"
+msgstr "身分証明書"
+
+msgid "users.export_employee"
+msgstr "従業員のエクスポート"
+
+msgid "users.notification.delete"
+msgstr "削除してもよろしいですか？ "
+
+msgid "users.true"
+msgstr "TRUE"
+
+msgid "users.false"
+msgstr "FALSE"
+
+msgid "users.add.header"
+msgstr "新しい従業員を追加します"
+
+msgid "users.select_company"
+msgstr "会社を選択します"
+
+msgid "users.email_hikesiya"
+msgstr "Email Hikesiya"
+
+msgid "users.first_name"
+msgstr "ファーストネーム"
+
+msgid "users.last_name"
+msgstr "ラストネーム"
+
+msgid "users.nick_name"
+msgstr "ニックネーム"
+
+msgid "users.university_name"
+msgstr "大学名"
+
+msgid "users.placeholder"
+msgstr "ここにテキストを入力します"
+
+msgid "users.ype"
+msgstr "以前の経験年数"
+
+msgid "users.employee_type"
+msgstr "従業員タイプ"
+
+msgid "users.see"
+msgstr "参照"
+
+msgid "users.select_business_title"
+msgstr "ビジネスタイトルを選択します"
+
+msgid "users.secondary_skill"
+msgstr "セカンダリースキル"
+
+msgid "users.contract_type"
+msgstr "契約タイプ"
+
+msgid "users.select_contract_type"
+msgstr "契約タイプを選択します"
+
+msgid "users.education_degree"
+msgstr "学歴"
+
+msgid "users.select_education_degree"
+msgstr "学歴を選択します"
+
+msgid "users.single"
+msgstr "単身"
+
+msgid "users.married"
+msgstr "既婚"
+
+msgid "users.other"
+msgstr "その他"
+
+msgid "users.total_annual_days"
+msgstr "許可された年間休日の合計日数"
+
+msgid "users.total_compensatory_days"
+msgstr "許可された代休日の合計日数"
+
+msgid "users.referral_user"
+msgstr "紹介ユーザー"
+
+msgid "users.none"
+msgstr "なし"
+
+msgid "users.choose_department"
+msgstr "部門を選択します"
+
+msgid "users.error.image_valid"
+msgstr "有効な画像ファイルではありません。"
+
+msgid "users.error.system"
+msgstr "このブラウザはHTML5 FileReaderをサポートしていません。"
+
+msgid "users.add_referral.header"
+msgstr "紹介スタッフを追加します"
+
+msgid "users.add_referred.header"
+msgstr "紹介されたスタッフを追加します"
+
+msgid "users.referral_staff"
+msgstr "紹介スタッフ"
+
+msgid "users.referred_staff"
+msgstr "紹介されたスタッフ"
+
+msgid "users.referred_staff.title"
+msgstr "以下のための紹介されたスタッフを追加します"
+
+msgid "users.add_user.header"
+msgstr "ユーザーを追加します"
+
+msgid "users.file_csv"
+msgstr "CSVファイル"
+
+msgid "users.edit.header"
+msgstr "従業員を編集します"
+
+msgid "users.cye"
+msgstr "現在の経験年数"
+
+msgid "users.change_password"
+msgstr "パスワードを変更すします"
+
+msgid "users.password"
+msgstr "Password"
+
+msgid "users.re_password"
+msgstr "パスワード（再入力）"
+
+msgid "users.sub_member_team"
+msgstr "サブメンバーチーム"
+
+msgid "users.edit_referral.header"
+msgstr "紹介されたスタッフを編集します"
+
+msgid "users.edit_business.header"
+msgstr "昇進を追加します"
+
+msgid "users.current_business_title"
+msgstr "現在のビジネスタイトル"
+
+msgid "users.new_business"
+msgstr "新しいビジネス"
+
+msgid "users.new_role"
+msgstr "新しい役割"
+
+msgid "users.new_business_title"
+msgstr "新しいビジネスタイトル"
+
+msgid "users.choose_team"
+msgstr "チームを選択します"
+
+msgid "users.sub_member"
+msgstr "サブメンバー"
+
+msgid "users.promoted_date"
+msgstr "昇進日"
+
+msgid "users.add_note"
+msgstr "メモを追加します..."
+
+msgid "users.error.network_system"
+msgstr "ネットワークエラー。もう一度お試しください！"
+
+msgid "users.employee_contact.title"
+msgstr "地区別従業員数（ホーチミン市）"
+
+msgid "users.employee_contact.show_all_district"
+msgstr "すべての地区を表示します。"
+
+msgid "users.employee_contact.show_all_provinces"
+msgstr "すべての県を表示します。"
+
+msgid "users.employee_contact.other_provinces"
+msgstr "その他の県"
+
+msgid "users.number_of_employees"
+msgstr "従業員数"
+
+msgid "users.scs_employees"
+msgstr "SCS従業員"
+
+msgid "users.kicotrans_employees"
+msgstr "Kicotrans従業員"
+
+msgid "users.leader_title"
+msgstr "<b>リーダー - {0} </b>"
+
+msgid "users.member_title"
+msgstr "メンバー - {1}"
+
+msgid "users.contract_address"
+msgstr "契約住所"
+
+msgid "users.colleges"
+msgstr "大学"
+
+msgid "users.bachelor"
+msgstr "学士"
+
+msgid "users.master"
+msgstr "修士"
+
+msgid "users.ph_d"
+msgstr "Ph.D"
+
+msgid "users.probation"
+msgstr "試用期間"
+
+msgid "users.one_year"
+msgstr "1年"
+
+msgid "users.three_year"
+msgstr "3年"
+
+msgid "users.infinite"
+msgstr "無期限"
+
+msgid "users.development"
+msgstr "開発"
+
+msgid "users.overhead"
+msgstr "オーバーヘッドコスト"
+
+msgid "users.list_info_tax.header"
+msgstr "従業員税"
+
+msgid "users.list_info_tax.tax"
+msgstr "税金"
+
+msgid "users.list_info_tax.dependent_person"
+msgstr "DEPENDENT PERSON"
+
+msgid "users.add_referred"
+msgstr "紹介を追加します"
+
+msgid "users.referred_staff"
+msgstr "紹介されたスタッフ"
+
+msgid "users.introduction_date"
+msgstr "紹介日"
+
+msgid "users.user_detail.header"
+msgstr "従業員詳細"
+
+msgid "users.edit_profile"
+msgstr "プロフィール編集"
+
+msgid "users.user_detail.about"
+msgstr "概要"
+
+msgid "users.user_detail.project"
+msgstr "プロジェクト"
+
+msgid "users.user_detail.team"
+msgstr "TEAM"
+
+msgid "users.user_detail.promotion_history"
+msgstr "昇進履歴"
+
+msgid "users.user_detail.labor_contract"
+msgstr "労働契約"
+
+msgid "users.user_detail.account_experience"
+msgstr "アカウント経験"
+
+msgid "users.user_detail.incentive"
+msgstr "インセンティブ"
+
+msgid "users.user_detail.citizen_identity"
+msgstr "身分証明"
+
+msgid "users.about.header"
+msgstr "個人情報"
+
+msgid "users.address"
+msgstr "住所"
+
+msgid "users.professional_information"
+msgstr "職業情報"
+
+msgid "users.degree"
+msgstr "学位"
+
+msgid "users.about.years"
+msgstr "年"
+
+msgid "users.expiration_date"
+msgstr "有効期限"
+
+msgid "users.about.download_cv"
+msgstr "履歴書をダウンロードします"
+
+msgid "users.curriculum_vitae"
+msgstr "履歴書"
+
+msgid "users.referral_user_information"
+msgstr "紹介者の情報"
+
+msgid "users.account_experience.title"
+msgstr "アカウントごとの労働経験（人日）"
+
+msgid "users.citizen_identify.title"
+msgstr "国民識別情報"
+
+msgid "users.select_district"
+msgstr "地区を選択します"
+
+msgid "users.contact_address.province_city"
+msgstr "県/市"
+
+msgid "users.contact_address.select_province_city"
+msgstr "県/市を選択します"
+
+msgid "users.contract.title"
+msgstr "従業員労働契約"
+
+msgid "users.contract.title_add_contract"
+msgstr "労働契約を追加します"
+
+msgid "users.attached_file"
+msgstr "添付ファイル"
+
+msgid "users.not_declared_yet"
+msgstr "まだ宣言されていません"
+
+msgid "users.incentive_name"
+msgstr "インセンティブ名"
+
+msgid "users.yearly_incentive"
+msgstr "年次インセンティブ（VND）"
+
+msgid "users.monthly_incentive"
+msgstr "月次インセンティブ"
+
+msgid "users.join_at"
+msgstr "参加日"
+
+msgid "users.old_title"
+msgstr "古い役割"
+
+msgid "users.new_title"
+msgstr "新しい役割"
+
+msgid "users.roles_old"
+msgstr "古い役割"
+
+msgid "users.roles_new"
+msgstr "新しい役割"
+
+msgid "users.duration"
+msgstr "期間"
+
+msgid "users.months"
+msgstr "月"
+
+msgid "users.promotion.notification_delete"
+msgstr "この行を削除してもよろしいですか？"
+
+msgid "users.tax.title"
+msgstr "税情報リスト"
+
+msgid "users.tax_code"
+msgstr "税コード"
+
+msgid "users.date_of_issuing"
+msgstr "発行日"
+
+msgid "users.dependent_persons_list"
+msgstr "扶養者リスト"
+
+msgid "users.identity_card_number"
+msgstr "身分証番号"
+
+msgid "users.dependent_relationship"
+msgstr "扶養関係"
+
+msgid "users.tax.add_dependent_person"
+msgstr "扶養者を追加します。"
+
+msgid "users.tax.notification.delete"
+msgstr "この税コードを削除してもよろしいですか？"
+
+msgid "users.add.empty_team"
+msgstr "チームの欄は空白にできません"
+
+msgid "users.add.error.project"
+msgstr "プロジェクトの追加エラーです。"
+
+msgid "users.add.error.team"
+msgstr "チームの追加エラーです。"
+
+msgid "users.add.error.foreign_language"
+msgstr "外国語の追加エラーです。"
+
+msgid "users.add.write_log"
+msgstr "ユーザーを作成します"
+
+msgid "users.add.success"
+msgstr "ユーザーが保存されました。"
+
+msgid "users.edit.error.sub_member"
+msgstr "サブメンバーの追加に失敗しました"
+
+msgid "users.delete.empty.user"
+msgstr "ユーザーを削除できませんでした。もう一度お試しください。"
+
+msgid "users.delete.success"
+msgstr "{0} が削除されました"
+
+msgid "users.delete.write_log"
+msgstr "ユーザーを削除します"
+
+msgid "users.add_user.success"
+msgstr "ユーザーが保存されました: {0}"
+
+msgid "users.add_user.error"
+msgstr "無効なファイル形式がアップロードされました。CSVファイルをアップロードしてください。"
+
+msgid "users.add_user.empty_file"
+msgstr "CSVファイルをアップロードしてください。"
+
+msgid "users.update_emp_id.success"
+msgstr "ユーザーのemp_idが更新されました。"
+
+msgid "users.cv.error"
+msgstr "CVが見つかりません"
+
+msgid "users.empty"
+msgstr "お願いします！データが空です！"
+
+msgid "users.user_detail.error.empty_id"
+msgstr "お願いします！URLが無効です！"
+
+msgid "users.edit_business.fail"
+msgstr "編集に失敗しました！"
+
+msgid "users.edit_business.role.success"
+msgstr "{0} {1} が {2} 役割から {3} 役割に昇進しました！"
+
+msgid "users.edit_business.business.success"
+msgstr "{0} {1} が {2} から {3} に昇進しました！"
+
+msgid "users.edit_business.business_role.success"
+msgstr "{0} {1} が {2} から {3} 、そして {4} 役割から {5} 役割に昇進しました！"
+
+msgid "users.edit_business.title.role"
+msgstr "あなたの役割がアップグレードされました"
+
+msgid "users.edit_business.title.business"
+msgstr "あなたの職位がアップグレードされました"
+
+msgid "users.edit_business.title.business_role"
+msgstr "あなたの職位と役割がアップグレードされました"
+
+msgid "users.add_tax.success"
+msgstr "税金の追加に成功しました"
+
+msgid "users.edit_tax.success"
+msgstr "税金の編集に成功しました"
+
+msgid "users.edit_tax.error"
+msgstr "編集に失敗しました！"
+
+msgid "users.add_tax.write_log"
+msgstr "data_submit"
+
+msgid "users.add_referred.success"
+msgstr "紹介されたスタッフが追加されました！"
+
+msgid "users.edit_referred.success"
+msgstr "紹介されたスタッフが編集されました！"
+
+msgid "users.delete_dependent_persons.error"
+msgstr "扶養者を削除できませんでした。もう一度お試しください。"
+
+msgid "users.delete_tax.error"
+msgstr "税コードを削除できませんでした。もう一度お試しください。"
+
+msgid "users.delete_tax.success"
+msgstr "{0} {1} の税コードが削除されました"
+
+msgid "users.edit_dependent_person.success"
+msgstr "扶養者が保存されました。"
+
+msgid "users.delete_file.error"
+msgstr "ファイルを削除できませんでした。もう一度お試しください。"
+
+msgid "users.delete_file.success"
+msgstr "{0} {1} のファイルが削除されました"
+
+msgid "users.add_referral.success"
+msgstr "紹介スタッフが追加されました！"
+
+msgid "users.send_mail_user.title_from"
+msgstr "タイムシート管理システム"
+
+msgid "users.download_cv_user.error"
+msgstr "このユーザーは存在していない又は非アクティブです。もう一度お試しください！"
+
+msgid "users.ajax_get_roles.error.check_leader"
+msgstr "ユーザーはリーダーで、役割を変更できません。もう一度お試しください！"
+
+msgid "users.ajax_get_roles.error.check_sub_member"
+msgstr "ユーザーはサブメンバーで、役割を変更できません。もう一度お試しください！"
+
+msgid "users.ajax_get_roles.success"
+msgstr "成功"
+
+msgid "users.ajax_get_roles.error.empty_user"
+msgstr "ユーザーが見つかりません"
+
+msgid "users.validation.data_missing"
+msgstr "データがみつかりません"
+
+msgid "users.validation.empty"
+msgstr "この項目{0}を記入してください"
+
+msgid "users.validation.unique"
+msgstr "{0} は既に存在します。"
+
+msgid "users.validation.max_length"
+msgstr "{0} は長すぎです。最大は {1} 文字です"
+
+msgid "users.validation.min_length"
+msgstr "{0} は短すぎです。最小は {1} 文字です"
+
+msgid "users.validation.valid_space"
+msgstr "{0} にはスペースを入れないでください。"
+
+msgid "users.validation.valid_format"
+msgstr "{0} が有効である必要があります"
+
+msgid "users.validation.birthday_format"
+msgstr "不正な {0} 形式、または年齢が18歳未満です。"
+
+msgid "users.validation.format"
+msgstr "不正な {0} 形式です。"
+
+msgid "users.validation.set_value"
+msgstr "不正な {0} 値です"
+
+msgid "users.validation.end_start"
+msgstr "End date must gt start date"
+
+msgid "users.validation.password_format"
+msgstr "パスワードは最小6文字で、少なくとも1つの大文字、1つの小文字、1つの数字、1つの特殊文字を含める必要があります"
+
+msgid "users.validation.unicode"
+msgstr "{0} はUnicodeではありません。"
+
+msgid "users.validation.passwords_equal"
+msgstr "入力した2つのパスワードが一致しません。"
+
+msgid "users.validation.check_exists"
+msgstr "{0} は存在しません。"
+
+msgid "users.validation.numeric"
+msgstr "{0} は数字である必要があります"
+
+msgid "users.validation.employee_type.in_list"
+msgstr "従業員のタイプは[Overhead、Development]のみです"
+
+msgid "users.validation.is_integer"
+msgstr "{0} は整数ではありません"
+
+msgid "users.validation.format_date"
+msgstr "不正な日付形式または {0} は今日より前である必要があります"
+
+msgid "users.validation.check_exist"
+msgstr "{0} が存在しません。"
+
+msgid "users.validation.data_types"
+msgstr "{0} は不正なデータ型です。"
+
+msgid "users.validation.total.greater_than"
+msgstr "合計年次休暇日数が設定より大きくてはいけません"
+
+msgid "users.old_business_title"
+msgstr "古いビジネスタイトル"
+
+msgid "users.old_roles"
+msgstr "古い役割"
+
+msgid "users.intern"
+msgstr "インターン（Y/N）"
+# End text Users
+# Start text User Incentive
+msgid "user_incentive.choose_certificate_name"
+msgstr "資格名を選択します"
+
+msgid "user_incentive.index.header"
+msgstr "従業員インセンティブ"
+
+msgid "user_incentive.index.title_add"
+msgstr "従業員インセンティブを追加します"
+
+msgid "user_incentive.choose_incentive"
+msgstr "インセンティブを選択します"
+
+msgid "user_incentive.monthly_incentive"
+msgstr "月次インセンティブ（VND）"
+
+msgid "user_incentive.edit_title"
+msgstr "インセンティブを編集します"
+
+msgid "user_incentive.notification.delete"
+msgstr "従業員の資格インセンティブを削除してもよろしいですか？"
+
+msgid "user_incentive.edit.header"
+msgstr "従業員のインセンティブを編集します"
+
+msgid "user_incentive.select_user"
+msgstr "ユーザーを選択します"
+
+msgid "user_incentive.choose_incentive_name"
+msgstr "インセンティブ名を選択してください"
+
+msgid "user_incentive.add.success"
+msgstr "ユーザーインセンティブが保存されました！"
+
+msgid "user_incentive.add.error"
+msgstr "ユーザーインセンティブを保存できませんでした！"
+
+msgid "user_incentive.edit.success"
+msgstr "ユーザーインセンティブが編集されました！"
+
+msgid "user_incentive.delete.error"
+msgstr "資格インセンティブを削除できませんでした。もう一度お試しください。"
+
+msgid "user_incentive.delete.success"
+msgstr "従業員の資格インセンティブ：{0} {1} が削除されました"
+# End text User Incentive
+# Start text User Report
+msgid "user_report.index.header"
+msgstr "週次レポートの受信者設定"
+
+msgid "user_report.recipient"
+msgstr "受信者"
+
+msgid "user_report.add.header"
+msgstr "ユーザーレポートを追加します"
+
+msgid "user_report.add.title"
+msgstr "新しいユーザーレポート"
+
+msgid "user_report.menu.send_report"
+msgstr "ユーザー送信レポート"
+
+msgid "user_report.edit.header"
+msgstr "週次レポートの受信者を更新します"
+
+msgid "user_report.add.error"
+msgstr "プロジェクトにユーザーが既に存在されましたか？"
+
+msgid "user_report.add.success"
+msgstr "ユーザーの追加に成功しました"
+
+msgid "user_report.edit.error"
+msgstr "データが空またはURLが無効です。"
+
+msgid "user_report.edit.success"
+msgstr "{0} の受信者が正常に更新されました！"
+
+msgid "user_report.delete.error"
+msgstr "ユーザーレポートを削除できません。もう一度お試しください。"
+
+msgid "user_report.delete.success"
+msgstr "ユーザーレポートの削除に成功しました！"
+# End text User Report
+# Start text Week
+msgid "week.select_week"
+msgstr "週を選択してください"
+
+msgid "week.role_member"
+msgstr "メンバー役割"
+
+msgid "week.role_leader"
+msgstr "リーダー役割"
+
+msgid "week.role_pm"
+msgstr "PM役割"
+
+msgid "week.validation.valid_value"
+msgstr "入力の検証"
+# End text Week
+# Start text Wfh
+msgid "wfh.index.header"
+msgstr "WFHリスト"
+
+msgid "wfh.index.title"
+msgstr "WFH"
+
+msgid "wfh.index.total"
+msgstr "合計 {0} 項目"
+
+msgid "wfh.choose_employee"
+msgstr "従業員を選択します"
+
+msgid "wfh.total_day"
+msgstr "合計日数"
+
+msgid "wfh.total"
+msgstr "合計 WFH（WFH）"
+
+msgid "wfh.day"
+msgstr "day"
+
+msgid "wfh.notification.delete"
+msgstr "この WFH を削除してもよろしいですか？"
+
+msgid "wfh.add.header"
+msgstr "WFHを登録します"
+
+msgid "wfh.add.title"
+msgstr "WFH 追加"
+
+msgid "wfh.edit.title"
+msgstr "WFH 編集"
+
+msgid "wfh.remove"
+msgstr "削除"
+
+msgid "wfh.placeholder"
+msgstr "ここにテキストを入力します"
+
+msgid "wfh.select_approve"
+msgstr "承認者を選択します"
+
+msgid "wfh.add.error.number_counter"
+msgstr "休暇日数が0未満にならないようにしてください。"
+
+msgid "wfh.edit.header"
+msgstr "WFHを更新します"
+
+msgid "wfh.approve.header"
+msgstr "WFHを承認します"
+
+msgid "wfh.approve.title"
+msgstr "WFHを承認します"
+
+msgid "wfh.notification.approve"
+msgstr "この WFH を承認してもよろしいですか？"
+
+msgid "wfh.notification.reject"
+msgstr "この WFH を拒否してもよろしいですか？"
+
+msgid "wfh.reject_by"
+msgstr "拒否者"
+
+msgid "wfh.ok"
+msgstr "OK"
+
+msgid "wfh.approve.confirm.error"
+msgstr "この入力を記入してください。"
+
+msgid "wfh.report.header"
+msgstr "WFH報告"
+
+msgid "wfh.wfh_day"
+msgstr "WFH 日数"
+
+msgid "wfh.report.notification.delete"
+msgstr "年の KPI を削除してもよろしいですか？"
+
+msgid "wfh.error.empty_id"
+msgstr "WFH ID が存在しません。"
+
+msgid "wfh.approve_user.success"
+msgstr "WFHの承認に成功しました"
+
+msgid "wfh.approve_user.notification.success"
+msgstr "承認されたWFHリクエスト"
+
+msgid "wfh.approve_user.error"
+msgstr "WFHの承認に失敗しました"
+
+msgid "wfh.reject_user.success"
+msgstr "WFHの拒否に成功しました"
+
+msgid "wfh.reject_user.notification.success"
+msgstr "拒否されたWFHリクエスト"
+
+msgid "wfh.reject_user.error"
+msgstr "WFHの拒否に失敗しました"
+
+msgid "wfh.get_user_info.error"
+msgstr "ユーザーが存在しません"
+
+msgid "wfh.send_mail.padding"
+msgstr "に対しますWFH申請の承認 "
+
+msgid "wfh.send_mail.ok"
+msgstr "に対しますWFH申請を承認されました "
+
+msgid "wfh.send_mail.reject"
+msgstr "に対しますWFH申請を承認されました "
+
+msgid "wfh.add.time_than"
+msgstr "開始時間は終了時間より小さくしますことはできません"
+
+msgid "wfh.add.isset.leave"
+msgstr "休暇時間は既に存在します。"
+
+msgid "wfh.add.isset.wfh"
+msgstr "WFH が既に存在します"
+
+msgid "wfh.add.empty.field"
+msgstr "理由欄は空欄にできません"
+
+msgid "wfh.add.success"
+msgstr "WFH が保存されました。"
+
+msgid "wfh.add.notification"
+msgstr "送信された WFH リクエスト"
+
+msgid "wfh.edit.error.empty_id"
+msgstr "お願いします！URL が無効です。"
+
+msgid "wfh.edit.empty.wfh"
+msgstr "お願いします！データが空です！"
+
+msgid "wfh.edit.error.max_time"
+msgstr "時間が切れました。09:00 以降は今日の WFH を追加できません。"
+
+msgid "wfh.edit.notification"
+msgstr "更新された WFH リクエスト"
+
+msgid "wfh.delete.error"
+msgstr "WFH を削除できませんでした。もう一度お試しください。"
+
+msgid "wfh.delete.success"
+msgstr "WFH が削除されました"
+
+msgid "wfh.reject.error"
+msgstr "WFH の拒否に失敗しました"
+
+msgid "wfh.validation.empty"
+msgstr "{0} は必須です。"
+
+msgid "wfh.send_mail.get_wfh.padding"
+msgstr "あなたの WFH リクエストは承認待ちです。"
+
+msgid "wfh.send_mail.get_wfh.approve"
+msgstr "あなたの WFH リクエストは承認されました。"
+
+msgid "wfh.send_mail.get_wfh.reject"
+msgstr "あなたの WFH リクエストは拒否されました。"
+
+msgid "wfh.send_mail.get_wfh.has_submit"
+msgstr "は WFH リクエストを提出しました。"
+
+msgid "wfh.num_of_days"
+msgstr "日数"
+
+msgid "wfh.respond"
+msgstr "応答します"
+# End text Wfh
+
+#Banner start
+msgid "banner.banner"
+msgstr "バナー"
+
+msgid "banner.banner_add"
+msgstr "バナーを追加します"
+
+msgid "banner.select_type"
+msgstr "タイプを選択します"
+
+msgid "banner.banner_type"
+msgstr "バナータイプ"
+
+msgid "banner.logo_type"
+msgstr "ロゴタイプ"
+
+msgid "banner.member_type"
+msgstr "メンバータイプ"
+
+msgid "banner.slider_type"
+msgstr "スライダータイプ"
+
+msgid "banner.link"
+msgstr "リンク"
+
+msgid "banner.text_view_1"
+msgstr "テキストビュー 1"
+
+msgid "banner.text_view_2"
+msgstr "テキストビュー 2"
+
+msgid "banner.file_upload"
+msgstr "ファイルをアップロードします"
+
+msgid "banner.banner_edit"
+msgstr "バナーを編集します"
+
+msgid "banner.banner_list"
+msgstr "バナーリスト"
+
+msgid "banner.total_banner"
+msgstr "（合計 {0} バナー）"
+
+msgid "banner.text_view"
+msgstr "テキストビュー"
+
+msgid "banner.delete.confirm"
+msgstr "このレシピを削除してもよろしいですか？"
+#Banner end
+
+#Dashboard start
+msgid "dashboard.newcomer_in"
+msgstr "新人"
+
+msgid "dashboard.alert.not_found_newcomer"
+msgstr "新人が見つかりません。"
+#Dashboard end
+
+#Tax start
+msgid "tax.input_tax"
+msgstr "税入力"
+
+msgid "tax.delete.confirm"
+msgstr "本当にこの税コードを削除しますか？"
+
+msgid "tax.delete.dependent_persons"
+msgstr "扶養家族"
+
+msgid "tax.delete.select_dependent_relationship"
+msgstr "家族関係を選択します"
+
+msgid "tax.husband"
+msgstr "夫"
+
+msgid "tax.wife"
+msgstr "妻"
+
+msgid "tax.children"
+msgstr "子供"
+
+msgid "tax.father"
+msgstr "父親"
+
+msgid "tax.mother"
+msgstr "母親"
+#Tax end
+
+#Error end
+msgid "error.page_not_found"
+msgstr "おっと！ページが見つかりません。"
+
+msgid "error.internal_server_error"
+msgstr "おっと！内部サーバーエラー。"
+
+msgid "error.message_not_found"
+msgstr "お探しのページが見つかりませんでした。その間、お戻りいただけます。"
+#Error end
+
+# Start Text ValidationFunction
+
+msgid "validation_function.group_not_type"
+msgstr "グループが種類ではありません"
+
+# End Text ValidationFunction
+
+#Pagination start
+msgid "pagination.page_of"
+msgstr "{1}のページ {0}"
+
+msgid "pagination.next"
+msgstr "次へ"
+
+msgid "pagination.last"
+msgstr "最後へ"
+#Pagination end

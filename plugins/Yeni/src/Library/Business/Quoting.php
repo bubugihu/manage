@@ -21,7 +21,7 @@ class Quoting extends Entity
     {
         return $this->model_quoting->selectList($condition);
     }
-    public function getList($key_search = "",  $page, $export = false, $type)
+    public function getList($key_search = "",  $page = 1, $export = false, $type = null)
     {
         $order = [];
         if(is_null($type))
@@ -29,6 +29,7 @@ class Quoting extends Entity
             $condition = [
                 'OR' => [
                     'code LIKE' => "%" . $key_search . "%",
+                    'order_code LIKE' => "%" . $key_search . "%",
                 ],
             ];
             $order = [
@@ -38,6 +39,7 @@ class Quoting extends Entity
             $condition = [
                 'OR' => [
                     'code LIKE' => "%" . $key_search . "%",
+                    'order_code LIKE' => "%" . $key_search . "%",
                 ],
                 'source' => $type
             ];
