@@ -35,8 +35,8 @@ class Report extends Entity
                 'customer_name LIKE' => "%" . $key_search['key_search'] . "%",
                 'customer_phone LIKE' => "%" . $key_search['key_search'] . "%",
             ],
-            'YEAR(order_date)' => $key_search['month'],
-            'MONTH(order_date)' => $key_search['year'],
+            'YEAR(order_date)' => $key_search['year'],
+            'MONTH(order_date)' => $key_search['month'],
             'source' => 1,
         ];
         $order = [
