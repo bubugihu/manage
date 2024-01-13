@@ -76,22 +76,22 @@
                 <h2>Thông tin hàng</h2>
             </div>
             <div class="row">
-                <div class="col-2">
+                <div class="col-2" style="font-weight: 700">
                     Mã code
                 </div>
-                <div class="col-2">
+                <div class="col-2" style="font-weight: 700">
                     Tên hàng
                 </div>
-                <div class="col-2">
+                <div class="col-2" style="font-weight: 700">
                     Số lượng
                 </div>
-                <div class="col-2">
+                <div class="col-2" style="font-weight: 700">
                     Giá mua
                 </div>
-                <div class="col-2">
+                <div class="col-2" style="font-weight: 700">
                     Giá bán
                 </div>
-                <div class="col-2">
+                <div class="col-2" style="font-weight: 700">
                     Ghi chú
                 </div>
             </div>
