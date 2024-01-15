@@ -23,9 +23,103 @@ class ReportController extends AppController
 
     public function index()
     {
-//        $content = "bui gia hung n5";
-//        $mail_array = $this->business_api_gmail->getMailAcb($content);
-//        $result = $this->business_api_gmail->checkBodyMail($mail_array, $content);
+        $content = "bui gia hung n5";
+//        $mail_array = $this->business_api_gmail->getMailAcb();
+        $mail_array = [
+            0=> [
+                2 => '
+
+
+Kính gửi Quý khách hàng.
+
+ACB trân trọng thông báo tài khoản *24692047* của Quý khách đã thay đổi số
+dư như sau:
+Số dư mới của tài khoản trên là: *82,551.00 VND* tính đến *15/01/2024*.
+Giao dịch mới nhất:Ghi có *+10,000.00 VND*.
+Nội dung giao dịch: *MBVCB.5076134614.082170.BUI GIA HUNG N5.CT TU
+1042536477 BUI GIA HUNG TOI 24692047 BUI GIA HUNG TAI ACB GD 082170-011524
+13:36:03*.
+
+Cảm ơn Quý khách hàng đã sử dụng Sản phẩm/ Dịch vụ của ACB. Chúng tôi mong
+được tiếp tục phục vụ Quý khách hàng.
+Trân trọng.
+
+
+------------------------------------------------------------------------------------------------------------------
+Dear Customers,
+
+ACB respectfully updates your *24692047* account balance, as follows:
+Updated account balance: *82,551.00 VND* up to *15/01/2024*.
+Latest transaction: Credit *+10,000.00 VND*.
+Content: *MBVCB.5076134614.082170.BUI GIA HUNG N5.CT TU 1042536477 BUI GIA
+HUNG TOI 24692047 BUI GIA HUNG TAI ACB GD 082170-011524 13:36:03*.
+
+Thank you for using ACB’s Product/Service. We look forward to serving you
+in the future.
+Yours faithfully,
+
+
+------------------------------------------------------------------------------------------------------------------
+
+Đây là dịch vụ Email tự động của ACB, Quý khách vui lòng không "Reply".
+Mọi thông tin cần hỗ trợ, Quý khách vui lòng liên hệ:
+Trung Tâm Dịch Vụ Khách Hàng 24/7
+1900545486 - (028) 38 247 247
+1800577775 (Miễn phí - Dành cho KH ưu tiên)
+
+Please do not reply to this automated email. For further information,
+please contact Call Center
+24/7 at 1900545486 – (028) 38 247 247
+1800577775 (free and available for priority customers.)
+------------------------------------------------------------------------------------------------------------------ '
+            ],
+            1=>[
+                2 => '
+
+
+Kính gửi Quý khách hàng.
+
+ACB trân trọng thông báo tài khoản *24692047* của Quý khách đã thay đổi số
+dư như sau:
+Số dư mới của tài khoản trên là: *92,551.00 VND* tính đến *15/01/2024*.
+Giao dịch mới nhất:Ghi có *+10,000.00 VND*.
+Nội dung giao dịch: *BUI GIA HUNG N1 GD 929275-011524 15:08:43*.
+
+Cảm ơn Quý khách hàng đã sử dụng Sản phẩm/ Dịch vụ của ACB. Chúng tôi mong
+được tiếp tục phục vụ Quý khách hàng.
+Trân trọng.
+
+
+------------------------------------------------------------------------------------------------------------------
+Dear Customers,
+
+ACB respectfully updates your *24692047* account balance, as follows:
+Updated account balance: *92,551.00 VND* up to *15/01/2024*.
+Latest transaction: Credit *+10,000.00 VND*.
+Content: *BUI GIA HUNG N1 GD 929275-011524 15:08:43*.
+
+Thank you for using ACB’s Product/Service. We look forward to serving you
+in the future.
+Yours faithfully,
+
+
+------------------------------------------------------------------------------------------------------------------
+
+Đây là dịch vụ Email tự động của ACB, Quý khách vui lòng không "Reply".
+Mọi thông tin cần hỗ trợ, Quý khách vui lòng liên hệ:
+Trung Tâm Dịch Vụ Khách Hàng 24/7
+1900545486 - (028) 38 247 247
+1800577775 (Miễn phí - Dành cho KH ưu tiên)
+
+Please do not reply to this automated email. For further information,
+please contact Call Center
+24/7 at 1900545486 – (028) 38 247 247
+1800577775 (free and available for priority customers.)
+------------------------------------------------------------------------------------------------------------------ '
+            ]
+        ];
+        dd($mail_array);
+        $result = $this->business_api_gmail->checkBodyMail($mail_array, $content);
 //        dd($result);
         $arr['key_search']  = $_GET['key_search'] ?? "";
         $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;

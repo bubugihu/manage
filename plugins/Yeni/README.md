@@ -1,4 +1,4 @@
-# Yeni plugin for CakePHP
+bin# Yeni plugin for CakePHP
 
 ## Installation
 

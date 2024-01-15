@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Yeni;
 
+use App\Command\CheckStatusOrderCommand;
 use Cake\Console\CommandCollection;
 use Cake\Core\BasePlugin;
 use Cake\Core\ContainerInterface;
@@ -73,7 +74,7 @@ class YeniPlugin extends BasePlugin
     public function console(CommandCollection $commands): CommandCollection
     {
         // Add your commands here
-
+        $commands->add('bake CheckStatusOrder', CheckStatusOrderCommand::class);
         $commands = parent::console($commands);
 
         return $commands;
