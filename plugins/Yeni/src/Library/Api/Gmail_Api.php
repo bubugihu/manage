@@ -4,51 +4,31 @@ namespace Yeni\Library\Api;
 
 class Gmail_Api
 {
-    public function getBodyMailVCB()
+    public function getMailAcb($content)
     {
-        $client = new \Google_Client();
-        $client->setAuthConfig('gmail.json');
-        $client->setRedirectUri("http://manage.local/yeni/report/");
-        $client->setAccessType('offline');
-        $client->setPrompt('select_account consent');
-        $client->addScope(\Google_Service_Gmail::GMAIL_READONLY);
+        $scriptUrl = "https://script.google.com/macros/s/AKfycbw6IO6dbkTf8iN0IrUgtiKmPJeDr1DhycKjoI6ULu29tOxsurIGYxrExzxltHrQMntq/exec";
+        $data = [
+            'search' => 'is:unread from:mailalert@acb.com.vn after:2024/01/15'
+        ];
+        $ch = curl_init($scriptUrl);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS , $data);
+        $response = curl_exec($ch);
+        return json_decode($response, true);
+    }
 
-        // Authenticate
-        if ($client->isAccessTokenExpired())
+    public function checkBodyMail($mail_array, $content)
+    {
+        $result = false;
+        foreach($mail_array as $mail)
         {
-            $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
+            $body = $mail[2]; //body
+            $convert_body_to_lower = strtolower($body);
+            $key = strtolower($content);
+            $result =  mb_stripos($convert_body_to_lower, $key) !== false;
+            if($result) break;
         }
-
-        // Create Gmail service
-        $service = new \Google_Service_Gmail($client);
-
-        // Lấy ngày hôm nay (theo múi giờ của bạn)
-        $today = new \DateTime('now', new \DateTimeZone('YOUR_TIMEZONE'));
-
-        // Định dạng ngày thành chuỗi theo định dạng của Gmail
-        $todayString = $today->format('Y/m/d');
-
-        // Tạo truy vấn lọc
-        $query = 'is:unread from:VCBDigibank@info.vietcombank.com.vn after:' . $todayString;
-
-        // Lấy danh sách email chưa đọc và được gửi từ địa chỉ cụ thể trong ngày hôm nay
-        $messages = $service->users_messages->listUsersMessages('me', ['q' => $query]);
-        // Xử lý các email như bạn cần
-        foreach ($messages->getMessages() as $message) {
-            $message = $service->users_messages->get('me', $message->getId());
-            $headers = $message->getPayload()->getHeaders();
-
-            // Extract sender, subject, and other information from headers
-            foreach ($headers as $header) {
-                if ($header->getName() == 'From') {
-                    $sender = $header->getValue();
-                } elseif ($header->getName() == 'Subject') {
-                    $subject = $header->getValue();
-                }
-            }
-            dd($headers);
-            // Đánh dấu email là đã đọc (nếu cần)
-            $service->users_messages->modify('me', $message->getId(), ['removeLabelIds' => ['UNREAD']]);
-        }
+        return $result;
     }
 }

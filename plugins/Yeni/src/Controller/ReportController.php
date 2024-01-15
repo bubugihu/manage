@@ -18,13 +18,15 @@ class ReportController extends AppController
         parent::initialize();
         $this->business_report = new Report();
         $this->business_order = new Orders();
+        $this->business_api_gmail = new Gmail_Api();
     }
 
     public function index()
     {
-        $gmail = new Gmail_Api();
-        $gmail->getBodyMailVCB();
-        dd(123);
+//        $content = "bui gia hung n5";
+//        $mail_array = $this->business_api_gmail->getMailAcb($content);
+//        $result = $this->business_api_gmail->checkBodyMail($mail_array, $content);
+//        dd($result);
         $arr['key_search']  = $_GET['key_search'] ?? "";
         $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;
 		$arr['month']  = $_GET['month'] ?? date("m");;
