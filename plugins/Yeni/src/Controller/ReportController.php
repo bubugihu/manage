@@ -6,6 +6,7 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Log\Log;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use \Yeni\Controller\AppController;
+use Yeni\Library\Api\Gmail_Api;
 use Yeni\Library\Business\Orders;
 use Yeni\Library\Business\Report;
 use Yeni\Model\Table\SetProductTable;
@@ -21,6 +22,9 @@ class ReportController extends AppController
 
     public function index()
     {
+        $gmail = new Gmail_Api();
+        $gmail->getBodyMailVCB();
+        dd(123);
         $arr['key_search']  = $_GET['key_search'] ?? "";
         $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;
 		$arr['month']  = $_GET['month'] ?? date("m");;
