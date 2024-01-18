@@ -23,8 +23,6 @@ class ReportController extends AppController
 
     public function index()
     {
-//        $result = $this->business_api_gmail->checkBodyMail($mail_array, $content);
-//        dd($result);
         $arr['key_search']  = $_GET['key_search'] ?? "";
         $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;
 		$arr['month']  = $_GET['month'] ?? date("m");;

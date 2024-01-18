@@ -1,18 +1,18 @@
 <aside class="bd-sidebar">
     <div class="bg-light">
         <ul class="nav nav-pills d-flex justify-content-center aside-tab" role="tablist">
-            <li class="nav-item mx-1" role="presentation">
-                <button class="btn rounded-0 <?php echo in_array($this->getRequest()->getParam('controller'), ['Home', 'ManageSystem', 'Purchasing', 'Config', 'Quoting', 'Report', 'Expenses', 'Product']) ? 'active' : ''; ?>"
-                        id="pills-aside-main-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-aside-main"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-aside-main"
-                        aria-selected="true">
-                    <i class="fa-solid fa-folder-tree"></i>
-                </button>
-            </li>
+<!--            <li class="nav-item mx-1" role="presentation">-->
+<!--                <button class="btn rounded-0 --><?php //echo in_array($this->getRequest()->getParam('controller'), ['Home', 'ManageSystem', 'Purchasing', 'Config', 'Quoting', 'Report', 'Expenses', 'Product']) ? 'active' : ''; ?><!--"-->
+<!--                        id="pills-aside-main-tab"-->
+<!--                        data-bs-toggle="pill"-->
+<!--                        data-bs-target="#pills-aside-main"-->
+<!--                        type="button"-->
+<!--                        role="tab"-->
+<!--                        aria-controls="pills-aside-main"-->
+<!--                        aria-selected="true">-->
+<!--                    <i class="fa-solid fa-folder-tree"></i>-->
+<!--                </button>-->
+<!--            </li>-->
 <!--            <li class="nav-item mx-1" role="presentation">-->
 <!--                <button class="btn rounded-0 --><?php //echo in_array($this->getRequest()->getParam('controller'), ['Materials', 'PartNo', 'Team', 'Function', 'Permission', 'Vendor', 'Project', 'Customer', 'Unit', 'Currency','TemplateMail' , 'Office', 'ExchangeRate', 'CompanyText', 'RepositoryManager', 'Department', 'CheckFollow', 'WoTravelerTemplate', 'Language', 'UpdatePricePartNo', 'LaborEstimateDetail']) ? 'active' : ''; ?><!--"-->
 <!--                        id="pills-aside-setting-tab"-->
