@@ -55,7 +55,7 @@
                                     <div style="width: 3%"><br><?= __("Code") ?></div>
                                     <div style="width: 1%"><br><?= __("Quantity") ?></div>
                                     <div style="width: 2%"><br><?= __("Price") ?></div>
-                                    <div style="width: 5%"><br><?= __("Note") ?></div>
+                                    <div style="width: 5%"><br><?= __("Name") ?></div>
                                     <div style="width: 2%"><br><?= __("Date") ?></div>
                                     <div style="width: 2%"><br><?= __("Status") ?></div>
                                 </div>
@@ -85,7 +85,7 @@
                                                     <?= $value->price_display ?? 0 ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->note ?? '' ?>
+                                                    <?= $value->name ?? '' ?>
                                                 </div>
                                                 <div>
                                                     <?= $value->p_date->toDateString() ?? '' ?>

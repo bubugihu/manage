@@ -23,7 +23,7 @@ class Purchasing extends Entity
     {
         return $this->model_quoting->selectList($condition);
     }
-    public function getList($key_search = "",  $page, $export = false, $type)
+    public function getList($key_search = "",  $page = 1, $export = false, $type = null)
     {
         $order = [];
         if(is_null($type))
@@ -50,6 +50,7 @@ class Purchasing extends Entity
     public function saveList($params)
     {
         $connection = ConnectionManager::get('default');
+        $sql = "";
         try{
             $connection->begin();
             if(empty($params))
@@ -78,9 +79,9 @@ class Purchasing extends Entity
                     continue;
                 if(in_array($code, $list_product))
                 {
-                    $sql = "UPDATE product SET `name` = '$name',`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
+                    $sql = "UPDATE product SET `name` = :name,`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
                     $connection->execute(
-                        $sql,
+                        $sql,['name' => $name]
                     );
                 }else{
                     $params = [
@@ -98,6 +99,7 @@ class Purchasing extends Entity
         {
             Log::error($e->getMessage());
             $connection->rollback();
+            dd($sql);
             return false;
         }
         return true;

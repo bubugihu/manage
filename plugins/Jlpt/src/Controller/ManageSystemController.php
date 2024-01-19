@@ -42,7 +42,6 @@ class ManageSystemController extends AppController
         $this->set('paginate',$paginate);
         $data_request = !empty($list_customer->all()->toList()) ? $list_customer->all()->toList()[0] : [];
         $this->set('data_request', $data_request);
-
     }
 
     public function view($id)
