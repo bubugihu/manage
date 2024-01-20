@@ -541,7 +541,8 @@
                         //export excel
                         let full_name = $('#full_name').val()
 
-                        exportToExcel(full_name.replace(/\s+/g, '_'))
+                        // exportToExcel(full_name.replace(/\s+/g, '_'))
+
                         let phone = $('#phone').val()
                         let addr = $('#addr').val()
                         let total_order = $('#total_order').val()

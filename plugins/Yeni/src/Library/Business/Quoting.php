@@ -186,7 +186,7 @@ class Quoting extends Entity
         return $result;
     }
 
-    public function formatValueQuotingShopee($key, $params, $sheet, $order_code)
+    public function formatValueQuotingShopee($key, $params, $sheet, $order_code, $list_product)
     {
         $result_quoting['order_code'] = "SHOPEE_" . trim($params['A']);
         $result_quoting['code'] = trim($params['S']);
@@ -196,6 +196,7 @@ class Quoting extends Entity
         $result_quoting['q_date'] = new FrozenTime($q_date);
         $result_quoting['price'] = trim($sheet->getCell('Y'.$key)->getValue()); //
         $result_quoting['source'] = SOURCE_SHOPEE;
+        $result_quoting['p_price'] = $list_product[trim($params['S'])] ?? 0;
 
         return $result_quoting;
     }

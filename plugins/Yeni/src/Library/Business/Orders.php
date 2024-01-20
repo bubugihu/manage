@@ -61,6 +61,17 @@ class Orders extends Entity
             $connection->begin();
             if(empty($data) || empty($data[7]))
                 return false;
+
+            // list product
+            $list_product = $this->model_product->find('list', [
+                'fields' => ['id', 'code','del_flag','p_price'],
+                'conditions' => ['Product.del_flag' => UNDEL],
+                'keyField' => 'code',
+                'valueField' => function($value) {
+                    return $value['p_price'];
+                },
+            ])->toArray();
+
             $result = [];
             $order_date_input_array = explode("/",$data[10]);
             $oder_date = $order_date_input_array[1] . "/" . $order_date_input_array[0] . "/" . $order_date_input_array[2];
@@ -74,6 +85,7 @@ class Orders extends Entity
                 $quoting['source'] = 1; // zalo
                 $quoting['order_code'] = $data[0]; // zalo
                 $quoting['name'] = $data[12][$key];
+                $quoting['p_price'] = $list_product[$data[7][$key]] ?? 0;
                 $result[] = $quoting;
             }
             $list_entities = $this->model_quoting->newEntities($result);

@@ -73,6 +73,17 @@ class QuotingController extends AppController
                     if (count($dataInput) > 0)
                     {
                         $results = [];
+                        // list product
+                        $list_product = $this->model_product->find('list', [
+                            'fields' => ['id', 'code','del_flag','p_price'],
+                            'conditions' => ['Product.del_flag' => UNDEL],
+                            'keyField' => 'code',
+                            'valueField' => function($value) {
+                                return $value['p_price'];
+                            },
+                        ])->toArray();
+
+                        //set product
                         $set_product_model = new SetProductTable();
                         $list_set_product = $set_product_model->find('list', [
                             'fields' => ['id', 'code','del_flag'],
@@ -91,7 +102,7 @@ class QuotingController extends AppController
                                 continue;
                             }
 
-                            $results['quoting'][$key] = $this->business_quoting->formatValueQuotingShopee($key, $value, $getSheet, $order_code);
+                            $results['quoting'][$key] = $this->business_quoting->formatValueQuotingShopee($key, $value, $getSheet, $order_code, $list_product);
                             $result_order = $this->business_quoting->formatValueOrderShopee($key, $value, $getSheet, $order_code);
                             if(!empty($result_order))
                             {
