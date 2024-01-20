@@ -235,9 +235,9 @@ class Report extends Entity
             {
                 if(!in_array($code,array_keys($list_set_product)))
                 {
-                    $sql = "UPDATE product SET `name` = '$name', `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
+                    $sql = "UPDATE product SET `name` = :name, `q_qty` = q_qty + $qty, `q_price` = $price WHERE `code` = '$code'";
                     $connection->execute(
-                        $sql,
+                        $sql,['name' => $name]
                     );
                 }else{
                     $list_product_detail = $list_set_product[$code]->set_product_detail;

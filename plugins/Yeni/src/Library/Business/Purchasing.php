@@ -17,6 +17,7 @@ class Purchasing extends Entity
         $this->model_product = $this->_getProvider("Yeni.Product");
         $this->model_order = $this->_getProvider("Yeni.Orders");
         $this->model_purchasing = $this->_getProvider("Yeni.Purchasing");
+        $this->model_pre_purchasing = $this->_getProvider("Yeni.PrePurchasing");
     }
 
     public function selectListQuoting($condition)
@@ -58,16 +59,14 @@ class Purchasing extends Entity
             $list_entities = $this->model_purchasing->newEntities($params);
             $this->model_purchasing->saveMany($list_entities);
 
-
             $list_product = $this->model_product->find('list', [
-                'fields' => ['id', 'code','del_flag'],
+                'fields' => ['id', 'code', 'total_qty','del_flag'],
                 'conditions' => ['Product.del_flag' => UNDEL],
-                'keyField' => 'id',
+                'keyField' => 'code',
                 'valueField' => function($value) {
-                    return $value['code'];
+                    return $value['total_qty'];
                 },
             ])->toArray();
-
             //update inventory
             foreach($list_entities as $value)
             {
@@ -77,12 +76,18 @@ class Purchasing extends Entity
                 $name = $value['name'];
                 if(empty($code))
                     continue;
-                if(in_array($code, $list_product))
+                if(in_array($code, array_keys($list_product)))
                 {
-                    $sql = "UPDATE product SET `name` = :name,`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
-                    $connection->execute(
-                        $sql,['name' => $name]
-                    );
+                    if(intval($list_product[$code]) > 0)
+                    {
+                        $pre = $this->model_pre_purchasing->newEntity($value->toArray());
+                        $this->model_pre_purchasing->save($pre);
+                    }else{
+                        $sql = "UPDATE product SET `name` = :name,`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
+                        $connection->execute(
+                            $sql,['name' => $name]
+                        );
+                    }
                 }else{
                     $params = [
                         'code'  => $code,
@@ -99,7 +104,6 @@ class Purchasing extends Entity
         {
             Log::error($e->getMessage());
             $connection->rollback();
-            dd($sql);
             return false;
         }
         return true;
