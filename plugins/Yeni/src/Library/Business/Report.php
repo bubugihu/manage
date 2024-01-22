@@ -280,8 +280,13 @@ class Report extends Entity
         {
             $quoting_monthly = $quoting->q_date->format('n');
             $source = SOURCE[$quoting->source];
-            $p_price = $quoting->product->p_price ?? $quoting->price/2;
-            $profit = (floatval($quoting->price) - floatval($p_price)) * intval($quoting->quantity);
+            if($quoting->p_price == 0)
+            {
+                $p_price = floatval($quoting->price/2);
+            }else{
+                $p_price = floatval($quoting->p_price);
+            }
+            $profit = (floatval($quoting->price) - $p_price) * intval($quoting->quantity);
             if(isset($result_monthly[$source][$quoting_monthly]))
             {
                 $result_monthly[$source][$quoting_monthly]['profit'] += floor($profit);
