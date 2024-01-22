@@ -82,6 +82,8 @@ class Purchasing extends Entity
                     {
                         $pre = $this->model_pre_purchasing->newEntity($value->toArray());
                         $this->model_pre_purchasing->save($pre);
+                        $this->model_purchasing->updateAll(['del_flag' => DEL_FLAG], ['id' => $value['id']]);
+
                     }else{
                         $sql = "UPDATE product SET `name` = :name,`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
                         $connection->execute(
