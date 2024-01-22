@@ -15,6 +15,7 @@ class Report extends Entity
         $this->model_quoting = $this->_getProvider("Yeni.Quoting");
         $this->model_product = $this->_getProvider("Yeni.Product");
         $this->model_order = $this->_getProvider("Yeni.Orders");
+        $this->model_purchasing = $this->_getProvider("Yeni.Purchasing");
     }
 
     public function getOne($id)
@@ -312,5 +313,29 @@ class Report extends Entity
     {
         $this->model_order->deleteAll(['order_code' => $order_code]);
         $this->model_quoting->deleteAll(['order_code' => $order_code]);
+    }
+
+    public function getOutcome($current_year)
+    {
+        $last_year = $current_year -1;
+        $last_year_text = "$last_year-12-01";
+        $current_year_text = "$current_year-12-01";
+        $list_purchasing = $this->model_purchasing->find()
+            ->where(['p_date >=' => $last_year_text])
+            ->where(['p_date <' => $current_year_text])
+            ->toArray();
+        $result_monthly = [];
+        foreach($list_purchasing as $key => $purchasing)
+        {
+            $quoting_monthly = $purchasing->p_date->format('n');
+            if(isset($result_monthly[$quoting_monthly]))
+            {
+                $result_monthly[$quoting_monthly] += floatval($purchasing->quantity * $purchasing->price);
+            }else{
+                $result_monthly[$quoting_monthly] = floatval($purchasing->quantity * $purchasing->price);
+            }
+
+        }
+        return $result_monthly;
     }
 }

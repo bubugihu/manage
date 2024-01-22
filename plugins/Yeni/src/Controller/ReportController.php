@@ -41,9 +41,13 @@ class ReportController extends AppController
 
         //profit
         $list_profit = $this->business_report->getProfit($current_year);
+
+        // outcome
+        $list_outcome = $this->business_report->getOutcome($current_year);
         $this->set('labels',$labels);
         $this->set('getMonthlyYear',$getMonthlyYear);
         $this->set('list_profit',$list_profit);
+        $this->set('list_outcome',$list_outcome);
     }
 
     public function importOrder()

@@ -320,6 +320,20 @@
             ?>
         ]
 
+        const data_out_come = [
+            <?php if (isset($labels) && count($labels) > 0)
+            foreach ($labels as $key => $val)
+            {
+                if(isset($list_outcome[$key]))
+                {
+                    echo '"'. $list_outcome[$key] . '", ' ;
+                }else{
+                    echo '"'. 0 . '", ' ;
+                }
+            }
+            ?>
+        ]
+
         const data_count_order_shopee = [
             <?php if (isset($labels) && count($labels) > 0)
             foreach ($labels as $key => $val)
@@ -362,8 +376,14 @@
                 },
                 {
                     label: 'Profit',
-                    borderColor: 'red',
+                    borderColor: 'green',
                     data: data_profit,
+                    fill: false,
+                },
+                {
+                    label: 'Outcome',
+                    borderColor: 'red',
+                    data: data_out_come,
                     fill: false,
                 },
             ],
@@ -380,16 +400,20 @@
                             if(tooltipItems[0].datasetIndex == 0)
                             {
                                 return `Shopee: ${data_count_order_shopee[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_shopee[tooltipItems[0].index], "VND")} \nZalo: ${data_count_order_zalo[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_zalo[tooltipItems[0].index], "VND")} \n`
-                            }else{
+                            }else if(tooltipItems[0].datasetIndex == 1){
                                 return `Shopee: ${gFormatCurrency(data_profit_shopee[tooltipItems[0].index], "VND")} \nZalo: ${gFormatCurrency(data_profit_zalo[tooltipItems[0].index], "VND")} \n`
+                            }else{
+                                return `Total: ${gFormatCurrency(data_out_come[tooltipItems[0].index], "VND")}`
                             }
                         },
                         label: function(tooltipItem, data) {
                             if(tooltipItem.datasetIndex == 0)
                             {
                                 return `Total: ${data_count_order_total[tooltipItem.index]}  Orders, Income: ${gFormatCurrency(data_sum_price_total[tooltipItem.index], "VND")}`
-                            }else{
+                            }else if(tooltipItem.datasetIndex == 1){
                                 return `Total: ${gFormatCurrency(data_profit[tooltipItem.index], "VND")}`
+                            }else{
+                                return `Outcome: ${gFormatCurrency(data_out_come[tooltipItem.index], "VND")}`
                             }
                         }
                     },
