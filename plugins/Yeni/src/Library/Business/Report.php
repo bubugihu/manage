@@ -328,12 +328,12 @@ class Report extends Entity
         foreach($list_purchasing as $key => $purchasing)
         {
             $quoting_monthly = $purchasing->p_date->format('n');
-            if(isset($result_monthly[$quoting_monthly]))
-            {
-                $result_monthly[$quoting_monthly] += floatval($purchasing->quantity * $purchasing->price);
-            }else{
-                $result_monthly[$quoting_monthly] = floatval($purchasing->quantity * $purchasing->price);
-            }
+                if(isset($result_monthly[$quoting_monthly]))
+                {
+                    $result_monthly[$quoting_monthly] += floatval($purchasing->quantity * $purchasing->price);
+                }else{
+                    $result_monthly[$quoting_monthly] = floatval($purchasing->quantity * $purchasing->price);
+                }
 
         }
         return $result_monthly;

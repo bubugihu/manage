@@ -14,8 +14,8 @@
                                     <?= __('Import EXCEL') ?>
                                 </label>
                                 <?= $this->Form->create(null, [
-//                                    'url' => '/yeni/purchasing/importExcel',
-                                    'url' => '/yeni/purchasing/importFixBugExcel',
+                                    'url' => '/yeni/purchasing/importExcel',
+//                                    'url' => '/yeni/purchasing/importFixBugExcel',
                                     'method' => 'post',
                                     'id' => 'uploadFile',
                                     'class' => ['d-none'],
