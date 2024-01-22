@@ -198,4 +198,15 @@ class Purchasing extends Entity
         $new = $this->model_order->newEntity($params);
         $this->model_order->save($new);
     }
+
+    public function updatePPrice($key, $params, $sheet)
+    {
+        $set = [
+            'p_price'   =>   floatval(trim($sheet->getCell('F'.$key)->getValue()))
+        ];
+        $where = [
+            'code'  => trim($params['B'])
+        ];
+        $this->model_product->updateAll($set, $where);
+    }
 }
