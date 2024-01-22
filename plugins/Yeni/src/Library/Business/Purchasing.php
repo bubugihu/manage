@@ -201,16 +201,12 @@ class Purchasing extends Entity
 
     public function updatePPrice($key, $params, $sheet)
     {
-        if(intval(trim($params['K'])) >= 206 && intval(trim($params['K'])) <= 413)
-        {
-            $set = [
-                'price'   =>   floatval(trim($sheet->getCell('F'.$key)->getValue()))
-            ];
-            $where = [
-                'code'  => trim($params['B']),
-                'id'  => trim($params['K']),
-            ];
-            $this->model_purchasing->updateAll($set, $where);
-        }
+        $set = [
+            'price'   =>   floatval(trim($sheet->getCell('F'.$key)->getValue()))
+        ];
+        $where = [
+            'code'  => trim($params['B']),
+        ];
+        $this->model_product->updateAll($set, $where);
     }
 }
