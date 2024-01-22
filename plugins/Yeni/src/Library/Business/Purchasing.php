@@ -202,7 +202,7 @@ class Purchasing extends Entity
     public function updatePPrice($key, $params, $sheet)
     {
         $set = [
-            'price'   =>   floatval(trim($sheet->getCell('F'.$key)->getValue()))
+            'p_price'   =>   floatval(trim($sheet->getCell('F'.$key)->getValue()))
         ];
         $where = [
             'code'  => trim($params['B']),
