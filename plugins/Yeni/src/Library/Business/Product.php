@@ -15,6 +15,7 @@ class Product extends Entity
         $this->model_set_product = $this->_getProvider("Yeni.SetProduct");
         $this->model_set_product_detail = $this->_getProvider("Yeni.SetProductDetail");
         $this->model_source_import = $this->_getProvider("Yeni.SourceImport");
+        $this->model_cost_incurred= $this->_getProvider("Yeni.CostIncurred");
         $this->set_name = "";
         $this->set_code = "";
         $this->set_avatar = "";
@@ -338,5 +339,19 @@ class Product extends Entity
             return false;
         }
         return true;
+    }
+
+    public function saveCostIncurred($params)
+    {
+        try {
+            $list_entities = $this->model_cost_incurred->newEntities($params);
+            $this->model_cost_incurred->saveMany($list_entities);
+            return true;
+        }catch (\Exception $e)
+        {
+            Log::error($e->getMessage());
+            dd($e->getMessage());
+            return false;
+        }
     }
 }

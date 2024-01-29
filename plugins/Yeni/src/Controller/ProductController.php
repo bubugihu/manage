@@ -3,6 +3,8 @@
 namespace Yeni\Controller;
 
 use Cake\Filesystem\File;
+use Cake\I18n\FrozenTime;
+use Cake\ORM\TableRegistry;
 use \Yeni\Controller\AppController;
 use \Yeni\Model\Table\ConfigTable;
 use \Yeni\Model\Table\SetProductTable;
@@ -407,5 +409,73 @@ class ProductController extends AppController
             ->withStringBody($json_results);
 
         return $this->response;
+    }
+
+    public function costIncurred(){
+        if ($this->getRequest()->is('POST'))
+        {
+            $extensions = explode(".", $_FILES['file_import']['name']);
+            if ($extensions[1] == 'xlsx' || $extensions[1] == 'XLSX')
+            {
+                $file_name = $_FILES['file_import']['tmp_name'];
+                $file = new Xlsx();
+                $objPHPExcel = $file->load($file_name);
+                // Customer sheet
+                $getSheet = $objPHPExcel->getSheet(0);
+                if (!empty($getSheet))
+                {
+                    $dataInput = $getSheet->toArray(null, true, true, true);
+                    if (count($dataInput) > 0)
+                    {
+                        $results = [];
+                        $date = null;
+                        foreach ($dataInput as $key => $value)
+                        {
+                            if($key <= 2)
+                            {
+                                continue;
+                            }
+
+                            if(empty(trim($value['B'])) || empty(trim($value['E'])))
+                            {
+                                break;
+                            }
+
+                            if($value['A'] != null)
+                            {
+                                $date = FrozenTime::createFromFormat('d/m/Y', trim($value['A']));
+                            }
+                            $results[$key] = [
+                                'name'      => trim($value['B']),
+                                'value'      => trim($getSheet->getCell('E'.$key)->getValue()),
+                                'unit_name' =>  trim($value['C']),
+                                'quantity' =>  intval(trim($value['D'])),
+                                'note'      => trim($value['G']),
+                                'in_date'   => $date
+                            ];
+                        }
+                        if($this->business_product->saveCostIncurred($results))
+                        {
+                            $this->Flash->success("Successfully.");
+                        }else{
+                            $this->Flash->error(__("Failed import"));
+                        }
+                    }
+                    else
+                    {
+                        $this->Flash->error(__("Failed no data"));
+                    }
+                }
+                else
+                {
+                    $this->Flash->error(__("Failed no sheet"));
+                }
+            }
+            else
+            {
+                $this->Flash->error(__("Failed not xlsx"));
+            }
+        }
+        return $this->redirect('/yeni/product/');
     }
 }

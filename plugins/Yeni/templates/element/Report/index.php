@@ -290,6 +290,21 @@
             ?>
         ]
 
+        const data_expense = [
+            <?php if (isset($labels) && count($labels) > 0)
+            foreach ($labels as $key => $val)
+            {
+                if(isset($list_profit['total'][$key]))
+                {
+                    echo '"'. $list_profit['total'][$key]["expense"] . '", ' ;
+                }else{
+                    echo '"'. 0 . '", ' ;
+                }
+            }
+
+            ?>
+        ]
+
         const data_profit_shopee = [
             <?php if (isset($labels) && count($labels) > 0)
             foreach ($labels as $key => $val)
@@ -421,7 +436,7 @@
                             {
                                 return `Shopee: ${data_count_order_shopee[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_shopee[tooltipItems[0].index], "VND")} \nZalo: ${data_count_order_zalo[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_zalo[tooltipItems[0].index], "VND")} \n`
                             }else if(tooltipItems[0].datasetIndex == 1){
-                                return `Shopee: ${gFormatCurrency(data_profit_shopee[tooltipItems[0].index], "VND")} \nZalo: ${gFormatCurrency(data_profit_zalo[tooltipItems[0].index], "VND")} \n`
+                                return `Shopee: ${gFormatCurrency(data_profit_shopee[tooltipItems[0].index], "VND")} \nZalo: ${gFormatCurrency(data_profit_zalo[tooltipItems[0].index], "VND")} \nExpense: -${gFormatCurrency(data_expense[tooltipItems[0].index], "VND")} \n`
                             }else{
                                 return `Total: ${gFormatCurrency(data_out_come[tooltipItems[0].index], "VND")}`
                             }

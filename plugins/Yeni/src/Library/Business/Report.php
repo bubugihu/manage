@@ -18,6 +18,7 @@ class Report extends Entity
         $this->model_purchasing = $this->_getProvider("Yeni.Purchasing");
         $this->model_pre_purchasing = $this->_getProvider("Yeni.PrePurchasing");
         $this->model_cost_inventory = $this->_getProvider("Yeni.CostInventory");
+        $this->model_cost_incurred = $this->_getProvider("Yeni.CostIncurred");
     }
 
     public function getOne($id)
@@ -273,6 +274,25 @@ class Report extends Entity
         $last_year = $current_year -1;
         $last_year_text = "$last_year-12-01";
         $current_year_text = "$current_year-12-01";
+
+        $list_expense  = $this->model_cost_incurred->find()
+            ->where(['in_date >=' => $last_year_text])
+            ->where(['in_date <' => $current_year_text])
+            ->toArray();
+
+        $result_ex = [];
+        foreach ($list_expense as $value)
+        {
+            $ex = $value->in_date->format('n');
+            $expense = $value->value * $value->quantity;
+            if(isset($result_ex[$ex]))
+            {
+                $result_ex[$ex] += $expense;
+            }else{
+                $result_ex[$ex] = $expense;
+            }
+        }
+
         $list_quoting = $this->model_quoting->find()
             ->where(['q_date >=' => $last_year_text])
             ->where(['q_date <' => $current_year_text])
@@ -307,6 +327,13 @@ class Report extends Entity
                 $result_monthly['total'][$quoting_monthly]['count_quoting'] = 1;
             }
 
+        }
+
+        foreach($result_monthly['total'] as $key =>  &$value)
+        {
+            $expense =  !empty($result_ex[$key]) ? $result_ex[$key] : 0;
+            $value['profit'] -= $expense;
+            $value['expense'] = $expense;
         }
         return $result_monthly;
     }

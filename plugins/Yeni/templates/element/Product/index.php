@@ -69,19 +69,34 @@
                                 <?= $this->Form->end(); ?>
                             </li>
 
+<!--                            <li class="nav-item px-1">-->
+<!--                                <label class="btn btn-outline-secondary rounded-0" for="export-json">-->
+<!--                                    <i class="fa-solid fa-plus"></i>-->
+<!--                                    --><?php //= __('Export Json') ?>
+<!--                                </label>-->
+<!--                                --><?php //= $this->Form->create(null, [
+//                                    'url' => '/yeni/product/exportJson',
+//                                    'method' => 'get',
+//                                    'id' => '',
+//                                    'class' => ['d-none'],
+//                                    'enctype' => 'multipart/form-data'
+//                                ]); ?>
+<!--                                <input type="submit" id="export-json" name="">-->
+<!--                                --><?php //= $this->Form->end(); ?>
+<!--                            </li>-->
                             <li class="nav-item px-1">
-                                <label class="btn btn-outline-secondary rounded-0" for="export-json">
+                                <label class="btn btn-outline-secondary rounded-0" for="importCost">
                                     <i class="fa-solid fa-plus"></i>
-                                    <?= __('Export Json') ?>
+                                    <?= __('Cost Incurred') ?>
                                 </label>
                                 <?= $this->Form->create(null, [
-                                    'url' => '/yeni/product/exportJson',
-                                    'method' => 'get',
-                                    'id' => '',
+                                    'url' => '/yeni/product/costIncurred',
+                                    'method' => 'post',
+                                    'id' => 'cost_incurred',
                                     'class' => ['d-none'],
                                     'enctype' => 'multipart/form-data'
                                 ]); ?>
-                                <input type="submit" id="export-json" name="">
+                                <input type="file" id="importCost" name="file_import">
                                 <?= $this->Form->end(); ?>
                             </li>
                         </ul>
@@ -187,6 +202,10 @@
     $(document).ready(function() {
         $('#importProduct').on("change", function () {
             $('#uploadFile').submit();
+        });
+
+        $('#importCost').on("change", function () {
+            $('#cost_incurred').submit();
         });
     })
 
