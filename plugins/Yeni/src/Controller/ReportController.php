@@ -3,6 +3,7 @@
 namespace Yeni\Controller;
 
 use Cake\Datasource\ConnectionManager;
+use Cake\I18n\FrozenTime;
 use Cake\Log\Log;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use \Yeni\Controller\AppController;
@@ -44,10 +45,14 @@ class ReportController extends AppController
 
         // outcome
         $list_outcome = $this->business_report->getOutcome($current_year);
+
+        // inventory
+        $cost_inventory = $this->business_report->getInventory($current_year);
         $this->set('labels',$labels);
         $this->set('getMonthlyYear',$getMonthlyYear);
         $this->set('list_profit',$list_profit);
         $this->set('list_outcome',$list_outcome);
+        $this->set('cost_inventory',$cost_inventory);
     }
 
     public function importOrder()

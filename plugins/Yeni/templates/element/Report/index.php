@@ -334,6 +334,20 @@
             ?>
         ]
 
+        const data_cost_inventory = [
+            <?php if (isset($labels) && count($labels) > 0)
+            foreach ($labels as $key => $val)
+            {
+                if(isset($cost_inventory[$key]))
+                {
+                    echo '"'. $cost_inventory[$key] . '", ' ;
+                }else{
+                    echo '"'. 0 . '", ' ;
+                }
+            }
+            ?>
+        ]
+
         const data_count_order_shopee = [
             <?php if (isset($labels) && count($labels) > 0)
             foreach ($labels as $key => $val)
@@ -384,6 +398,12 @@
                     label: 'Outcome',
                     borderColor: 'red',
                     data: data_out_come,
+                    fill: false,
+                },
+                {
+                    label: 'Inventory',
+                    borderColor: 'yellow',
+                    data: data_cost_inventory,
                     fill: false,
                 },
             ],

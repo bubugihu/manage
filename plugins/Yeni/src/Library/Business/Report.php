@@ -16,6 +16,8 @@ class Report extends Entity
         $this->model_product = $this->_getProvider("Yeni.Product");
         $this->model_order = $this->_getProvider("Yeni.Orders");
         $this->model_purchasing = $this->_getProvider("Yeni.Purchasing");
+        $this->model_pre_purchasing = $this->_getProvider("Yeni.PrePurchasing");
+        $this->model_cost_inventory = $this->_getProvider("Yeni.CostInventory");
     }
 
     public function getOne($id)
@@ -337,5 +339,25 @@ class Report extends Entity
 
         }
         return $result_monthly;
+    }
+
+    public function getInventory($current_year)
+    {
+        $last_year = $current_year -1;
+        $last_year_text = "$last_year-12-01";
+        $current_year_text = "$current_year-12-01";
+
+        $query = $this->model_cost_inventory
+            ->find()
+            ->select(['id', 'month', 'year', 'value', 'del_flag'])
+            ->where(['created_on >=' => $last_year_text])
+            ->where(['created_on <' => $current_year_text])
+            ->where(['del_flag' => UNDEL])->all()->toList()
+        ;
+        foreach($query as $value)
+        {
+            $results[$value->month] = $value->value;
+        }
+        return $results;
     }
 }
