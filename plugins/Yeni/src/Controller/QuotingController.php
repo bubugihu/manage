@@ -3,6 +3,7 @@
 namespace Yeni\Controller;
 
 use \Yeni\Controller\AppController;
+use Yeni\Model\Table\ProductTable;
 use \Yeni\Model\Table\SetProductTable;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use Yeni\Library\Business\Quoting;
@@ -13,6 +14,7 @@ class QuotingController extends AppController
     {
         parent::initialize();
         $this->business_quoting = new Quoting();
+        $this->model_product = new ProductTable();
     }
 
     public function index()
