@@ -1,6 +1,6 @@
 <ul class="list-unstyled ps-0">
         <li class="mb-1 <?php echo $this->getRequest()->getParam('controller') == 'Home' ? 'active' : ''; ?>">
-            <a href="/yeni/" class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3 aside-none-after">
+            <a href="/" class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 collapsed fs-5 p-3 aside-none-after">
                 <i class="fas fa-tachometer-alt me-2 aside-menu-icon"></i>
                 <div class="text-start"><?= __("Dashboard") ?></div>
             </a>
