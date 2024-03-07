@@ -11,7 +11,6 @@ use \Yeni\Model\Table\SetProductTable;
 use Cake\Log\Log;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use Yeni\Library\Business\Product;
-
 class ProductController extends AppController
 {
     public function initialize(): void
@@ -124,100 +123,96 @@ class ProductController extends AppController
                 $getSheet = $objPHPExcel->getSheet(0);
                 if (!empty($getSheet)) {
                     $dataInput = $getSheet->toArray(null, true, true, true);
-//                    $file_path = WWW_ROOT . 'dashboard.po';
-//                    $content = 'msgid "Hello"' . PHP_EOL . 'msgstr "Xin chào"';
-//                    $file = new File($file_path, true, 0644);
-//                    $file->write($content);
-//                    $file->close();
-                    $filePath = WWW_ROOT . 'Dashboard.po';
-                    $fileContent = file_get_contents($filePath);
-                    $lines = explode(PHP_EOL, $fileContent);
-                    foreach ($dataInput as $key => $value)
+//
+//                    $filePath = WWW_ROOT . 'Dashboard.po';
+//                    $fileContent = file_get_contents($filePath);
+//                    $lines = explode(PHP_EOL, $fileContent);
+//                    foreach ($dataInput as $key => $value)
+//                    {
+//                        if($key <= 1)
+//                        {
+//                            continue;
+//                        }
+//
+//                        $english = trim($value['A']);
+//                        $japan = trim($value['B']);
+//
+//                        foreach ($lines as &$line) {
+//                            if (substr($line, 0, 6) === 'msgstr') {
+//                                if (strpos($line, $english) !== false) {
+//                                    $line = str_replace($english, $japan, $line);
+//                                    break;
+//                                }
+//                            }
+//                        }
+//                    }
+//                    file_put_contents(WWW_ROOT . 'japan.po', implode(PHP_EOL, $lines));
+
+                    if (count($dataInput) > 0)
                     {
-                        if($key <= 1)
+                        $results = [];
+                        $category = null;
+                        $name = "";
+                        foreach ($dataInput as $key => $value)
                         {
-                            continue;
-                        }
+                            if($key <= 14)
+                            {
+                                continue;
+                            }
 
-                        $english = trim($value['A']);
-                        $japan = trim($value['B']);
+                            if($key == 868)
+                            {
+                                break;
+                            }
 
-                        foreach ($lines as &$line) {
-                            if (substr($line, 0, 6) === 'msgstr') {
-                                if (strpos($line, $english) !== false) {
-                                    $line = str_replace($english, $japan, $line);
-                                    break;
-                                }
+                            if(empty(trim($value['B'])))
+                            {
+                                continue;
+                            }
+
+                            if(!is_numeric(trim($getSheet->getCell('F'.$key)->getValue())))
+                            {
+                                $value['special'] = trim($value['F']);
+                            }
+
+                            if(!is_numeric(trim($getSheet->getCell('G'.$key)->getValue())))
+                            {
+                                $value['G'] = null;
+                            }
+
+                            if(empty(trim($value['A'])))
+                            {
+                                $value['A'] = $category;
+                            }
+
+                            if(empty(trim($value['C'])))
+                            {
+                                $value['C'] = $name;
+                            }
+
+                            $results[$key] = $this->business_product->formatSource($key, $value, $getSheet);
+
+                            if(!empty($results[$key]['category']))
+                            {
+                                $category = $results[$key]['category'];
+                            }
+
+                            if(!empty($results[$key]['name']))
+                            {
+                                $name = $results[$key]['name'];
                             }
                         }
+                        if($this->business_product->saveListSource($results))
+                        {
+                            $this->Flash->success("Successfully.");
+                        }else{
+                            $this->Flash->error(__("Failed import"));
+                        }
                     }
-                    file_put_contents(WWW_ROOT . 'japan.po', implode(PHP_EOL, $lines));
-
-//                    if (count($dataInput) > 0)
-//                    {
-//                        $results = [];
-//                        $category = null;
-//                        $name = "";
-//                        foreach ($dataInput as $key => $value)
-//                        {
-//                            if($key <= 14)
-//                            {
-//                                continue;
-//                            }
-//
-//                            if($key == 868)
-//                            {
-//                                break;
-//                            }
-//
-//                            if(empty(trim($value['B'])))
-//                            {
-//                                continue;
-//                            }
-//
-//                            if(!is_numeric(trim($getSheet->getCell('F'.$key)->getValue())))
-//                            {
-//                                $value['special'] = trim($value['F']);
-//                            }
-//
-//                            if(!is_numeric(trim($getSheet->getCell('G'.$key)->getValue())))
-//                            {
-//                                $value['G'] = null;
-//                            }
-//
-//                            if(empty(trim($value['A'])))
-//                            {
-//                                $value['A'] = $category;
-//                            }
-//
-//                            if(empty(trim($value['C'])))
-//                            {
-//                                $value['C'] = $name;
-//                            }
-//
-//                            $results[$key] = $this->business_product->formatSource($key, $value, $getSheet);
-//
-//                            if(!empty($results[$key]['category']))
-//                            {
-//                                $category = $results[$key]['category'];
-//                            }
-//
-//                            if(!empty($results[$key]['name']))
-//                            {
-//                                $name = $results[$key]['name'];
-//                            }
-//                        }
-//                        if($this->business_product->saveListSource($results))
-//                        {
-//                            $this->Flash->success("Successfully.");
-//                        }else{
-//                            $this->Flash->error(__("Failed import"));
-//                        }
-//                    }
-//                    else
-//                    {
-//                        $this->Flash->error(__("Failed no data"));
-//                    }
+                    else
+                    {
+                        $this->Flash->error(__("Failed no data"));
+                    }
                 }
                 else
                 {

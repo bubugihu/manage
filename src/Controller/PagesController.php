@@ -24,7 +24,7 @@ use Cake\Log\Log;
 use Cake\View\Exception\MissingTemplateException;
 use Yeni\Library\Business\Orders;
 use Yeni\Library\Business\Product;
-
+use Cake\Http\Client;
 /**
  * Static content controller
  *
@@ -54,6 +54,14 @@ class PagesController extends AppController
     }
     public function index()
     {
+//        $client = new Client();
+//        $response = $client->get('https://www.jlpt-overseas.jp/onlineresults/search.do?id1=2080201&id2=10649&password=19960915');
+//        $html = $response->getBody()->getContents();
+//        $url = 'https://www.jlpt-overseas.jp/onlineresults';
+//        // Thay thế toàn bộ dấu "." trong src của ảnh bằng URL
+//        $html = preg_replace('/src="\.\//', 'src="' . $url . '/', $html);
+//        $html = preg_replace("/src='\.\//", "src='" . $url . '/', $html);
+//        dd($html);
         $this->viewBuilder()->disableAutoLayout();
         $this->set('layout',false);
 
