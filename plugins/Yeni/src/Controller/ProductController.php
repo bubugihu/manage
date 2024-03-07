@@ -431,7 +431,7 @@ class ProductController extends AppController
                                 continue;
                             }
 
-                            if(empty(trim($value['B'])) || empty(trim($value['E'])))
+                            if(empty(($value['B'])) || empty(($value['E'])))
                             {
                                 break;
                             }
