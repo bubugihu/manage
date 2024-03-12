@@ -366,7 +366,7 @@
 
                 $('#total_order').val(gFormatCurrency(total_order_hide, "VND"))
                 $('#total_order_hide').val(total_order_hide)
-                $('#total_actual').val(total_order_hide)
+                $('#total_actual').val(parseFloat(total_price_product))
 
             })
 
@@ -387,7 +387,7 @@
 
                 $('#total_order').val(gFormatCurrency(total_order_hide, "VND"))
                 $('#total_order_hide').val(total_order_hide)
-                $('#total_actual').val(total_order_hide)
+                $('#total_actual').val(parseFloat(total_price_product))
             })
 
         });
@@ -399,7 +399,7 @@
             let total_order_hide = parseFloat(total_price_product) + parseFloat(ship)
             $('#total_order').val(gFormatCurrency(total_order_hide, "VND"))
             $('#total_order_hide').val(total_order_hide)
-            $('#total_actual').val(total_order_hide)
+            $('#total_actual').val(parseFloat(total_price_product))
         })
         //reset
         $('#reset_form').click(function(){
