@@ -56,6 +56,7 @@ class Product extends Entity
                 $detail['price'] = $set_value->price;
                 $detail['price_option'] = $set_value->price_option;
                 $set[$set_value->code] = $detail;
+                $detail['p_price'] = $set_value->p_price;
             }
         }
         return $this->formatResultSet($results + $set);
@@ -74,7 +75,7 @@ class Product extends Entity
                 $detail['is_set'] = true;
                 $detail['code'] = $key;
                 $detail['total'] = 0;
-                $detail['p_price'] = 0;
+                $detail['p_price'] = $value['p_price'];
                 $detail['q_price'] = $value['price'] . "/" . $value['price_option'];
                 $detail['name'] = "Set $key (có khung tròn/ không khung tròn)";
 
