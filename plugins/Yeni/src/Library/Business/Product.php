@@ -56,6 +56,7 @@ class Product extends Entity
                 $detail['price'] = $set_value->price;
                 $detail['price_option'] = $set_value->price_option;
                 $set[$set_value->code] = $detail;
+                $detail['p_price'] = $set_value->p_price;
             }
         }
         return $this->formatResultSet($results + $set);
@@ -74,7 +75,7 @@ class Product extends Entity
                 $detail['is_set'] = true;
                 $detail['code'] = $key;
                 $detail['total'] = 0;
-                $detail['p_price'] = 0;
+                $detail['p_price'] = $value['p_price'];
                 $detail['q_price'] = $value['price'] . "/" . $value['price_option'];
                 $detail['name'] = "Set $key (có khung tròn/ không khung tròn)";
 
@@ -254,10 +255,10 @@ class Product extends Entity
 
     public function formatSetValue($key, $params, $sheet, &$results, &$results_detail)
     {
-        if(!empty(trim($params['A'])) && !empty(trim($params['C'])) && !empty(trim($params['H'])))
+        if(!empty($params['A']) && !empty($params['C']) && !empty($params['H']))
         {
-            $this->set_name = trim($params['A']);
-            $this->set_code = trim($params['C']);
+            $this->set_name = $params['A'];
+            $this->set_code = $params['C'];
             $this->set_price = $sheet->getCell('H'.$key)->getValue();
             $formatImage = str_replace('.', '_', $this->set_code);
             $file_name = WWW_ROOT . "img/yeni/set/" . $formatImage .  ".png";
@@ -266,15 +267,15 @@ class Product extends Entity
             $results[$key]['avatar'] = $file_name;
             $results[$key]['price'] = $this->set_price;
 
-            if(!empty(trim($params['I'])))
+            if(!empty($params['I']))
             {
                 $this->set_price_option = $sheet->getCell('I'.$key)->getValue();
                 $results[$key]['price_option'] = $sheet->getCell('I'.$key)->getValue();
             }
         }
         $results_detail[$key]['set_product_code'] = $this->set_code;
-        $results_detail[$key]['product_code'] = trim($params['E']);
-        $results_detail[$key]['quantity'] = intval(trim($params['G']));
+        $results_detail[$key]['product_code'] = $params['E'];
+        $results_detail[$key]['quantity'] = intval($params['G']);
     }
 
     private function formatCategory($category)

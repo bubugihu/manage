@@ -368,6 +368,7 @@
                 $('#total_order_hide').val(total_order_hide)
                 $('#total_actual').val(parseFloat(total_price_product))
 
+
             })
 
             $('.qty').change(function()
@@ -388,6 +389,7 @@
                 $('#total_order').val(gFormatCurrency(total_order_hide, "VND"))
                 $('#total_order_hide').val(total_order_hide)
                 $('#total_actual').val(parseFloat(total_price_product))
+
             })
 
         });
