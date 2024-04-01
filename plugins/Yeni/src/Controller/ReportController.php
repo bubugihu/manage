@@ -53,6 +53,7 @@ class ReportController extends AppController
         $this->set('list_profit',$list_profit);
         $this->set('list_outcome',$list_outcome);
         $this->set('cost_inventory',$cost_inventory);
+        dd($list_outcome);
 
     }
 

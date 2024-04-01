@@ -147,7 +147,7 @@ class Purchasing extends Entity
         $result['name'] = ($params['C']);
         $result['quantity'] = intval(($params['E']));
         $result['status'] = STATUS_QUOTING_DONE;
-        $result['p_date'] = new FrozenTime("now");
+        $result['p_date'] = FrozenTime::now()->subDays(3);
         $result['price'] = floatval(($sheet->getCell('F'.$key)->getValue()));
         $result['source'] = 0;
         return $result;
