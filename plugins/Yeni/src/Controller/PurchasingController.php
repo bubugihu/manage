@@ -51,7 +51,7 @@ class PurchasingController extends AppController
 
                         foreach ($dataInput as $key => $value)
                         {
-                            if($key <= 1 || empty($value['B']) || trim($value['B']) == "" )
+                            if($key <= 1 || empty($value['B']) || ($value['B']) == "" )
                             {
                                 continue;
                             }

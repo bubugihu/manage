@@ -188,15 +188,15 @@ class Quoting extends Entity
 
     public function formatValueQuotingShopee($key, $params, $sheet, $order_code, $list_product)
     {
-        $result_quoting['order_code'] = "SHOPEE_" . trim($params['A']);
-        $result_quoting['code'] = trim($params['S']);
-        $result_quoting['quantity'] = trim($params['Z']);
+        $result_quoting['order_code'] = "SHOPEE_" . ($params['A']);
+        $result_quoting['code'] = ($params['S']);
+        $result_quoting['quantity'] = ($params['Z']);
         $result_quoting['status'] = STATUS_QUOTING_DONE;
-        $q_date = trim($sheet->getCell('C'.$key)->getValue());
+        $q_date = ($sheet->getCell('C'.$key)->getValue());
         $result_quoting['q_date'] = new FrozenTime($q_date);
-        $result_quoting['price'] = trim($sheet->getCell('Y'.$key)->getValue()); //
+        $result_quoting['price'] = ($sheet->getCell('Y'.$key)->getValue()); //
         $result_quoting['source'] = SOURCE_SHOPEE;
-        $result_quoting['p_price'] = $list_product[trim($params['S'])] ?? 0;
+        $result_quoting['p_price'] = $list_product[($params['S'])] ?? 0;
 
         return $result_quoting;
     }
@@ -207,9 +207,9 @@ class Quoting extends Entity
         {
             $order_code = $params['A'];
             $result_order['order_code'] = "SHOPEE_" . $order_code;
-            $result_order['total_order'] = floatval(trim($sheet->getCell('AC'.$key)->getValue())) - floatval(trim($sheet->getCell('AD'.$key)->getValue()));
-            $result_order['total_actual'] = $result_order['total_order'] - floatval(trim($sheet->getCell('AT'.$key)->getValue())) - floatval(trim($sheet->getCell('AU'.$key)->getValue())) - floatval(trim($sheet->getCell('AV'.$key)->getValue()));
-            $q_date = trim($sheet->getCell('C'.$key)->getValue());
+            $result_order['total_order'] = floatval(($sheet->getCell('AC'.$key)->getValue())) - floatval(($sheet->getCell('AD'.$key)->getValue()));
+            $result_order['total_actual'] = $result_order['total_order'] - floatval(($sheet->getCell('AT'.$key)->getValue())) - floatval(($sheet->getCell('AU'.$key)->getValue())) - floatval(($sheet->getCell('AV'.$key)->getValue()));
+            $q_date = ($sheet->getCell('C'.$key)->getValue());
             $result_order['order_date'] = new FrozenTime($q_date);
             $result_order['shipping'] = 0;
             $result_order['source'] = SOURCE_SHOPEE;

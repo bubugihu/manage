@@ -232,8 +232,8 @@ class Product extends Entity
     {
         $result = [];
         $result['category_id'] = $this->formatCategory($params['B']);
-        $result['code'] = trim($params['C']);
-        $result['name'] = trim($params['D']);
+        $result['code'] = ($params['C']);
+        $result['name'] = ($params['D']);
         $result['unit_id'] = $this->formatUnit($params['E']);
         return $result;
     }
@@ -242,13 +242,13 @@ class Product extends Entity
     {
         $result = [];
         $result['category'] = $params['A'];
-        $result['code'] = trim($params['B']);
-        $result['name'] = trim($params['C']);
+        $result['code'] = ($params['B']);
+        $result['name'] = ($params['C']);
         $result['remark'] = $params['special'] ?? "";
-        $result['note'] = trim($params['I']);
-        $result['description'] = trim($params['D']);
+        $result['note'] = ($params['I']);
+        $result['description'] = ($params['D']);
         $result['q_price'] = $params['G'];
-        $result['p_price'] = trim($sheet->getCell('F'.$key)->getValue());
+        $result['p_price'] = ($sheet->getCell('F'.$key)->getValue());
 
         return $result;
     }
@@ -351,7 +351,6 @@ class Product extends Entity
         }catch (\Exception $e)
         {
             Log::error($e->getMessage());
-            dd($e->getMessage());
             return false;
         }
     }

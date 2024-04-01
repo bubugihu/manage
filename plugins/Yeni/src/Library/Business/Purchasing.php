@@ -68,6 +68,7 @@ class Purchasing extends Entity
                 },
             ])->toArray();
             //update inventory
+            $list_add = [];
             foreach($list_entities as $value)
             {
                 $qty = $value['quantity'];
@@ -97,8 +98,13 @@ class Purchasing extends Entity
                         'p_price'   => $price,
                         'p_qty'     => $qty,
                     ];
-                    $new_product = $this->model_product->newEntity($params);
-                    $this->model_product->save($new_product);
+                    if(!in_array($code, $list_add))
+                    {
+                        $list_add[] = $code;
+                        $new_product = $this->model_product->newEntity($params);
+                        $this->model_product->save($new_product);
+                    }
+
                 }
             }
             $connection->commit();
@@ -137,19 +143,19 @@ class Purchasing extends Entity
     public function formatValue($key, $params, $sheet)
     {
         $result = [];
-        $result['code'] = trim($params['B']);
-        $result['name'] = trim($params['C']);
-        $result['quantity'] = intval(trim($params['E']));
+        $result['code'] = ($params['B']);
+        $result['name'] = ($params['C']);
+        $result['quantity'] = intval(($params['E']));
         $result['status'] = STATUS_QUOTING_DONE;
         $result['p_date'] = new FrozenTime("now");
-        $result['price'] = floatval(trim($sheet->getCell('F'.$key)->getValue()));
+        $result['price'] = floatval(($sheet->getCell('F'.$key)->getValue()));
         $result['source'] = 0;
         return $result;
     }
 
     private function formatStatus($status)
     {
-        $strLower = trim($status);
+        $strLower = ($status);
         $key = array_search($strLower, STATUS_QUOTING);
         if ($key !== false) {
             return $key;

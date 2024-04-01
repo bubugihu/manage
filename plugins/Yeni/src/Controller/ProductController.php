@@ -165,27 +165,27 @@ class ProductController extends AppController
                                 break;
                             }
 
-                            if(empty(trim($value['B'])))
+                            if(empty(($value['B'])))
                             {
                                 continue;
                             }
 
-                            if(!is_numeric(trim($getSheet->getCell('F'.$key)->getValue())))
+                            if(!is_numeric(($getSheet->getCell('F'.$key)->getValue())))
                             {
-                                $value['special'] = trim($value['F']);
+                                $value['special'] = ($value['F']);
                             }
 
-                            if(!is_numeric(trim($getSheet->getCell('G'.$key)->getValue())))
+                            if(!is_numeric(($getSheet->getCell('G'.$key)->getValue())))
                             {
                                 $value['G'] = null;
                             }
 
-                            if(empty(trim($value['A'])))
+                            if(empty(($value['A'])))
                             {
                                 $value['A'] = $category;
                             }
 
-                            if(empty(trim($value['C'])))
+                            if(empty(($value['C'])))
                             {
                                 $value['C'] = $name;
                             }
@@ -438,14 +438,14 @@ class ProductController extends AppController
 
                             if($value['A'] != null)
                             {
-                                $date = FrozenTime::createFromFormat('d/m/Y', trim($value['A']));
+                                $date = FrozenTime::createFromFormat('d/m/Y', ($value['A']));
                             }
                             $results[$key] = [
-                                'name'      => trim($value['B']),
-                                'value'      => trim($getSheet->getCell('E'.$key)->getValue()),
-                                'unit_name' =>  trim($value['C']),
-                                'quantity' =>  intval(trim($value['D'])),
-                                'note'      => trim($value['G']),
+                                'name'      => ($value['B']),
+                                'value'      => ($getSheet->getCell('E'.$key)->getValue()),
+                                'unit_name' =>  ($value['C']),
+                                'quantity' =>  intval(($value['D'])),
+                                'note'      => ($value['G']),
                                 'in_date'   => $date
                             ];
                         }
