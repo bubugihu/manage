@@ -99,7 +99,9 @@ class QuotingController extends AppController
                         $order_code = "";
                         foreach ($dataInput as $key => $value)
                         {
-                            if($key <= 1 || empty($value['A']) || $value['D'] != "Hoàn thành")
+//                            if($key <= 1 || empty($value['A']) || $value['D'] != "Hoàn thành")
+//                            if($key <= 1 || empty($value['A']) || $value['D'] != "Đã hủy")
+                            if($key <= 1 || empty($value['A']) || $value['D'] != "Đang giao")
                             {
                                 continue;
                             }

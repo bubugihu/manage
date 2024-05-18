@@ -107,6 +107,7 @@ class ManageSystemController extends AppController
     {
         if ($this->getRequest()->is('POST'))
         {
+            dd(123);
             $extensions = explode(".", $_FILES['file_import']['name']);
             $result = [];
             if ($extensions[1] == 'xlsx' || $extensions[1] == 'XLSX')

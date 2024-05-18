@@ -28,6 +28,10 @@
                 <i class="fa-solid fa-xmark"></i>
                 <?= __('Cancel') ?>
             </a>
+            <button class="btn btn-success rounded-0" id="btn-excel" type="button">
+                <i class="fa-regular fa-floppy-disk"></i>
+                <?= __('Import Excel') ?>
+            </button>
         </div>
     </div>
     <div class="form-title mx-3">
@@ -194,6 +198,21 @@
     </div>
 
     <?= $this->Form->end() ?>
+    <div style="display: none">
+        <ul class="nav nav-pills">
+            <li class="nav-item px-1">
+                <?= $this->Form->create(null, [
+                    'url' => '/jlpt/manage-system/import',
+                    'method' => 'post',
+                    'id' => 'uploadFile',
+                    'class' => ['d-none'],
+                    'enctype' => 'multipart/form-data'
+                ]); ?>
+                <input type="file" id="importQuoting" name="file_import">
+                <?= $this->Form->end(); ?>
+            </li>
+        </ul>
+    </div>
 </div>
 <script>
     $(document).ready(function() {
@@ -228,6 +247,13 @@
             submitHandler: function(form) {
                 form.submit();
             }
+        });
+
+        $("#btn-excel").click(function(){
+            $('#importQuoting').click();
+        })
+        $('#importQuoting').on("change", function () {
+            $('#uploadFile').submit();
         });
     })
 </script>

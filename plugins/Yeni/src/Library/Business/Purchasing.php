@@ -79,18 +79,22 @@ class Purchasing extends Entity
                     continue;
                 if(in_array($code, array_keys($list_product)))
                 {
-                    if(intval($list_product[$code]) > 0)
-                    {
-                        $pre = $this->model_pre_purchasing->newEntity($value->toArray());
-                        $this->model_pre_purchasing->save($pre);
-                        $this->model_purchasing->updateAll(['del_flag' => DEL_FLAG], ['id' => $value['id']]);
-
-                    }else{
-                        $sql = "UPDATE product SET `name` = :name,`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
-                        $connection->execute(
-                            $sql,['name' => $name]
-                        );
-                    }
+                    $sql = "UPDATE product SET `name` = :name,`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
+                    $connection->execute(
+                        $sql,['name' => $name]
+                    );
+//                    if(intval($list_product[$code]) > 0)
+//                    {
+//                        $pre = $this->model_pre_purchasing->newEntity($value->toArray());
+//                        $this->model_pre_purchasing->save($pre);
+//                        $this->model_purchasing->updateAll(['del_flag' => DEL_FLAG], ['id' => $value['id']]);
+//
+//                    }else{
+//                        $sql = "UPDATE product SET `name` = :name,`p_qty` = p_qty + $qty, `p_price` = $price WHERE `code` = '$code'";
+//                        $connection->execute(
+//                            $sql,['name' => $name]
+//                        );
+//                    }
                 }else{
                     $params = [
                         'code'  => $code,
