@@ -191,6 +191,16 @@ class Quoting extends Entity
         $result_quoting['order_code'] = "SHOPEE_" . ($params['A']);
         $result_quoting['code'] = ($params['S']);
         $result_quoting['quantity'] = ($params['Z']);
+        if($params['D'] == "Đang giao")
+        {
+            $result_quoting['status'] = STATUS_QUOTING_PROCESS;
+        }else if($params['D'] == "Hoàn thành")
+        {
+            $result_quoting['status'] = STATUS_QUOTING_DONE;
+        }else{
+            $result_quoting['status'] = STATUS_QUOTING_CANCEL;
+        }
+
         $result_quoting['status'] = STATUS_QUOTING_DONE;
         $q_date = ($sheet->getCell('C'.$key)->getValue());
         $result_quoting['q_date'] = new FrozenTime($q_date);

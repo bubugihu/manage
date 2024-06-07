@@ -101,7 +101,7 @@ class QuotingController extends AppController
                         {
 //                            if($key <= 1 || empty($value['A']) || $value['D'] != "Hoàn thành")
 //                            if($key <= 1 || empty($value['A']) || $value['D'] != "Đã hủy")
-                            if($key <= 1 || empty($value['A']) || $value['D'] != "Đang giao")
+                            if($key <= 1 || empty($value['A']))
                             {
                                 continue;
                             }
