@@ -105,6 +105,7 @@ class Quoting extends Entity
             if(empty($params))
                 return false;
             //quotinng
+            if($params['quoting'])
             $list_entities = $this->model_quoting->newEntities($params['quoting']);
             $this->model_quoting->saveMany($list_entities);
 
@@ -201,7 +202,6 @@ class Quoting extends Entity
             $result_quoting['status'] = STATUS_QUOTING_CANCEL;
         }
 
-        $result_quoting['status'] = STATUS_QUOTING_DONE;
         $q_date = ($sheet->getCell('C'.$key)->getValue());
         $result_quoting['q_date'] = new FrozenTime($q_date);
         $result_quoting['price'] = ($sheet->getCell('Y'.$key)->getValue()); //
