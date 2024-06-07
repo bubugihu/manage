@@ -106,6 +106,7 @@ class Report extends Entity
             ])
             ->where(['order_date >=' => $last_year_text])
             ->where(['order_date <' => $current_year_text])
+            ->where(['status ' => STATUS_QUOTING_DONE])
             ->group(['source', 'month'])
             ->order(['source', 'month'])
             ->toArray();
