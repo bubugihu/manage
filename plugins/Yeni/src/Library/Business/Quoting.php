@@ -224,7 +224,15 @@ class Quoting extends Entity
             $result_order['shipping'] = 0;
             $result_order['source'] = SOURCE_SHOPEE;
             $result_order['customer_name'] = "SHOPEE CUSTOMER NAME";
-            $result_order['status'] = STATUS_QUOTING_DONE;
+            if($params['D'] == "Đang giao")
+            {
+                $result_order['status'] = STATUS_QUOTING_PROCESS;
+            }else if($params['D'] == "Hoàn thành")
+            {
+                $result_order['status'] = STATUS_QUOTING_DONE;
+            }else{
+                $result_order['status'] = STATUS_QUOTING_CANCEL;
+            }
         }
 
         return $result_order;
