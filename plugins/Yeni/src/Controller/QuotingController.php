@@ -3,6 +3,7 @@
 namespace Yeni\Controller;
 
 use \Yeni\Controller\AppController;
+use Yeni\Library\Business\Orders;
 use Yeni\Model\Table\ProductTable;
 use \Yeni\Model\Table\SetProductTable;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
@@ -15,6 +16,7 @@ class QuotingController extends AppController
         parent::initialize();
         $this->business_quoting = new Quoting();
         $this->model_product = new ProductTable();
+        $this->business_order = new Orders();
     }
 
     public function index()
@@ -238,4 +240,91 @@ class QuotingController extends AppController
     }
 
 
+    public function updateShopee()
+    {
+        if ($this->getRequest()->is('POST'))
+        {
+            //get order stt 1 pending
+            $condition = [
+                'status'    =>  STATUS_QUOTING_PROCESS,
+                'del_flag'    =>  UNDEL,
+            ];
+            $list_order_pending = $this->business_order->model_order->find()->where($condition)->all()->toList();
+
+            foreach($list_order_pending as $key => $value)
+            {
+                $list_order_pending[substr($value->order_code, 7)] = $value->order_code;
+                unset($list_order_pending[$key]);
+            }
+
+            $list_cancel = [];
+            $list_done = [];
+            $extensions = explode(".", $_FILES['file_import']['name']);
+            $result = [];
+            if ($extensions[1] == 'xlsx' || $extensions[1] == 'XLSX')
+            {
+                $file_name = $_FILES['file_import']['tmp_name'];
+                $file = new Xlsx();
+                $objPHPExcel = $file->load($file_name);
+                // Customer sheet
+                $getSheet = $objPHPExcel->getSheet(0);
+                if (!empty($getSheet))
+                {
+                    $dataInput = $getSheet->toArray(null, true, true, true);
+                    if (count($dataInput) > 0)
+                    {
+                        foreach ($dataInput as $key => $value)
+                        {
+                            if(!empty($list_order_pending[$value['A']]))
+                            {
+                                if($value['D'] == "Hoàn thành")
+                                {
+                                    if(!in_array($list_order_pending[$value['A']], $list_done))
+                                        $list_done[] = $list_order_pending[$value['A']];
+                                }
+                                else
+                                {
+                                    if(!in_array($list_order_pending[$value['A']], $list_cancel))
+                                        $list_cancel[] = $list_order_pending[$value['A']];
+                                }
+                            }
+                        }
+
+                        $condition_done = [
+                            'order_code IN' =>  $list_done
+                        ];
+                        $set = [
+                            'status'    =>  STATUS_DONE
+                        ];
+                        $this->business_quoting->model_quoting->updateAll($set,$condition_done);
+                        $this->business_quoting->model_order->updateAll($set,$condition_done);
+
+                        $condition_cancel = [
+                            'order_code IN' =>  $list_cancel
+                        ];
+                        $set = [
+                            'status'    =>  STATUS_CANCEL
+                        ];
+                        $this->business_quoting->model_quoting->updateAll($set,$condition_cancel);
+                        $this->business_quoting->model_order->updateAll($set,$condition_cancel);
+
+                        $this->Flash->success("Successfully.");
+                    }
+                    else
+                    {
+                        $this->Flash->error(__("Failed no data"));
+                    }
+                }
+                else
+                {
+                    $this->Flash->error(__("Failed no sheet"));
+                }
+            }
+            else
+            {
+                $this->Flash->error(__("Failed not xlsx"));
+            }
+        }
+        return $this->redirect('/yeni/quoting/');
+    }
 }

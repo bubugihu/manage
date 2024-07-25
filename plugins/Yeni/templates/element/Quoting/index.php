@@ -37,6 +37,23 @@
                                     <?= $this->Form->end(); ?>
                                 </li>
 
+                            <li class="nav-item px-1">
+                                <label class="btn btn-outline-secondary rounded-0" for="updateQuoting">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <?= __('Update EXCEL Shopee') ?>
+                                </label>
+                                <?= $this->Form->create(null, [
+                                    'url' => '/yeni/quoting/updateShopee',
+                                    'method' => 'post',
+                                    'id' => 'updateFile',
+                                    'class' => ['d-none'],
+                                    'enctype' => 'multipart/form-data'
+                                ]); ?>
+                                <input type="file" id="updateQuoting" name="file_import">
+                                <?= $this->Form->end(); ?>
+                            </li>
+
+
                         </ul>
 
                         <div class="nav-end">
@@ -140,6 +157,10 @@
     $(document).ready(function() {
         $('#importQuoting').on("change", function () {
             $('#uploadFile').submit();
+        });
+
+        $('#updateQuoting').on("change", function () {
+            $('#updateFile').submit();
         });
     })
 
