@@ -440,6 +440,7 @@ class ProductController extends AppController
                             {
                                 $date = FrozenTime::createFromFormat('d/m/Y', ($value['A']));
                             }
+
                             $results[$key] = [
                                 'name'      => ($value['B']),
                                 'value'      => ($getSheet->getCell('E'.$key)->getValue()),
@@ -449,6 +450,7 @@ class ProductController extends AppController
                                 'in_date'   => $date
                             ];
                         }
+
                         if($this->business_product->saveCostIncurred($results))
                         {
                             $this->Flash->success("Successfully.");

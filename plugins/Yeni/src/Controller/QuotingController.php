@@ -290,23 +290,30 @@ class QuotingController extends AppController
                             }
                         }
 
-                        $condition_done = [
-                            'order_code IN' =>  $list_done
-                        ];
-                        $set = [
-                            'status'    =>  STATUS_DONE
-                        ];
-                        $this->business_quoting->model_quoting->updateAll($set,$condition_done);
-                        $this->business_quoting->model_order->updateAll($set,$condition_done);
+                        if(!empty($list_done))
+                        {
+                            $condition_done = [
+                                'order_code IN' =>  $list_done
+                            ];
+                            $set = [
+                                'status'    =>  STATUS_DONE
+                            ];
+                            $this->business_quoting->model_quoting->updateAll($set,$condition_done);
+                            $this->business_quoting->model_order->updateAll($set,$condition_done);
+                        }
 
-                        $condition_cancel = [
-                            'order_code IN' =>  $list_cancel
-                        ];
-                        $set = [
-                            'status'    =>  STATUS_CANCEL
-                        ];
-                        $this->business_quoting->model_quoting->updateAll($set,$condition_cancel);
-                        $this->business_quoting->model_order->updateAll($set,$condition_cancel);
+                        if(!empty($list_cancel))
+                        {
+                            $condition_cancel = [
+                                'order_code IN' =>  $list_cancel
+                            ];
+                            $set = [
+                                'status'    =>  STATUS_CANCEL
+                            ];
+                            $this->business_quoting->model_quoting->updateAll($set,$condition_cancel);
+                            $this->business_quoting->model_order->updateAll($set,$condition_cancel);
+                        }
+
 
                         $this->Flash->success("Successfully.");
                     }
