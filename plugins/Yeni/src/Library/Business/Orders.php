@@ -10,6 +10,9 @@ use function PHPUnit\Framework\exactly;
 
 class Orders extends Entity
 {
+    public $model_quoting;
+    public $model_product;
+    public $model_order;
     public function __construct()
     {
         parent::__construct();

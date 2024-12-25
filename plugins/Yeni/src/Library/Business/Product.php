@@ -8,6 +8,16 @@ use Jlpt\Library\Business\Base;
 
 class Product extends Entity
 {
+    public $model_product;
+    public $model_set_product;
+    public $model_set_product_detail;
+    public $model_source_import;
+    public $model_cost_incurred;
+    public $set_name;
+    public $set_code;
+    public $set_avatar;
+    public $set_price;
+    public $set_price_option;
     public function __construct()
     {
         parent::__construct();

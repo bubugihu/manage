@@ -9,6 +9,13 @@ use Yeni\Model\Table\SetProductTable;
 
 class Report extends Entity
 {
+    public $model_quoting;
+    public $model_product;
+    public $model_order;
+    public $model_purchasing;
+    public $model_pre_purchasing;
+    public $model_cost_inventory;
+    public $model_cost_incurred;
     public function __construct()
     {
         parent::__construct();
