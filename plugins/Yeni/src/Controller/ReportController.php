@@ -54,6 +54,52 @@ class ReportController extends AppController
         $this->set('list_outcome',$list_outcome);
         $this->set('cost_inventory',$cost_inventory);
 
+        //current month
+        $total_income_shopee = 0;
+        $total_income_zalo = 0;
+        $total_outcome = 0;
+        $total_incurred = 0;
+        if(!empty($getMonthlyYear['shopee']) && is_array($getMonthlyYear['shopee']))
+        {
+            foreach($getMonthlyYear['shopee'] as  $month => $array_value)
+            {
+                if($month == $arr['month'])
+                {
+                    $total_income_shopee = number_format($array_value['sum_price']);
+                }
+            }
+        }
+        if(!empty($getMonthlyYear['zalo']) && is_array($getMonthlyYear['zalo']))
+        {
+            foreach($getMonthlyYear['zalo'] as  $month => $array_value)
+            {
+                if($month == $arr['month'])
+                {
+                    $total_income_zalo = number_format($array_value['sum_price']);
+                }
+            }
+        }
+        if(!empty($list_profit['total']) && is_array($list_profit['total']))
+        {
+            foreach($list_profit['total'] as  $month => $array_value)
+            {
+                if($month == $arr['month'])
+                {
+                    $total_incurred = number_format($array_value['expense']);
+                }
+            }
+        }
+        if(!empty($list_outcome) && is_array($list_outcome))
+        {
+            foreach($list_outcome as  $month => $array_value)
+            {
+                if($month == $arr['month'])
+                {
+                    $total_outcome = number_format($array_value);
+                }
+            }
+        }
+        $this->set(compact('total_income_shopee','total_income_zalo','total_outcome','total_incurred'));
     }
 
     public function importOrder()

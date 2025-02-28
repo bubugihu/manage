@@ -14,6 +14,12 @@
         color: black;
     }
 
+    .bordered{
+        font-weight: bold;
+    }
+    .text-decoration-unset{
+        text-decoration: unset;
+    }
 </style>
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
@@ -97,6 +103,50 @@
             </div>
             </form>
 
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3 bordered">
+                        Current Income Shopee
+                    </div>
+                    <div class="col-3 bordered">
+                        Current Income Zalo
+                    </div>
+                    <div class="col-3 bordered">
+                        Current OutCome
+                    </div>
+                    <div class="col-3 bordered">
+                        Current Cost Incurred
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                         <?= $total_income_shopee ?? 0 ?>
+                    </div>
+                    <div class="col-3">
+                        <?= $total_income_zalo ?? 0 ?>
+                    </div>
+                    <div class="col-3">
+                        <?= $total_outcome ?? 0 ?>
+                    </div>
+                    <div class="col-3">
+                        <?= $this->Html->link(
+                            $total_incurred ?? 0,
+                            [
+                                'controller' => 'Product',
+                                'action' => 'costIncurred',
+                                '?' => [ // Thêm query string
+                                    'month' => $month ?? 1,
+                                    'year' => $year ?? 2025
+                                ]
+                            ],
+                            [
+                                'class' => 'text-decoration-unset',
+                                'target'=>  'blank'
+                            ]
+                        ) ?>
+                    </div>
+                </div>
+            </div>
             <div class="card-body">
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" style="background-color: #c5c5c5;">

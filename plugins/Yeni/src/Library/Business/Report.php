@@ -336,13 +336,16 @@ class Report extends Entity
             }
 
         }
-
-        foreach($result_monthly['total'] as $key =>  &$value)
+        if(!empty($result_monthly['total']) && is_array($result_monthly['total']))
         {
-            $expense =  !empty($result_ex[$key]) ? $result_ex[$key] : 0;
-            $value['profit'] -= $expense;
-            $value['expense'] = $expense;
+            foreach($result_monthly['total'] as $key =>  &$value)
+            {
+                $expense =  !empty($result_ex[$key]) ? $result_ex[$key] : 0;
+                $value['profit'] -= $expense;
+                $value['expense'] = $expense;
+            }
         }
+
         return $result_monthly;
     }
 
@@ -378,6 +381,7 @@ class Report extends Entity
 
     public function getInventory($current_year)
     {
+        $results = [];
         $last_year = $current_year -1;
         $last_year_text = "$last_year-12-01";
         $current_year_text = "$current_year-12-01";

@@ -25,7 +25,7 @@
             <?= __("List Order") ?>
         </div>
         <div class="card m-3 rounded-0">
-            <form id="form-filter" class="form-filter" action="/yeni/report/" method="get">
+            <form id="form-filter" class="form-filter" action="/yeni/product/cost-incurred" method="get">
             <div class="card-header p-1">
                 <nav class="navbar bg-body-tertiary">
                     <div class="container-fluid">
@@ -51,14 +51,18 @@
                             <li class="nav-item px-1 ">
                                 <select class="form-select" name="month" id="month">
                                     <?php for($i = 1; $i <= 12; $i++) : ?>
-                                        <option value="<?= $i ?>"><?= $i ?></option>
+                                        <option value="<?= $i ?>"
+                                        <?= (!empty($month) && $month == $i) ? "selected" : "" ?>
+                                        ><?= $i ?></option>
                                     <?php endfor; ?>
                                 </select>
                             </li>
                             <li class="nav-item px-1 ">
                                 <select class="form-select" name="year" id="year">
                                     <?php for($i = 2023; $i <= 2025; $i++) : ?>
-                                        <option value="<?= $i ?>"><?= $i ?></option>
+                                        <option value="<?= $i ?>"
+                                            <?= (!empty($year) && $year == $i) ? "selected" : "" ?>
+                                        ><?= $i ?></option>
                                     <?php endfor; ?>
                                 </select>
                             </li>
@@ -99,19 +103,6 @@
                                     <div class="css-table-body">
                                         <?php foreach ($list_result as $key => $value) : ?>
                                             <div class="css-table-row-input table-striped">
-                                                <div class="action-col">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="dropdown dropend" title="More Action">
-                                                            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical text-secondary"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
                                                 <div>
                                                     <?= $value->name ?? '' ?>
                                                 </div>
@@ -159,11 +150,6 @@
 <script>
     $(document).ready(function() {
         // set month year
-        const current_month = <?= $month ?? 1 ?>;
-        const current_year = <?= $year ?? 2024 ?>;
-        $('#month').val(current_month)
-        $('#year').val(current_year)
-
         $('#month').on("change", function () {
             $('#form-filter').submit();
         });
@@ -176,290 +162,5 @@
             $('#uploadFile').submit();
         });
 
-        const labels = [
-            <?php if (isset($labels) && count($labels) > 0) foreach ($labels as $day => $val) echo '"'. $val . '", ' ?>
-        ]
-        labels.push("Next")
-        const data_count_order_zalo = [
-            <?php if (isset($labels) && count($labels) > 0)
-                foreach ($labels as $key => $val)
-                {
-                    if(isset($getMonthlyYear['zalo'][$key]))
-                    {
-                        echo '"'. $getMonthlyYear['zalo'][$key]->count_order . '", ' ;
-                    }else{
-                        echo '"'. 0 . '", ' ;
-                    }
-                }
-
-            ?>
-        ]
-
-        const data_sum_price_zalo = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($getMonthlyYear['zalo'][$key]))
-                {
-                    echo '"'. $getMonthlyYear['zalo'][$key]->sum_price . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_count_order_total = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($getMonthlyYear['total'][$key]))
-                {
-                    echo '"'. $getMonthlyYear['total'][$key]["count_order"] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_sum_price_total = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($getMonthlyYear['total'][$key]))
-                {
-                    echo '"'. $getMonthlyYear['total'][$key]["sum_price"] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_profit = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($list_profit['total'][$key]))
-                {
-                    echo '"'. $list_profit['total'][$key]["profit"] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_expense = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($list_profit['total'][$key]))
-                {
-                    echo '"'. $list_profit['total'][$key]["expense"] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_profit_shopee = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($list_profit['SHOPEE'][$key]))
-                {
-                    echo '"'. $list_profit['SHOPEE'][$key]["profit"] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_profit_zalo = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($list_profit['ZALO'][$key]))
-                {
-                    echo '"'. $list_profit['ZALO'][$key]["profit"] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_out_come = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($list_outcome[$key]))
-                {
-                    echo '"'. $list_outcome[$key] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-            ?>
-        ]
-
-        const data_cost_inventory = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($cost_inventory[$key]))
-                {
-                    echo '"'. $cost_inventory[$key] . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-            ?>
-        ]
-
-        const data_count_order_shopee = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($getMonthlyYear['shopee'][$key]))
-                {
-                    echo '"'. $getMonthlyYear['shopee'][$key]->count_order . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-        const data_sum_price_shopee = [
-            <?php if (isset($labels) && count($labels) > 0)
-            foreach ($labels as $key => $val)
-            {
-                if(isset($getMonthlyYear['shopee'][$key]))
-                {
-                    echo '"'. $getMonthlyYear['shopee'][$key]->sum_price . '", ' ;
-                }else{
-                    echo '"'. 0 . '", ' ;
-                }
-            }
-
-            ?>
-        ]
-
-
-        const data = {
-            labels: labels,
-            datasets: [
-                {
-                    label: 'Income',
-                    borderColor: 'blue',
-                    data: data_sum_price_total,
-                    fill: false,
-                },
-                {
-                    label: 'Profit',
-                    borderColor: 'green',
-                    data: data_profit,
-                    fill: false,
-                },
-                {
-                    label: 'Outcome',
-                    borderColor: 'red',
-                    data: data_out_come,
-                    fill: false,
-                },
-                {
-                    label: 'Inventory',
-                    borderColor: 'yellow',
-                    data: data_cost_inventory,
-                    fill: false,
-                },
-            ],
-        };
-
-// Chart configuration
-        const config = {
-            type: 'line',
-            data: data,
-            options: {
-                tooltips: {
-                    callbacks: {
-                        title: function(tooltipItems, data) {
-                            if(tooltipItems[0].datasetIndex == 0)
-                            {
-                                return `Shopee: ${data_count_order_shopee[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_shopee[tooltipItems[0].index], "VND")} \nZalo: ${data_count_order_zalo[tooltipItems[0].index]}  Orders, Income: ${gFormatCurrency(data_sum_price_zalo[tooltipItems[0].index], "VND")} \n`
-                            }else if(tooltipItems[0].datasetIndex == 1){
-                                return `Shopee: ${gFormatCurrency(data_profit_shopee[tooltipItems[0].index], "VND")} \nZalo: ${gFormatCurrency(data_profit_zalo[tooltipItems[0].index], "VND")} \nExpense: -${gFormatCurrency(data_expense[tooltipItems[0].index], "VND")} \n`
-                            }else{
-                                return `Total: ${gFormatCurrency(data_out_come[tooltipItems[0].index], "VND")}`
-                            }
-                        },
-                        label: function(tooltipItem, data) {
-                            if(tooltipItem.datasetIndex == 0)
-                            {
-                                return `Total: ${data_count_order_total[tooltipItem.index]}  Orders, Income: ${gFormatCurrency(data_sum_price_total[tooltipItem.index], "VND")}`
-                            }else if(tooltipItem.datasetIndex == 1){
-                                return `Total: ${gFormatCurrency(data_profit[tooltipItem.index], "VND")}`
-                            }else{
-                                return `Outcome: ${gFormatCurrency(data_out_come[tooltipItem.index], "VND")}`
-                            }
-                        }
-                    },
-                },
-                scales: {
-                    yAxes: [{
-                        display: true,
-                        scaleLabel: {
-                            display: false,
-                        },
-                        ticks: {
-                            beginAtZero: true,
-                            callback: function(value, index, values) {
-                                return gFormatCurrency(value,"");
-                            }
-                        }
-                    }]
-                },
-                animation: {
-                    duration: 1,
-                    onComplete: function () {
-                        var chartInstance = this.chart,
-                            ctx = chartInstance.ctx;
-                        ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
-                        ctx.textAlign = 'center';
-                        ctx.textBaseline = 'bottom';
-
-                        this.data.datasets.forEach(function (dataset, i) {
-                            var meta = chartInstance.controller.getDatasetMeta(i);
-                            meta.data.forEach(function (bar, index) {
-                                var data = dataset.data[index];
-                                ctx.fillStyle = '#000';
-                                ctx.fillText(gFormatCurrency(data,""), bar._model.x, bar._model.y - 5);
-                            });
-                        });
-                    }
-                }
-            }
-        };
-
-// Get the canvas element
-        const ctx = document.getElementById('lineChart').getContext('2d');
-
-// Create the line chart
-        const myLineChart = new Chart(ctx, config);
-
-    })
 
 </script>

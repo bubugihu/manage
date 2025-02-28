@@ -6,6 +6,7 @@ use Cake\Filesystem\File;
 use Cake\I18n\FrozenTime;
 use Cake\ORM\TableRegistry;
 use \Yeni\Controller\AppController;
+use Yeni\Library\Business\Incurred;
 use \Yeni\Model\Table\ConfigTable;
 use \Yeni\Model\Table\SetProductTable;
 use Cake\Log\Log;
@@ -18,6 +19,7 @@ class ProductController extends AppController
         parent::initialize();
         $this->business_product = new Product();
         $this->business_set_product = new SetProductTable();
+        $this->business_incurred = new Incurred();
     }
 
     public function index()
@@ -473,6 +475,20 @@ class ProductController extends AppController
                 $this->Flash->error(__("Failed not xlsx"));
             }
         }
-        return $this->redirect('/yeni/product/');
+
+        $arr['key_search']  = $_GET['key_search'] ?? "";
+        $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? (int)trim($_GET['page']) : 1;
+        $arr['month']  = $_GET['month'] ?? date("m");;
+        $arr['year']  = $_GET['year'] ?? date("Y");;
+
+        $list_result = $this->business_incurred->getList($arr, $page, false);
+        $paginate = $this->Common->displayPaginationBelow(LIMIT, $page, $list_result->count(), $arr);
+
+        $this->set('total_result',$list_result->count());
+        $this->set('list_result',$list_result->all()->toList());
+        $this->set('paginate',$paginate);
+        $this->set('month', $arr['month']);
+        $this->set('year', $arr['year']);
+
     }
 }

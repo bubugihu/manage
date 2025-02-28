@@ -48,6 +48,14 @@
                         <div class="text-start"><?= __("From Excel") ?></div>
                     </a>
                 </li>
+                <li
+                    class="<?php echo ($this->getRequest()->getParam('controller') == 'Product' && $this->getRequest()->getParam('action') == 'costIncurred') ? 'active' : ''; ?>">
+                    <a href="/yeni/product/cost-incurred"
+                       class="btn btn-toggle d-inline-flex align-items-baseline rounded border-0 p-2 aside-none-after aside-menu-child">
+                        <i class="fa-regular fa-circle"></i>
+                        <div class="text-start"><?= __("Cost Incurred") ?></div>
+                    </a>
+                </li>
             </ul>
         </div>
     </li>
