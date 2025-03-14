@@ -50,18 +50,18 @@
                         <ul class="nav nav-pills">
                             <li class="nav-item px-1 ">
                                 <select class="form-select" name="month" id="month">
-                                    <?php for($i = 1; $i <= 12; $i++) : ?>
+                                    <?php for ($i = 1; $i <= 12; $i++) : ?>
                                         <option value="<?= $i ?>"
-                                        <?= (!empty($month) && $month == $i) ? "selected" : "" ?>
+                                        <?= !empty($month) && $month == $i ? 'selected' : '' ?>
                                         ><?= $i ?></option>
                                     <?php endfor; ?>
                                 </select>
                             </li>
                             <li class="nav-item px-1 ">
                                 <select class="form-select" name="year" id="year">
-                                    <?php for($i = 2023; $i <= 2025; $i++) : ?>
+                                    <?php for ($i = 2023; $i <= 2025; $i++) : ?>
                                         <option value="<?= $i ?>"
-                                            <?= (!empty($year) && $year == $i) ? "selected" : "" ?>
+                                            <?= !empty($year) && $year == $i ? 'selected' : '' ?>
                                         ><?= $i ?></option>
                                     <?php endfor; ?>
                                 </select>
@@ -73,8 +73,8 @@
                                         <li class="nav-item">
                                             <div class="bb-search">
                                                 <i class="fa fa-search"></i>
-                                                <input type="text" class="form-control" placeholder="<?= __("type") ?> ..." name="key_search" value="<?= $_GET['key_search'] ?? ''; ?>" autocomplete="off"/>
-                                                <button class="btn btn-primary" type="submit"><?= __("Search") ?></button>
+                                                <input type="text" class="form-control" placeholder="<?= __('type') ?> ..." name="key_search" value="<?= $_GET['key_search'] ?? ''; ?>" autocomplete="off"/>
+                                                <button class="btn btn-primary" type="submit"><?= __('Search') ?></button>
                                             </div>
                                         </li>
                                     </ul>
@@ -91,12 +91,12 @@
                         <div class="table-responsive">
                             <div class="css-table action-dropdown">
                                 <div class="css-table-header">
-                                    <div style="width: 1%"><br><?= __("Name") ?></div>
-                                    <div style="width: 3%"><br><?= __("Unit") ?></div>
-                                    <div style="width: 2%"><br><?= __("Quantity") ?></div>
-                                    <div style="width: 2%"><br><?= __("Value") ?></div>
-                                    <div style="width: 2%"><br><?= __("Note") ?></div>
-                                    <div style="width: 2%"><br><?= __("Date") ?></div>
+                                    <div style="width: 1%"><br><?= __('Name') ?></div>
+                                    <div style="width: 3%"><br><?= __('Unit') ?></div>
+                                    <div style="width: 2%"><br><?= __('Quantity') ?></div>
+                                    <div style="width: 2%"><br><?= __('Value') ?></div>
+                                    <div style="width: 2%"><br><?= __('Note') ?></div>
+                                    <div style="width: 2%"><br><?= __('Date') ?></div>
                                 </div>
 
                                 <?php if (!empty($list_result)) : ?>
@@ -107,7 +107,7 @@
                                                     <?= $value->name ?? '' ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->unit_name ?? "" ?>
+                                                    <?= $value->unit_name ?? '' ?>
                                                 </div>
                                                 <div>
                                                     <?= $value->quantity ?? 0 ?>
@@ -119,12 +119,12 @@
                                                     <?= $value->note ?? 0 ?>
                                                 </div>
                                                 <div>
-                                                    <?= $value->in_date->format("Y-m-d") ?>
+                                                    <?= $value->in_date->format('Y-m-d') ?>
                                                 </div>
                                             </div>
                                         <?php endforeach; ?>
                                     </div>
-                                <?php else: ?>
+                                <?php else : ?>
                                     <div class="caption-footer">
                                         No Data Available
                                     </div>
@@ -137,7 +137,7 @@
 
             <div class="card-bottom">
                 <div class="d-flex flex-row justify-content-between align-items-center px-4 py-0">
-                    <?php echo (isset($paginate)) ? $paginate : ''; ?>
+                    <?php echo $paginate ?? ''; ?>
                 </div>
             </div>
         </div>
@@ -158,9 +158,9 @@
             $('#form-filter').submit();
         });
 
-        $('#importOrder').on("change", function () {
-            $('#uploadFile').submit();
+        $('#importCost').on("change", function () {
+            $('#form-filter').submit();
         });
 
-
+        })
 </script>

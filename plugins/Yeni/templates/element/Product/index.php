@@ -84,7 +84,21 @@
 <!--                                <input type="submit" id="export-json" name="">-->
 <!--                                --><?php //= $this->Form->end(); ?>
 <!--                            </li>-->
-
+                            <li class="nav-item px-1">
+                                <label class="btn btn-outline-secondary rounded-0" for="importCost">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <?= __('Cost Incurred') ?>
+                                </label>
+                                <?= $this->Form->create(null, [
+                                    'url' => '/yeni/product/costIncurred',
+                                    'method' => 'post',
+                                    'id' => 'cost_incurred',
+                                    'class' => ['d-none'],
+                                    'enctype' => 'multipart/form-data'
+                                ]); ?>
+                                <input type="file" id="importCost" name="file_import">
+                                <?= $this->Form->end(); ?>
+                            </li>
                         </ul>
 
                         <div class="nav-end">

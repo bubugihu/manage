@@ -14,6 +14,10 @@ use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use Yeni\Library\Business\Product;
 class ProductController extends AppController
 {
+    public $business_product;
+    public $business_set_product;
+    public $business_incurred;
+
     public function initialize(): void
     {
         parent::initialize();
