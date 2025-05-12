@@ -304,6 +304,7 @@ class Report extends Entity
         $list_quoting = $this->model_quoting->find()
             ->where(['q_date >=' => $last_year_text])
             ->where(['q_date <' => $current_year_text])
+            ->where(['status' => STATUS_QUOTING_DONE])
             ->contain(['Product'])
             ->toArray();
         $result_monthly = [];
